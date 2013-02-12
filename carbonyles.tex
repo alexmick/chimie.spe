@@ -1,0 +1,416 @@
+\chapter{Carbonyles}
+\section{Acétalisation (Catalyse Acide)}
+\noindent 
+\\
+\setatomsep{2em}
+\setarrowdefault{0,1.5,black}
+
+\begin{center}
+\begin{small}
+\schemestart
+\chemfig{R-C(=[::+60]O)-[::-60]H}
+\+
+\chemfig{R_1-OH}
+\arrow(Aldéhyde+Alcool--Hémiacétal.170)
+\chemname{\chemfig{R-C(-[::90]OR_1)(-[::-90]H)-OH}}{{\scriptsize Hémiacétal}}
+\arrow(.10--Acétal.170){->[\chemfig{R_1-OH}][(en excès)]}
+\chemname{\chemfig{R-C(-[::90]OR_1)(-[::-90]H)-OR_1}}{{\scriptsize Acétal}}
+\schemestop
+
+\vspace{1cm}
+\schemestart
+\chemfig{R-C(=[::+60]O)-[::-60]R_2}
+\+
+\chemfig{R_1-OH}
+\arrow(Cétone+Alcool--Hémicétal.170)
+\chemname{\chemfig{R-C(-[::90]OR_1)(-[::-90]R_2)-OH}}{{\scriptsize Hémicétal}}
+\arrow(.10--Cétal.170){->[\chemfig{R_1-OH}][(en excès)]}
+\chemname{\chemfig{R-C(-[::90]OR_1)(-[::-90]R_2)-OR_1}}{{\scriptsize Cétal}}
+\schemestop
+
+\vspace{1cm}
+\end{small}
+\end{center}
+\underline{Mécanisme :}
+\schemestart[0,0.65]
+\chemfig{a/b} 
+\arrow{<=>} 
+\chemfig{A.N. R_1OH} 
+\arrow{<=>} 
+\chemfig{a/b} 
+\arrow{<=>}  
+\chemfig{a/b} 
+\arrow{<=>} 
+\chemfig{E} 
+\arrow{<=>} 
+\chemfig{A.N.} 
+\arrow{<=>} 
+\chemfig{a/b} 
+\schemestop
+\section{Protection} 
+\noindent 
+\\
+A l'aide d'un diol. z.B : glycol $\left( {\chemfig{HO-[::30]-[::-60]-[::60]OH}} ~ \right)$ \\
+1) Protection 2) Réaction 3) Déprotection
+\section{Réduction}
+\noindent 
+\\
+\begin{small}
+\schemestart
+\chemfig{Na^\oplus H_3B^\ominus -H}
+\+
+\chemfig{R_1-C(-[::+60]R_2)(=[::-60]O)}
+\+
+\chemfig{R-OH} \arrow
+\chemfig{R_1-C(-[::+60]R_2)(-[::-60]OH)}
+\+
+\chemfig{Na^\oplus H_3B^\ominus -RO}
+\schemestop
+\end{small}
+
+\vspace{1cm}
+\noindent $\Rightarrow$ Pas d'action sur \chemfig{C=C}
+\\ \\
+Rq : \chemfig{NaH}, \chemfig{LiH} !
+\section{Additions Nucléophiles}
+\noindent \\
+\underline{$\star$ Organomagnésiens :}
+BASES avant tout !!!
+\\
+\begin{center}
+{\Huge \chemfig{\chemabove{R}{\scriptstyle \delta \ominus}-\chemabove{{\vphantom{R}Mg}}{\scriptstyle \delta \oplus}-{\vphantom{R}X}}}
+\end{center}
+\noindent \\
+\underline{$\star$ Cyanure d'Hydrogène :}
+\vspace{.5cm}
+\begin{center}
+\schemestart
+\chemfig{R_1-C(-[::+60]R_2)(=[::-60]O)}
+\+
+\chemfig{\chemabove{\lewis{4,C}}{\ominus}~\lewis{0,N}}
+\arrow{->[A.N.][]}
+\chemfig{R_2-C(-[::90]R_1)(-[::-90]CN)(-\chemabove{\lewis{026,O}}{\quad \quad \ominus})}
+\arrow{->[\chemfig{H-CN}][]}
+\chemfig{R_2-C(-[::90]R_1)(-[::-90]CN)(-OH)}
+\schemestop
+\end{center}
+\vspace{.5cm}
+\noindent \\
+\underline{$\star$ Alcynures :}
+\vspace{.5cm}
+\begin{center}
+\schemestart
+\chemfig{R-~[::0]-[::0]H}
+\+
+\chemfig{Na_{(s)}}
+\arrow
+\chemfig{R-~[::0]\chemabove{\lewis{0,C}}{ \ominus}}
+\+
+\chemfig{Na\oplus}
+\+
+$\frac{1}{2}$\chemfig{H_{2_{(g)}}}
+\schemestop
+
+\schemestart
+\chemfig{R_1-C(-[::+60]R_2)(=[::-60]O)}
+\arrow{->[\chemfig{R-~[::0]\chemabove{\lewis{0,C}}{ \ominus}}][]}[,2]
+\chemfig{R_2-C(-[::90]R_1)(-~R)(-[:-90]\chemabove{\lewis{046,O}}{\quad \quad \ominus})}
+\arrow{->[\chemfig{H_2O}][-\chemfig{H\lewis{026,O}} $\ominus$]}
+\chemfig{R_2-C(-[::90]R_1)(-~R)(-[:-90]OH)}
+\schemestop
+\end{center}
+\vspace{.5cm}
+\noindent \\
+\underline{$\star$ Ylures de Phosphore :}
+\vspace{1cm}
+\begin{center}
+\setcrambond{.2pt}{}{}
+\schemestart
+\chemname{\chemfig{\lewis{4,P}-P h_{3}}}{{\scriptsize triphénylphosphine}}
+\+
+\chemfig{-[::30]-[::-60]-[::60]Br}
+\arrow
+\chemfig{-[::30]-[::-60]-[::60]  \ \ \ \ \chemabove{P}{\oplus}{(Ph)}_3}
+\arrow{0}[,0]
+\+
+\chemfig{\chemabove{\lewis{0246,Br}}{\quad \ominus}}
+\schemestop
+\vspace{.5cm}
+\setcrambond{.2pt}{}{}
+\schemestart
+\chemfig{\chemabove{\lewis{0246,Br}}{\quad \ominus}}
+\+
+\chemfig{-[::30]-[::-60]-[::60] \ \ \ \  \chemabove{P}{\oplus}{(Ph)}_3}
+\arrow{0}[,0]
+\+
+\chemfig{\lewis{4,\chemabove{Bu}{\quad \ominus}} \chemabove{Li}{\quad \oplus}}
+\arrow{->[- \chemfig{BuH_{(g)}}][- \chemfig{LiBr_{(s)}}]}
+\chemfig{-[::30]-[::-60]\lewis{5,\chemabove{C}{\ominus}}(-[::-60]H)--  \chemabove{P}{\oplus}{(Ph)}_3}
+\schemestop
+\vspace{.5cm}
+\setcrambond{.2pt}{}{}
+\schemestart
+\chemfig{-[::30]-[::-60]\lewis{5,\chemabove{C}{\ominus}}(-[::-60]H)--  \chemabove{P}{\oplus}{(Ph)}_3}
+\arrow{->[\chemfig{(-[::120]-[::60])(-[::-120])=O}][\bsc{Wittig}]}
+\chemfig{O=\ P{(Ph)}_3}
+\arrow{0}[,0]
+\+
+\chemfig{(-[::120]-[::60])(-[::-120])=^-[::60]-}
+\schemestop
+\end{center}
+\vspace{1cm}
+\section{Tautomérie céto-énol}
+Équilibre rapide. 
+\begin{center}
+\schemestart
+\chemfig{(-[::120]HO)(-[::-120])=_-[::-60]}
+\arrow{<->>}
+\chemfig{(=[::120]O)(-[::-120])-(-[::-60])(-[::60]H)}
+\schemestop
+\end{center}
+
+Avec des $\beta$-dicétones, liaisons Hydrogène :
+\begin{center}
+\schemestart
+\chemfig{(=[::120]O)(-[::-120])-(-[::-60])(=[::60]O)}
+\arrow{<=>}
+\chemfig{(-[::120]O-[::-100]H)(=[::-120])-(-[::-60])(=[::60]\lewis{3,O})}
+\schemestop
+\end{center}
+\section{Énolate}
+Obtention à l'aide d'une base forte : amidure $\left( \chemfig{NH_3} / \chemfig{N\chemabove{H_2}{\ominus}} \right)$ ou hydrure $\left( \chemfig{LiH}, \chemfig{NaH} \right)$ ou LDA (diisopropylamidure de lithium).
+\vspace{1cm}
+\begin{center}
+\schemestart
+\chemfig{*6(--(-)(-[:20]H)-(=O)-(-[:120]H)(-[:60]H)--)}
+\arrow(A.-20--B.-180){->[LDA,\chemfig{Et_2O}][$0^{o}C$]}[25,1.75]
+\chemname{\chemfig{*6(--(-)-(-\lewis{317,\chemabove{O}{\ominus}})=--)}}{{99\% (cinétique)}} 
+\+ 
+\chemname{\chemfig{*6(--(-)=(-\lewis{317,\chemabove{O}{\ominus}})---)}}{{1\% (thermo)}}
+\arrow(@A--C.180){->[LiH, THF][$55^{o}C$]}[-25,1.75]
+\chemname{\chemfig{*6(--(-)-(-\lewis{317,\chemabove{O}{\ominus}})=--)}}{{24\% (cinétique)}}
+\+
+\chemname{\chemfig{*6(--(-)=(-\lewis{317,\chemabove{O}{\ominus}})---)}}{{76\% (thermo)}}
+\schemestop
+\end{center}
+\section{Aldolisation - Cétolisation}
+\paragraph{Aldolisation}
+\begin{center}
+\schemestart
+\chemfig{-[::-30](-[::-60]H)-[::60]=_[::-60]O}
+\arrow{<=>[\chemfig{H\lewis{026,O}} $\ominus$][-\chemfig{H_2O}]}
+\chemleft[ 
+\subscheme{\chemfig{-[::-30]\lewis{6,\chembelow{C}{\quad \quad \ominus}}H-[::60]=_[::-60]O} \arrow{<->}[,1] ... }
+\chemright]
+\arrow{<=>[\chemfig{-[::-30]-[::60]=_[::-60]O}][]}
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{-[::-30]-[::60](-[::60](-[::60])(-[::-60]=_[::-60]O))-[::-60]\lewis{157,\chemabove{O}{\ominus}}}
+\arrow{<=>[\chemfig{H-OH}][-\chemfig{H\lewis{026,O}} $\ominus$]}
+\chemfig{-[::-30]-[::60](-[::60](-[::60])(-[::-60]=_[::-60]O))-[::-60]OH}
+\schemestop
+\end{center}
+\paragraph{Cétolisation}
+\begin{center}
+\setcrambond{2.5pt}{}{}
+\schemestart
+\chemfig{(-[::150]H)-[::30](=[::60]O)-[::-60]}
+\arrow{<=>[\chemfig{H\lewis{026,O}} $\ominus$][-\chemfig{H_2O}]}
+\chemleft[ 
+\subscheme{\chemfig{H_2\lewis{6,\chembelow{C}{\quad \quad \ominus}}-[::30](=[::60]O)-[::-60]} \arrow{<->}[,1] ... }
+\chemright]
+\arrow{<=>[\chemfig{-[::30](=[::60]O)-[::-60]}][]}
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{>:[::30](<[::-150])(-[::60]\lewis{024,\chemabove{O}{\ominus}})-[::-60]-[::60](=[::60]O)-[::-60]}
+\arrow{<=>[\chemfig{H-OH}][\vspace{.5cm}-\chemfig{H\lewis{026,O}} $\ominus$]}
+\chemfig{>:[::30](<[::-150])(-[::60]OH)-[::-60]-[::60](=[::60]O)-[::-60]}
+\schemestop
+\end{center}
+\paragraph{Polyaddition}
+En milieu basique, la réaction peut se poursuivre.
+\paragraph{Rétroaldolisation - Rétrocétolisation}
+\begin{center}
+\schemestart
+\setcrambond{2.5pt}{}{}
+\chemfig{>:[::30](<[::-150])(-[::60]OH)-[::-60]-[::60](=[::60]O)-[::-60]}
+\arrow{<=>[\chemfig{H\lewis{026,O}} $\ominus$][]}
+\begin{large}
+2
+\end{large}
+\chemfig{-[::30](=[::60]O)-[::-60]}
+\schemestop
+\end{center}
+\paragraph{Condensations croisées :} 
+Selon la nature des réactifs : \\ \\
+\noindent 2 Aldéhydes (différents) énolisables $\longrightarrow$ pas de sélection : 4x 25\%.
+\\ \\
+\noindent 1 Aldéhyde + 1 cétone énolisables $\longrightarrow$ cétol issu de A+C majoritaire. Aldol issu de A+A, minoritaire. Cétol issu de C+C, ultraminoritaire.
+\section{Crotonisation}
+\noindent Déshydratation d'un aldol ou d'un cétol.
+\\ \\
+Sélectivité : obtention de $\chemfig{C=C}$ et $\chemfig{C=O}$ conjuguées, $\chemfig{C=C}$ substituée au maximum, (E) majoritaire devant (Z).
+\begin{center}
+\textbf{En milieu basique}
+\schemestart
+\chemfig{-[::30](-[::60]OH)-[::-60](-[::-60]H)-[::60]=_[::-60]O}
+\arrow{<=>[\chemfig{H\lewis{026,O}} $\ominus$][-\chemfig{H_2O}]}
+\chemfig{-[::30](-[::60]OH)-[::-60]\lewis{6,\chembelow{C}{\quad \quad \ominus}}H-[::60]=_[::-60]O}
+\arrow{<=>[E1Cb][-\chemfig{H\lewis{026,O}} $\ominus$]}
+\chemfig{-[::30]=_[::-60]-[::60]=_[::-60]O}
+\schemestop
+\vspace{.7cm}
+\textbf{En milieu acide}
+\vspace{1cm}
+\schemestart
+\chemfig{-[::30](-[::60]OH)-[::-60]-[::60]=_[::-60]O}
+\arrow{<=>[\chemfig{\lewis{4|,\chemabove{H}{\oplus}}}][]}
+\chemfig{-[::30](-[::60]\chembelow{O}{\quad \oplus}H_2)-[::-60](-[::-60]H)-[::60]=_[::-60]O}
+\arrow{<=>[E1][- \chemfig{\lewis{4|,\chembelow{H}{\oplus}}}-\chemfig{H_2O}]}
+\chemfig{-[::30]=_[::-60]-[::60]=_[::-60]O}
+\schemestop
+\end{center}
+\section{C-Alkylation}
+\begin{center}
+\schemestart
+\setcrambond{2.5pt}{}{}
+\chemfig{\chemabove{Li}{\oplus}}
+\+
+\chemfig{-[::30]\lewis{6,\chemabove{C}{\quad  \ominus}}(-[::60])-[::-60]=^[::+60]O}
+\+
+\chemfig{-[::30]-[::-60]Br}
+\arrow{->[SN2][]}
+\setcrambond{2.5pt}{}{}
+\chemfig{>:[::30](<[::-150])(-[::60])-[::-60]=^[::60]O}
+\+
+\chemfig{LiBr_{(s)}}
+\schemestop
+\end{center}
+\section{Réactions des $\alpha$-énones}
+Préparation : par réaction de \textbf{Crotonisation} ou par oxydation des alcools allyliques (avec $\chemfig{MnO_2}$).
+\begin{center}
+\schemestart
+\chemleft[
+\subscheme{
+\chemfig{(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))=O}
+\arrow{<->}
+\chemfig{\lewis{1|,\chembelow{C}{\quad \oplus}}(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \ominus}}}
+\arrow{<->}
+\chemfig{(-[::-120])(=^[::120](-[::60]\lewis{1|,\chembelow{C}{\quad \oplus}}(-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \ominus}}}
+}
+\chemright]
+\schemestop
+
+\vspace{1cm}
+\textbf{$\Longrightarrow$ Attaques/Additions 1-2 ou 1-4}
+\end{center}
+\noindent \\
+\underline{$\star$ Organomagnésiens :}
+Pas de sélectivité marquée entre 1-2 et 1-4.
+\begin{center}
+\setatomsep{1.5em}
+\schemestart
+\chemfig{*6(=-(=O)-(-)---)}
+\arrow{->[1) \chemfig{EtMgBr}][2) \chemfig{\lewis{4|,H}}$\oplus$,\chemfig{H_2O}]}
+\chemfig{*6(=-(-OH)(-[::2]Et)-(-)---)}
+\+
+\chemleft\{
+\subscheme{
+\chemfig{*6((-Et)-=(-OH)-(-)---)}
+\arrow{<->>}[,1]
+\chemfig{*6((-Et)--(=O)-(-)---)}
+}
+\chemright\}
+\schemestop
+\end{center}
+\setatomsep{2em}
+\noindent \\
+\underline{$\star$ Organolithiens :}
+Additions \textbf{1-2}
+\begin{center}
+\schemestart
+\chemfig{BuCl}
+\+
+\chemfig{2\hspace{.2cm} Li}
+\arrow{->[\chemfig{Et_2O}][$0^{o}C$]}
+\chemfig{BuLi}
+\+
+\chemfig{LiCl_{(s)}}
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{*6(=-(=O)-(-)---)}
+\arrow{->[1) \chemfig{BuLi} , \chemfig{Et_2O}][2) \chemfig{\lewis{4|,H}}$\oplus$,\chemfig{H_2O}]}[,2]
+\chemfig{*6(=-(-OH)(-[::2]Bu)-(-)---)}
+\schemestop
+\end{center}
+\noindent \\
+\underline{$\star$ Organocuprates lithiés :}
+Additions \textbf{1-4}
+\begin{center}
+\schemestart
+\chemfig{4 \hspace{.2cm} EtLi}
+\+
+\chemfig{Cu_2 I_2}
+\arrow{->[THF][$\theta$ faible]}
+\chemfig{2 \hspace{.2cm} Et_2 Cu Li}
+\+
+\chemfig{2\hspace{.2cm}  LiI_{(s)}}
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{*6(=-(=O)-(-)---)}
+\arrow{->[\chemfig{Et_2 Cu Li}][-\chemfig{EtCu}]}
+\chemfig{*6((-Et)-=(-\lewis{157,\chemabove{O}{ \ominus}} (-[,,,,dash pattern=on 2pt off 2pt]\chemabove{Li}{\oplus}))-(-)---)}
+\arrow{->[\chemfig{\lewis{4|,H}}$\oplus$][\chemfig{H_2O}, -\chemfig{\chembelow{Li}{\oplus}}]}
+\chemfig{*6((-Et)--(=O)-(-)---)}
+\schemestop
+\end{center}
+\section{Dialkylation $\alpha$-$\beta$}
+Addition 1-4 suivie d'une C-Alkylation.
+\begin{center}
+\schemestart
+\chemfig{-[::-30]=_[::60]-[::-60](=[::-60]O)-[::60]}
+\arrow{->[\chemfig{Et_2CuLi}, THF][-\chemfig{EtCu}]}[,2]
+\chemfig{-[::-30](-[::-60]Et)-[::60]=_[::-60](-[::-60]\lewis{046,\chembelow{O}{\quad \ominus}} (-[,,,,dash pattern=on 2pt off 2pt]\chemabove{Li}{\oplus}))-[::60]}
+\arrow{->[\chemfig{Bu-Br}][-\chemfig{LiBr_{(s)}}]}
+\chemfig{-[::-30](-[::-60]Et)-[::60](-[::60]Bu)-[::-60](=[::-60]O)-[::60]}
+\schemestop
+\end{center}
+\section{Annélation de \bsc{Robinson}}
+\begin{center}
+Cyclisation à 6 chaînons. $\beta$-dicétone (cétoester) $+$ $\alpha$-énone.
+\end{center}
+\begin{center}
+\schemestart
+\chemfig{*6(--(=O)-(-)(-[::-120]H)-(=O)--)}
+\arrow{->[\chemfig{Et\lewis{062,O}} \! $\ominus$][\chemfig{EtOH}]}
+\chemfig{*6(--(=O)-\lewis{7,\chemabove{C}{ \ominus}}(-)-(=O)--)}
+\arrow{->[\chemfig{=^[::-30]-[::60](-[::60])=[::-60]O}][]}[,2]
+\chemfig{*6(--(=O)-(-)(-[::-120]-[::60]=^[::60](-[::60])(-[::-60]\lewis{137,\chemabove{O}{ \ominus}}))-(=O)--)}
+\schemestop
+\vspace{1cm}
+\schemestart
+\arrow{->[\chemfig{EtOH}][-\chemfig{Et\lewis{062,O}} \! $\ominus$]}[,1.2]
+\chemfig{*6(--(=O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_3 C)(=[::-60]O))-(=O)--)}
+\arrow{->[\chemfig{Et\lewis{062,O}} \! $\ominus$][-\chemfig{EtOH}]}[,1.2]
+\chemfig{*6(--(=O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_2 \lewis{2,\chemabove{C}{\quad \ominus}})(=[::-60]O))-(=O)--)}
+\arrow{<=>[Cétolisation][Intramoléculaire]}[,2]
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{*6(--(-[::-120]\lewis{046,\chemabove{O}{ \quad \ominus}})(*6(--(=O)----))-(-)(-[::0])-(=O)--)}
+\arrow{->[\chemfig{EtOH}][-\chemfig{Et\lewis{062,O}} \! $\ominus$]}[,1.2]
+\chemfig{*6(--(-[::-120]OH)(*6(-(-H)(-[::0]H)-(=O)----))-(-)(-[::0])-(=O)--)}
+\arrow{->[\chemfig{Et\lewis{062,O}} \! $\ominus$][-\chemfig{EtOH}]}[,1.2]
+\chemfig{*6(--(-[::-120]OH)(*6(-\lewis{6,\chembelow{\chemabove{C}{H}}{\quad \ominus}}-(=O)----))-(-)(-[::0])-(=O)--)}
+\schemestop
+\vspace{1cm}
+\schemestart
+\arrow{->[E1Cb][-\chemfig{H\lewis{026,O}} \!$\ominus$ ]}
+\chemname{\chemfig{*6(--(*6(=-(=O)----))-(-)(-[::0])-(=O)--)}}{Base des Stéroïdes}
+\schemestop
+\end{center}
+\setarrowdefault{0,1,black}

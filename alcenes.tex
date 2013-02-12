@@ -1,0 +1,139 @@
+%\setatomsep{25pt}
+\setatomsep{2em}
+\setarrowdefault{0,1.5,black}
+\setcrambond{5pt}{}{}
+\chapter{Alcènes}
+\section{Hydrogénation}
+\subsection{Hydrogénation catalytique des alcanes}
+\noindent \textbf{Bilan:} Alcène + H$_2$ $\longrightarrow$ Alcane \\
+\textbf{Catalyse:} Nickel \\
+\textbf{Stéréochimie:} Addition syn des deux H
+
+{\setatomsep{35pt}
+\begin{center}
+\schemestart
+\chemfig{Ph-[::-30]C(-[:210]CH_3)=C(-[:-30]Ph)-[::+30]CH_3}
+\arrow{->[H$_2$][Ni]}
+\chemfig{H_3 C>:[::-45]C(-[:240]H)(<|[:160]Ph)-C(<:[:45]Ph)(-[:-60]H)<|[::+20]CH_3}
+\arrow{0}[,0] \+ 
+Énantiomère
+\schemestop
+\end{center}
+}
+\textbf{Catalyse hétérogène} en plusieurs étapes dans le Nickel
+\begin{enumerate}
+	\item \textbf{Diffusion externe} des réactifs à la surface d'un grain de catalyseur
+	\item \textbf{Diffusion interne} à l'intérieur des pores du grain
+	\item \textbf{Adsorption} des réactifs
+	\item \textbf{Réaction} entre les espèces
+	\item \textbf{Désorption} des produits
+	\item \textbf{Diffusion interne} des produits
+	\item \textbf{Diffusion externe} des produits
+\end{enumerate}
+
+\subsection{Hydrogénation partielle des alcynes}
+\noindent Pour s'arrêter à l'alcane: nécéssité d'utiliser un catalyseur \textbf{désactivé} \\
+\textit{ex:} Pd de \textsc{Lundlar} \\
+\begin{center}
+\begin{small}
+\schemestart
+\chemfig{H_3 C-C~C-CH_3} \+ \chemfig{H_2} \arrow{->[Pd][]} \chemfig{H_3 C-[::-30]C(-[:210]H)=C(-[::-30]H)-[::+30]CH_3}
+\schemestop
+\end{small}
+\end{center}
+\section{Hydroboration}
+\subsection{Boration}
+\noindent Conduit à un \og trialkylborane \fg \ où le B se fixe sur le {\color{red} C} le \textbf{moins encombré} \\ \\
+\textbf{Bilan:}
+\schemestart
+\chemfig{-[:30]-[:-30]CH=CH_2} \+ \chemfig{BH_3}
+\arrow \chemleft( \chemfig{-[:30]-[:-30]CH_2-{\color{red}C}H_2} \chemright)$_{_{_{_{_{_{_{\!\!\! 3}}}}}}}\!\!\!${\setatomsep{25pt} \chemfig{-[:10]B(-[:170])-[:180]}}
+\schemestop
+\subsection{Oxydation des alkylboranes}
+\noindent Traitement oxydant des alkylboranes par H$_2$O$_2$ en solution basique $\rightarrow$ \textbf{alcool}
+\subsection{Bilan de l'hydroboration}
+\begin{center}
+\schemestart
+\chemfig{*5(--=(-[,0.5])--)}
+\arrow{->[ 1) BH$_3$, Et$_2$O][ 2) H$_2$O$_2$,HO$^-$]}[,2]
+\chemfig{*5(--(<|[:45]H)(<:[:-20,0.7]OH)-(<:[:-20,0.7]H)(<|[:45]CH_3)--)}
+\schemestop
+\end{center}
+\subsection{Halogenation}
+\noindent Attaque d'un di-halogène ou du chlorure d'iode sur le un trialkylborane
+{\setatomsep{15pt}
+\begin{center}
+\begin{footnotesize}
+\schemestart
+\chemleft( \chemfig{-[:30]-[:-30]CH_2} \chemright)$_{_{_{_{_{_{_{\!\! 3}}}}}}}$B
+\arrow{->[3$\:$Br$_2$][]}
+3 \chemfig{-[:30]-[:-30]CH_2-Br} \+ \chemfig{B-Br_3}
+\arrow{0}[,0.6]
+\chemfig{*6(---=--)}
+\arrow{->[ 1) BH$_3$, Et$_2$O][ 2) I-Cl]}[,1.8]
+\chemfig{*6(---(-I)---)}
+\schemestop
+\end{footnotesize}
+\end{center}
+}
+\section{Epoxydation}
+\subsection{Formation de l'époxyde}
+\noindent Réaction entre un alcène et un \textbf{peracide}. Les acides les plus utilisés sont:
+\begin{description}
+	\item[Acide peracétique:] \chemfig{H_3 C-C(=[:90]O)-O-[:30]OH}
+	\item[Acide perbenzoïque:] \chemfig{[:-30]*6(=-=(-(=[:90,0.7]O)-[:-30]O-[:30]O-[:90,0.7]H)-=-)}
+	\item[MCPBA:] \chemfig{[:-30]*6(=-=(-(=[:90,0.7]O)-[:-30]O-[:30]O-[:90,0.7]H)-=(-Cl)-)} \ \ \ l'acide métachloroperbenzoïque
+\end{description}
+C'est une réaction \textbf{stéréospécifique}: 
+\begin{center}
+\schemestart
+\chemfig{H-[:-30]C(-[:210]R)=C(-[:30]R')-[:-30]H}
+\arrow{->[MCPBA][]}[,1.5]
+\chemfig{C?(<:[:200]H)(<|[:250]R)-C(<:[:-20]R)(<|[:-70]H)-[:120]O?}
+\schemestop
+\end{center}
+\subsection{Hydrolyse}
+\begin{center}
+\schemestart
+\chemfig{-[:30]=_-[:-30]}
+\arrow{->[1) MCPBA][2) H$_2$O, HO$^-$]}[,1.8]
+\chemfig{HO-[:-50](<:[:210]H)(<|[:250]Me)-(<:[:70]H)(<|[:30]Me)-[:-50]OH}
+\arrow{0}[,0] \+ Énantiomère
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{-[:30]=_-[:30]}
+\arrow{->[1) MCPBA][2) H$_2$O, HO$^-$]}[,1.8]
+\chemfig{HO-[:-50](<:[:210]Me)(<|[:250]H)-(<:[:70]H)(<|[:30]Me)-[:-50]OH}
+\arrow{0}[,0.5] (Composé méso)
+\schemestop
+\end{center}
+%Mécanisme:
+%\schemestart
+%\chemfig{*3(-(<|Me)-O-(<|Me))} \+ \
+%\schemstop
+\section{Synhydroxylation}
+\noindent On utilise KMnO$_4$ dilué en milieu basique à $\theta_{amb}$ ou OsO$_4$ à $\theta_{amb}$ en 48h \\
+\setatomsep{20pt}
+\begin{center}
+\schemestart
+\chemfig{*6(--=---)} \+ \chemfig{Os(=[:135,1.2]O)(=[:225,1.2]O)(=[:45,1.2]O)=[:-45,1.2]O}
+\arrow{->}[,1]
+\chemfig{*6(--?-(-[:12]O-[:-45]Os(-[:225]O?)(=[:45,1.2]O)=[:-45,1.2]O)---)}
+\footnotesize
+\arrow{->[ H$_2$O][Na$_2$SO$_3$ ou H$_2$S]}[,2]
+\normalsize
+\chemfig{*6(--(<|OH)-(<|OH)---)}
+\schemestop
+\end{center}
+\vspace{0.5cm}
+\underline{$\star$ Coupure des diols par l'acide periodique :} 
+\vspace{.5cm}
+\setatomsep{2em}
+\begin{center}
+\schemestart
+\chemfig{*6(--(<|OH)-(<|OH)---)}
+\arrow{->[HIO$_4$][]}
+\chemfig{(-[:30]-[:-30]=^O)-[:-90]-[:-30]-[:30]=_O}
+\schemestop
+\end{center}

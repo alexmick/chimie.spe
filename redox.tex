@@ -1,0 +1,101 @@
+\chapter{Équilibres d'Oxydoréduction}
+	\section{Rappels de première année}
+		\begin{enumerate} \item \underline{Généralités sur les oxydants/réducteurs :} 
+			\begin{itemize} \item \underline{Réducteur :} espèce susceptible de céder des électrons
+						\item \underline{Oxydant :} espèce susceptible de capter des électrons
+						\item Une oxydation correspond à une perte d'électrons, une réduction à un gain d'électrons
+						\item \underline{Demi-équation d'oxydoréduction : }
+						$$Ox + n.e^{-} = Red$$
+						\item On note un couple d'oxydant et de réducteur (Ox/Red), contrairement aux couples acides/bases où le donneur est en premier
+						\item \underline{Bilan :}
+						$$n_2.Ox_1 + n_1.Red_1 = n_2.Red_1 + n_1.Ox_2$$ dont la constante d'équilibre vaut $$K^0 = \frac{[Red_1]^{n_2}.[Ox_2]^{n_1}}{[Red_2]^{n_1}.[Ox_1]^{n_2}}$$
+			\end{itemize}
+		\item \underline{Calcul du nombre d'oxydation :} \\ le nombre d'oxydation est la charge formelle de l'ion fictif créé en attribuant les doublets liants à l'atome le plus électronégatif. 
+		\item \underline{Quelques règles de calcul :} 
+			\begin{itemize} \item Pour un ion monoatomique, n.o = charge
+						\item Pour une molécule neutre : $\sum n.o = 0 $
+						\item Pour un ion polyatomique : $\sum n.o = \mbox{charge}$
+						\item n.o.(O) $=$  $-$II sauf dans les peroxydes ($-$I) et dans le dioxygène (0)
+						\item n.o (H) = $+$I sauf hydrure ($-$I) et $H_2$ (0)
+			\end{itemize}
+		\item Un réactif \textbf{oxydé} voit son \underline{n.o augmenter}
+		\item Un réactif \textbf{réduit} voit son \underline{n.o diminuer}
+	\end{enumerate}
+	\section{Pile}
+		 Une pile est constituée par les espèces de deux couples séparés par un dispositif permettant la migration des ions. Un conducteur électronique est un contact avec chaque couple.
+		 \begin{enumerate} \item \underline{Tension à vide :} la tension à vide E d'une pile est le potentiel du conducteur de droite moins le potentiel de gauche à i=0 (si i va de droite à gauche à l'intérieur de la pile)
+		 			\item \underline{Affinité chimique :}  le système ($\Sigma$) est paramètré par les paramètres habituels (P, T, composition) et en plus la tension $U_{el}$ : on a donc un système électrochimique.
+					\item $\mathrm{d} q$ : charge infinitésimale transporté du pole $+$ au pôle $-$ à l'est de la pile par une variation d$\xi$ de l'avancement de la réaction et d$q = n_p.F.d\xi$ 
+				\end{enumerate}
+				 Une pile est constituée par les espèces de deux couples séparés par un dispositif permettant la migration des ions. Un conducteur électronique est un contact avec chaque couple. On note $$ \left. \begin{array}{c}
+					\alpha_1.Ox_1+n_1e^{-} = \beta_1 Red_1 \\
+					\alpha_2.Ox_2+n_2e^{-} = \beta_2 Red_2 \\
+				\end{array} \right\} n_p = \mbox{ PPCM de } n_1 \mbox{ et } n_2\mbox{ avec }n_p=n_1p_1=n_2p_2$$
+Dans toute la suite, on considère la réaction  
+$$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_2+b_1Red_1$$
+		 \begin{enumerate} \item Tension à vide : la tension à vide E d'une pile est le potentiel du conducteur de droite moins le potentiel de gauche à i=0 (si i va de droite  à gauche à l'intérieur de la pile)
+		 			\item Le système ($\Sigma$) est paramètré par les paramètres habituels (P,t,composition) et en plus la tension $U_{el}$ : on a donc un système électrochimique.
+					\item dq : charge infinitésimale transporté du pole + au pôle - à l'extérieur de la pile par une variation d$\xi$ de l'avancement de la réaction et d$q = n_p.F.d\xi$ 
+					\item On écrit le premier principe pour la pile : 
+					$$\d U = \delta Q_e +\delta W \mbox{ et } \delta W = -P\d V -U_{el}\d q$$
+					Le second principe donne :
+					$$\d H = V\d P + \delta Q_e - U_{el}\d q$$
+					Lors d'une transformation isobare, en confondant $\d H$ avec $\Delta_rH\d\xi$ : 
+					$$\Delta_rH\d\xi =\delta Q_e -n_p.F.U_{el}\d\xi$$
+					En confondant $\Delta_rH$ et $\Delta_rH^0$ et en considérant $U_{el}$ comme une constante, on peut intégrer selon l'avancement et :
+					$$Q_e = (\Delta_rH^0+n_p.F.U_{el})(\xi_F-\xi_I)$$
+					\item En écrivant la différentielle de G de deux manières différentes, on peut prouver que 
+					$$\mathcal{A}\d\xi = U_{el}\d q +T.\delta S_{cr}$$
+					On pose alors $$ \stackrel{\sim}{\mathcal{A}}=\mathcal{A}-n_p.F.U_{el}$$
+					\item À l'équilibre, i=0, $U_{el}=E$ et $\delta S_{cr}=0$ d'où 
+					\begin{equation}\stackrel{\sim}{\mathcal{A}} \ =0 \Longrightarrow \mathcal{A}=n_p.F.E\end{equation}
+					\item On peut définir un potentiel électrochimique : 
+					$$\stackrel{\sim}{\mu}_i\left(T,P,U_{el},\mbox{compo}\right) = \mu_i\left(T,P,U_{el},\mbox{compo}\right)+z_i.F.\varphi_i$$ avec $\varphi_i$ le potentiel de la phase où est $A_i$, d'où 
+					$$\stackrel{\sim}{\mathcal{A}} \ = \sum_{i=1}^{n+p}\nu_i.\stackrel{\sim}{\mu}_i$$
+					\item Tension à vide standard $E^0$
+						\begin{itemize} \item On considère une pile fonctionnant de manière réversible où chacune des espèces est dans un état standard. On a alors 
+						$$\mathcal{A} = \mathcal{A}^0 = -\Delta_rG^0$$
+						Ce qui donne avec la formule (1) 
+						\begin{equation}E^0 = \frac{\mathcal{A}^0}{n_p.F} = \frac{RT\ln\left(K^0\right)}{n_p.F} = V^0_1-V^0_2 \end{equation}
+						\item On a de même 
+						$$\Delta rG^0 = -n_pFE^0 \mbox{ et } \Delta rS^0 = n_pF\frac{\d E^0}{\d T}$$
+						\item D'où 
+						$$\Delta rH^0 = n_pF\left(T\frac{\d E^0}{\d T}-E^0\right)$$
+						\end{itemize} \end{enumerate}
+				\section{Formule de \textsc{Nernst}}	\begin{enumerate} 
+						\item Mise en place : avec (3), on a 
+						\begin{eqnarray*} E &=& \frac{1}{n_pF}\left(a_1\mu_{Ox_1}+b_2\mu_{Red_2}-b_1\mu_{Red_1}-a_2\mu_{Red_1}\right) \\
+										&=& \frac{1}{n_1F}\left(\alpha_1\mu_{Ox_1}-\beta_1\mu_{Red_1}\right)-\frac{1}{n_2F}\left(\alpha_2\mu_{Ox_2}-\beta_2\mu_{Red_2}\right) \\ 
+										&=& V_1-V_2 \end{eqnarray*}
+						\item Pour chaque couple, on pose 
+						$$E=\frac{1}{nF}(\alpha\mu_{Ox}-\beta\mu_{Red})$$
+						C'est le potentiel d'oxydoréduction du couple (Ox/Red). 
+						\item On a donc
+						$$E = \underbrace{\frac{1}{nF}(\alpha\mu^0_{Ox}-\beta\mu^0_{Red})}_{E^0 \mbox{, potentiel standard}}+\frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}}{{a_{red}}^{\beta}}\right)$$		
+						\item Exemple : \\
+						\schemestart 
+						\chemfig{Cr_2O_7^{2-}} \chemsign{+} 14\chemfig{H^{+}}\chemsign{+}6\chemfig{e^{-}}  \arrow{<->} 2\chemfig{Cr^{3+}} \chemsign{+} 7\chemfig{H_2O}
+						\schemestop
+						$$E=E^0+\frac{RT}{nF}\ln\left(\frac{[Cr_2O_7^{2-}]h^{14}}{[Cr^{3+}]^2}\right)$$
+						\end{enumerate}
+		\section{Potentiel d'électrode}
+				\subsection{Electrode à hydrogène}
+					Il s'agit d'une électrode de platine platinée dans une solution de pH connu et où arrive et où arrive \chemfig{H_2} sous une pression connue $P_{H_2}$
+					Le couple mis en jeu est \schemestart
+					2\chemfig{H^{+}} \chemsign{+} 2\chemfig{e^{-}} \arrow{<->} \chemfig{H_2}
+					\schemestop
+					. On a donc un potentiel 
+					$$E = E^0_{(H^{+}/H_{2})}+\frac{RT}{2F}\ln\left(\frac{h^2.P^0}{P_{H_2}}\right)$$
+				Si on prend tous les constituants dans leurs états standards, on a par convention 
+				$$ E^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \forall \mathrm{T}$$
+				$$ V^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \forall \mathrm{T}$$
+				\subsection{Définition du potentiel d'électrode}
+					Il s'agit de la tension à vide d'un pile dont l'électrode de vache est l'électrode standard ) hydrogène celle de droite étant celle étudiée. On a donc 
+					$$E= E_{Ox/Red}-E^0_{(H^{+}/H_{2})} = V_{Ox/Red} - V^0_{(H^{+}/H_{2})}$$ 
+					Par convention, on  a donc que pour un même couple, le potentiel d'oxydoréduction et potentiel d'électrodes sont identiques
+			\section{Utilisation des potentiels d'oxydoréduction}
+				\begin{enumerate}
+\item Prévision des réactions : On a toujours la réaction (R) : $$a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_2+b_1Red_1$$. L'affinité de cette réaction vaut $\mathcal{A} = n_PF(E_1-E_2)$. On voit donc que si $E_1 > E_2$, l'affinité est positive, et la réaction se déroule dans le sens direct, et si $E_2 >  E_1$, l'affinité est négative et la réaction se déroule dans le sens retour. On peut généraliser ce critère en disant que c'est l'oxydant avec le plus grand potentiel qui joue son rôle. \\ Une approche plus rapide consiste à raisonner sur les potentiels standards : le terme en $0,06 \log$ n'a qu'une influence réduite sur la valeur du potentiel et si l'écart entre les potentiels standards est de l'ordre de quelques dizaines de volt, on pourra considérer la réaction comme quantitative. 
+\item Calcul de potentiel standard : introduction de $\A^*$. Dans système siège de (R), $\A=n_p.F.U_{el}$ et à l'équilibre $\A=n_p.F.E$. Par analogie, on associe à chaque demi-équation électronique $\A^*=n.F.E$ avec E le potentiel défini par la relation de \textsc{Nernst}. Cette grandeur a les mêmes propriétés que $\A$. Il s'agit en fait de l'affinité d'une réaction mettant en jeu le couple étudié et $H^+/H_2$
+				\end{enumerate}
+	\section{Principe de construction d'un diagramme potentiel-pH}

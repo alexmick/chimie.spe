@@ -1,0 +1,119 @@
+\setatomsep{2em}
+\chapter{Acides Carboxyliques}
+\section{Propriétés}
+Structure de type $AX_3$ au voisinage du C fonctionnel. Géométrie plane.
+Présence de liaisons hydrogènes (LH) intermoléculaires $\longrightarrow$ formation de dimères. \\ \\
+\textbf{IR :}
+\begin{center}
+$\sigma_{\scriptsize \chemfig{C=O}}=$ 1750 à 1750 $\text{cm}^{-1}$\\
+$\sigma_{\scriptsize \chemfig{O-H}}=$ 2500 à 3500 $\text{cm}^{-1}$\\ 
+\end{center}
+\textbf{RMN :} 
+\begin{center}
+H fonctionnel : très déblindé, $10<\delta<13$ ppm \\
+H porté par C en $\alpha$, $2<\delta<3$ ppm \\
+\end{center}
+\section{Estérification}
+\begin{center}
+\schemestart
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]OH}
+\+
+\chemfig{-\textcolor{red}{O}H}
+\arrow
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]\textcolor{red}{O}-[::60]}
+\+
+\chemfig{H_2 O}
+\schemestop
+\end{center}
+La vitesse augmente avec la température, mais \underline{\textbf{pas}} le rendement ! La réaction peut être catalysée ($\chemfig{H_2 SO_4}$ ou $\chemfig{H_3 PO_4}$ ou APTS).
+\\ \\
+\paragraph{Mécanisme (réaction catalysée)}
+\begin{enumerate}
+\item Protonation
+\item AN de l'alcool
+\item Réarrangement acide/base interne
+\item Élimination de l'eau
+\item Déprotonation
+\end{enumerate}
+\section{Dérivés d'acide}
+\subsection{Chlorures d'acyle}
+\begin{center}
+\schemestart
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]OH}
+\arrow{<=>[\chemfig{Cl-[::30]S(=[::60]O)-[::-60]Cl}][]}
+\chemfig{-[::30]-[::-60]\lewis{2|,\chemabove{C}{\quad \oplus}}(-[::-60]OH)-[::60]O-[::-60]S(-[::80]\lewis{137,\chemabove{O}{\ominus}})(-[::-100]Cl)-[::0]Cl}
+\arrow{<=>}[,1.2]
+\chemfig{HO-C(-[::90]Et)(-[::-90]Cl)-O-S(-[::-60]Cl)=[::60]O}
+\schemestop
+\vspace{1cm}
+\schemestart
+\arrow[,1]
+\chemfig{H-O-\lewis{0|,\chemabove{C}{\quad \oplus}}(-[::90]Et)(-[::-90]Cl)}
+\+
+\chemfig{SO_2}
+\+
+\chemfig{\chemabove{Cl}{\quad \ominus}}
+\arrow[,1.2]
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]Cl}
+\+
+\chemfig{SO_2}
+\+
+\chemfig{HCl}
+\schemestop
+\end{center}
+\subsection{Anhydrides}
+\noindent Par \textbf{déshydratation} des acides carboxyliques :
+\begin{center}
+\schemestart
+\chemfig{12 \hspace{0.5cm} R-[::30](=[::60]O)-[::-60]OH}
+\arrow{->[\chemfig{P_4 O_{10}}][-4 \chemfig{H_3 PO_4}]}
+\chemfig{6 \hspace{0.5cm} R-[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]R}
+\schemestop
+\end{center}
+Par \textbf{substitution nucléophile} sur un chlorure d'acyle (obtention d'un anhydride \textbf{mixte}) :
+\begin{center}
+\schemestart
+\chemfig{R_1 -[::30](=[::60]O)-[::-60]OH}
+\arrow{->[\chemfig{R_2 -[::30](=[::60]O)-[::-60]Cl}][AN puis E]}
+\chemfig{R_1 -[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]R_2}
+\schemestop
+\end{center}
+\vspace{2cm}
+Exemple des diacides :
+\begin{center}
+\schemestart
+\chemname{\chemfig{*6(-=(-COOH)-(-COOH)=-=)}}{Acide orthophtalique}
+\arrow{->[$\Delta$][- \chemfig{H_2 O}]}
+\chemname{\chemfig{*6(-=(*5(-(=O)-O-(=O)--))-=-=)}}{Anhydride phtalique}
+\schemestop
+\end{center}
+\vspace{2cm}
+\subsection{Ester}
+Par substitution, mécanisme procédant par une addition nucléophile suivie d'une élimination, à partir d'un :
+\paragraph{Chlorure d'acyle}
+\begin{center}
+\schemestart
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]Cl}
+\arrow{<=>[\chemfig{H-\lewis{26,O}-Me}][A.N.]}
+\chemfig{Et-C(-[::90]\lewis{024,\chemabove{O}{\quad \ominus}})(-[::-90]Cl)-\lewis{2,\chembelow{O}{\oplus}}(-[::30]Me)-[::-30]H}
+\arrow{<=>[][$-$ \chemfig{\chembelow{Cl}{\ominus}}]}
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
+\schemestop
+\vspace{1cm}
+\schemestart
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
+\arrow{->[\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}][a/b]}
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Me}
+\+
+\chemfig{\chemabove{Cl}{\ominus}-[,,,,dash pattern=on 2pt off 2pt]\chemabove{H}{\quad \oplus}N*6(-=-=-=)}
+\schemestop
+\end{center}
+\vspace{.5cm}
+\paragraph{Anhydride}
+\begin{center}
+\schemestart
+\chemfig{Me -[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]Me}
+\arrow{<=>[\chemfig{H-\lewis{26,O}-Et}][A.N.]}
+%\chemfig{Me -[::30](=[::+60]O)-[::-60]O-[::60]C(-[::-90]O()())(=[::+60]O)-[::-60]Me}
+\schemestop
+\end{center}
