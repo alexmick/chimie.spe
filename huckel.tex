@@ -2,40 +2,40 @@
 	\section{Théorie des orbitales moléculaires}
 		\subsection{Approximations} 
 		
-		 		\begin{itemize} \item \underline{\textsc{Born-Oppenheimer}} : On considère que les électrons se déplacent dans un champ de noyaux immobiles
+		 		\begin{itemize} \item \underline{\bsc{Born-Oppenheimer}} : On considère que les électrons se déplacent dans un champ de noyaux immobiles
 						\item \underline{Approximations orbitalaire} la fonction d'onde $\psi$ poly-électronique est impossible à trouver. On pose alors
 						$$\psi = \prod_{i=1}^{n}\varphi_i\mbox{(1 électron)} = \prod \mbox{OM}$$
 						(chaque $\varphi_i$ décrit le comportement de 2 électrons de nombre quantique magnétique de spin opposé) \\
 						\item $\varphi_i^2$ décrit la densité de probabilité de présence de l'électron numéro i décrit pas $\varphi_i$ \end{itemize}
 		\subsection{Méthode CLOA}
 		On admet que chaque $\varphi_i$ s'écrit comme une combinaison linéaire d'orbitales atomiques $X_j$ centrées sur chaque atomes de la molécules. 
-		\\ \\ Exemple : Pour la molécule d' \chemfig{H-[,0.6]Cl}, chaque Orbitale Moléculaire peut s'écrire $\varphi_i = {c_H}_i.{X_H}_i +{c_{Cl}}_i.{X_{Cl}}_i$ \\ \\
+		\\ \\ Exemple : Pour la molécule d' \chemfig{H-[,0.6]Cl}, chaque Orbitale Moléculaire peut s'écrire $\varphi_i = {c_H}_i.{X_H}_i +{c_{Cl}}_i.{X_{Cl}}_i$ \\ \\
 		Quelques règles : \begin{itemize} \item On ne peut combiner que des OA de même type de symétrie
 									\item On ne combine que les OA décrivant les électrons de valence
-									\item On ne combien que les OA d'énergie voisine 
+									\item On ne combine que les OA d'énergie voisine 
 									\item Une combinaison de k OA donne k OM
 									\item Une combinaison de 2 OA donne 2 OM : une liante ($E_{OM}$ < min($E_{OA}$)) et une anti-liante : ($E_{OM}$ > max($E_{OA}$)) \end{itemize}
 		\subsection{Recouvrement}
-			Le critère incontournable "de même type de symétrie" se ramène à "intégrale de recouvrement non-nul". On définit pour 2 OA l'intégrale S de recouvrement comme 
-			$$S_{AB}=\iiint_{espace}X_A.X_B \,\d \tau \ \ \ |S_{AB}|<1$$
+			Le critère incontournable "\textbf{de même type de symétrie}" se ramène à "\textbf{intégrale de recouvrement non-nul}". On définit pour 2 OA l'intégrale S de recouvrement comme 
+			$$S_{AB}=\iiint_{espace}X_AX_B\d \tau \ \ \ |S_{AB}|<1$$
 			Si $X_A$ et $X_B$ sont de même signe dans le domaine de recouvrement, $X_A$ et $X_B$ sont dites en phase. Le recouvrement est dit liant si $S_{AB}$>0, anti-liant sinon. \\
 			Plus le recouvrement du nuage électronique est important, plus la molécule est stable.
 		\subsection{Interactions entre deux OA}
 			On considère la molécule diatomique \chemfig{A-[,0.7]B}. Soit $\varphi = c_A.X_A + c_B.X_B$, chaque OA étant centrée sur "son" atome. \\
 			Les OA et les OM sont normées c'est à dire 
-			$$\iiint_{espace}X_A.X_A \,\d \tau = 1 = \ps{X_A}{X_A} \mbox{ et de même } \ps{\varphi}{\varphi}=1$$
-			On appelle $\H$ l'opérateur hamiltonien mono-électronique, ce qui donne dans l'équation de Schrödinger $$\H ( \varphi )= E\varphi$$
-			Les solutions $\varphi$ sont appelées fonction propre ou fonction d'onde ou OM. Les valeurs de l'énergie E associée aux OM les valeurs propres de l'opérateur. Si une même valeur propre E est associée à plusieurs OM, ces dernières sont dégénérées. On a comme conséquence directe 
+			$$\iiint_{espace}X_A.X_A.\d \tau = 1 = \ps{X_A}{X_A} \mbox{ et de même } \ps{\varphi}{\varphi}=1$$
+			On appelle $\H$ l'opérateur hamiltonien mono-électronique, ce qui donne dans l'équation de \bsc{Schrödinger} : $$\H ( \varphi )= E\varphi$$
+			Les solutions $\varphi$ sont appelées fonction propre ou fonction d'onde ou OM. Les valeurs de l'énergie E associée aux OM les valeurs propres de l'opérateur. Si une même valeur propre E est associée à plusieurs OM, ces dernières sont dégénérées. On a comme conséquence directe :
 			$$\ps{\varphi}{\H(\varphi)} = \ps{\varphi}{E\varphi} = E\ps{\varphi}{\varphi} = E$$
-			\\ On pose $\displaystyle H_{AA}=\ps{X_A}{\H(X_A)} \mbox{ l'intégrale coulombienne}$
-			L'intégrale coulombienne représente l'énergie d'un électron décrit pas $X_A$ dans la molécule \chemfig{A-[,0.7]B}. La valeur est différente mais très voisine de l'énergie de l'électron décrit par $X_A$ dans l'atome A. On a toujours $H_{AA}<0$ \\
+			\\ On pose $\displaystyle H_{AA}=\ps{X_A}{\H(X_A)} \mbox{ l'intégrale coulombienne}$.
+			L'intégrale coulombienne représente l'énergie d'un électron décrit pas $X_A$ dans la molécule \chemfig{A-[,0.7]B}. La valeur est différente mais très voisine de l'énergie de l'électron décrit par $X_A$ dans l'atome A. On a toujours $H_{AA}<0$ \\
 			On pose $\displaystyle H_{AB} = \ps{X_A}{\H(X_B)}$ l'intégrale de résonance ou d'échange. La valeur absolue de $H_{AB}$ donne une idée de l'intensité des interactions entre A et B. 
 			\\ On a $$|H_{AB}| \propto |S_{AB}| \mbox{ et }H_{AB}S_{AB} < 0$$
 			Pour des OA et OM  réelles, $H_{AB}=H_{BA}$ et $S_{AB}=S_{BA}$
 			
 			\subsection{Equation séculaire}
 			
-			On part de l'équation de \textsc{Schrödinger}.
+			On part de l'équation de \bsc{Schrödinger}.
 			\begin{eqnarray*} \H \varphi &=& E \varphi \\
 						\Longleftrightarrow \H(c_A.X_A+c_B.X_B) &=& E \varphi \\
 						\Longleftrightarrow c_A\H(X_A)+c_B\H(X_B) &=& E(c_A.X_A+c_B.X_B) \end{eqnarray*}
@@ -50,26 +50,26 @@
 						$H_{AA}-E$ & $H_{AB}-E.S$ \\
 						$H_{AB}-E.S$ & $H_{BB}-E$ \\
 						\end{tabular}\!\!\right|=0$$
-						C'est le déterminant séculaire. 
+						C'est le \textbf{déterminant séculaire}. 
 			\subsubsection{Interaction entre 2 OA identiques}
 			
 				On suppose $H_{AA}=H_{BB}$, ce qui entraine pour le déterminant séculaire $\displaystyle (H_{AA}-E)^2-(H_{AB}-E.S)^2 =0$ on a deux valeurs propres, $E_1$ et $E_2$ avec 
 				$$E_1=\frac{H_{AA}+H_{AB}}{1+S} \mbox{ et } E_2 = \frac{H_{AA}-H_{AB}}{1-S}$$ On peut démontrer que $E_1 <H_{AA}<E_2$. On voit donc que $E_1$ est l'énergie de l'OM liante $\varphi_1$ et $E_1$ l'énergie de l'OM anti-liante $\varphi_2$ 
-				\\ \\ Par symétrie, ${c_A}^2 = {c_B}^2$ \\ Pour la liante, $c_A = c_B$, pas de surface nodale entre A et B. On exprime la normalisation de $\varphi_1$ et on trouve $\displaystyle \varphi_1 = \frac{X_A+X_B}{\sqrt{2}\sqrt{1+S}}$ et de même $\displaystyle \varphi_2 = \frac{X_A-X_B}{\sqrt{2}{1-S}}$
-				\\ On a comme résultat que la différence d'énergie entre l'OM anti-liante et $H_{AA}$ (la déstabilisation) est plus grande que la différence entre $H_{AA}$ et l'énergie de l'OM liante (la stabilisation) \\ \\
+				\\ \\ Par symétrie, ${c_A}^2 = {c_B}^2$ \\ Pour la liante, $c_A = c_B$, pas de surface nodale entre A et B. On exprime la normalisation de $\varphi_1$ et on trouve $\displaystyle \varphi_1 = \frac{X_A+X_B}{\sqrt{2}\sqrt{1+S}}$ et de même $\displaystyle \varphi_2 = \frac{X_A-X_B}{\sqrt{2}{1-S}}$
+				\\ On a comme résultat que la différence d'énergie entre l'OM anti-liante et $H_{AA}$ (la déstabilisation) est plus grande que la différence entre $H_{AA}$ et l'énergie de l'OM liante (la stabilisation) \\ \\
 				Si les deux OA sont différentes, on a toujours deux OM, dont une liante et une anti-liante, et on a toujours la déstabilisation plus importante que la stabilisation. On a en plus que l'OM liante ressemble/est plus développée sur l'atome dont le coefficient $c_i$ est le plus important en valeur absolue.
-		\section{Théorie de \textsc{Hückel} simple}
+		\section{Théorie de \bsc{Hückel} simple}
 			\subsection{Principe}
-				\underline{Séparation des systèmes $\sigma$ et $\pi$} : Les systèmes $\sigma$ et $\pi$ sont orthogonaux (au sens du produit scalaire) ou encore indépendant. Les OA participantes aux OM $\sigma$ sont symétriques par rapport à xOy, celles du système $\pi$ lui sont antisymétriques. On peut donc dissocier les OM $\pi$ et $\sigma$. on construit le squelette $\sigma$ de la molécule par recouvrement des OA concernées. On étuis alors le système $\pi$ dans le champ du squelette $\sigma$ \\ \\
-				\underline{Approximation de \textsc{Hückel}} : Pour les OM du système $\pi$, 
-				$$\varphi_i = \sum_{j=1}^{m} c_{j,i}(Pz_j)$$ avec $Pz_j$ l'OA Pz de l'atome i
-				\\ Les intégrales colombiennes sont notées $\alpha_A$ et sont considérés comme des paramètres. On note pour le carbone $\alpha_C = \alpha <0$ \\
+			\noindent	\underline{Séparation des systèmes $\sigma$ et $\pi$} : Les systèmes $\sigma$ et $\pi$ sont orthogonaux (au sens du produit scalaire) ou encore indépendant. Les OA participantes aux OM $\sigma$ sont symétriques par rapport à xOy, celles du système $\pi$ lui sont antisymétriques. On peut donc dissocier les OM $\pi$ et $\sigma$. on construit le squelette $\sigma$ de la molécule par recouvrement des OA concernées. On étuis alors le système $\pi$ dans le champ du squelette $\sigma$ \\ \\
+				\underline{Approximation de \bsc{Hückel}} : Pour les OM du système $\pi$, 
+				$$\varphi_i = \sum_{j=1}^{m} c_{j,i}(Pz_j)$$ avec $Pz_j$ l'OA $Pz$ de l'atome j.
+				\\ Les intégrales coulombiennes sont notées $\alpha_A$ et sont considérées comme des paramètres. On note pour le carbone $\alpha_C = \alpha <0$ \\
 				Les intégrales de résonance sont aussi considérées comme des paramètres et on note encore pour le carbone $\beta_{CC}=\beta$. De plus, $\beta_{AB} =0$ si les atomes A et B ne sont pas directement connectés et pour tous les atomes, qu'ils soient liés ou non, $S_{AB}=0$. Le rôle de S perdure à travers $\beta_{AB}$
 				\\ \underline{Pour les hétéro-atomes} : \begin{itemize} 
 				\item Les intégrales coulombiennes d'un atome X valent $\displaystyle \alpha_X=\alpha +h_X\beta$ et les intégrales de résonances valent soit $\displaystyle \beta_{CX} = h_X\beta$ soit $\displaystyle \beta_{X_1Y_2} = {h_X}_1{h_Y}_2\beta$
 				\item les groupes alkyles sont tous considérés comme des hétéroatomes apportant deux électrons au système $\pi$
 				\item Certains hétéroatomes apportent 1 électron au système $\pi$ par exemple les halogènes porté par un C insaturé, certains oxygènes et azotes et certains hétéroatomes apportent 2 électrons, les groupes alkyles et certains oxygènes et azotes 
-				 \\ \\ Exemple : \\ $$\begin{array}{|l|c|} \hline
+				 \\ \\ Exemple : \\ $$\begin{array}{|c|c|} \hline
 				\chemfig{[,0.6](-[:120]R)(-[:-120]R)=O} & \mbox{Oxygène à 1 électron} \\ \hline
 				\chemfig{[:30,0.6]*6(-=\lewis{0,N}-=-=)} & \mbox{Azote à 1 électron} \\ \hline
 				\chemfig{[,0.6]=[:30]-[:-30]\lewis{26,O}-H} &\mbox{Oxygène à 1 électron} \\ & \\ \hline 
@@ -77,8 +77,8 @@
 				\end{itemize} 
 			\bigskip
 			
-			 \underline{Remarques} S=0 supprime la dissymétrie stabilisation/déstabilisation. \\ Les valeurs exactes de $\alpha_X$ et $\beta_{CX}$ importent peu, mais l'électronégativité doit être respectée : si $\chi \nearrow$, $\alpha_X \searrow$
-			\\ \\ \underline{Indice de liaison $\pi$, charge nette} : \begin{itemize}
+			 \underline{Remarques} S=0 supprime la dissymétrie stabilisation/déstabilisation. \\ Les valeurs exactes de $\alpha_X$ et $\beta_{CX}$ importent peu, mais l'électronégativité doit être respectée : si $\chi \nearrow$, $\alpha_X \searrow$
+			\\ \\ \underline{Indice de liaison $\pi$, charge nette} : \begin{itemize}
 			\item Indice de liaison : Valable uniquement pour 2 atomes i et j directement connectés dans le squelette $\sigma$ 
 			$$P_{ij}=\sum_{\ell}n_{\ell}.c_{i,\ell}c_{j,\ell}$$ avec $n_{\ell}$ le nombre d'électron dans l'OM $\ell$
 			Si $P_{i,j}$=0, la liaison est uniquement $\sigma$, si  $P_{i,j}$=1, la liaison est une liaison $\pi$ pure. 
@@ -99,8 +99,8 @@
 				$$\begin{tabular}{|c|c|c|}
 				\hline OM & $\varphi_1$ & $\varphi_2$ \\ \hline
 				énergie & 1 & -1 \\ \hline
-				$c_1$ & $\frac{1}{\sqrt{2}}$ & $\frac{1}{\sqrt{2}}$ \\ & &  \\ \hline
-				$c_2$ & $\frac{1}{\sqrt{2}}$ & -$\frac{1}{\sqrt{2}}$ \\ & & \\ \hline \end{tabular}$$
+				$c_1$ & $\displaystyle\frac{1}{\sqrt{2}}$ & $\displaystyle\frac{1}{\sqrt{2}}$ \\ & &  \\ \hline
+				$c_2$ & $\displaystyle\frac{1}{\sqrt{2}}$ & -$\displaystyle\frac{1}{\sqrt{2}}$ \\ & & \\ \hline \end{tabular}$$
 				
 				\item Si on doit calculer l'indice de liaison $\pi$, 
 					$$P_{12} = 2.\frac{1}{\sqrt{2}}.\frac{1}{\sqrt{2}} =1$$ donc la liaison est purement $\pi$ 
@@ -129,13 +129,13 @@
 					$E_3=\alpha-0.618\beta$ \\
 					$E_4=\alpha-1.618\beta$ \end{tabular}\right.$$
 	 
-	\item Calcul de coefficient : on s'intéresse à $\varphi_1 = c_{1,1}z_1+c_{1,2}z_2+c_{1,3}z_3+c_{1,4}z_4$. Comme \textsc{Hückel} ne distingue pas les s-trans et s-cis, on a un plan de symétrie dans la molécule de butadiène : \chemfig{\chemabove{}{1}=[:30]{\chembelow[4pt]{}{2}}-#(-2.4pt,-2.4pt)[,0.8]{\chembelow[4pt]{}{3}}=[:-30]\chemabove{}{4}} \hspace*{0.3cm} ce qui implique que $c_{1,1}=c_{1,4}$ et $c_{1,2}=c_{1,3}$. En exprimant la normalisation de $\varphi_1$, on trouve $c_{1,1}=0.372$
+	\item Calcul de coefficient : on s'intéresse à $\varphi_1 = c_{1,1}z_1+c_{1,2}z_2+c_{1,3}z_3+c_{1,4}z_4$. Comme Hückel ne distingue pas les s-trans et s-cis, on a un plan de symétrie dans la molécule de butadiène : \hspace*{0.3cm} \chemfig{\chemabove{}{1}=[:30]{\chembelow[4pt]{}{2}}-#(-2.4pt,-2.4pt)[,0.8]{\chembelow[4pt]{}{3}}=[:-30]\chemabove{}{4}} \hspace*{0.3cm} ce qui implique que $c_{1,1}=c_{1,4}$ et $c_{1,2}=c_{1,3}$. En exprimant la normalisation de $\varphi_1$, on trouve $c_{1,1}=0.372$
 		$$\begin{tabular}{|c|c|c|c|c|} \hline
 		OM&$\varphi_1$&$\varphi_2$&$\varphi_3$&$\varphi_4$ \\ \hline
 		Energie&1.618&0.618&-0.618&-1.618 \\ \hline
 		$c_1$&0.372&0.602&0.602&0.372 \\ \hline
-		$c_2$&0.602&0.372&-0.372&-0.602   \\ \hline 
-		$c_3$&0.602&-0.372&-0.372&0.602 \\ \hline
+		$c_2$&0.602&0.372&-0.372&-0.602   \\ \hline 
+		$c_3$&0.602&-0.372&-0.372&0.602 \\ \hline
 		$c_4$&0.372&-0.602&0.602&-0.372 \\ \hline  \end{tabular} $$
 
 		

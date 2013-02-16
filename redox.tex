@@ -62,7 +62,7 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 						\item D'où 
 						$$\Delta rH^0 = n_pF\left(T\frac{\d E^0}{\d T}-E^0\right)$$
 						\end{itemize} \end{enumerate}
-				\section{Formule de \textsc{Nernst}}	\begin{enumerate} 
+				\section{Formule de \bsc{Nernst}}	\begin{enumerate} 
 						\item Mise en place : avec (3), on a 
 						\begin{eqnarray*} E &=& \frac{1}{n_pF}\left(a_1\mu_{Ox_1}+b_2\mu_{Red_2}-b_1\mu_{Red_1}-a_2\mu_{Red_1}\right) \\
 										&=& \frac{1}{n_1F}\left(\alpha_1\mu_{Ox_1}-\beta_1\mu_{Red_1}\right)-\frac{1}{n_2F}\left(\alpha_2\mu_{Ox_2}-\beta_2\mu_{Red_2}\right) \\ 
@@ -73,29 +73,33 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 						\item On a donc
 						$$E = \underbrace{\frac{1}{nF}(\alpha\mu^0_{Ox}-\beta\mu^0_{Red})}_{E^0 \mbox{, potentiel standard}}+\frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}}{{a_{red}}^{\beta}}\right)$$		
 						\item Exemple : \\
-						\schemestart 
+						\begin{center}
+\schemestart 
 						\chemfig{Cr_2O_7^{2-}} \chemsign{+} 14\chemfig{H^{+}}\chemsign{+}6\chemfig{e^{-}}  \arrow{<->} 2\chemfig{Cr^{3+}} \chemsign{+} 7\chemfig{H_2O}
 						\schemestop
-						$$E=E^0+\frac{RT}{nF}\ln\left(\frac{[Cr_2O_7^{2-}]h^{14}}{[Cr^{3+}]^2}\right)$$
+\end{center}
+						$$E=E^0+\frac{RT}{nF}\ln\left(\frac{[\text{Cr}_2\text{O}_7^{2-}]\text{h}^{14}}{[\text{Cr}^{3+}]^2}\right)$$
 						\end{enumerate}
 		\section{Potentiel d'électrode}
 				\subsection{Electrode à hydrogène}
-					Il s'agit d'une électrode de platine platinée dans une solution de pH connu et où arrive et où arrive \chemfig{H_2} sous une pression connue $P_{H_2}$
-					Le couple mis en jeu est \schemestart
-					2\chemfig{H^{+}} \chemsign{+} 2\chemfig{e^{-}} \arrow{<->} \chemfig{H_2}
+					Il s'agit d'une électrode de platine platinée dans une solution de pH connu et où arrive et où arrive \chemfig{H_2} sous une pression connue $P_{H_2}$. \\
+					Le couple mis en jeu est : \hspace*{0.5cm}
+					\schemestart
+					2\chemfig{H^{+}} \chemsign{+} 2\chemfig{e^{-}} \arrow{<->}[0,1] \chemfig{H_2}
 					\schemestop
-					. On a donc un potentiel 
+					\\
+					On a donc un potentiel 
 					$$E = E^0_{(H^{+}/H_{2})}+\frac{RT}{2F}\ln\left(\frac{h^2.P^0}{P_{H_2}}\right)$$
 				Si on prend tous les constituants dans leurs états standards, on a par convention 
-				$$ E^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \forall \mathrm{T}$$
-				$$ V^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \forall \mathrm{T}$$
+				$$ E^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
+				$$ V^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
 				\subsection{Définition du potentiel d'électrode}
 					Il s'agit de la tension à vide d'un pile dont l'électrode de vache est l'électrode standard ) hydrogène celle de droite étant celle étudiée. On a donc 
 					$$E= E_{Ox/Red}-E^0_{(H^{+}/H_{2})} = V_{Ox/Red} - V^0_{(H^{+}/H_{2})}$$ 
-					Par convention, on  a donc que pour un même couple, le potentiel d'oxydoréduction et potentiel d'électrodes sont identiques
+					Par convention, on  a donc que pour un même couple, le potentiel d'oxydoréduction et le potentiel d'électrodes sont identiques.
 			\section{Utilisation des potentiels d'oxydoréduction}
 				\begin{enumerate}
-\item Prévision des réactions : On a toujours la réaction (R) : $$a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_2+b_1Red_1$$. L'affinité de cette réaction vaut $\mathcal{A} = n_PF(E_1-E_2)$. On voit donc que si $E_1 > E_2$, l'affinité est positive, et la réaction se déroule dans le sens direct, et si $E_2 >  E_1$, l'affinité est négative et la réaction se déroule dans le sens retour. On peut généraliser ce critère en disant que c'est l'oxydant avec le plus grand potentiel qui joue son rôle. \\ Une approche plus rapide consiste à raisonner sur les potentiels standards : le terme en $0,06 \log$ n'a qu'une influence réduite sur la valeur du potentiel et si l'écart entre les potentiels standards est de l'ordre de quelques dizaines de volt, on pourra considérer la réaction comme quantitative. 
-\item Calcul de potentiel standard : introduction de $\A^*$. Dans système siège de (R), $\A=n_p.F.U_{el}$ et à l'équilibre $\A=n_p.F.E$. Par analogie, on associe à chaque demi-équation électronique $\A^*=n.F.E$ avec E le potentiel défini par la relation de \textsc{Nernst}. Cette grandeur a les mêmes propriétés que $\A$. Il s'agit en fait de l'affinité d'une réaction mettant en jeu le couple étudié et $H^+/H_2$
+\item \textbf{Prévision des réactions :} On a toujours la réaction (R) : $$a_1Ox_1+b_2Red_2 \longleftrightarrow a_2Ox_2+b_1Red_1$$ L'affinité de cette réaction vaut $\mathcal{A} = n_PF(E_1-E_2)$. On voit donc que si $E_1 > E_2$, l'affinité est positive, et la réaction se déroule dans le sens direct, et si $E_2 >  E_1$, l'affinité est négative et la réaction se déroule dans le sens retour. On peut généraliser ce critère en disant que c'est l'oxydant avec le plus grand potentiel qui joue son rôle. \\ Une approche plus rapide consiste à raisonner sur les potentiels standards : le terme en $0,06 \log$ n'a qu'une influence réduite sur la valeur du potentiel et si l'écart entre les potentiels standards est de l'ordre de quelques dizaines de volt, on pourra considérer la réaction comme quantitative. 
+\item \textbf{Calcul de potentiel standard :} introduction de $\A^*$. Dans système siège de (R), $\A=n_p.F.U_{el}$ et à l'équilibre $\A=n_p.F.E$. Par analogie, on associe à chaque demi-équation électronique $\A^*=n.F.E$ avec E le potentiel défini par la relation de \bsc{Nernst}. Cette grandeur a les mêmes propriétés que $\A$. Il s'agit en fait de l'affinité d'une réaction mettant en jeu le couple étudié et $H^+/H_2$.
 				\end{enumerate}
 	\section{Principe de construction d'un diagramme potentiel-pH}

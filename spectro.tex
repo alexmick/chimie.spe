@@ -1,7 +1,7 @@
 \chapter{Spectroscopie infrarouge et RMN}
 	\section{Niveaux d'énergie d'une molécule}
 		On se place dans le référentiel barycentrique de la molécule. L'énergie d'une molécule a pour origine les électrons et le mouvement des atomes :
-			\begin{itemize} \item La vibration : movement autour de positions d'équilibres :
+			\begin{itemize} \item La vibration : mouvement autour de positions d'équilibres :
 				\begin{itemize} \item valence : variation de distance internucléaires 
 							\item déformation : variation d'angles valentiels 
 							\item rotation : autour d'axes passant par le centre d'inertie
@@ -9,7 +9,7 @@
 						\item On a donc une énergie totale 
 						$$E=E_e+E_v+E_{rot}$$
 						\item Sous l'effet d'un photon, une molécule peut passer d'un état d'énergie $E_1$ à un état d'énergie $E_2$. On a la relation 
-						$$h\nu = E_2-E_1=\frac{hc}{\lambda} = h.\sigma.c$$ où $\sigma$ est le nombre d'onde de la molécule et égal à l'inverse de la longueur d'onde.
+						$$h\nu = E_2-E_1=\frac{h\text{c}}{\lambda} = h \sigma \text{c}$$ où $\sigma$ est le nombre d'onde de la molécule et égal à l'inverse de la longueur d'onde.
 						\item Lors de la relaxation, la molécule ré-emet toujours mois de photons qu'elle n'en absorbe, c'est pourquoi on peut définir 
 						$$A=\log\left(\frac{I_0}{I}\right)$$
 						\item Il y a plusieurs niveaux de transitions énergétique : \\
@@ -21,65 +21,67 @@
 	\section{Spectroscopie infrarouge}
 		\subsection{Principe}
 			Il s'agit de transitions vibrationelles. Pour qu'elles soient permises, la transition doit entrainer, pour le groupe, l'existence d'un moment dipolaire variable. \\ \\
-	\small	\chemfig{[,0.6]C([::-120]-R)(-[::120]R)=O} \normalsize permet une grande variation de moment dipolaire \\ \\ au contraire de 	\small	\chemfig{[,0.6]C(-[::120]R)(-[::-120]R)=C(-[::-60]R)-[::60]R} \normalsize dans lequel le moment dipolaire est presque nul. \\ \\ 
-		On procède avec un appareil à infrarouge à transformée de Fourier : L'échantillon est soumis à une impulsion polychromatique. On traite le signal de désexcitation par transformée de Fourier $\Rightarrow$ on accès aux fréquences absorbées $\Rightarrow$ on a le spectre de la molécule
+	\small	\chemfig{[,0.6]C([::-120]-R)(-[::120]R)=O} \normalsize \hspace*{0.5cm} permet une grande variation de moment dipolaire \\ \\ au contraire de 	\small	\chemfig{[,0.6]C(-[::120]R)(-[::-120]R)=C(-[::-60]R)-[::60]R} \normalsize dans lequel le moment dipolaire est presque nul. \\ \\ 
+		On procède avec un appareil à infrarouge à transformée de Fourier : L'échantillon est soumis à une impulsion polychromatique. On traite le signal de désexcitation par transformée de \bsc{Fourier} $\Rightarrow$ on accès aux fréquences absorbées $\Rightarrow$ on a le spectre de la molécule.
 		\subsection{Allure du spectre}
 			Usuellement, on porte en ordonnée soit le pourcentage de transmission, parfois l'absorbance ou encore le pourcentage d'absorption. \\
-			En abscisse, on a le nombre d'onde, usuellement compris entre 400 et 4000 $\mbox{cm}^{-1}$ \\
-			Il y a deux zones sur le spectre : \begin{itemize} \item $\sigma > 1300 \mbox{ cm}^{-1}$ où on peut lire les caractéristiques de certains groupes d'atomes
+			En abscisse, on a le nombre d'onde, usuellement compris entre 400 et 4000 $\mbox{cm}^{-1}$. \\
+			Il y a deux zones sur le spectre : \begin{itemize} \item $\sigma > 1300 \mbox{ cm}^{-1}$ où on peut lire les caractéristiques de certains groupes d'atomes.
 												\item $\sigma < 1300 \mbox{ cm}^{-1}$ appelée zone "d'empreinte digitale" où l'attribution de chaque bande est très délicate mais est une signature de la molécule.
 									\end{itemize}
 		\subsection{Tables}
 		
-			\begin{tabular}{|l|c|c|}\hline Groupements & $\sigma \ (\mbox{ cm}^{-1})$ & Aspect \\ \hline
+			\begin{center}
+\begin{tabular}{|c|c|c|}\hline Groupements & $\sigma \ (\mbox{ cm}^{-1})$ & Aspect \\ \hline
 			\chemfig{C=C} & 1650 $\mbox{ cm}^{-1}$ & faible \\ \hline
 			\chemfig{C~C} & 2100 $\mbox{ cm}^{-1}$ & très faible \\ \hline
 			\chemfig{C=O} & 1650-1800 $\mbox{ cm}^{-1}$ & intense \\ \hline
 			\chemfig{N-H} et \chemfig{O-H} & 3000-3500 $\mbox{ cm}^{-1}$ & souvent large \\ \hline
 			\chemfig{C_{tetra}-H} & < 3000 $\mbox{ cm}^{-1}$ & \phantom{1} \\ \hline
-			\chemfig{C_{tri}-H} et \chemfig{C_{dig}-H} & >3000 $\mbox{ cm}^{-1}$ & \phantom{1} \\ \hline \end{tabular}
+			\chemfig{C_{tri}-H} et \chemfig{C_{dig}-H} & >3000 $\mbox{ cm}^{-1}$ & \phantom{1} \\ \hline \end{tabular}
+\end{center}
 	\section{ Résonnance magnétique nucléaire}
 		\subsection{Principe}
-			La RMN repose sur l'existence d'un spin nucléaire : les protons et neutrons constitutifs des noyaux ont un spin (ie un moment cinétique) $\Longrightarrow$ certains noyaux ont un spin non-nul $\overrightarrow{I}$
+			La \textbf{RMN} repose sur l'existence d'un spin nucléaire : les protons et neutrons constitutifs des noyaux ont un spin (ie un moment cinétique) $\Rightarrow$ certains noyaux ont un spin non-nul $\overrightarrow{I}$.
 			\\ On a la norme de $\overrightarrow{I}$ qui est donnée par 
 			$$\hbar \sqrt{I(I+1)}$$ avec I le nombre quantique de spin, entier ou demi entier \\
 			A ce spin, on associe un moment magnétique : $\overrightarrow{\mu}=\gamma \overrightarrow{I}$. Pour $^1H$, I=$±\frac{1}{2}$ $\gamma = 267,510.10^6$ $\mbox{s}^{-1}\mbox{T}^{-1}$
 			\\ \\ Lorsqu'on place ce proton dans un champ magnétique uniforme et permanent $\overrightarrow{B}=B_0\overrightarrow{u_z}$, les protons vont gagner une énergie de $m_I\hbar\gamma B_0$ et la différence d'énergie entre les différents types de protons ($m_I$ = 1/2 et $m_I$ = -1/2) vaut 
 			$$\Delta E = \hbar\gamma B_0$$
-			On est amené a poser $\Delta E = h\nu_0$ et on appelle $\nu_0$ la fréquence de Larmor de l'appareil utilisé.
+			On est amené a poser $\Delta E = h\nu_0$ et on appelle $\nu_0$ la fréquence de \bsc{Larmor} de l'appareil utilisé.
 			$$\nu_0=\frac{\gamma B_0}{2\pi}$$
-			\\ \\ Dans une même molécule, les $^1H$ ne résonnent pas tous à la même fréquence : ils ressentent en effet un champ légèrement inférieur au champ imposé à cause du diamagnétisme de la molécule, des interactions de Van Der Waals et du milieu. En conséquence, on n'a plus une fréquence de résonance égale à $\nu_0$ mais à 
-			$$\nu = \nu_0(1-\sigma)$$ avec $\sigma$ la constante d'écran, de l'ordre de $10^{-6}$ ce qui entraine que $\nu \simeq \nu_0$ 
-			\\ \\ Un échantillon est soumis à l'action d'une impulsion (10 à 50 $\mu$s) qui crée un champ magnétique normal à $B_0$. On traite la relaxation ($\simeq$1s) par transformée de Fourier. Un appareil est identifié par sa fréquence de Larmor (typiquement de l'ordre de la centaine de MHz) 
+			\\ \\ Dans une même molécule, les $^1H$ ne résonnent pas tous à la même fréquence : ils ressentent en effet un champ légèrement inférieur au champ imposé à cause du diamagnétisme de la molécule, des interactions de \bsc{Van Der Waals} et du milieu. En conséquence, on n'a plus une fréquence de résonance égale à $\nu_0$ mais à 
+			$$\nu = \nu_0(1-\sigma)$$ avec $\sigma$ la constante d'écran, de l'ordre de $10^{-6}$ ce qui entraine que $\nu \simeq \nu_0$.
+			\\ \\ Un échantillon est soumis à l'action d'une impulsion (10 à 50 $\mu$s) qui crée un champ magnétique normal à $B_0$. On traite la relaxation ($\simeq$1s) par transformée de \bsc{Fourier}. Un appareil est identifié par sa fréquence de \bsc{Larmor} (typiquement de l'ordre de la centaine de MHz). 
 		\subsection{Etude du signal}
-			Les variations de fréquences de résonances étant infimes, on préfère travailler sur le déplacement chimique $\delta$ qui est donné par la formule 
+			Les variations de fréquences de résonances étant infimes, on préfère travailler sur le déplacement chimique $\delta$ qui est donné par la relation 
 			$$\delta = 10^6\frac{\nu-\nu_{ref}}{\nu_0}$$  avec $$ \left\{ \begin{array}{l}
 														\nu = \mbox{fréquence du proton} \\
 														\nu_{ref} = \mbox{fréquence du proton du TMS } \chemfig{Si{(}CH_3{)}_4} \\
 														\nu_0 = \mbox{fréquence de larmor} \\ \end{array} \right.$$
-			On a choisit le déplacement chimique car contrairement à $\nu$, il ne dépend pas de $B_0$. Usuellement, $\delta$ est compris entre -12 et 12 ppm mais on rencontre le plus souvent des déplacements chimiques positifs. Si le proton $^1H$ est fortement écranté, on dit qu'il est blindé et $\delta$ est faible. Si le proton est faiblement écarté, on dit qu'il est déblindé et $\delta$ est grand. Par exemple, un proton vinylique \small \\\chemfig{[,0.6]C(-[::120]R)(-[::-120]R)=C(-[::60]R)-[::-60,,,,red]{{\textcolor{red}H}}} \normalsize aura un déplacement chimique compris entre 4 et 6 ppm alors qu'un proton aromatique \small \chemfig{[:-30,0.6]*6(-=(-[,,,,red]{{\textcolor{red}H}})-=-=)} \normalsize  aura un déplacement chimique compris entre 6 et 9 ppm (du au courant de cycle crée par les électrons $\pi$ délocalisés sur le cycle)
-			\\ \\ \underline{Protons isochrones} :
+			On a choisit le déplacement chimique car contrairement à $\nu$, il ne dépend pas de $B_0$. Usuellement, $\delta$ est compris entre -12 et 12 ppm mais on rencontre le plus souvent des déplacements chimiques positifs. Si le proton $^1H$ est fortement écranté, on dit qu'il est blindé et $\delta$ est faible. Si le proton est faiblement écarté, on dit qu'il est déblindé et $\delta$ est grand. Par exemple, un proton vinylique \small \\\chemfig{[,0.6]C(-[::120]R)(-[::-120]R)=C(-[::60]R)-[::-60,,,,red]{{\textcolor{red}H}}} \normalsize aura un déplacement chimique compris entre 4 et 6 ppm alors qu'un proton aromatique \small \chemfig{[:-30,0.6]*6(-=(-[,,,,red]{{\textcolor{red}H}})-=-=)} \normalsize  aura un déplacement chimique compris entre 6 et 9 ppm (du au courant de cycle crée par les électrons $\pi$ délocalisés sur le cycle).
+			\\ \underline{Protons isochrones} :
 			\\ Deux protons sont dits isochrones s'ils ont même déplacement chimique. Pour reconnaitre des protons isochrones, on regarde s'ils sont chimiquement équivalent (ie) même environnement électronique. \\
 			Il y a un test simple de reconnaissance des protons chimiquement équivalent : on remplace formellement Ha par du deutérium D (molécule A) et Hb par du deutérium D (molécule B). Si A et B sont identiques, stéréoisomères de conformation ou énantiomères, Ha et Hb sont chimiquement équivalents donc isochrones. 
 			
-				Exemple : avec la molécule de 1-bromo-2-chloroéthane \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]Hb)(<|[::-100]Ha)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize. La molécule A serait \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]Hb)(<|[::-100]D)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize et la molécule B serait \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]D)(<|[::-100]Ha)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize, qui sont deux énantiomères, donc Ha et Hb sont chimiquement équivalents donc isochrones. 
+				\textbf{Exemple} : avec la molécule de 1-bromo-2-chloroéthane \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]Hb)(<|[::-100]Ha)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize. La molécule A serait \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]Hb)(<|[::-100]D)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize et la molécule B serait \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]D)(<|[::-100]Ha)-(<|[::35]H)(<:[::70]H)-[::-60]Cl} \normalsize, qui sont deux énantiomères, donc Ha et Hb sont chimiquement équivalents donc isochrones. 
 						\\ \\ Avec la molécule de 1-bromo-2-chloropropane, \small \chemfig{[,0.7](-[::125]Br)(<:[::-140]Hb)(<|[::-100]Ha)-(<|[::35]CH_3)(<:[::70]H)-[::-60]Cl} \normalsize, A et B sont diastéréoisomères, donc Ha et Hb ne sont pas chimiquement équivalents.  \\ \\ 
 				On superpose souvent aux spectres l'intégration des signaux : la hauteur de l'intégration est proportionnelles au nombre de protons isochrones.
 
 		\subsection{Aspect des pics}
-			On observe une démultiplication en plusieurs pics d'un même signal du à un couplage spin-spin (interactions entre les protons étudiés et leurs voisins)
-			\\ En solution, les interactions noyaux-noyaux sont en partie responsables de ce couplage J. Il est transmis via les électrons des OM de la molécule.  Généralement, J est compris entre 0 et 20 Hz et il est indépendant de $\overrightarrow{B}_0$. La constante de couplage entre 2 protons séparés par X liaisons est noté $x_J$ (ce qui exclut un solvant comportant des hydrogènes $\Longrightarrow$ \chemfig{CCl_4} ou solvants deutériques) \\ \\
+			On observe une démultiplication en plusieurs pics d'un même signal du à un couplage spin-spin (interactions entre les protons étudiés et leurs voisins).
+			\\ En solution, les interactions noyaux-noyaux sont en partie responsables de ce couplage J. Il est transmis via les électrons des OM de la molécule.  Généralement, J est compris entre 0 et 20 Hz et il est indépendant de $\overrightarrow{B}_0$. La constante de couplage entre 2 protons séparés par X liaisons est noté $x_J$ (ce qui exclut un solvant comportant des hydrogènes $\Longrightarrow$ \chemfig{CCl_4} ou solvants deutériques). \\ \\
 			\underline{Protons magnétiquement équivalents} :
-				Il s'agit de protons isochrones identiquement couplés avec les autres protons de la molécule qui ne leur sont pas équivalents (magnétiquement équivalent $\Longrightarrow$ chimiquement équivalent)
-				\\ \\ Exemples : \begin{itemize} \item \chemfig{[,0.8](-[::125]Br)(<:[::-135]Hb)(<|[::-105]Ha)-(<:[::40]H)(<|[::65]H)-[::-60]Cl} Ha et Hb sont magnétiquement équivalents \\ \\ \\
-				 \item \chemfig{[,0.7]*6((-[::-145]Hc)-(-[:-90]NO_2)=(-[:-35]Hb)-(-[:35]Ha)=(-[:90]Cl)-(-[:145]Hd)=)} Ha et Hd sont chimiquement équivalents mais sont couplés différemment à Hb donc ils ne sont pas magnétiquement équivalents \\ \\ 
+				Il s'agit de protons isochrones identiquement couplés avec les autres protons de la molécule qui ne leur sont pas équivalents (magnétiquement équivalent $\Longrightarrow$ chimiquement équivalent).
+				\\ \\ \textbf{Exemples} : \begin{itemize} \item \chemfig{[,0.8](-[::125]Br)(<:[::-135]Hb)(<|[::-105]Ha)-(<:[::40]H)(<|[::65]H)-[::-60]Cl} Ha et Hb sont magnétiquement équivalents. \\ \\ \\
+				 \item \chemfig{[,0.7]*6((-[::-145]Hc)-(-[:-90]NO_2)=(-[:-35]Hb)-(-[:35]Ha)=(-[:90]Cl)-(-[:145]Hd)=)} Ha et Hd sont chimiquement équivalents mais sont couplés différemment à Hb donc ils ne sont pas magnétiquement équivalents. \\ \\ 
 				\end{itemize}
  Quelques règles de couplage : 
-		\begin{itemize} \item Les couplages entre protons magnétiquement équivalents ne sont pas observés
-					\item Le couplage diminue au fur et à mesure que l'on s'éloigne de l'atome ($x_J$ = 9 si x >3 ou 5 si conjugaison de liaison)
-					\item Un couplage entre un proton connecté à un hétéronome et les autres protons est rarement observé \\ \\
+		\begin{itemize} \item Les couplages entre protons magnétiquement équivalents ne sont pas observés.
+					\item Le couplage diminue au fur et à mesure que l'on s'éloigne de l'atome ($x_J$ = 9 si x >3 ou 5 si conjugaison de liaison).
+					\item Un couplage entre un proton connecté à un hétéroatome et les autres protons est rarement observé. \\ \\
 		\end{itemize}
 		\underline{Multiplicité du signal} :
-			\chemfig{-[,0.5]C(-[:90,0.5])(-[:-90,0.7]Ha)-[,0.9]C(-[:90,0.5])(-[:-90,0.7]Hb)-[,0.5]}  \\ \\On s'intéresse au couplage entre Ha et Hb. \\ Hb crée un champ magnétique $\overrightarrow{b}$ en Ha. Ha perçoit un champ $\overrightarrow{b}$ ou -$\overrightarrow{b}$ (dépend du spin) avec une équiprobabilité. D'où $\overrightarrow{Ba} = \overrightarrow{B_0}(1-\sigma)±\overrightarrow{b}$ d'où 
+			\hspace*{0.5cm} \chemfig{-[,0.5]C(-[:90,0.5])(-[:-90,0.7]Ha)-[,0.9]C(-[:90,0.5])(-[:-90,0.7]Hb)-[,0.5]}  \\ \\On s'intéresse au couplage entre Ha et Hb. \\ Hb crée un champ magnétique $\overrightarrow{b}$ en Ha. Ha perçoit un champ $\overrightarrow{b}$ ou -$\overrightarrow{b}$ (dépend du spin) avec une équiprobabilité. D'où $\overrightarrow{Ba} = \overrightarrow{B_0}(1-\sigma)±\overrightarrow{b}$ d'où 
 			$$\nu_A = \nu_C(1-\sigma)±\frac{\gamma b}{2\pi}$$ En posant $J=\gamma b/\pi$, on a $\nu_A = \nu_C(1-\sigma)±J/2$ et on observe un doublet dont les pics sont séparés de J.
-			\\ Généralisation : Un proton Ha couplé avec n protons Hx équivalents portés par un ou plusieurs atomes de carbones directement connectés au carbone porteur de Ha possède un signal de résonance avec n+1 pics.
+			\\ \\ \textbf{Généralisation :} Un proton Ha couplé avec n protons Hx équivalents portés par un ou plusieurs atomes de carbones directement connectés au carbone porteur de Ha possède un signal de résonance avec n+1 pics.
