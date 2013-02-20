@@ -40,7 +40,7 @@ La vitesse augmente avec la température, mais \underline{\textbf{pas}} le rendem
 \begin{center}
 \schemestart
 \chemfig{-[::-30]-[::60](=[::60]O)-[::-60]OH}
-\arrow{<=>[\chemfig{Cl-[::30]S(=[::60]O)-[::-60]Cl}][]}
+\arrow{<=>[\chemfig{Cl-[::30]S(=[::60]O)-[::-60]Cl}][]}[,2]
 \chemfig{-[::30]-[::-60]\lewis{2|,\chemabove{C}{\quad \oplus}}(-[::-60]OH)-[::60]O-[::-60]S(-[::80]\lewis{137,\chemabove{O}{\ominus}})(-[::-100]Cl)-[::0]Cl}
 \arrow{<=>}[,1.2]
 \chemfig{HO-C(-[::90]Et)(-[::-90]Cl)-O-S(-[::-60]Cl)=[::60]O}
@@ -66,7 +66,7 @@ La vitesse augmente avec la température, mais \underline{\textbf{pas}} le rendem
 \begin{center}
 \schemestart
 \chemfig{12 \hspace{0.5cm} R-[::30](=[::60]O)-[::-60]OH}
-\arrow{->[\chemfig{P_4 O_{10}}][-4 \chemfig{H_3 PO_4}]}
+\arrow{->[\chemfig{P_4 O_{10}}][-4 \chemfig{H_3 PO_4}]}[,2]
 \chemfig{6 \hspace{0.5cm} R-[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]R}
 \schemestop
 \end{center}
@@ -74,7 +74,7 @@ Par \textbf{substitution nucléophile} sur un chlorure d'acyle (obtention d'un an
 \begin{center}
 \schemestart
 \chemfig{R_1 -[::30](=[::60]O)-[::-60]OH}
-\arrow{->[\chemfig{R_2 -[::30](=[::60]O)-[::-60]Cl}][AN puis E]}
+\arrow{->[\chemfig{R_2 -[::30](=[::60]O)-[::-60]Cl}][AN puis E]}[,2]
 \chemfig{R_1 -[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]R_2}
 \schemestop
 \end{center}
@@ -83,7 +83,7 @@ Exemple des diacides :
 \begin{center}
 \schemestart
 \chemname{\chemfig{*6(-=(-COOH)-(-COOH)=-=)}}{Acide orthophtalique}
-\arrow{->[$\Delta$][- \chemfig{H_2 O}]}
+\arrow{->[$\Delta$][- \chemfig{H_2 O}]}[,2]
 \chemname{\chemfig{*6(-=(*5(-(=O)-O-(=O)--))-=-=)}}{Anhydride phtalique}
 \schemestop
 \end{center}
@@ -94,15 +94,15 @@ Par substitution, mécanisme procédant par une addition nucléophile suivie d'une 
 \begin{center}
 \schemestart
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]Cl}
-\arrow{<=>[\chemfig{H-\lewis{26,O}-Me}][A.N.]}
+\arrow{<=>[\chemfig{H-\lewis{26,O}-Me}][A.N.]}[,1.5]
 \chemfig{Et-C(-[::90]\lewis{024,\chemabove{O}{\quad \ominus}})(-[::-90]Cl)-\lewis{2,\chembelow{O}{\oplus}}(-[::30]Me)-[::-30]H}
-\arrow{<=>[][$-$ \chemfig{\chembelow{Cl}{\ominus}}]}
+\arrow{<=>[][$-$ \chemfig{\chembelow{Cl}{\ominus}}]}[,1.5]
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
 \schemestop
 \vspace{1cm}
 \schemestart
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
-\arrow{->[\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}][a/b]}
+\arrow{->[\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}][a/b]}[,1.5]
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Me}
 \+
 \chemfig{\chemabove{Cl}{\ominus}-[,,,,dash pattern=on 2pt off 2pt]\chemabove{H}{\quad \oplus}N*6(-=-=-=)}
@@ -112,8 +112,20 @@ Par substitution, mécanisme procédant par une addition nucléophile suivie d'une 
 \paragraph{Anhydride}
 \begin{center}
 \schemestart
-\chemfig{Me -[::30](=[::+60]O)-[::-60]O-[::60](=[::+60]O)-[::-60]Me}
-\arrow{<=>[\chemfig{H-\lewis{26,O}-Et}][A.N.]}
-%\chemfig{Me -[::30](=[::+60]O)-[::-60]O-[::60]C(-[::-90]O()())(=[::+60]O)-[::-60]Me}
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](=[::+60]\lewis{13,O})-[::-60]Me}
+\arrow{<=>[\chemfig{H-\lewis{26,O}-Et}][A.N.]}[,1.5]
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](-[::-120]\chembelow{O}{\oplus}(-[:-150]H)(-[:-30]Et))(-[::+60]\chemabove{\lewis{024,O}}{\quad \ominus})-[::-60]Me}
+\schemestop
+
+\vspace{1cm}
+\schemestart
+\arrow{<=>[][]}[,1]
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\chembelow{\lewis{157,O}}{ \ominus}}
+\+
+\chemfig{\chemabove{O}{\quad\oplus}(-[:120]H)(-[:-120]Et)-(=^[:60]\lewis{02,O})(-[:-60]Me)}
+\arrow{->[a/b][]}[,1.5]
+\chemfig{Me-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}H}
+\+
+\chemfig{Me-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Et}
 \schemestop
 \end{center}
