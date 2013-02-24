@@ -37,43 +37,41 @@
 \definecolor{ffqqqq}{rgb}{1,0,0}
 \begin{center}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-7.95,-1.92) rectangle (7.89,2.78);
-\draw [shift={(-1.27,-3.86)}] plot[domain=1.69:2.46,variable=\t]({1*6.1*cos(\t r)+0*6.1*sin(\t r)},{0*6.1*cos(\t r)+1*6.1*sin(\t r)});
-\draw [shift={(0,-9.95)}] plot[domain=1.41:1.73,variable=\t]({1*12.32*cos(\t r)+0*12.32*sin(\t r)},{0*12.32*cos(\t r)+1*12.32*sin(\t r)});
-\draw [shift={(1.27,-3.86)}] plot[domain=0.68:1.45,variable=\t]({1*6.1*cos(\t r)+0*6.1*sin(\t r)},{0*6.1*cos(\t r)+1*6.1*sin(\t r)});
+\clip(-7.98,-1.94) rectangle (7.93,3.32);
 \draw (-8,0)-- (8,0);
-\draw (-7.5,1.54) node[anchor=north west] {$Air$};
-\draw (-7.51,-0.44) node[anchor=north west] {$Fer$};
+\draw (-7.5,1.53) node[anchor=north west] {$Air$};
+\draw (-7.51,-0.43) node[anchor=north west] {$Fer$};
 \draw(-3,0) circle (1cm);
 \draw(3,0) circle (1cm);
-\draw (-0.82,-0.29) node[anchor=north west] {$ Fe $};
-\draw (0.22,-0.32) node[anchor=north west] {$Fe $};
-\draw (-3.27,0.03) node[anchor=north west] {$ e^- $};
-\draw (2.76,0.06) node[anchor=north west] {$ e^- $};
-\draw [color=ffqqqq](-1.79,-0.46) node[anchor=north west] {$ e^- $};
+\draw (-0.82,-0.3) node[anchor=north west] {$ Fe $};
+\draw (0.23,-0.32) node[anchor=north west] {$Fe $};
+\draw (-3.28,0.04) node[anchor=north west] {$ e^- $};
+\draw (2.76,0.05) node[anchor=north west] {$ e^- $};
+\draw [color=ffqqqq](-1.8,-0.47) node[anchor=north west] {$ e^- $};
 \draw [color=ffqqqq](1.29,-0.41) node[anchor=north west] {$ e^- $};
 \draw [->,color=ffqqqq] (-1.02,-0.62) -- (-2.14,-0.52);
 \draw [->,color=ffqqqq] (1,-0.57) -- (2.11,-0.47);
-\draw [color=qqqqff](0.27,1) node[anchor=north west] {$Fe^{2+} $};
+\draw [color=qqqqff](0.28,1) node[anchor=north west] {$Fe^{2+} $};
 \draw [color=qqqqff](-1.03,1) node[anchor=north west] {$Fe^{2+} $};
 \draw [->] (-0.53,-0.26) -- (-0.52,0.28);
 \draw [->] (0.52,-0.26) -- (0.54,0.28);
-\draw (-3.8,0.62) node[anchor=north west] {$ O_2 $};
-\draw (2.19,0.64) node[anchor=north west] {$ O_2 $};
-\draw (-3.17,0.75) node[anchor=north west] {$ H_2O $};
+\draw (-3.79,0.62) node[anchor=north west] {$ O_2 $};
+\draw (2.18,0.63) node[anchor=north west] {$ O_2 $};
+\draw (-3.18,0.75) node[anchor=north west] {$ H_2O $};
 \draw (2.83,0.79) node[anchor=north west] {$ H_2O $};
-\draw [color=zzqqww](-5.34,0.72) node[anchor=north west] {$ HO^-$};
-\draw [color=zzqqww](4.49,0.7) node[anchor=north west] {$ HO^-$};
-\draw (-2.52,2.16) node[anchor=north west] {$Na^+,Cl^-$};
-\draw (0.92,2.18) node[anchor=north west] {$Cl^-, Na^+$};
-\draw [->] (-0.7,1.72) -- (-0.23,1.23);
-\draw [->] (0.54,1.73) -- (0.19,1.23);
-\draw [->] (-2.82,1.78) -- (-3.77,1.28);
-\draw [->] (2.83,1.78) -- (3.79,1.2);
+\draw [color=zzqqww](-5.35,0.64) node[anchor=north west] {$ HO^-$};
+\draw [color=zzqqww](4.44,0.64) node[anchor=north west] {$ HO^-$};
+\draw (-2.52,2.15) node[anchor=north west] {$Na^+,Cl^-$};
+\draw (0.96,2.06) node[anchor=north west] {$Cl^-, Na^+$};
+\draw [->] (-0.94,1.57) -- (-0.47,1.08);
+\draw [->] (0.73,1.55) -- (0.39,1.05);
+\draw [->] (-2.74,1.69) -- (-3.7,1.19);
+\draw [->] (2.67,1.68) -- (3.63,1.1);
 \draw [shift={(-3.99,0.14)},color=zzqqww]  plot[domain=0.69:2.18,variable=\t]({1*0.84*cos(\t r)+0*0.84*sin(\t r)},{0*0.84*cos(\t r)+1*0.84*sin(\t r)});
 \draw [shift={(3.98,0.2)},color=zzqqww]  plot[domain=0.89:2.44,variable=\t]({1*0.87*cos(\t r)+0*0.87*sin(\t r)},{0*0.87*cos(\t r)+1*0.87*sin(\t r)});
 \draw [->,color=zzqqww] (-4.47,0.82) -- (-4.72,0.66);
 \draw [->,color=zzqqww] (4.52,0.88) -- (4.76,0.67);
+\draw [shift={(0,-6.51)}] plot[domain=0.82:2.32,variable=\t]({1*8.87*cos(\t r)+0*8.87*sin(\t r)},{0*8.87*cos(\t r)+1*8.87*sin(\t r)});
 \end{tikzpicture}
 \end{center}
 \noindent La force motrice de cette réaction est le gradient de concentration de dioxygène dans l'eau : elle est plus importante à la périphérie qu'au centre donc la concentration à la périphérie doit diminuer par consommation d'\chemfig{O_2}.
@@ -89,14 +87,14 @@
 \end{center}
 
 	\section{Etude cinétique}
-		\subsection{couple $M^{2+}$/$M_{s}$}
+		\subsection{Couple $M^{2+}$/$M_{s}$}
 		Une lame de cuivre plongée dans une solution aqueuse de sulfate de cuivre subit une corrosion uniforme : on a un équilibre dynamique entre les ions cuivres et le cuivre solide. Une étude du diagramme i-E nous donne le potentiel d'équilibre et le courant d'échange $i_0$. 
 		\subsection{Couple $M^{2+}$/$M_{s}$ en présence d'eau}
 			Une lame de fer est plongée dans une solution acide de sulfate de fer. Elle subit une corrosion différentielle : en effet l'étude du diagramme i-E montre que le courant de corrosion (représentatif de la cinétique de la réaction de Fe avec \chemfig{H^{+}}) est plus grand en valeur absolue que le courant d'échange $\Rightarrow$ sous contrôle cinétique, c'est bien la corrosion différentielle qui se produit.
 	\section{Méthode de protection contre la corrosion}
 			\subsection{Courbe de polarisation d'un métal}
 				Certains métaux donnent effectivement lieu au phénomène de passivation Ti, Cr... Pour l'acier (alliage Fe/C avec le \%C $\simeq$ 0,15-0,85), le carbone ne sert qu'à améliorer les propriétés mécaniques du fer et n'a aucun effet sur la corrosion. 
-				\\ Les métaux passivables présentent sur leurs courbes i-E des zones où i=0 pour un large domaine de potentiel (appelé Potentiel de Flade) situé entre l'oxydation du métal proprement dite et la transpassivation (disparition de la couche passivante). On voit alors que l'oxydation est auto-inhibée. Pour le Fer, dans l'air humide, cette passivation ne s'observe pas. On cherche donc à rendre le Fer "inoxydable". Pour cela, on réalise un alliage dont le le domaine de passivation est important dans l'air humide ou dans des conditions spécifiques. La plupart des aciers inoxydables contiennent du Chrome à plus de 12\% en masse. 
+				\\ Les métaux passivables présentent sur leurs courbes i-E des zones où i=0 pour un large domaine de potentiel (appelé Potentiel de Flade) situé entre l'oxydation du métal proprement dite et la transpassivation (disparition de la couche passivante). On voit alors que l'oxydation est auto-inhibée. Pour le Fer, dans l'air humide, cette passivation ne s'observe pas. On cherche donc à rendre le Fer \og inoxydable \fg. Pour cela, on réalise un alliage dont le le domaine de passivation est important dans l'air humide ou dans des conditions spécifiques. La plupart des aciers inoxydables contiennent du Chrome à plus de 12\% en masse. 
 				\\ Pour certains métaux (par exemple le titane) la couche naturellement formée assure une passivation efficace. Pour d'autres (par exemple l'aluminium) la couche naturelle est peu efficace (\chemfig{Al_2O_3} est peu adhérent). Dans de tels cas, on oxyde de façon contrôlée ces métaux de façon à avoir une formation lente d'une couche efficace (on parle par exemple d'aluminium anodisé)
 			\subsection{Protection cathodique}
 			\begin{itemize}
