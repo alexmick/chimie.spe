@@ -14,9 +14,17 @@
 \usepackage{framed}    %pour le cadre de la page de garde
 \usepackage{mathrsfs}  %ajoute la commande mathscr qui fait de belles lettres calligraphiées (le Hamiltonien par exemple)
 \usepackage{lmodern}   %fonte vectorielle qui resiste au zoom
+\usepackage{hyperref}
 \normalfont %pour charger T1lmr.fd 
 \DeclareFontShape{T1}{lmr}{bx}{sc} { <-> ssub * cmr/bx/sc }{} %permet d'avoir des small caps dans les titres :)
 
+\hypersetup{bookmarksnumbered=true, colorlinks=true, linkcolor=blue,
+pdfinfo={
+Title={Chimie},
+Subject={Cours de PC*},
+Author={Antoine Hoste, Corentin Chatelier, Alexander Micklewright},
+}
+}
 %%       Zone Mise en page
 \setlength{\oddsidemargin}{0cm}
 \setlength{\topmargin}{0cm}
