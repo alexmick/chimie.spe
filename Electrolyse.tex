@@ -4,9 +4,15 @@
 			On réalise l'électrolyse d'une solution aqueuse de \chemfig{H^{+}},\chemfig{Cl^{-}}.  Expérimentalement, tant que U<$U_{el}$, le courant est nul. Si $U<U_{el}$, on a un dégagement gazeux à l'électrode reliée au pôle - du générateur (\schemestart \chemfig{H^{+}}  \chemsign{+} \chemfig{e^{-}} \arrow  $\frac{1}{2}$ \chemfig{H_{2_{(g)}}} \schemestop),  c'est une réduction donc c'est la cathode. On observe un dégagement gazeux de \chemfig{Cl_{2}} à l'électrode reliée au pôle + du générateur (\schemestart \chemfig{Cl^{-}} \arrow  $\frac{1}{2}$ \chemfig{Cl_{2}} + \chemfig{e^{-}} \schemestop) c'est une oxydation donc c'est l'anode.
 		\subsection{Essai d'interprétation thermodynamique}
 	\begin{itemize}
-\item Réaction possibles : à l'anode, \schemestart $\frac{1}{2}$ \chemfig{Cl_{2}}+\chemfig{e^{-}} \arrow \chemfig{Cl^{-}} \schemestop \ avec $E^0_1 = 1,36V$  
-					\schemestart  $\frac{1}{4}$ \chemfig{O_{2}} +\chemfig{e^{-}}+\chemfig{H^{+}} \arrow $\frac{1}{2}$ \chemfig{H_{2}O} \schemestop \ avec $E^0_2 = 1,23 V$ 
-					\\ A la cathode, \schemestart  $\frac{1}{2}$\chemfig{H^{+}} \arrow \chemfig{H_{2}} \schemestop \ avec $E^0_3 = 0V$
+\item Réaction possibles : À l'anode,
+					\begin{center}
+					\schemestart $\frac{1}{2}$ \chemfig{Cl_{2}}+\chemfig{e^{-}} \arrow \chemfig{Cl^{-}} \schemestop \ avec $E^0_1 = 1,36\,$V \\  
+										\schemestart  $\frac{1}{4}$ \chemfig{O_{2}} +\chemfig{e^{-}}+\chemfig{H^{+}} \arrow $\frac{1}{2}$ \chemfig{H_{2}O} \schemestop \ avec $E^0_2 = 1,23\,$V 
+					\end{center}
+					À la cathode,
+					\begin{center}
+					\schemestart  $\frac{1}{2}$\chemfig{H^{+}} \arrow \chemfig{H_{2}} \schemestop \ avec $E^0_3 = 0\,$V
+					\end{center}
 \item Prévisions thermodynamiques : Les réactions qui se déroulent majoritairement sont celles qui demandent le moins d'énergie, ce qui correspond à celles de plus forte affinité chimique. L'affinité chimique est maximale si l'affinité de la cathode est maximale et celle de l'anode minimale (avec $\A = F.E$). La thermo prévoit donc la réduction de l'espèce avec le potentiel de Nernst le plus élevé (parmi les réactions possibles à la cathode) et l'oxydation de l'espèce avec le potentiel de Nernst le moins élevé (parmi les réactions possibles à l'anode) \end{itemize}
 		\subsection{Vérifications expérimentales}
 			La concentration de \chemfig{Cl^{-}} vaut 1 mol$\times \mbox{L}^{-1}$, $p_{H_2}=p_{O_2}=1$bar,  à la cathode se produit la réduction de \chemfig{H^{+}} ce qui est conforme aux prévisions, mais la thermodynamique prévoit l'oxydation de l'eau à l'anode, ce qui n'est pas vérifiée expérimentalement. On peut cependant retrouver l'existence de la tension limite en exprimant la différentielle de G et on trouve \[U_{el} \geq \frac{\Delta rG}{F} = E_a-E_c\]
