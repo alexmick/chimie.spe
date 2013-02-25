@@ -1,0 +1,57 @@
+\chapter{Les matériaux polymères : généralités et synthèse}
+\section{Généralités}
+	\subsection{Structure}
+		\begin{itemize}
+			\item Macromolécule : Une macromolécule est une molécule de masse molaire élevée (typiquement de l'ordre de $10^3$ g.mol$^{-1}$) issue de l'assemblage cavalent d'un grand nombre d'unités de répétition appelées \underline{unités constitutifs}, qui sont différents des monomères
+			\item \underline{Exemple} Pour le polystyrène, le monomère est le styrène : \chemfig{[:-30,0.7]*6(=-=(-=[:-30])-=-)} et l'unité de répétition est \chemfig{[,0.7]*6(=-=-(-[:90]CH(-[:180]H_2C))=-)}
+			\item Polymère : Un polymère est une substance composée de macromolécules ne comportant pas toutes le même nombre d'unités de répétition. On distingue les homopolymères qui sont formés à partir d'un unique type de monomère (ou par certaines polymérisation par étape) et les copolymères qui sont formés à partir de différents monomères
+			\item  Les polymères à connaitre :  \\ 
+										\begin{tabular}{|c|l|l|} \hline
+			Unités de répétition & Désignation courante & Sigle \\ \hline
+			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](\vphantom{-[:-90]})-[:30]-[@{cl,0.5}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polyéthylène & PE \\ \hline
+			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6](\vphantom{-[:-90,1.5]}))-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polypropylène & PP  \\ \hline
+			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6]Ph\vphantom{-[:-90,1.5]})-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polystyrène & PS \\ \hline
+			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6]Cl\vphantom{-[:-90,1.5]})-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polychlorure de vinyle & PVC \\ \hline										\end{tabular}
+			
+		\end{itemize}
+	\subsection{Caractéristiques moléculaires des polymères linéaires}
+		\begin{itemize}
+			\item Le \underline{degré de polymérisation} (DP) X est le nombre d'unités monomères constituant la macromolécule. Dans le cas des exemples du paragraphe précédent, pour le polypropylène, X = n. 
+			\item Le \underline{degré moyen de polymérisation} $\moyenne{X_{n}}$ est le nombre moyen de motifs constitutifs que comporte le polymère. Il s'agit du nombre de monomères polymérisés rapporté au nombre de chaînes 
+			$$ \moyenne{X_{n}} = \frac{\mbox{Nombre d'unités monomères}}{\mbox{nombre de chaînes}}$$ ou encore 
+			$$\moyenne{X_n} = \frac{\displaystyle \sum_{i=1}^{\infty}X_i.N_i}{\displaystyle \sum_{i=1}^{\infty}N_i} = \sum_{i=1}^{\infty} x_i.X_i$$ avec $N_i$ le nombre de macromolécules dont le degré de polymérisation est $X_i$ et $$x_i = \frac{N_i}{\displaystyle\sum N_i}$$ fraction molaire des chaînes contenant $X_i$ unités monomères
+			\item La \underline{masse molaire moyenne} (pour un homopolymère) : \\ 
+				On note $M_i$ la masse molaire d'une macromolécule constituée par $X_i$ unités de répétition (UR) \\
+					$M_i = X_i.M_{UR}+M_{EXT}$ avec $M_{UR}$ la masse molaire d'une UR et $M_{EXT}$ la masse molaire des extrémités. Le plus souvent, ce terme est négligeable. On a donc la masse des macromolécule de masse molaire $M_i$ qui vaut $W_i=N_i.M_i$.
+					La masse molaire moyenne en nombre est donnée par 
+					$$\moyenne{M_n} = \frac{\displaystyle \sum_{i=1}^{\infty} N_i.M_i}{\displaystyle \sum_{i=1}^{\infty} N_i} = \moyenne{X_n}.M_{UR}$$ 
+					Cette masse molaire est obtenue par osmométrie, tonométrie... (voir Binaires) \\
+					La masse molaire en masse est donnée par 
+					$$\moyenne{M_w} = \frac{\displaystyle \sum_{i=1}^{\infty} W_i.M_i}{\displaystyle \sum_{i=1}^{\infty} W_i} =\frac{\displaystyle \sum_{i=1}^{\infty} N_i.M_i^2}{\displaystyle \sum_{i=1}^{\infty} N_i.M_I} $$ \\
+					On note $w_i$ la fraction massique des chaînes contenant $X_i$ unités monomères, 
+					$$w_i = \frac{W_i}{\displaystyle \sum_{i} W_i}$$ \\
+					On obtient ainsi le degré de polymérisation moyen en masse, 
+					$$\moyenne{X_w} = \sum_{i} w_i.X_i$$ 
+					D'où 
+					$$\moyenne{M_w} = \moyenne{X_w}.M_{UR}$$
+					Cette masse molaire est obtenue par diffusion statique de la lumière
+			\item L'immense majorité des systèmes macromoléculaires est polymoléculaire. Cela signifie qu'ils sont constitués de chaînes ayant des tailles différentes (et donc des masses molaires différentes). La \underline{polymolécularité}, les propriétés et donc les applications dépendent des masses molaires et de la distribution des masses molaires d'où l'importance de contrôler ces paramètres. 
+			L'indice de polymolécularité I est donné par 
+			$$I = \frac{\moyenne{M_w}}{\moyenne{M_n}} \geq 1$$ 
+			Plus la dispersion en taille des macromolécules constitutives augmente, plus I augmente. Usuellement, il est compris entre 1,05 et 30. 
+			
+			\end{itemize}
+	\subsection{La chimie macromoléculaire}
+		\begin{itemize}
+			\item \underline{Polymérisation par étape} : Les monomères sont de réactivité antagonistes et souvent bifonctionnels. La polymérisation opère par couple d'oligocène de plus en plus grands. \\
+		\begin{center}	\schemestart \chemfig{M_i} \chemsign{+} \chemfig{M_j} \arrow \chemfig{M_{i+j}}  \schemestop \end{center}
+			\underline{Exemple} Avec \small \chemfig{[,0.9]C(=[:120]O)(-[:-120]HO)-[@{op,.5}]CH_2-[@{cl,.5}]NH_2} \makebraces[10pt,5pt]{\!\!5}{op}{cl} \normalsize il peut se former de longue chaînes d'amides. 
+			\item \underline{Polymérisation en chaîne} : pour ce type de polymérisation, il y a nécessité de créer un centre actif (radical, ion) par activation d'un monomère. La construction de la chaine se réalise pas à  pas 
+			\begin{center}	\schemestart \chemfig{M_n^{\star}} \chemsign{+} \chemfig{M} \arrow \chemfig{M_{n+1}^{\star}}  \schemestop \end{center} \end{itemize}
+\section{Polymérisation par étapes} 
+	\subsection{Exemples}
+		\begin{itemize}
+\item \underline{Formation du PET} \\
+	\footnotesize \schemestart[,0.7,] n \chemfig{[,0.5](=[:120]O)(-[:-120]HO)-*6(=-=(-(=[:60]O)-[:-60]OH)-=-)} \chemsign{+} n \chemfig{[,0.5]HO-[:30]CH_2-[:-30]CH_2-[:30]OH} \arrow \chemfig{[,.5]-[@{op,0.5}:30](=[:90]O)-*6(=-=(-(=[:90]O)-[:-30]O-[:30]CH_2-[:-30]CH_2-[:30]O-[@{cl,.5}:-30])-=-)}  \makebraces[10pt,3pt]{\!\!n}{op}{cl} \chemsign{+} 2n \chemfig{H_2O} \schemestop \par
+
+		\end{itemize}

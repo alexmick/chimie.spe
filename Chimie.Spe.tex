@@ -7,13 +7,11 @@
 \usepackage{esint}     %les maths
 \usepackage{chemfig}   %chimie oblige!
 \usepackage{layout}    %reglage de la mise en page
+\usepackage{lmodern}   %fonte vectorielle qui resiste au zoom
 \usepackage{lastpage}  %permet d'avoir le nombre de pages total en pied de page
 \usepackage{fancyhdr}  %les en-têtes et pieds de page perso
 \usepackage{framed}    %pour le cadre de la page de garde
 \usepackage{mathrsfs}  %ajoute la commande mathscr qui fait de belles lettres calligraphiées (le Hamiltonien par exemple)
-\usepackage{lmodern}   %fonte vectorielle qui resiste au zoom
-\normalfont %pour charger T1lmr.fd 
-\DeclareFontShape{T1}{lmr}{bx}{sc} { <-> ssub * cmr/bx/sc }{} %permet d'avoir des small caps dans les titres :)
 
 %%       Zone Mise en page
 \setlength{\oddsidemargin}{0cm}
@@ -49,6 +47,8 @@
 \newcommand{\A}{\mathcal{A}} %le A de activité chimique
 \newcommand\ps[2]{\langle#1|#2\rangle} %le produit scalaire
 \renewcommand\H{\mathscr{H}} %le hamiltonien
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}} \def\makebraces[#1,#2]#3#4#5{\edef\delimhalfdim{\the\dimexpr(#1+#2)/2} \edef\delimvshift{\the\dimexpr(#1-#2)/2}\chemmove{\node[at=(#4),yshift=(\delimvshift)]{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim width0pt\right.$};\node[at=(#5),yshift=(\delimvshift)]{$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}} \setpolymerdelim() %Permet de créer les délimiteurs pour les polymères
+\newcommand\moyenne[1]{<\!\!#1\!\!>} %Nombre moyen de 
 %% Environnements personalisés
 \newenvironment{scheme}
 {\shemestart}
@@ -66,13 +66,14 @@
 \input{Acides_Carboxyliques}
 \input{alcenes}
 \input{aromatiques}
+\input{Polymere1}
 
 \part{Chimie Générale}
 \input{thermo}
 \input{spectro}
-\input{redox}
-\input{corrosion}
-\input{Electrolyse}
 \input{huckel}
+\input{redox}
+\input{Electrolyse}
+\input{corrosion}
 \end{document}
 
