@@ -129,3 +129,160 @@ Par substitution, mécanisme procédant par une addition nucléophile suivie d'une 
 \chemfig{Me-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Et}
 \schemestop
 \end{center}
+\subsection{Réduction des esters}
+\noindent Réducteur : tétrahydruroaluminate de lithium \chemfig{LiAlH_4} dans l'éther, milieu anhydre.
+\vspace{0.5cm}
+\begin{center}
+\schemestart
+\chemfig{*6(-=-(-(=[:90]O)-[:-30]OEt)=-=)}
+\arrow{->[1) \chemfig{LiAlH_4}, \chemfig{Et_2 O}][2) \chemfig{\lewis{4|,H}}$\oplus$, \chemfig{H_2 O}]}[,2]
+\chemfig{*6(-=-(--[:90]OH)=-=)}
+\+
+\chemfig{Et-OH}
+\schemestop
+\end{center}
+Le groupe ester est relativement inerte, on peut donc l'utiliser comme protection d'un groupe acide ou alcool.
+\section{Synthèse des amides}
+\noindent Obtention par \textbf{acylation d'amines primaires ou secondaires}.
+\paragraph{Chlorure d'acyle}
+\begin{center}
+\schemestart
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]Cl}
+\arrow{->[\chemfig{-[:-30]-[::60]\chemabove{N}{H}-[:-30]} (2 eq)][- \chemfig{Cl} $\ominus$]}[,2.2]
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]N(-[:30]-[:-30])(-[:-90])}
+\+
+\chemfig{-[:30]-[::-60]\chembelow{\chemabove{N}{\oplus}}{\ H_2}-[:30]}
+\schemestop
+\end{center}
+On peut aussi opérer dans un solvant basique tel que la pyridine, afin d'éviter d'utiliser 2 moles d'amines :
+\vspace{.5cm}
+\begin{center}
+\schemestart
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]Cl}
+\arrow{->[\chemfig{-[:-30]-[::60]\chemabove{N}{H}-[:-30]} (1 eq)][\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}]}[,2.2]
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]N(-[:30]-[:-30])(-[:-90])}
+\+
+\chemfig{\chemabove{Cl}{\ominus}-[,,,,dash pattern=on 2pt off 2pt]\chemabove{H}{\quad \oplus}N*6(-=-=-=)}
+\schemestop
+\end{center}
+Puis isolation de l'amide, élimination de \chemfig{HCl} par chauffage, et régénération de la pyridine.
+\paragraph{Anhydride}
+\begin{center}
+\schemestart
+\chemfig{-[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](=[::+60]\lewis{13,O})-[::-60]}
+\arrow{->[\chemfig{-[:30]-[::-60]NH_2}][\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}]}[,2]
+\chemname{\chemfig{-[::30](=[::60]\lewis{13,O})-[::-60]\chembelow{N}{H}-[:30]-[:-30]}}{\\ {\footnotesize N-éthyléthanamide}}
+\+
+\chemfig{-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}H}
+\+
+\chemfig{[:-30] \chemabove{H}{\quad \oplus}N*6(-=-=-=)}
+\schemestop
+\end{center}
+\underline{Intérêt :} le groupe amide étant moins réactif que le groupe amine, il peut servir de groupe protecteur du groupe amine. ($cf$ mésomérie pour la réactivité)
+\section{Hydrolyse des fonctions dérivées d'acide}
+\subsection{Chlorures d'acyle et Anhydrides}
+L'hydrolyse a peu d'intérêt : formation de deux moles d'acide.
+\subsection{Esters}
+Il s'agit de la \textbf{Saponification}, en présence de \chemfig{HO}$\ominus$. C'est une réaction totale.
+\begin{center}
+\schemestart
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]O-[::60]}
+\+
+\chemfig{H\chemabove{O}{\ominus}}
+\arrow
+\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]\chembelow{O}{\ominus}}
+\+
+\chemfig{-OH}
+\schemestop
+\end{center}
+En milieu acide, l'hydrolyse se produit selon le mécanisme inverse de la réaction d'estérification.
+\subsection{Amides}
+\vspace{0.5cm}
+\begin{center}
+\schemestart
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]NH_2}
+\arrow(A.-20--B.-180){->[\chemfig{HO}$\ominus$][- \chemfig{NH_3}]}[25,1.75]
+\chemfig{Et-C\chemabove{O_2}{\ominus}}
+\arrow(@A--C.180){->[\chemfig{\lewis{4|,H}}$\oplus$, \chemfig{H_2 O}][- \chemfig{NH_4}$\oplus$]}[-25,1.75]
+\chemfig{Et-CO_2H}
+\schemestop
+\end{center}
+\subsection{Nitriles}
+\vspace{0.5cm}
+\begin{center}
+\schemestart
+\chemfig{Et-C~N}
+\arrow{->[\chemfig{H_2O}][]}[,1.5]
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]NH_2}
+\schemestop
+\end{center}
+Il est difficile de s'arrêter au stade de l'amide, l'hydrolyse se poursuit.
+\section{Synthèse Malonique}
+\textbf{Alkylation, saponification, décarboxylation.} C'est une méthode de préparation d'acides carboxyliques à partir de dérivés halogénés, avec allongement de la chaîne carbonée de deux unités. Utilisation de diesters dérivant de \textbf{l'acide malonique} :
+\begin{center}
+\schemestart
+\chemfig{HO-[::30](=[::+60]\lewis{13,O})-[::-60]-[::60](=[::+60]\lewis{13,O})-[::-60]OH}
+\schemestop
+\end{center}
+On protège les fonctions acides par réaction d'estérification : obtention de diesters.
+\begin{center}
+\schemestart
+\chemfig{HO-[::30](=[::+60]\lewis{13,O})-[::-60]-[::60](=[::+60]\lewis{13,O})-[::-60]OH}
+\arrow{->[\chemfig{Et-OH} (2eq)][-2 \chemfig{H_2O}]}[,2]
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60]-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\schemestop
+\end{center}
+Puis pour obtenir l'anion malonate : utilisation de la base conjuguée de l'acool utilisé, pour enlever le H mobile.
+\begin{center}
+\schemestart
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60](-[:-90]H)-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\arrow{<=>[$\ominus$ \chemfig{\lewis{246,O}Et}][- \chemfig{EtOH}]}[,1.5]
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60]\chemabove{\chembelow{\lewis{5,C}}{\quad H}}{\ominus}-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\schemestop
+
+\vspace{0.5cm}
+\schemestart
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60]\chemabove{\chembelow{\lewis{5,C}}{\quad H}}{\ominus}-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\arrow{->[\chemfig{-[:30]-[::-60]-[::+60]Br}][- Br$\ominus$]}[,2]
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60](-[:-90]-[:-30]-[:30])-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\schemestop
+\end{center}
+Cette \textbf{alkylation} peut aussi s'effectuer avec les $\beta$-dicétones, et les cétoesters.
+
+\vspace{0.5cm}
+\noindent Puis réaction de \textbf{saponification}, réaction totale :
+\begin{center}
+\schemestart
+\chemfig{EtO-[::30](=[::+60]\lewis{13,O})-[::-60](-[:-90]-[:-30]-[:30])-[::60](=[::+60]\lewis{13,O})-[::-60]OEt}
+\+
+\chemfig{H\chemabove{O}{\ominus}}
+\arrow
+\chemfig{\chemabove{O}{\ominus}-[::30](=[::+60]\lewis{13,O})-[::-60](-[:-90]-[:-30]-[:30])-[::60](=[::+60]\lewis{13,O})-[::-60]\chemabove{O}{\ominus}}
+\+
+2 \chemfig{-OH}
+\schemestop
+\end{center}
+On élimine l'éthanol, et on repasse en milieu acide pour reformer le diacide.
+
+\vspace{0.5cm}
+\noindent Enfin, \textbf{décarboxylation} : élimination de \chemfig{CO_2}. Il s'agit ici d'un mécanisme de transfert circulaire à 6 centres, du fait d'un groupe électroattracteur en $\beta$ du groupe acide.
+\begin{center}
+\schemestart
+\chemfig{HO-[::30](=[::+60]\lewis{13,O})-[::-60](-[:-90]-[:-30]-[:30])-[::60](=[::-60]\lewis{17,O})-[::60]O-[:150]H}
+\arrow{<=>[][- \chemfig{CO_2}]}[,1.5]
+\chemfig{HO-[::30](-[::+60]OH)=_[::-60](-[:-90]-[:-30]-[:30])}
+\arrow{<->>[tautomérie][céto-énol]}[,1.5]
+\chemfig{HO-[::30](=[::+60]O)-[::-60](-[:-90]-[:-30]-[:30])}
+\schemestop
+\end{center}
+
+\vspace{1cm}
+\paragraph{Bilan de la synthèse malonique}
+
+\begin{center}
+\schemestart
+\chemfig{-[:-30]-[::60]-[::-60]Br}
+\arrow{->[][]}[,1.5]
+\chemfig{-[:-30]-[::60]-[::-60]-[::60](=[:90]O)-[::-60]OH}
+\schemestop
+\end{center}
