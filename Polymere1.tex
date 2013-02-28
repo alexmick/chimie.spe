@@ -51,7 +51,34 @@
 \section{Polymérisation par étapes} 
 	\subsection{Exemples}
 		\begin{itemize}
-\item \underline{Formation du PET} \\
-	\footnotesize \schemestart[,0.7,] n \chemfig{[,0.5](=[:120]O)(-[:-120]HO)-*6(=-=(-(=[:60]O)-[:-60]OH)-=-)} \chemsign{+} n \chemfig{[,0.5]HO-[:30]CH_2-[:-30]CH_2-[:30]OH} \arrow \chemfig{[,.5]-[@{op,0.5}:30](=[:90]O)-*6(=-=(-(=[:90]O)-[:-30]O-[:30]CH_2-[:-30]CH_2-[:30]O-[@{cl,.5}:-30])-=-)}  \makebraces[10pt,3pt]{\!\!n}{op}{cl} \chemsign{+} 2n \chemfig{H_2O} \schemestop \par
-
+\item \underline{Formation du PET} \\ \\
+	\footnotesize \schemestart[,0.7,] n \chemfig{[,0.5](=[:120]O)(-[:-120]HO)-*6(=-=(-(=[:60]O)-[:-60]OH)-=-)} \chemsign{+} n \chemfig{[,0.5]HO-[:30]CH_2-[:-30]CH_2-[:30]OH} \arrow \chemfig{[,.5]-[@{op,0.5}:30](=[:90]O)-*6(=-=(-(=[:90]O)-[:-30]O-[:30]CH_2-[:-30]CH_2-[:30]O-[@{cl,.5}:-30])-=-)}  \makebraces[10pt,3pt]{\!\!n}{op}{cl} \chemsign{+} 2n \chemfig{H_2O} \schemestop \normalsize
+\item \underline{Formation du nylon 6-6} \\ 
+\footnotesize \schemestart[,0.7,] n \chemfig{[,0.9]C(=[:120]O)(-[:-120]HO)-{(CH_2)_4}-C(-[:-60]OH)=[:60]O} \chemsign{+} \chemfig{[,0.9]H_2N-{(CH_2)_6}-NH_2} \arrow \chemfig{[,0.9]C(-[:-120]NH(-[@{op,.5}:180]))(=[:120]O)-{(CH_2)_4}-C(=[:60]O)-[:-60]NH-{(CH_2)_6}-[@{cl,.6}]} \chemsign{+} 2n \chemfig{[,0.9]H_2O} \makebraces[50pt,5pt]{\!\!n}{op}{cl}  \schemestop \par
 		\end{itemize}
+	\subsection{Fonctions réactives et fonctionnalités}
+		\begin{itemize}
+			\item \underline{Fonctions réactives} Les polymères sont synthétisés en reliant des molécules de monomères entre elles par des liaisons chimiques covalentes. Cette réactivité chimique des monomères résulte de la présence sur ceux-ci de groupes fonctionnels (soit des fonctions réactives) capables de former des liaisons chimiques avec les groupes fonctionnels d'autre molécules de monomères.
+			\item \underline{Site réactif} Chaque groupe fonctionnel contient un pou plusieurs sites réactifs capable de former une liaison chimique avec un rature molécule de monomère
+			\item \underline{Fonctionnalité d'un monomère} : il s'agit du nombre de sites réactifs de ce monomère. Si un monomère ou un mélange de monomère possède une fonctionnalité moyenne inférieure à 2, il ne se forme que des composés de faible masse moléculaire ou des oligomères non-utilisables comme matériaux. Si la fonctionnalité est égale à 2, on peut avoir accès à des polymères linéaires. La polymérisation de mélanges de monomères ayant une fonctionnalité moyenne supérieure à 2 entraîne la formation de réseaux tridimensionnels.
+			\item  \bigskip \begin{tabular}{|l|l|l|} \hline
+				\textbf{Groupe} & \textbf{Structure} & \textbf{Fonctionnalité} \\ \hline
+			Vinyle & \chemfig{[,0.6]C=C} & 2 \\ \hline
+			Hydroxyle & \chemfig{[,0.6]C-OH} & 1 \\ \hline
+			Carbonyle & \chemfig{[,0.6]C=O} & 2 \\ \hline
+			Oxyrane & \chemfig{[:-30,0.6]C*3(-C-O-[,0.6])} & 2 \\ \hline
+			Amino & \chemfig{[,0.6]-NH2} & 1 (ou 2) \\ \hline
+						\end{tabular}
+		\end{itemize}
+	\subsection{Mécanisme général}
+		\subsubsection{Polycondensation}
+			Il s'agit d'une polymérisation par étapes, dans laquelle la croissance des chaînes résulte de réactions de condensation (c'est-à-dire addition suivie d'élimination d'une petite molécule, généralement de l'eau)
+			\\ \underline{Exemple : formation de polyester} \\ \\ 
+			\footnotesize	\schemestart n \chemfig{[,0.6]HO-C(=[:-90]O)-R-C(=[:-90]O)-OH} \chemsign{+} n \chemfig{[,0.6]HO-R'-OH} \arrow{<->} \chemfig{[,0.6]-[@{op,0.5}]C(=[:-90]O)-R-C(=[:-90]O)-O-R'-O-[@{cl,.5}]} \chemsign{+} 2n \chemfig{H_2O} \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop \normalsize En travaillant avec un excès de diol et en éliminant l'eau au fur et à mesure de sa formation, on déplace l'équilibre. Avec un chlorure d'acyle, on travaille en présence de base pour éliminer \chemfig{HCl}. 
+			On peut de même former des polyamides en utilisant des diamines et de diacides carboxyliques. 
+		\subsubsection{Polyaddition}
+			Il s'agit de polymérisation par étapes, dans laquelle la croissance des chaînes résulte de réactions d'addition, sans élimination d'une molécule de faible masse
+			\\ \underline{Exemple : formation de polyuréthanes} \\ \\
+			\footnotesize \schemestart n \chemfig{[,0.7]O=C=N-R-N=C=O} \chemsign{+} n \chemfig{[,0.7]HO-R'-OH} \arrow \chemfig{[,0.7]-[@{op,.5}]CO-NH-R-NH-CO-O-R'-O-[@{cl,.5}]}   \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop
+			
+\section{Polymérisation en chaîne}		
