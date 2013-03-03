@@ -39,26 +39,39 @@ La vitesse augmente avec la température, mais \underline{\textbf{pas}} le rendem
 \subsection{Chlorures d'acyle}
 \begin{center}
 \schemestart
-\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]OH}
-\arrow{<=>[\chemfig{Cl-[::30]S(=[::60]O)-[::-60]Cl}][]}[,2]
-\chemfig{-[::30]-[::-60]\lewis{2|,\chemabove{C}{\quad \oplus}}(-[::-60]OH)-[::60]O-[::-60]S(-[::80]\lewis{137,\chemabove{O}{\ominus}})(-[::-100]Cl)-[::0]Cl}
+	\chemfig{-[::-30]-[::60](@{ac1a1}=[@{ac1dl1}::60]@{ac1a2}\lewis{13,O})-[::-60]OH}
+\arrow{<=>[\chemfig{Cl-[::30]@{ac1a3}S(=[@{ac1dl2}::60]@{ac1a4}\lewis{13,O})-[::-60]Cl}][]}
+	\chemfig{-[::30]-[::-60]@{ac1a5}\lewis{7|,\chemabove{C}{\quad \oplus}}(-[::-80]HO)-[::60]O-[::-60]S(-[@{ac1l2}::80]@{ac1a6}\lewis{137,\chemabove{O}{\ominus}})(-[@{ac1l1}::-100]Cl)-[::0]Cl}
 \arrow{<=>}[,1.2]
-\chemfig{HO-C(-[::90]Et)(-[::-90]Cl)-O-S(-[::-60]Cl)=[::60]O}
+	\chemfig{HO-C(-[::90]Et)(-[::-90]Cl)-[@{ac1l3}]@{ac1a7}O-S(-[@{ac1l4}::-60]@{ac1a8}Cl)=[::60]O}
+		\chemmove{
+\draw[shorten <= 1pt,->, shorten >=10pt](ac1dl1).. controls +(180:8mm) and +(38:0.1mm).. (ac1a2);
+\draw[shorten <= 2pt,->](ac1a2).. controls +(45:5mm) and +(135:5mm).. (ac1a3);
+\draw[shorten <= 1pt,->](ac1dl2).. controls +(0:5mm) and +(320:3mm).. (ac1a4);
+\draw[->,shorten >=4pt](ac1l1).. controls +(120:5mm) and +(315:8mm).. (ac1a5);
+\draw[shorten <= 2pt,->](ac1a6).. controls +(315:5mm) and +(315:8mm).. (ac1l2);
+\draw[shorten >= 1pt,->](ac1l3).. controls +(90:5mm) and +(90:5mm).. (ac1a7);
+\draw[shorten >= 1pt,->](ac1l4).. controls +(30:5mm) and +(30:6mm).. (ac1a8);
+				 }
 \schemestop
 \vspace{1cm}
 \schemestart
 \arrow[,1]
-\chemfig{H-O-\lewis{0|,\chemabove{C}{\quad \oplus}}(-[::90]Et)(-[::-90]Cl)}
+\chemfig{@{ac1a9}H-[@{ac1l5}]O-[@{ac1l6}]\lewis{0|,\chemabove{C}{\quad \oplus}}(-[::90]Et)(-[::-90]Cl)}
 \+
 \chemfig{SO_2}
 \+
-\chemfig{\chemabove{Cl}{\quad \ominus}}
+\chemfig{@{ac1a10}\chemabove{Cl}{\quad \ominus}}
 \arrow[,1.2]
-\chemfig{-[::-30]-[::60](=[::60]O)-[::-60]Cl}
+\chemfig{-[::-30]-[::60](=[::60]\lewis{13,O})-[::-60]Cl}
 \+
 \chemfig{SO_2}
 \+
 \chemfig{HCl}
+		\chemmove{
+\draw[,->,shorten >= 1pt](ac1l5).. controls +(90:5mm) and +(90:5mm).. (ac1l6);
+\draw[shorten <= 2pt,->,shorten >= 1pt](ac1a10).. controls +(270:2cm) and +(270:2cm).. (ac1a9);
+					}
 \schemestop
 \end{center}
 \subsection{Anhydrides}
@@ -93,40 +106,60 @@ Par substitution, mécanisme procédant par une addition nucléophile suivie d'une 
 \paragraph{Chlorure d'acyle}
 \begin{center}
 \schemestart
-\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]Cl}
-\arrow{<=>[\chemfig{H-\lewis{26,O}-Me}][A.N.]}[,1.5]
-\chemfig{Et-C(-[::90]\lewis{024,\chemabove{O}{\quad \ominus}})(-[::-90]Cl)-\lewis{2,\chembelow{O}{\oplus}}(-[::30]Me)-[::-30]H}
-\arrow{<=>[][$-$ \chemfig{\chembelow{Cl}{\ominus}}]}[,1.5]
+\chemfig{Et-[::30](@{ac2a1}=[@{ac2dl1}::60]@{ac2a2}\lewis{13,O})-[::-60]Cl}
+\arrow{<=>[\chemfig{H-@{ac2a3}\lewis{26,O}-Me}][A.N.]}
+\chemfig{Et-C(-[@{ac2l1}::90]@{ac2a4}\lewis{024,\chemabove{O}{\quad \ominus}})(-[@{ac2l2}::-90]@{ac2a5}Cl)-\lewis{2,\chembelow{O}{\oplus}}(-[::30]Me)-[::-30]H}
+\arrow{<=>[][$-$ \chemfig{\chembelow{Cl}{\ominus}}]}
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
+\chemmove{
+\draw[shorten <= 2pt,shorten >= 2pt,->](ac2a3).. controls +(90:12mm) and +(20:5mm).. (ac2a1);
+\draw[shorten <= 1pt,->, shorten >=10pt](ac2dl1).. controls +(180:8mm) and +(38:0.1mm).. (ac2a2);
+\draw[shorten <= 2pt,shorten >= 2pt,->](ac2a4).. controls +(180:5mm) and +(180:5mm).. (ac2l1);
+\draw[shorten <= 0pt,shorten >= 2pt,->](ac2l2).. controls +(180:5mm) and +(180:5mm).. (ac2a5);
+}
 \schemestop
 \vspace{1cm}
 \schemestart
-\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{2,\chembelow{O}{\oplus}}(-[::60]Me)-[::0]H}
-\arrow{->[\chemfig{[:-30]\lewis{4,N}*6(-=-=-=)}][a/b]}[,1.5]
+\chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]@{ac2a6}\lewis{2,\chembelow{O}{\oplus}}(-[@{ac2l3}::60]@{ac2a7}H)-[::0]Me}
+\arrow{->[\chemfig{[:-30]@{ac2a8}\lewis{4,N}*6(-=-=-=)}][a/b]}
 \chemfig{Et-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Me}
 \+
 \chemfig{\chemabove{Cl}{\ominus}-[,,,,dash pattern=on 2pt off 2pt]\chemabove{H}{\quad \oplus}N*6(-=-=-=)}
+\chemmove{
+\draw[shorten <= 0pt,shorten >= 2pt,->](ac2l3).. controls +(330:5mm) and +(0:5mm).. (ac2a6);
+\draw[shorten <= 2pt,shorten >= 2pt,->](ac2a8).. controls +(180:5mm) and +(90:5mm).. (ac2a7);
+}
 \schemestop
 \end{center}
 \vspace{.5cm}
 \paragraph{Anhydride}
 \begin{center}
 \schemestart
-\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](=[::+60]\lewis{13,O})-[::-60]Me}
-\arrow{<=>[\chemfig{H-\lewis{26,O}-Et}][A.N.]}[,1.5]
-\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](-[::-120]\chembelow{O}{\oplus}(-[:-150]H)(-[:-30]Et))(-[::+60]\chemabove{\lewis{024,O}}{\quad \ominus})-[::-60]Me}
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\lewis{57,O}-[::60](@{ac3a1}=[@{ac3dl1}::+60]@{ac3a2}\lewis{13,O})-[::-60]Me}
+\arrow{<=>[\chemfig{H-@{ac3a3}\lewis{26,O}-Et}][A.N.]}[,1.5]
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]@{ac3a4}\lewis{57,O}-[@{ac3l1}::60](-[::-120]\chembelow{O}{\oplus}(-[:-150]H)(-[:-30]Et))(-[@{ac3l2}::+60]@{ac3a5}\chemabove{\lewis{024,O}}{\quad \ominus})-[::-60]Me}
+\chemmove{
+\draw[shorten <= 2pt,shorten >= 2pt,->](ac3a3).. controls +(90:12mm) and +(20:5mm).. (ac3a1);
+\draw[shorten <= 1pt,->, shorten >=10pt](ac3dl1).. controls +(180:8mm) and +(38:0.1mm).. (ac3a2);
+\draw[shorten <= 0pt,shorten >= 2pt,->](ac3l1).. controls +(120:5mm) and +(90:5mm).. (ac3a4);
+\draw[shorten <= 2pt,shorten >= 0pt,->](ac3a5).. controls +(0:5mm) and +(0:5mm).. (ac3l2);
+}
 \schemestop
 
 \vspace{1cm}
 \schemestart
 \arrow{<=>[][]}[,1]
-\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]\chembelow{\lewis{157,O}}{ \ominus}}
+\chemfig{Me -[::30](=[::+60]\lewis{13,O})-[::-60]@{ac3a6}\chembelow{\lewis{157,O}}{ \ominus}}
 \+
-\chemfig{\chemabove{O}{\quad\oplus}(-[:120]H)(-[:-120]Et)-(=^[:60]\lewis{02,O})(-[:-60]Me)}
+\chemfig{@{ac3a7}\chemabove{O}{\quad\oplus}(-[@{ac3l3}:120]@{ac3a8}H)(-[:-120]Et)-(=^[:60]\lewis{02,O})(-[:-60]Me)}
 \arrow{->[a/b][]}[,1.5]
 \chemfig{Me-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}H}
 \+
 \chemfig{Me-[::30](=[::60]\lewis{13,O})-[::-60]\lewis{26,O}-Et}
+\chemmove{
+\draw[shorten <= 3pt,shorten >= 1pt,->](ac3a6).. controls +(30:8mm) and +(180:8mm).. (ac3a8);
+\draw[shorten <= 0pt,shorten >= 1pt,->](ac3l3).. controls +(210:5mm) and +(180:5mm).. (ac3a7);
+}
 \schemestop
 \end{center}
 \subsection{Réduction des esters}
