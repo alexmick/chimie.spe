@@ -85,13 +85,17 @@ BASES avant tout !!!
 \vspace{.5cm}
 \begin{center}
 \schemestart
-\chemfig{R_1-C(-[::+60]R_2)(=[::-60]O)}
-\+
-\chemfig{\chemabove{\lewis{4,C}}{\ominus}~\lewis{0,N}}
-\arrow{->[A.N.][]}
-\chemfig{R_2-C(-[::90]R_1)(-[::-90]CN)(-\chemabove{\lewis{026,O}}{\quad \quad \ominus})}
-\arrow{->[\chemfig{H-CN}][]}
+\chemfig{R_1-@{c1a1}C(-[::+60]R_2)(=[@{c1dl1}::-60]@{c1a2}O)}
+\arrow{->[\chemfig{@{c1a3}\chemabove{\lewis{4,C}}{\ominus}~\lewis{0,N}}][A.N.]}[,2]
+\chemfig{R_2-C(-[::90]R_1)(-[::-90]CN)(-@{c1a4}\chemabove{\lewis{026,O}}{\quad \quad \ominus})}
+\arrow{->[\chemfig{@{c1a5}H-[@{c1l1}]@{c1a6}CN}][- \chemfig{\chembelow{\lewis{4,C}}{\ominus}~\lewis{0,N}}]}[,2]
 \chemfig{R_2-C(-[::90]R_1)(-[::-90]CN)(-OH)}
+\chemmove{
+\draw[shorten <= 2pt,shorten >= 1pt,->](c1a3).. controls +(180:8mm) and +(0:8mm).. (c1a1);
+\draw[shorten <= 1pt,shorten >= 0pt,->](c1dl1).. controls +(210:5mm) and +(210:5mm).. (c1a2);
+\draw[shorten <= 2pt,shorten >= 1pt,->](c1a4).. controls +(90:8mm) and +(90:8mm).. (c1a5);
+\draw[shorten <= 0pt,shorten >= 1pt,->](c1l1).. controls +(90:5mm) and +(90:5mm).. (c1a6);
+}
 \schemestop
 \end{center}
 \vspace{.5cm}
@@ -100,23 +104,29 @@ BASES avant tout !!!
 \vspace{.5cm}
 \begin{center}
 \schemestart
-\chemfig{R-~[::0]-[::0]H}
+\chemfig{R-~[:0,0.5pt]-[::0]H}
 \+
 \chemfig{Na_{(s)}}
 \arrow
-\chemfig{R-~[::0]\chemabove{\lewis{0,C}}{ \ominus}}
+\chemfig{R-~\chemabove{\lewis{0,C}}{ \ominus}}
 \+
 \chemfig{Na\oplus}
 \+
 $\frac{1}{2}$\chemfig{H_{2_{(g)}}}
 \schemestop
-
+\vspace{0.5cm}
 \schemestart
-\chemfig{R_1-C(-[::+60]R_2)(=[::-60]O)}
-\arrow{->[\chemfig{R-~[::0]\chemabove{\lewis{0,C}}{ \ominus}}][]}[,2]
-\chemfig{R_2-C(-[::90]R_1)(-~R)(-[:-90]\chemabove{\lewis{046,O}}{\quad \quad \ominus})}
-\arrow{->[\chemfig{H_2O}][-\chemfig{H\lewis{026,O}} $\ominus$]}
-\chemfig{R_2-C(-[::90]R_1)(-~R)(-[:-90]OH)}
+\chemfig{R_1-@{c2a1}C(-[::+60]R_2)(=[@{c2dl1}::-60]@{c2a2}O)}
+\arrow{->[\chemfig{@{c2a3}\chemabove{\lewis{4,C}}{ \ominus}~-[::0]R}][]}[,2]
+\chemfig{R_2-C(-[::-90]R_1)(-~[:0,0.5pt]-R)(-[:90]@{c2a4}\chemabove{\lewis{042,O}}{\quad \quad \ominus})}
+\arrow{->[\chemfig{@{c2a5}H-[@{c2l1}]@{c2a6}O-H}][-\chemfig{H\lewis{026,O}} $\ominus$]}
+\chemfig{R_2-C(-[::90]R_1)(-~[:0,0.5pt]-R)(-[:-90]OH)}
+\chemmove{
+\draw[shorten >= 2pt,shorten <= 2pt,->](c2a3).. controls +(180:8mm) and +(0:8mm).. (c2a1);
+\draw[shorten >= 0pt,shorten <= 1pt,->](c2dl1).. controls +(210:5mm) and +(210:5mm).. (c2a2);
+\draw[shorten >= 2pt,shorten <= 2pt,->](c2a4).. controls +(0:10mm) and +(180:10mm).. (c2a5);
+\draw[shorten >= 2pt,shorten <= 0pt,->](c2l1).. controls +(90:5mm) and +(90:5mm).. (c2a6);
+}
 \schemestop
 \end{center}
 \vspace{.5cm}
@@ -126,36 +136,47 @@ $\frac{1}{2}$\chemfig{H_{2_{(g)}}}
 \begin{center}
 \setcrambond{.2pt}{}{}
 \schemestart
-\chemname{\chemfig{\lewis{4,P}-P h_{3}}}{{\scriptsize triphénylphosphine}}
+\chemname{\chemfig{{(Ph)}_3@{c3a1}\lewis{2,P}}}{{\scriptsize triphénylphosphine}}
 \+
-\chemfig{-[::30]-[::-60]-[::60]Br}
+\chemfig{-[::30]-[::-60]@{c3a2}-[@{c3l1}::60]@{c3a3}Br}
 \arrow
 \chemfig{-[::30]-[::-60]-[::60]  \ \ \ \ \chemabove{P}{\oplus}{(Ph)}_3}
 \arrow{0}[,0]
 \+
 \chemfig{\chemabove{\lewis{0246,Br}}{\quad \ominus}}
+\chemmove{
+\draw[shorten >= 2pt,shorten <= 2pt,->](c3a1).. controls +(90:1cm) and +(90:1cm).. (c3a2);
+\draw[shorten >= 1pt,shorten <= 0pt,->](c3l1).. controls +(300:5mm) and +(270:5mm).. (c3a3);
+}
 \schemestop
 \vspace{.5cm}
 \setcrambond{.2pt}{}{}
 \schemestart
 \chemfig{\chemabove{\lewis{0246,Br}}{\quad \ominus}}
 \+
-\chemfig{-[::30]-[::-60]-[::60] \ \ \ \  \chemabove{P}{\oplus}{(Ph)}_3}
+\chemfig{-[::30]-[::-60]@{c3a4}(-[@{c3l2}:-90]@{c3a5}H)-[::60] \ \ \ \  \chemabove{P}{\oplus}{(Ph)}_3}
 \arrow{0}[,0]
 \+
-\chemfig{\lewis{4,\chemabove{Bu}{\quad \ominus}} \chemabove{Li}{\quad \oplus}}
+\chemfig{@{c3a6}\lewis{6,\chemabove{Bu}{\quad \ominus}}-[,,,,dash pattern=on 2pt off 2pt] \chemabove{Li}{\quad \oplus}}
 \arrow{->[- \chemfig{BuH_{(g)}}][- \chemfig{LiBr_{(s)}}]}
 \chemfig{-[::30]-[::-60]\lewis{5,\chemabove{C}{\ominus}}(-[::-60]H)--  \chemabove{P}{\oplus}{(Ph)}_3}
+\chemmove{
+\draw[shorten >= 2pt,shorten <= 0pt,->](c3l2).. controls +(180:4mm) and +(210:4mm).. (c3a4);
+\draw[shorten >= 0pt,shorten <= 2pt,->](c3a6).. controls +(270:8mm) and +(0:8mm).. (c3a5);
+}
 \schemestop
 \vspace{.5cm}
 \setcrambond{.2pt}{}{}
 \schemestart
-\chemfig{-[::30]-[::-60]\lewis{5,\chemabove{C}{\ominus}}(-[::-60]H)--  \chemabove{P}{\oplus}{(Ph)}_3}
-\arrow{->[\chemfig{(-[::120]-[::60])(-[::-120])=O}][\bsc{Wittig}]}
+\chemfig{-[::30]-[::-60]@{c3a7}\lewis{2,\chembelow{C}{\quad \ominus}}(-[::-60]H)--  \chemabove{P}{\oplus}{(Ph)}_3}
+\arrow{->[\chemfig{(@{c3a8}-[::120]-[::60])(-[::-120])=O}][\bsc{Wittig}]}
 \chemfig{O=\ P{(Ph)}_3}
 \arrow{0}[,0]
 \+
 \chemfig{(-[::120]-[::60])(-[::-120])=^-[::60]-}
+\chemmove{
+\draw[shorten >= 2pt,shorten <= 2pt,-stealth,thin,dash pattern= on 2pt off 2pt](c3a7).. controls +(90:1cm) and +(180:1cm).. (c3a8);
+}
 \schemestop
 \end{center}
 \vspace{1cm}
@@ -174,7 +195,7 @@ Avec des $\beta$-dicétones, liaisons Hydrogène :
 \schemestart
 \chemfig{(=[::120]O)(-[::-120])-(-[::-60])(=[::60]O)}
 \arrow{<=>}
-\chemfig{(-[::120]O-[::-100]H)(=[::-120])-(-[::-60])(=[::60]\lewis{3,O})}
+\chemfig{(-[::120]O-[::-100]H)(=^[::-120])-(-[::-60])(=[::60]\lewis{3,O})}
 \schemestop
 \end{center}
 \section{Énolate}
@@ -255,21 +276,32 @@ Sélectivité : obtention de $\chemfig{C=C}$ et $\chemfig{C=O}$ conjuguées, $\chem
 \begin{center}
 \textbf{En milieu basique}
 \schemestart
-\chemfig{-[::30](-[::60]OH)-[::-60](-[::-60]H)-[::60]=_[::-60]O}
-\arrow{<=>[\chemfig{H\lewis{026,O}} $\ominus$][-\chemfig{H_2O}]}
-\chemfig{-[::30](-[::60]OH)-[::-60]\lewis{6,\chembelow{C}{\quad \quad \ominus}}H-[::60]=_[::-60]O}
+\chemfig{-[::30](-[::60]OH)-[::-60]@{c4a1}(-[@{c4l1}::-60]@{c4a2}H)-[::60]=_[::-60]O}
+\arrow{<=>[\chemfig{@{c4a3}\lewis{426,O}H} $\ominus$][-\chemfig{H_2O}]}
+\chemfig{-[::30](-[@{c4l2}::60]@{c4a4}OH)-[@{c4l3}::-60]@{c4a5}\lewis{6,\chembelow{C}{\quad \quad \ominus}}H-[::60]=_[::-60]O}
 \arrow{<=>[E1Cb][-\chemfig{H\lewis{026,O}} $\ominus$]}
 \chemfig{-[::30]=_[::-60]-[::60]=_[::-60]O}
+	\chemmove{
+	\draw[->,shorten >= 0pt,shorten <= 2pt](c4a3).. controls 		+(180:20mm) and +(0:30mm).. (c4a2);
+	\draw[->,shorten >= 1pt,shorten <= 0pt](c4l1).. controls +(180:4mm) and +(210:4mm).. (c4a1);
+	\draw[->,shorten >= 2pt,shorten <= 2pt](c4a5).. controls +(270:8mm) and +(210:8mm).. (c4l3);
+	\draw[->,shorten >= 1pt,shorten <= 0pt](c4l2).. controls +(180:8mm) and +(180:8mm).. (c4a4);
+	}
 \schemestop
 \vspace{.7cm}
 \textbf{En milieu acide}
 \vspace{1cm}
 \schemestart
-\chemfig{-[::30](-[::60]OH)-[::-60]-[::60]=_[::-60]O}
-\arrow{<=>[\chemfig{\lewis{4|,\chemabove{H}{\oplus}}}][]}
-\chemfig{-[::30](-[::60]\chembelow{O}{\quad \oplus}H_2)-[::-60](-[::-60]H)-[::60]=_[::-60]O}
+\chemfig{-[::30](-[::60]@{c5a1}\lewis{24,O}H)-[::-60]-[::60]=_[::-60]O}
+\arrow{<=>[\chemfig{@{c5a2}\lewis{4|,\chemabove{H}{\oplus}}}][]}
+\chemfig{-[::30](-[@{c5l1}::60]@{c5a3}\chembelow{O}{\quad \oplus}H_2)-[@{c5l2}::-60](-[@{c5l3}::-60]H)-[::60]=_[::-60]O}
 \arrow{<=>[E1][- \chemfig{\lewis{4|,\chembelow{H}{\oplus}}}-\chemfig{H_2O}]}
 \chemfig{-[::30]=_[::-60]-[::60]=_[::-60]O}
+	\chemmove{
+	\draw[->,shorten >= 4pt,shorten <= 2pt](c5a1).. controls +(90:10mm) and +(180:15mm).. (c5a2);
+	\draw[->,shorten >= 1pt,shorten <= 0pt](c5l1).. controls +(180:4mm) and +(210:4mm).. (c5a3);
+	\draw[->,shorten >= 1pt,shorten <= 0pt](c5l3).. controls +(180:4mm) and +(210:4mm).. (c5l2);
+}
 \schemestop
 \end{center}
 \section{C-Alkylation}
@@ -294,13 +326,17 @@ Préparation : par réaction de \textbf{Crotonisation} ou par oxydation des alcool
 \schemestart
 \chemleft[
 \subscheme{
-\chemfig{(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))=O}
+\chemfig{(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))=[@{c6dl2}]@{c6a1}O}
 \arrow{<->}
-\chemfig{\lewis{1|,\chembelow{C}{\quad \oplus}}(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \ominus}}}
+\chemfig{\lewis{1|,\chembelow{C}{\quad \oplus}}(-[::-120])(-[@{c6l1}::120](=^[@{c6dl1}::60](-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \ominus}}}
 \arrow{<->}
 \chemfig{(-[::-120])(=^[::120](-[::60]\lewis{1|,\chembelow{C}{\quad \oplus}}(-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \ominus}}}
 }
 \chemright]
+\chemmove{
+\draw[->,shorten <= 1pt, shorten >= 0pt](c6dl2).. controls +(90:5mm) and +(90:5mm).. (c6a1);
+\draw[->,shorten <= 2pt, shorten >= 1pt](c6dl1).. controls +(270:4mm) and +(180:4mm).. (c6l1);
+}
 \schemestop
 
 \vspace{1cm}
@@ -381,23 +417,34 @@ Addition 1-4 suivie d'une C-Alkylation.
 \end{center}
 \section{Annélation de \bsc{Robinson}}
 \begin{center}
-Cyclisation à 6 chaînons. $\beta$-dicétone (cétoester) $+$ $\alpha$-énone.
+Cyclisation à 6 chaînons. $\beta$-dicétone (ou cétoester) $+$ $\alpha$-énone.
 \end{center}
 \begin{center}
 \schemestart
-\chemfig{*6(--(=O)-(-)(-[::-120]H)-(=O)--)}
-\arrow{->[\chemfig{Et\lewis{062,O}} \! $\ominus$][\chemfig{EtOH}]}
-\chemfig{*6(--(=O)-\lewis{7,\chemabove{C}{ \ominus}}(-)-(=O)--)}
-\arrow{->[\chemfig{=^[::-30]-[::60](-[::60])=[::-60]O}][]}[,2]
+\chemfig{*6(--(=O)-@{c7a1}(-)(-[@{c7l1}::-120]@{c7a2}H)-(=O)--)}
+\arrow{->[\chemfig{Et-@{c7a3}\lewis{062,O}} \! $\ominus$][\chemfig{EtOH}]}
+\chemfig{*6(--(=O)-@{c7a4}\lewis{7,\chemabove{C}{ \ominus}}(-)-(=O)--)}
+\arrow{->[\chemfig{@{c7a5}=^[@{c7dl1}::-30]-[@{c7l2}::60](-[::60])=[@{c7dl2}::-60]@{c7a6}O}][]}[,2]
 \chemfig{*6(--(=O)-(-)(-[::-120]-[::60]=^[::60](-[::60])(-[::-60]\lewis{137,\chemabove{O}{ \ominus}}))-(=O)--)}
+\chemmove{
+\draw[->,shorten <= 0pt, shorten >= 2pt](c7l1).. controls +(30:4mm) and +(0:2mm).. (c7a1);
+\draw[->,shorten <= 2pt, shorten >= 2pt](c7a3).. controls +(90:10mm) and +(60:10mm).. (c7a2);
+\draw[->,shorten <= 3pt, shorten >= 2pt](c7a4).. controls +(330:10mm) and +(210:10mm).. (c7a5);
+\draw[->,shorten <= 2pt, shorten >= 2pt](c7dl1).. controls +(30:4mm) and +(150:4mm).. (c7l2);
+\draw[->,shorten <= 2pt, shorten >= 0pt](c7dl2).. controls +(30:6mm) and +(45:6mm).. (c7a6);
+}
 \schemestop
 \vspace{1cm}
 \schemestart
 \arrow{->[\chemfig{EtOH}][-\chemfig{Et\lewis{062,O}} \! $\ominus$]}[,1.2]
 \chemfig{*6(--(=O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_3 C)(=[::-60]O))-(=O)--)}
 \arrow{->[\chemfig{Et\lewis{062,O}} \! $\ominus$][-\chemfig{EtOH}]}[,1.2]
-\chemfig{*6(--(=O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_2 \lewis{2,\chemabove{C}{\quad \ominus}})(=[::-60]O))-(=O)--)}
+\chemfig{*6(--@{c8a2}(=[@{c8dl1}]@{c8a3}O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_2 @{c8a1}\lewis{1,\chemabove{C}{\ominus}})(=[::-60]O))-(=O)--)}
 \arrow{<=>[Cétolisation][Intramoléculaire]}[,2]
+\chemmove{
+\draw[->,shorten <= 3pt, shorten >= 3pt,red](c8a1).. controls +(50:6cm) and +(280:5cm).. (c8a2);
+\draw[->,shorten <= 2pt, shorten >= 0pt](c8dl1).. controls +(30:6mm) and +(45:6mm).. (c8a3);
+}
 \schemestop
 \vspace{1cm}
 \schemestart
