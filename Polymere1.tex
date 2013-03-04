@@ -81,4 +81,53 @@
 			\\ \underline{Exemple : formation de polyuréthanes} \\ \\
 			\footnotesize \schemestart n \chemfig{[,0.7]O=C=N-R-N=C=O} \chemsign{+} n \chemfig{[,0.7]HO-R'-OH} \arrow \chemfig{[,0.7]-[@{op,.5}]CO-NH-R-NH-CO-O-R'-O-[@{cl,.5}]}   \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop
 			
-\section{Polymérisation en chaîne}		
+\section{Polymérisation en chaîne}	
+	\subsection{Caractères généraux}	
+Il y a nécessité d'avoir un centre actif (radical, ion, liaison C-métal...). La construction de la molécule se réalise pas à pas, c'est-à-dire que la chaîne croît d'une unité à chaque réaction \schemestart \chemfig{M_n^{\star}} \chemsign{+} \arrow \chemfig{M_{n+1^{\star}}}  \schemestop (la $\star$ indique que l'extrémité de la chaine est activée). Lors d'un mécanisme de type radicalaire, les durées de vies des chaînes sont courtes, d'environs 1s. a durée de la construction d'une macromolécule par voie radicalaire est très faible devant la durée de réaction. \\
+Il s'agit d'une réaction en chaîne qui comprend les étapes habituelles : \\ \begin{itemize}
+\item Amorçage (naissance de la chaîne)
+\item Propagation (croissance de la chaîne)
+\item Terminaison (fin de la chaîne)
+\end{itemize}
+	\subsection{Polymérisation radicalaire homogène}
+Le milieu réactionnel est en général constitué d'un monomère vinylique (\chemfig{R-CH=CH_2}) dans lequel il est dissous un marcheur (molécule capable de générer des radicaux libres sous l'action de la chaleur ou de la lumière et d'amorcer une réaction en chaîne). Dans un certain nombre de cas, le milieu de polymérisation contient également un solvant. \\
+	\begin{tabular}{|r|r|r|r|} \hline
+		\textbf{Monomère} & \textbf{Formule} & \textbf{Monomère} & \textbf{Formule} \\\hline
+		\textit{éthylène} & \chemfig{[,0.6]CH_2=CH_2} & propylène & \chemfig{[,0.6]CH_2=CH-CH_3} \\\hline
+		\textit{styrène} & \chemfig{[,0.6]CH_2=CH-Ph} & chlorure de vinyle & \chemfig{[,0.6]CH_2=CH-Cl} \\\hline
+		isoprène & \chemfig{[,0.6]CH_2-C(-[:-90]CH_3)-CH=CH_2} & \textit{butadiène} & \chemfig{[,0.6]CH_2=CH-CH=CH_2} \\\hline
+		méthacrylate de méthyle & \chemfig{[,0.6]CH_2=C(-[:-90]Me)-C(=[:-90]O)-O-CH_3} & acrylonitrile & \chemfig{[,0.6]CH_2=CH-CN} \\\hline \end{tabular} 
+		(les composés en italique sont à connaitre par coeur)
+		\subsubsection{Mécanisme}
+	\begin{enumerate}
+		\item Mécanisme
+			\begin{itemize}
+\item Amorçage : On se limite ici aux amorçages thermiques. Cette phase comporte généralement, deux réactions successives symbolisées par : \\ 
+\begin{itemize}
+\item la décomposition homolytique de l'amorceur : \schemestart \chemfig{A} \arrow 2\chemfig{\lewis{1.,I}} \schemestop	\\
+	 de constante de vitesse $k_d$
+\item la réaction d'un radical ainsi obtenu avec une molécule de monomère : \schemestart \chemfig{\lewis{1.,I}} \chemsign{+} \chemfig{M} \arrow \chemfig{\lewis{2.,R_1}} \schemestop \\ de constante de vitesse $k_a$
+\item Cependant, en raison de la proximité des deux radicaux \lewis{1.,I} au moment e leur apparition ainsi que de la vitesse relativement élevée d'une possible réaction entre ces deux radicaux, il se produit la réaction \schemestart 2\chemfig{\lewis{1.,I}} \arrow \chemfig{I-I} \schemestop \\ de constante de vitesse $k_c$ : une fraction non-négligeable des molécules d'amorceur ne participe pas à la formation de chaînes polymères. La proportion d'amorcer réellement actif est appelée facteur d'efficacité ou efficacité de l'amorceur et est notée f (compris entre 0,3 et 0,8)
+\end{itemize}
+La vitesse globale d'amorçage s'écrit $v_a = 2f.k_d.[A]$ (on applique l'AEQS à \lewis{1.,I} et on écrit que $v_d-v_c=f.v_d$)
+\end{itemize}			
+\item Propagation : étape principale, elle est $10^3$ à $10^4$ fois plus fréquente que l'amorçage ou la terminaison
+\\ \underline{Exemple}
+\schemestart \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[:40]-[:-40]@{rad1}\lewis{2.,C}-[:-90]X} \chemfig{@{ar1}\vphantom{C}} \chemsign{+} \chemfig{H_2C=[@{db}]@{rad2}CH(-[:-90]X)} \arrow \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[:40]-[:-40](-[:-90]X)-[:40]-[:-40]\lewis{1.,C}-[:-90]X}
+\chemmove{\draw[->](rad1)..controls +(100:5mm) and +(145:5mm)..(ar1);
+ \draw[->](db)..controls +(90:7mm) and +(45:4mm)..(ar1);
+ \draw[->](db)..controls +(90:4mm) and +(90:4mm)..(rad2);}
+ \schemestop
+
+
+\schemestart \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[@{op1}:40]-[:-40](-[:-90]X)-[@{cl1}:40]-[:-40]@{rad1}\lewis{2.,C}-[:-90]X} \chemfig{@{ar1}\vphantom{C}} \chemsign{+} \chemfig{H_2C=[@{db}]@{rad2}CH(-[:-90]X)} \arrow \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[@{op2}:40]-[:-40](-[:-90]X)-[@{cl2}:40]-[:-40]\lewis{1.,C}-[:-90]X}
+\chemmove{\draw[->](rad1)..controls +(100:5mm) and +(145:5mm)..(ar1);
+ \draw[->](db)..controls +(90:7mm) and +(45:4mm)..(ar1);
+ \draw[->](db)..controls +(90:4mm) and +(90:4mm)..(rad2);}
+ \makebraces[5pt,5pt]{\!\!n-1}{op1}{cl1}
+  \makebraces[5pt,5pt]{\!\!n}{op2}{cl2} \schemestop
+  
+  Remarque : on peut observer deux types d'additions \\
+  \schemestart \chemfig{R-[:40]-[:-40]\lewis{2.,C}-[:-90]X} \chemsign{+} \chemfig{H_2C=CH} \arrow[25]
+  \schemestop
+\end{enumerate}
