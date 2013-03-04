@@ -3,17 +3,23 @@
 	\subsection{Structure}
 		\begin{itemize}
 			\item Macromolécule : Une macromolécule est une molécule de masse molaire élevée (typiquement de l'ordre de $10^3$ g.mol$^{-1}$) issue de l'assemblage cavalent d'un grand nombre d'unités de répétition appelées \underline{unités constitutifs}, qui sont différents des monomères
-			\item \underline{Exemple} Pour le polystyrène, le monomère est le styrène : \chemfig{[:-30,0.7]*6(=-=(-=[:-30])-=-)} et l'unité de répétition est \chemfig{[,0.7]*6(=-=-(-[:90]CH(-[:180]H_2C))=-)}
+			\item \underline{Exemple} Pour le polystyrène, le monomère est le styrène : \chemfig{[:-30,0.7]*6(=-=(-=[:-30])-=-)} 
+			
+			et l'unité de répétition est \chemfig{[,0.7]*6(=-=-(-[:90]CH(-[:180]H_2C))=-)}
 			\item Polymère : Un polymère est une substance composée de macromolécules ne comportant pas toutes le même nombre d'unités de répétition. On distingue les homopolymères qui sont formés à partir d'un unique type de monomère (ou par certaines polymérisation par étape) et les copolymères qui sont formés à partir de différents monomères
-			\item  Les polymères à connaitre :  \\ 
-										\begin{tabular}{|c|l|l|} \hline
+			\item  Les polymères à connaitre :
+			\end{itemize}  
+			
+										\begin{center}
+\begin{tabular}{|c|l|c|} \hline
 			Unités de répétition & Désignation courante & Sigle \\ \hline
 			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](\vphantom{-[:-90]})-[:30]-[@{cl,0.5}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polyéthylène & PE \\ \hline
 			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6](\vphantom{-[:-90,1.5]}))-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polypropylène & PP  \\ \hline
 			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6]Ph\vphantom{-[:-90,1.5]})-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polystyrène & PS \\ \hline
 			\chemfig{\vphantom{CH_2}-[@{op,.5}:-30](-[:-90,0.6]Cl\vphantom{-[:-90,1.5]})-[:30]-[@{cl,0.75}:-30]} \makebraces[10pt,5pt]{\!\!n}{op}{cl} & Polychlorure de vinyle & PVC \\ \hline										\end{tabular}
+\end{center}
 			
-		\end{itemize}
+		
 	\subsection{Caractéristiques moléculaires des polymères linéaires}
 		\begin{itemize}
 			\item Le \underline{degré de polymérisation} (DP) X est le nombre d'unités monomères constituant la macromolécule. Dans le cas des exemples du paragraphe précédent, pour le polypropylène, X = n. 
@@ -46,80 +52,109 @@
 			\item \underline{Polymérisation par étape} : Les monomères sont de réactivité antagonistes et souvent bifonctionnels. La polymérisation opère par couple d'oligocène de plus en plus grands. \\
 		\begin{center}	\schemestart \chemfig{M_i} \chemsign{+} \chemfig{M_j} \arrow \chemfig{M_{i+j}}  \schemestop \end{center}
 			\underline{Exemple} Avec \small \chemfig{[,0.9]C(=[:120]O)(-[:-120]HO)-[@{op,.5}]CH_2-[@{cl,.5}]NH_2} \makebraces[10pt,5pt]{\!\!5}{op}{cl} \normalsize il peut se former de longue chaînes d'amides. 
+			\\
 			\item \underline{Polymérisation en chaîne} : pour ce type de polymérisation, il y a nécessité de créer un centre actif (radical, ion) par activation d'un monomère. La construction de la chaine se réalise pas à  pas 
 			\begin{center}	\schemestart \chemfig{M_n^{\star}} \chemsign{+} \chemfig{M} \arrow \chemfig{M_{n+1}^{\star}}  \schemestop \end{center} \end{itemize}
 \section{Polymérisation par étapes} 
 	\subsection{Exemples}
-		\begin{itemize}
-\item \underline{Formation du PET} \\ \\
-	\footnotesize \schemestart[,0.7,] n \chemfig{[,0.5](=[:120]O)(-[:-120]HO)-*6(=-=(-(=[:60]O)-[:-60]OH)-=-)} \chemsign{+} n \chemfig{[,0.5]HO-[:30]CH_2-[:-30]CH_2-[:30]OH} \arrow \chemfig{[,.5]-[@{op,0.5}:30](=[:90]O)-*6(=-=(-(=[:90]O)-[:-30]O-[:30]CH_2-[:-30]CH_2-[:30]O-[@{cl,.5}:-30])-=-)}  \makebraces[10pt,3pt]{\!\!n}{op}{cl} \chemsign{+} 2n \chemfig{H_2O} \schemestop \normalsize
-\item \underline{Formation du nylon 6-6} \\ 
-\footnotesize \schemestart[,0.7,] n \chemfig{[,0.9]C(=[:120]O)(-[:-120]HO)-{(CH_2)_4}-C(-[:-60]OH)=[:60]O} \chemsign{+} \chemfig{[,0.9]H_2N-{(CH_2)_6}-NH_2} \arrow \chemfig{[,0.9]C(-[:-120]NH(-[@{op,.5}:180]))(=[:120]O)-{(CH_2)_4}-C(=[:60]O)-[:-60]NH-{(CH_2)_6}-[@{cl,.6}]} \chemsign{+} 2n \chemfig{[,0.9]H_2O} \makebraces[50pt,5pt]{\!\!n}{op}{cl}  \schemestop \par
-		\end{itemize}
+
+\underline{Formation du PET}
+\begin{center}
+\footnotesize \schemestart[,0.7,] 
+n \chemfig{[,0.5](=[:120]O)(-[:-120]HO)-*6(=-=(-(=[:60]O)-[:-60]OH)-=-)} 
+\chemsign{+} 
+n \chemfig{[,1]HO-[:30]CH_2-[:-30]CH_2-[:30]OH} 
+\arrow 
+\chemfig{[,.5]-[@{op,0.5}:30](=[:90]O)-*6(=-=(-(=[:90]O)-[:-30]O-[:30]CH_2-[:-30,1]CH_2-[:30,1]O-[@{cl,.5}:-30])-=-)}  
+\makebraces[10pt,3pt]{\!\!n}{op}{cl} 
+\chemsign{+} 
+2n \chemfig{H_2O} 
+\schemestop \normalsize
+\end{center}
+
+\vspace{0.5cm}
+\underline{Formation du nylon 6-6}
+\begin{center}
+\footnotesize \schemestart[,0.7,] n \chemfig{[,0.9]C(=[:120]O)(-[:-120]HO)-[,1]{(CH_2)_4}-[,1]C(-[:-60]OH)=[:60]O} \chemsign{+} \chemfig{[,0.9]H_2N-[,1]{(CH_2)_6}-[,1]NH_2} \arrow \chemfig{[,0.9]C(-[:-120]NH(-[@{op,.5}:180]))(=[:120]O)-[,1]{(CH_2)_4}-[,1]C(=[:60]O)-[:-60]NH-[,1]{(CH_2)_6}-[@{cl,.6},1]} \chemsign{+} 2n \chemfig{[,0.9]H_2O} \makebraces[50pt,5pt]{\!\!n}{op}{cl}  \schemestop \par
+\end{center}
+
 	\subsection{Fonctions réactives et fonctionnalités}
 		\begin{itemize}
 			\item \underline{Fonctions réactives} Les polymères sont synthétisés en reliant des molécules de monomères entre elles par des liaisons chimiques covalentes. Cette réactivité chimique des monomères résulte de la présence sur ceux-ci de groupes fonctionnels (soit des fonctions réactives) capables de former des liaisons chimiques avec les groupes fonctionnels d'autre molécules de monomères.
 			\item \underline{Site réactif} Chaque groupe fonctionnel contient un pou plusieurs sites réactifs capable de former une liaison chimique avec un rature molécule de monomère
 			\item \underline{Fonctionnalité d'un monomère} : il s'agit du nombre de sites réactifs de ce monomère. Si un monomère ou un mélange de monomère possède une fonctionnalité moyenne inférieure à 2, il ne se forme que des composés de faible masse moléculaire ou des oligomères non-utilisables comme matériaux. Si la fonctionnalité est égale à 2, on peut avoir accès à des polymères linéaires. La polymérisation de mélanges de monomères ayant une fonctionnalité moyenne supérieure à 2 entraîne la formation de réseaux tridimensionnels.
-			\item  \bigskip \begin{tabular}{|l|l|l|} \hline
-				\textbf{Groupe} & \textbf{Structure} & \textbf{Fonctionnalité} \\ \hline
+			\end{itemize}
+			\begin{center}
+\bigskip \begin{tabular}{|c|c|c|} \hline
+				\textbf{Groupe} & \textbf{Structure} & \textbf{Fonctionnalité} \\ \hline
 			Vinyle & \chemfig{[,0.6]C=C} & 2 \\ \hline
 			Hydroxyle & \chemfig{[,0.6]C-OH} & 1 \\ \hline
 			Carbonyle & \chemfig{[,0.6]C=O} & 2 \\ \hline
 			Oxyrane & \chemfig{[:-30,0.6]C*3(-C-O-[,0.6])} & 2 \\ \hline
 			Amino & \chemfig{[,0.6]-NH2} & 1 (ou 2) \\ \hline
 						\end{tabular}
-		\end{itemize}
+\end{center}
 	\subsection{Mécanisme général}
 		\subsubsection{Polycondensation}
 			Il s'agit d'une polymérisation par étapes, dans laquelle la croissance des chaînes résulte de réactions de condensation (c'est-à-dire addition suivie d'élimination d'une petite molécule, généralement de l'eau)
-			\\ \underline{Exemple : formation de polyester} \\ \\ 
-			\footnotesize	\schemestart n \chemfig{[,0.6]HO-C(=[:-90]O)-R-C(=[:-90]O)-OH} \chemsign{+} n \chemfig{[,0.6]HO-R'-OH} \arrow{<->} \chemfig{[,0.6]-[@{op,0.5}]C(=[:-90]O)-R-C(=[:-90]O)-O-R'-O-[@{cl,.5}]} \chemsign{+} 2n \chemfig{H_2O} \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop \normalsize En travaillant avec un excès de diol et en éliminant l'eau au fur et à mesure de sa formation, on déplace l'équilibre. Avec un chlorure d'acyle, on travaille en présence de base pour éliminer \chemfig{HCl}. 
+			\\ \underline{Exemple : formation de polyester} 
+			\begin{center}
+\footnotesize	\schemestart n \chemfig{[,0.6]HO-C(=[:-90]O)-R-C(=[:-90]O)-OH} \chemsign{+} n \chemfig{[,0.6]HO-R'-OH} \arrow{<->} \chemfig{[,0.6]-[@{op,0.5}]C(=[:-90]O)-R-C(=[:-90]O)-O-R'-O-[@{cl,.5}]} \chemsign{+} 2n \chemfig{H_2O} \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop \normalsize 
+\end{center}
+			En travaillant avec un excès de diol et en éliminant l'eau au fur et à mesure de sa formation, on déplace l'équilibre. Avec un chlorure d'acyle, on travaille en présence de base pour éliminer \chemfig{HCl}. 
 			On peut de même former des polyamides en utilisant des diamines et de diacides carboxyliques. 
 		\subsubsection{Polyaddition}
 			Il s'agit de polymérisation par étapes, dans laquelle la croissance des chaînes résulte de réactions d'addition, sans élimination d'une molécule de faible masse
-			\\ \underline{Exemple : formation de polyuréthanes} \\ \\
-			\footnotesize \schemestart n \chemfig{[,0.7]O=C=N-R-N=C=O} \chemsign{+} n \chemfig{[,0.7]HO-R'-OH} \arrow \chemfig{[,0.7]-[@{op,.5}]CO-NH-R-NH-CO-O-R'-O-[@{cl,.5}]}   \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop
+			\\ \underline{Exemple : formation de polyuréthanes}
+			\begin{center}
+\footnotesize \schemestart n \chemfig{[,0.7]O=C=N-R-N=C=O} \chemsign{+} n \chemfig{[,0.7]HO-R'-OH} \arrow \chemfig{[,0.7]-[@{op,.5}]CO-NH-R-NH-CO-O-R'-O-[@{cl,.5}]}   \makebraces[10pt,5pt]{\!\!n}{op}{cl} \schemestop
+\end{center}
 			
 \section{Polymérisation en chaîne}	
 	\subsection{Caractères généraux}	
-Il y a nécessité d'avoir un centre actif (radical, ion, liaison C-métal...). La construction de la molécule se réalise pas à pas, c'est-à-dire que la chaîne croît d'une unité à chaque réaction \schemestart \chemfig{M_n^{\star}} \chemsign{+} \arrow \chemfig{M_{n+1^{\star}}}  \schemestop (la $\star$ indique que l'extrémité de la chaine est activée). Lors d'un mécanisme de type radicalaire, les durées de vies des chaînes sont courtes, d'environs 1s. a durée de la construction d'une macromolécule par voie radicalaire est très faible devant la durée de réaction. \\
-Il s'agit d'une réaction en chaîne qui comprend les étapes habituelles : \\ \begin{itemize}
+Il y a nécessité d'avoir un centre actif (radical, ion, liaison C-métal...). La construction de la molécule se réalise pas à pas, c'est-à-dire que la chaîne croît d'une unité à chaque réaction \schemestart \chemfig{M_n^{\star}} \chemsign{+} \arrow \chemfig{M_{n+1^{\star}}}  \schemestop (la $\star$ indique que l'extrémité de la chaine est activée). Lors d'un mécanisme de type radicalaire, les durées de vies des chaînes sont courtes, d'environs 1s. a durée de la construction d'une macromolécule par voie radicalaire est très faible devant la durée de réaction. \\
+Il s'agit d'une réaction en chaîne qui comprend les étapes habituelles : \\ \begin{itemize}
 \item Amorçage (naissance de la chaîne)
 \item Propagation (croissance de la chaîne)
 \item Terminaison (fin de la chaîne)
 \end{itemize}
 	\subsection{Polymérisation radicalaire homogène}
 Le milieu réactionnel est en général constitué d'un monomère vinylique (\chemfig{R-CH=CH_2}) dans lequel il est dissous un marcheur (molécule capable de générer des radicaux libres sous l'action de la chaleur ou de la lumière et d'amorcer une réaction en chaîne). Dans un certain nombre de cas, le milieu de polymérisation contient également un solvant. \\
-	\begin{tabular}{|r|r|r|r|} \hline
+	\begin{center}
+\begin{tabular}{|c|c|c|c|} \hline
 		\textbf{Monomère} & \textbf{Formule} & \textbf{Monomère} & \textbf{Formule} \\\hline
 		\textit{éthylène} & \chemfig{[,0.6]CH_2=CH_2} & propylène & \chemfig{[,0.6]CH_2=CH-CH_3} \\\hline
 		\textit{styrène} & \chemfig{[,0.6]CH_2=CH-Ph} & chlorure de vinyle & \chemfig{[,0.6]CH_2=CH-Cl} \\\hline
 		isoprène & \chemfig{[,0.6]CH_2-C(-[:-90]CH_3)-CH=CH_2} & \textit{butadiène} & \chemfig{[,0.6]CH_2=CH-CH=CH_2} \\\hline
 		méthacrylate de méthyle & \chemfig{[,0.6]CH_2=C(-[:-90]Me)-C(=[:-90]O)-O-CH_3} & acrylonitrile & \chemfig{[,0.6]CH_2=CH-CN} \\\hline \end{tabular} 
-		(les composés en italique sont à connaitre par coeur)
+\end{center}
+		(les composés en \textit{italique} sont à connaitre par coeur)
 		\subsubsection{Mécanisme}
 	\begin{enumerate}
 		\item Mécanisme
 			\begin{itemize}
-\item Amorçage : On se limite ici aux amorçages thermiques. Cette phase comporte généralement, deux réactions successives symbolisées par : \\ 
+\item \textbf{Amorçage} : On se limite ici aux amorçages thermiques. Cette phase comporte généralement, deux réactions successives symbolisées par : \\ 
 				\begin{itemize}
 					\item la décomposition homolytique de l'amorceur : \schemestart \chemfig{A} \arrow 2\chemfig{\lewis{1.,I}} \schemestop	\\
-	 de constante de vitesse $k_d$
-					\item la réaction d'un radical ainsi obtenu avec une molécule de monomère : \schemestart \chemfig{\lewis{1.,I}} \chemsign{+} \chemfig{M} \arrow \chemfig{\lewis{2.,R_1}} \schemestop \\ de constante de vitesse $k_a$
-					\item Cependant, en raison de la proximité des deux radicaux \lewis{1.,I} au moment e leur apparition ainsi que de la vitesse relativement élevée d'une possible réaction entre ces deux radicaux, il se produit la réaction \schemestart 2\chemfig{\lewis{1.,I}} \arrow \chemfig{I-I} \schemestop \\ de constante de vitesse $k_c$ : une fraction non-négligeable des molécules d'amorceur ne participe pas à la formation de chaînes polymères. La proportion d'amorcer réellement actif est appelée facteur d'efficacité ou efficacité de l'amorceur et est notée f (compris entre 0,3 et 0,8)
+	 de constante de vitesse $k_d$.
+					\item la réaction d'un radical ainsi obtenu avec une molécule de monomère : \begin{center}
+\schemestart \chemfig{\lewis{1.,I}} \chemsign{+} \chemfig{M} \arrow \chemfig{\lewis{2.,R_1}} \schemestop \end{center} 
+de constante de vitesse $k_a$.
+					\item Cependant, en raison de la proximité des deux radicaux \lewis{1.,I} au moment e leur apparition ainsi que de la vitesse relativement élevée d'une possible réaction entre ces deux radicaux, il se produit la réaction \schemestart 2\chemfig{\lewis{1.,I}} \arrow \chemfig{I-I} \schemestop \\ de constante de vitesse $k_c$ : une fraction non-négligeable des molécules d'amorceur ne participe pas à la formation de chaînes polymères. La proportion d'amorcer réellement actif est appelée facteur d'efficacité ou efficacité de l'amorceur et est notée f (compris entre 0,3 et 0,8).
 				\end{itemize}
 La vitesse globale d'amorçage s'écrit $v_a = 2f.k_d.[A]$ (on applique l'AEQS à \lewis{1.,I} et on écrit que $v_d-v_c=f.v_d$)			
-			\item Propagation : étape principale, elle est $10^3$ à $10^4$ fois plus fréquente que l'amorçage ou la terminaison
+			\item \textbf{Propagation} : étape principale, elle est $10^3$ à $10^4$ fois plus fréquente que l'amorçage ou la terminaison.
 \\ \underline{Exemple}
+\begin{center}
 \schemestart \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[:40]-[:-40]@{rad1}\lewis{2.,C}-[:-90]X} \chemfig{@{ar1}\vphantom{C}} \chemsign{+} \chemfig{H_2C=[@{db}]@{rad2}CH(-[:-90]X)} \arrow \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[:40]-[:-40](-[:-90]X)-[:40]-[:-40]\lewis{1.,C}-[:-90]X}
 \chemmove{
 \draw[->](rad1)..controls +(100:5mm) and +(145:5mm)..(ar1);
  \draw[->](db)..controls +(90:7mm) and +(45:4mm)..(ar1);
  \draw[->](db)..controls +(90:4mm) and +(90:4mm)..(rad2);}
  \schemestop
+\end{center}
 
-
+\begin{center}
 \schemestart \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[@{op1}:40]-[:-40](-[:-90]X)-[@{cl1}:40]-[:-40]@{rad1}\lewis{2.,C}-[:-90]X} \chemfig{@{ar1}\vphantom{C}} \chemsign{+} \chemfig{H_2C=[@{db}]@{rad2}CH(-[:-90]X)} \arrow \chemfig{(-[:-140]Ph)(=[:90]O)-[:-40]O-[@{op2}:40]-[:-40](-[:-90]X)-[@{cl2}:40]-[:-40]\lewis{1.,C}-[:-90]X}
 \chemmove{
 \draw[->](rad1)..controls +(100:5mm) and +(145:5mm)..(ar1);
@@ -127,30 +162,41 @@ La vitesse globale d'amorçage s'écrit $v_a = 2f.k_d.[A]$ (on applique l'AEQS à \
  \draw[->](db)..controls +(90:4mm) and +(90:4mm)..(rad2);}
  \makebraces[5pt,5pt]{\!\!n-1}{op1}{cl1}
   \makebraces[5pt,5pt]{\!\!n}{op2}{cl2} \schemestop
-  
-   Remarque : on peut observer deux types d'additions \\
+\end{center}
+\vspace{0.3cm}
+   Remarque : on peut observer deux types d'additions :
   \definesubmol{e}{-[,.1,,,draw=none]}
+\begin{center}
 \schemestart \chemfig{R-[:30]-[:-30](!e\lewis{0.,})-[:-90]X} 
 \+ 
 \chemfig{H_2C=CH-[:-90]X}
-\arrow(E.0--F.180){->[Tête à queue][]}[25,2]
+\arrow(E.0--F.180){->[Tête à queue][]}[20,2]
 \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30]-[:-30](!e\lewis{0.,})-[:-90]X}
-\arrow(@E.0--G.180){->[Tête à tête][(rare)]}[-25,2]
+\arrow(@E.0--G.180){->[Tête à tête][(rare)]}[-20,2]
 \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30](-[:90]X)-[:-30](!e\lewis{0.,})}
 \schemestop
+\end{center}
+\vspace{0.3cm}
 L'addition tête à queue est généralement favorisée (stabilisation par résonance et effets stériques), dans le cas du styrène, on a 100\% d'addition tête à queue.
-\item Terminaison : La polymérisation radicalaire se termine par rencontre et désactivation 2 à 2 des centres propagateurs. \\ 
+\item Terminaison : La polymérisation radicalaire se termine par rencontre et désactivation 2 à 2 des centres propagateurs. 
+\begin{center}
 \schemestart 2 \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30]-[:-30](!e\lewis{0.,})-[:-90]X}
 \arrow(E.0--F.180){->[addition][]}[25,2] \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30]-[:-30](-[:-90]X)-[:40](-[:90]X)-[:-40]-[:40](-[:90]X)-[:-40]-[:40]R} 
 \arrow(@E.0--G.180){->[dismutation]}[-25,2] \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30]-[:-30]-[:-90]X} \+ \chemfig{R-[:30]-[:-30](-[:-90]X)-[:30]=[:-30]-[:-90]X}
  \schemestop
+\end{center}
+\vspace{0.3cm}
  Dans le cas du styrène, l'addition est prédominante (85\%)
- \item Transfert : Il s'agit d'actes très fréquents en polymérisation réticulaire et souvent non-désirés
- \schemestart \chemfig{R-[:30]-[:-30](!e\lewis{0.,})-[:-90]X} \+ TH \arrow \chemfig{R-[:30]-[:-30]-[:-90]X}+\lewis{1.,T} \schemestop \\
- \lewis{1.,T} peut amorcer la formation d'une nouvelle chaîne. TH peut être l'amorcer, le monomère, le solvant ou le polymère (dans ce cas les ramifications sont possibles)
+ \item \textbf{Transfert} : Il s'agit d'actes très fréquents en polymérisation réticulaire et souvent non-désirés
+ \begin{center}
+\schemestart \chemfig{R-[:30]-[:-30](!e\lewis{0.,})-[:-90]X} \+ TH \arrow \chemfig{R-[:30]-[:-30]-[:-90]X}+\lewis{1.,T} \schemestop
+\end{center}
+\vspace{0.3cm}
+ \lewis{1.,T} peut amorcer la formation d'une nouvelle chaîne. TH peut être l'amorcer, le monomère, le solvant ou le polymère (dans ce cas les ramifications sont possibles).
 		 \end{itemize}
- \item Cinétique  : Le mécanisme de la polymérisation habituellement proposé pour un taux d'avancement faible, est : \\ 
- 	\begin{tabular}{lcr} Amorcage & \schemestart \chemfig{A} \arrow 2 \chemfig{I}  \schemestop & $k_d$ \\ 
+ \item \underline{Cinétique  :} Le mécanisme de la polymérisation habituellement proposé pour un taux d'avancement faible, est : \\ 
+ 	\begin{center}
+\begin{tabular}{lcr} Amorcage & \schemestart \chemfig{A} \arrow 2 \chemfig{I}  \schemestop & $k_d$ \\ 
 			& \schemestart \chemfig{I} \+ \chemfig{M} \arrow \chemfig{R_1} \schemestop & $k_a$ \\
 			Propagation & \schemestart \chemfig{R_1} \+ M \arrow \chemfig{R_2} \schemestop & $k_p$ \\
 			& \schemestart \chemfig{R_2} \+ M \arrow \chemfig{R_3} \schemestop & $k_p$ \\ 
@@ -159,6 +205,7 @@ L'addition tête à queue est généralement favorisée (stabilisation par résonance 
 			& $\cdots$ & $\cdots$ \\
 			Terminaison & \schemestart \chemfig{R_i} \+ \chemfig{R_j} \arrow \chemfig{P_{i+j}} \schemestop & $k_t$
 			\end{tabular}
+\end{center}
 			
 La vitesse de polymérisation vaut $\displaystyle v=-\frac{\d [M]}{\d t}$. La vitesse d'amorçage vaut $v_a = 2f.k_d.[A]$. On note $\displaystyle  S=\sum_{j=1}^{\infty} [\lewis{2.,R_{j}}]$ et on a $\displaystyle v=-\frac{\d [M]}{\d t} = v_a + k_p.[M].S$. On applique l'AEQS à \lewis{1.,R_1} : 
 \begin{eqnarray*} v_a &=& [\lewis{2.,R_1}].[M].k_p + k_t.[\lewis{2.,R_1}].S=\sum_{j=2}^{\infty} [\lewis{2.,R_{j}}]+2.k_t.[\lewis{2.,R_1}]^2 \\
@@ -168,61 +215,75 @@ On suppose que $[\lewis{2.,R_j}] \ll S \Rightarrow$ \begin{tabular}{rc} AEQS à \
 												AEQS à  [\lewis{2.,R_3}] & $k_p.[\lewis{2.,R_2}].[M] \simeq k_p[\lewis{2.,R_3}].[M] + k_t.[\lewis{2.,R_3}].S$ \\[4 pt]
 												$\vdots$ & $\vdots$ \\[4 pt]
 												AEQS à [\lewis{2.,R_j}] & $k_p.[\lewis{2.,R_{j}}].[M] \simeq k_p[\lewis{2.,R_{j+1}}].[M] + k_t.[\lewis{2.,R_{j+1}}].S$ \\ \hline
-												& $v_a \simeq k_t[\lewis{2.,R_n}].[M] + k_t.S^2$ \end{tabular}
+												& $v_a \simeq k_t[\lewis{2.,R_n}].[M] + k_t.S^2$ \end{tabular}
 \\ On suppose que $[\lewis{2.,R_n}] \stackrel{n\rightarrow \infty}{\longrightarrow} 0$ d'où
 \begin{eqnarray*} v_a &\simeq& k_T.S^2 = 2.f.k_d.[A] \\
 		\Rightarrow S &=& \sqrt{\frac{2.f.k_d.[A]}{k_t}} \end{eqnarray*}
 		Et enfin, avec l'hypothèse des chaînes longues, qui consiste à négliger la vitesse d'amorçage dans $v$, 
 		$$v\simeq k_p\sqrt{\frac{2.f.k_d}{k_t}}[M][A]^{1/2}$$
-La loi trouvée est valable pour de faibles taux de conversion (au début de la réaction)
+La loi trouvée est valable pour de faibles taux de conversion (au début de la réaction).
 \end{enumerate}
 	\subsection{Polymérisation anionique}
 		\begin{enumerate} \item 
 		\begin{itemize}
-\item La polymérisation en chaîne par voie radicalaire ne permettant pas un trôle de le linéarité des chaînes, on s'est tourné vers la polymérisation ionique dès 1950
-\item Dans le cas de la polymérisation anionique, les intermédiaires réactionnels sont des carbanions
-\item Les espèces ioniques actives ne réagissant pas entre elles, les réactions de terminaisons (en l'absence d'échange avec le solvant) sont très lentes ou inexistantes en polymérisation anionique
-\item Les monomères favorables à une polymérisation ionique sont ceux portant des groupements permettant de stabiliser le carbanion formé, c'est-à-dire exerçant un effet électroattracteur
+\item La polymérisation en chaîne par voie radicalaire ne permettant pas un trôle de le linéarité des chaînes, on s'est tourné vers la polymérisation ionique dès 1950.
+\item Dans le cas de la polymérisation anionique, les intermédiaires réactionnels sont des carbanions.
+\item Les espèces ioniques actives ne réagissant pas entre elles, les réactions de terminaisons (en l'absence d'échange avec le solvant) sont très lentes ou inexistantes en polymérisation anionique.
+\item Les monomères favorables à une polymérisation ionique sont ceux portant des groupements permettant de stabiliser le carbanion formé, c'est-à-dire exerçant un effet électroattracteur.
 \end{itemize}
 \item Mécanisme 
 \begin{itemize}
-\item Amorçage : il faut créer des anions, on utilise donc une base forte ou un métal alcalin. La méthode la plus usuelle emploie le butyllithium : \\ 
-\schemestart \chemfig{Li-[@{sb}]Bu} \+ \chemfig{H_2@{ar1}C=[@{db}]@{rad1}C(-[:30]H)-[:-30]Z}\arrow  \chemfig{Bu-[:40]-[:-40]\chemabove{\lewis{5,C}}{\ominus}(-[:30])-[:-30]Z},\chemfig{Li^+} 
+\item Amorçage : il faut créer des anions, on utilise donc une base forte ou un métal alcalin. La méthode la plus usuelle emploie le butyllithium :
+\vspace{0.5cm}
+\begin{center}
+\schemestart \chemfig{Li-[@{sb}]Bu} \+ \chemfig{H_2@{ar1}C=[@{db}]@{rad1}C(-[:30]H)-[:-30]Z}\arrow  \chemfig{Bu-[:30]-[:-30]\chemabove{\lewis{5,C}}{\ominus}(-[:30])-[:-30]Z},\chemfig{Li^+} 
 \chemmove{
 \draw[->](sb)..controls +(100:5mm) and +(145:5mm)..(ar1);
  \draw[->](db)..controls +(90:7mm) and +(100:4mm)..(rad1);}
 \schemestop
+\end{center}
+\vspace{0.5cm}
 On peut également créer un radical anion à partir du naphtalène.
-\item Propagation : \\
-Exemple :\\
-\schemestart \chemfig{[,0.7]Bu-[@{op1}]CH_2-C(-[:90]H)(-[:-90]X)-[@{cl1}]CH_2-\chemabove{\lewis{0,C}}{\ominus}(-[:40]H)-[:-40]X},\chemfig{Li^+}
+\item Propagation : 
+\end{itemize}
+Exemple :
+\begin{center}
+\schemestart \chemfig{[,0.7]Bu-[@{op1},1]CH_2-C(-[:90]H)(-[:-90]X)-[@{cl1},1]CH_2-\chemabove{\lewis{0,C}}{\ominus}(-[:60,1]H)-[:-60,1]X},\chemfig{Li^+}
  \+ 
  \chemfig{H_2C=CHX} 
- \arrow 
- \chemfig{[,0.7]Bu-[@{op2}]CH_2-C(-[:90]H)(-[:-90]X)-[@{cl2}]CH_2-\chemabove{\lewis{0,C}}{\ominus}(-[:40]H)-[:-40]X},\chemfig{Li^+}
-\makebraces[20pt,5pt]{\!\!{j-1}}{op1}{cl1} \makebraces[20pt,5pt]{\!\!j}{op2}{cl2}
+ \arrow[,0.8]
+ \chemfig{[,0.7]Bu-[@{op2},1]CH_2-[,1]C(-[:90]H)(-[:-90]X)-[@{cl2}]CH_2-[,1]\chemabove{\lewis{0,C}}{\ominus}(-[:
+60,1]H)-[:-60,1]X},\chemfig{Li^+}
+\makebraces[20pt,15pt]{\!\!{j-1}}{op1}{cl1} \makebraces[20pt,15pt]{\!\!j}{op2}{cl2}
  \schemestop 
- \\ Dans le cas du  styrène, on obtient une polymérisation linéaire et une régiosélectivité tête-à-queue.
- \item Polymère vivant : Dans un solvant aprotique (par exemple le THF), il ne peut pas y avoir d'étape de terminaison par capture de protons. Lorsque tout le monomère est consommé, on obtient un macrocarbanion qui est usuellement nommé "polymère vivant" car il peut croître à nouveau si on ajoute du monomère
- Dans un solvant protique, il peut y avoir terminaison, ce qui provoque l'arrêt de la croissance du polymère
+\end{center}
+ Dans le cas du  styrène, on obtient une polymérisation linéaire et une régiosélectivité tête-à-queue.
+ \begin{itemize}
+ \item Polymère vivant : Dans un solvant aprotique (par exemple le THF), il ne peut pas y avoir d'étape de terminaison par capture de protons. Lorsque tout le monomère est consommé, on obtient un macrocarbanion qui est usuellement nommé "polymère vivant" car il peut croître à nouveau si on ajoute du monomère.
+ Dans un solvant protique, il peut y avoir terminaison, ce qui provoque l'arrêt de la croissance du polymère.
 \end{itemize}
-\item Cinétique de la polymérisation anionique : \\
+\item Cinétique de la polymérisation anionique :
+\begin{center}
 \begin{tabular}{c}
 	\schemestart \chemfig{\chemabove{A}{\ominus}} \+ M \arrow{->[$k_a$]} \chemfig{A-\chemabove{M}{\ominus}} \schemestop \\
 	\schemestart \chemfig{A-\chemabove{M}{\ominus}} + M \arrow{->[$k_p$]} \chemfig{A-\chemabove{M_2}{\ominus}} \schemestop \\
 	$\vdots$ \\
 	\schemestart \chemfig{A-\chemabove{M_q}{\ominus}} + M \arrow{->[$k_p$]} \chemfig{A-\chemabove{M_{q+1}}{\ominus}} \schemestop \end{tabular}
+\end{center}
 	
-	On a $$v=-\frac{\d [M]}{\d t} = k_a[A]+k_p\sum_{j=1}^{\infty}[AM_j^{-}].[M] \simeq k_p.[M]\sum_{j=1}^{\infty}[AM_j^{-}]=k_p[M]C$$
+	On a : $$v=-\frac{\d [M]}{\d t} = k_a[A]+k_p\sum_{j=1}^{\infty}[AM_j^{-}].[M] \simeq k_p.[M]\sum_{j=1}^{\infty}[AM_j^{-}]=k_p[M]C$$
 \end{enumerate}
 \subsection{Comparaison des polymérisation anionique et radicalaire}
+\vspace{0.5cm}
+\begin{center}
 \begin{tabular}{|l|l|l|} \hline
 & \textbf{Radicalaire} & \textbf{Anionique} \\\hline
 Intermédiaire réactionnels & Radicaux libres & Anions \\\hline
 Transferts & Nombreux & Très rares \\\hline
-Terminaison & En permanence & Inexistante en l'absence de solvant protique \\\hline
+Terminaison & En permanence & \parbox{0.3\linewidth}{Inexistante en l'absence\\de solvant protique} \\\hline
 Concentration en CA & $10^{-9}$ à $10^{-7}$ mol.L$^{-1}$ & $10^{-4}$ à $10^{-2}$ mol.L$^{-1}$ \\\hline
 Vitesse de polymérisation & $v=k.\sqrt{[A]}.[M]$ & $v=k_p.[C].[M]$ \\\hline
 Polymolécularité & Large (I$\geq$2) & Étroite (I $\leq$ 1.5) \\\hline
-Monomères utilisé & Presque tous les monomères vinyliques,& Peu de monomères vinyliques utilisables\\\hline
-Polymère & Chaînes ramifiées, polymères thermoplastiques & Chaînes très linéaires, polymère thermoplastiques \\\hline \end{tabular}
+Monomères utilisé & \parbox{0.3\linewidth}{Presque tous les\\monomères vinyliques}& \parbox{0.3\linewidth}{Peu de monomères\\vinyliques utilisables}\\\hline
+Polymère & \parbox{0.3\linewidth}{Chaînes ramifiées,\\polymères thermoplastiques}& \parbox{0.3\linewidth}{Chaînes très linéaires,\\polymères thermoplastiques} \\\hline \end{tabular}
+\end{center}
