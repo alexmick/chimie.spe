@@ -1,0 +1,164 @@
+\chapter{Diagrammes d'Ellingham}
+	\section{Oxydes}
+		\subsection{Dioxygène}
+	\begin{center}
+\definecolor{yqyqyq}{rgb}{0.5,0.5,0.5}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (0,-1.6) -- (0,5.81);
+\foreach \y in {-1,1,2,3,4,5}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+\draw[color=black] (0.08,5.5) node [anchor=west] { E};
+\clip(-1.77,-1.6) rectangle (7.36,5.81);
+\draw (0.62,3)-- (0.12,3);
+\draw (1.18,3)-- (0.68,3);
+\draw (1.76,3)-- (1.26,3);
+\draw (4.2,3)-- (3.7,3);
+\draw (4.8,3)-- (4.3,3);
+\draw (5.4,3)-- (4.9,3);
+\draw (1,0)-- (0.5,0);
+\draw (4.88,0)-- (4.38,0);
+\draw (3.02,4.74)-- (2.52,4.74);
+\draw (2.66,4.16)-- (2.16,4.16);
+\draw (3.4,4.16)-- (2.9,4.16);
+\draw (2.72,2.22)-- (2.22,2.22);
+\draw (3.54,2.26)-- (3.04,2.26);
+\draw (3.08,1.68)-- (2.58,1.68);
+\draw (2.98,0.8)-- (2.48,0.8);
+\draw (3.04,-0.66)-- (2.54,-0.66);
+\draw [->,color=yqyqyq] (0.42,3.36) -- (0.44,2.74);
+\draw [->,color=yqyqyq] (0.24,2.8) -- (0.26,3.42);
+\draw [->,color=yqyqyq] (0.82,2.82) -- (0.84,3.44);
+\draw [->,color=yqyqyq] (1.38,2.84) -- (1.4,3.46);
+\draw [->,color=yqyqyq] (3.84,2.82) -- (3.86,3.44);
+\draw [->,color=yqyqyq] (4.42,2.82) -- (4.44,3.44);
+\draw [->,color=yqyqyq] (5.04,2.84) -- (5.06,3.46);
+\draw [->,color=yqyqyq] (0.64,-0.18) -- (0.66,0.44);
+\draw [->,color=yqyqyq] (4.52,-0.22) -- (4.54,0.4);
+\draw [->,color=yqyqyq] (2.68,-0.88) -- (2.7,-0.26);
+\draw [->,color=yqyqyq] (2.72,0.54) -- (2.74,1.16);
+\draw [->,color=yqyqyq] (2.7,1.42) -- (2.72,2.04);
+\draw [->,color=yqyqyq] (2.38,2) -- (2.4,2.62);
+\draw [->,color=yqyqyq] (3.14,2) -- (3.16,2.62);
+\draw [->,color=yqyqyq] (2.38,3.9) -- (2.4,4.52);
+\draw [->,color=yqyqyq] (3.14,3.92) -- (3.16,4.54);
+\draw [->,color=yqyqyq] (4.04,3.36) -- (4.06,2.74);
+\draw [->,color=yqyqyq] (2.84,1.04) -- (2.86,0.42);
+\draw [->,color=yqyqyq] (2.84,-0.36) -- (2.86,-0.98);
+\draw [->,color=yqyqyq] (2.54,2.52) -- (2.56,1.9);
+\draw [->,color=yqyqyq] (3.3,2.52) -- (3.32,1.9);
+\draw [->,color=yqyqyq] (2.9,2) -- (2.92,1.38);
+\draw [dotted] (1.76,3)-- (2.16,4.16);
+\draw [dotted] (3.4,4.16)-- (3.7,3);
+\draw [dotted] (3.7,3)-- (3.54,2.26);
+\draw [dotted] (2.24,2.22)-- (1.76,3);
+\draw [dotted] (0.62,3)-- (2.58,1.68);
+\draw [dotted] (3.04,1.68)-- (5,3);
+\draw [dotted] (5,3)-- (3.02,4.74);
+\draw [dotted] (2.54,4.74)-- (0.62,3);
+\draw [dotted] (1,0)-- (2.52,0.8);
+\draw [dotted] (4.4,0)-- (2.96,0.8);
+\draw [dotted] (2.54,-0.66)-- (1,0);
+\draw [dotted] (3.02,-0.66)-- (4.4,0);
+\draw [->,color=yqyqyq] (0.84,0.36) -- (0.86,-0.26);
+\draw [->,color=yqyqyq] (4.7,0.28) -- (4.72,-0.34);
+\draw (3.09,5.31) node[anchor=north west] {$\sigma_p^{\star}$};
+\draw (2.64,4.7) node[anchor=north west] {$\pi^{\star}$};
+\draw (2.76,2.68) node[anchor=north west] {$\pi$};
+\draw (3.22,1.78) node[anchor=north west] {$\sigma_p$};
+\draw (3.2,1.3) node[anchor=north west] {$\sigma_s^{\star}$};
+\draw (3.08,-0.55) node[anchor=north west] {$\sigma_s$};
+\draw (-0.51,3.41) node[anchor=north west] {$2p$};
+\draw (-0.65,0.41) node[anchor=north west] {$2s$};
+\end{tikzpicture}
+\\\bsc{Fig 1} : Diagramme de construction des OM du dioxygène \end{center}
+On note l'existence de deux électrons non-appariés, ce qui explique le fait que le dioxygène est paramagnétique. Son spin total vaut donc 1 et la multiplicité du spin vaut 2s+1 c'est à dire 3 $\Rightarrow$ l'oxygène est dans son état triplet. 
+		\subsection{Oxydes}
+			Un oxyde est un composé le plus souvent binaire où l'oxygène est à son degré d'oxydation -II. Les oxydes métalliques peuvent être basiques comme \chemfig{Na_2O} ou \chemfig{CaO}, ils peuvent être amphotère (\chemfig{Al_2O_3}) ou acide si le degré d'oxydation du métal est élevé (\chemfig{CrO_3}). Il existe des oxydes de non-métaux, comme \chemfig{SO_2} ou \chemfig{CO_2} qui sont acides et légèrement solubles dans l'eau
+		\section{Thermodynamique de l'oxydation du zinc}
+			\subsection{Equilibres en présence}
+\begin{enumerate}
+\item \schemestart 2 \chemfig{Zn_{(s)}}\chemsign{+} \chemfig{{O_2}_{(g)}} \arrow{<=>} 2 \chemfig{ZnO_{(s)}} \schemestop $\mbox{   }T<T_{fus}$
+\item \schemestart 2 \chemfig{Zn_{(l)}} \chemsign{+} \chemfig{{O_2}_{(g)}}  \arrow{<=>} 2 \chemfig{ZnO_{(s)}}\schemestop $\mbox{   }T_{fus}<T<T_{eb}$
+\item \schemestart 2 \chemfig{Zn_{(g)}} \chemsign{+} \chemfig{{O_2}_{(g)}}  \arrow{<=>} 2 \chemfig{ZnO_{(s)}}\schemestop $\mbox{   }T_{fus}<T<T^{'}_{fus}(ZnO)$
+\item \schemestart 2 \chemfig{Zn_{(g)}} \chemsign{+} \chemfig{{O_2}_{(g)}}  \arrow{<=>} 2 \chemfig{ZnO_{(l)}}\schemestop $\mbox{   }T>T^{'}_{fus}$
+\end{enumerate}
+			\subsection{Enthalpie libre standard de réaction}
+		L'approximation d'Ellingham consiste à considérer les enthalpies libres et entropies libres de réactions comme indépendantes de la température (mais elles restent sensibles aux changements d'état). Ainsi, $\Delta rG^0 = a+bT \mbox{ avec } a= \Delta rH^0=\mbox{cste et } b = \Delta rS^0=\mbox{cste}$. A l'exception d'\chemfig{O_2} tous les constituants sont dans leurs états standards. \\ 
+		Considérons l'équilibre \schemestart \chemfig{Zn_{(s)}} \arrow{<=>} \chemfig{Zn_{(l)}} \schemestop. On a égalité des potentiels des deux phases soit $\mu_{Zn(s)}^0=\mu_{Zn(l)}^0$ à la température de changement d'état. Ainsi, à $T=T_{fus}$, $ \Delta rG^{0}_{1}=2 \mu^0_{ZnO(s)} -\mu^0_{O_2(g)} -2\mu^0_{Zn(s)}$ est égal à  $\Delta rG^{0}_{2}=2 \mu^0_{ZnO(s)} -\mu^0_{O_2(g)} -2\mu^0_{Zn(l)}$. On a donc une continuité de la courbe, bien que la pente, elle, varie.
+		\subsection{Equation des droites}
+\begin{itemize}
+\item Zinc solide : $ \Delta rG^{0}_{1} = \Delta rH^{0}_{1} -T.\Delta rS^{0}_{1}$. \\Or,  $\Delta rH^{0}_{1} = 2.\Delta fH^0_{ZnO(s)}$ et $\Delta rS^{0}_{1}=2 S^0_{ZnO(s)}-2S^0_{Zn(s)}-S^0_{O_2(g)}$. On a donc $\Delta rG^{0}_{1} = -692,2+0.2004.T \mbox{ kJ.mol}^{-1}$ \\ On voit que pour tout $T<T_{fus}$, $\Delta rG^{0}_{1} \ll 0 \Rightarrow K^0 \gg 1$ \bigskip
+\item Zinc gazeux : \begin{eqnarray*}\Delta rG^{0}_{3} &=& (2\Delta fH^0_{ZnO(s)} -2\Delta fH^0_{Zn(g)})-T(2S^{0}_{ZnO}-2.S^{0}_{Zn(g)}-S^{0}_{O_2(g)})\\
+										&=& -357,2+0,439.T \mbox{ kJ.mol}^{-1} \end{eqnarray*}
+\item Zinc liquide : Si les grandeurs standards sont inconnues, on se sert de la continuité de $\Delta rG^0$ lors des changements d'état et on en déduit : 
+$$\Delta rG^0_2 = -725,1+0,2422.T$$
+\end{itemize}
+		\subsection{Diagramme d'Ellingham du Zinc}
+		\begin{center}
+\definecolor{qqzzcc}{rgb}{0,0.6,0.8}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7417893455101804cm,y=0.8822797518568123cm]
+\draw[->,color=black] (-1.08,0) -- (19.14,0);
+\foreach \x in {,2,4,6,8,10,12,14,16,18}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+\draw[->,color=black] (0,-14.72) -- (0,2.28);
+\foreach \y in {-14,-12,-10,-8,-6,-4,-2,2}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+\clip(-1.08,-14.72) rectangle (19.14,2.28);
+\draw (3.71,-0.16)-- (3.71,0.16);
+\draw (3.51,1.12) node[anchor=north west] {$ T_{fus} $};
+\draw (8.42,-0.17)-- (8.42,0.15);
+\draw (8.19,1.08) node[anchor=north west] {$ T_{eb} $};
+\draw (0.08,2.03) node[anchor=north west] {$ \Delta rG^0 $};
+\draw (16.39,1.17) node[anchor=north west] {$ T $};
+\draw (0,-10)-- (3.71,-8.56);
+\draw (3.71,-8.56)-- (8.36,-5.49);
+\draw (10.83,-1.88)-- (8.36,-5.49);
+\draw [dotted] (3.71,0.06)-- (3.71,-10);
+\draw [dotted] (8.37,-7.23)-- (8.42,0.06);
+\draw (1.45,-9.22) node[anchor=north west] {$Zn_{(s)}$};
+\draw (5.66,-7.25) node[anchor=north west] {$ Zn_{(l)} $};
+\draw (10.08,-3.6) node[anchor=north west] {$Zn_{(g)}$};
+\draw (2.14,-2.78) node[anchor=north west] {$ZnO$};
+\draw [->,dash pattern=on 9pt off 9pt] (15.47,-13.2) -- (15.28,1.89);
+\draw [color=qqzzcc](13.52,2.15) node[anchor=north west] {$\log\frac{P_{O_2}}{P^0}$};
+\draw [dash pattern=on 1pt off 5pt on 9pt off 4pt,color=qqzzcc,domain=-1.08:19.14] plot(\x,{(-0-12.04*\x)/14.83});
+\draw (15.62,-12) node[anchor=north west] {$-20$};
+\draw [dash pattern=on 1pt off 5pt on 9pt off 4pt,color=qqzzcc,domain=-1.08:19.14] plot(\x,{(-0-8.23*\x)/15.18});
+\draw (15.58,-8) node[anchor=north west] {$-10$};
+\draw [color=qqzzcc](12.61,1.94) node[anchor=north west] {$y=$};
+\draw (1.71,1.77) node[anchor=north west] {$ (\mbox{kJ.mol}^{-1}) $};
+\end{tikzpicture}
+\\\bsc{Fig 1} : Diagramme d'Ellingham du Zinc
+\end{center}
+	\subsection{Détermination graphique de la pression de corrosion}
+		La pression de corrosion est définie comme la pression de dioxygène à l'équilibre. Pour tous les équilibres considérés, $K^0_{i}=\frac{P^0}{P_{cor}}$. De plus, tous ces équilibres sont divariants. Comme on impose la pression en zinc (puisqu'il est dans son état standard), le système devient monovariant et le seul facteur d'équilibre est la pression en dioxygène. On trace donc sur le diagramme la courbe $y=\log\frac{P_{O_2}}{P^0}$. A l'intersection entre les deux courbes, on a $P_{O_2}=P_{cor}$
+		\\ \underline{Couple Oxyde/Métal} Si on impose T et $P_{O2}$, le plus souvent, on est hors équilibre chimique. Dans le graphe (P,y), on associe un point au couple $(T,P_{O2})$. Si le point est au dessus du diagramme, $P_{O_2} > P_{corr}$ et $\A = RT\ln\left(\frac{P_{O_2}}{P_{cor}}\right) > 0 \Rightarrow \mbox{ on est dans le domaine d'existence de }\chemfig{ZnO}$
+		\section{Diagrammes d'Ellingham}
+			\subsection{Principe de construction}
+				Dans le même système d'axe (T,$\Delta rG^0$), on trace $\Delta rG^0=f(T)$ pour divers couples (oxydes/métal) et aussi (\chemfig{H_2O}/\chemfig{H_2}), (\chemfig{CO}/\chemfig{C}) et (\chemfig{CO_2}/\chemfig{CO}). Toutes les équations doivent être écrites avec le même nombre stoechiométriques pour \chemfig{O_2}
+				\\ \underline{Exemple} Diagramme d'Ellinghame pour le Cuivre, l'Aluminium et le Zinc
+				\\ \\ \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.6547257396109863cm,y=0.8062440105612998cm]
+\draw[->,color=black] (-1.3,0) -- (13.97,0);
+\foreach \x in {,2,4,6,8,10,12}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+\draw[color=black] (13.5,0.11) node [anchor=south west] { T};
+\draw[->,color=black] (0,-11.39) -- (0,1.01);
+\foreach \y in {-10,-8,-6,-4,-2}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+\clip(-1.3,-11.39) rectangle (13.97,1.01);
+\draw (0.17,1.17) node[anchor=north west] {$\Delta rG^0$};
+\draw (1.5,1.2) node[anchor=north west] {$(\mbox{kJ.mol}^{-1})$};
+\draw (5.47,-0.44)-- (0.68,-3.55);
+\draw (1.18,-7.26)-- (8.89,-1.2);
+\draw (2,-10)-- (10.23,-3.7);
+\draw (1.81,-1.44) node[anchor=north west] {$CuO$};
+\draw (2.39,-2.2) node[anchor=north west] {$Cu$};
+\draw (4.65,-3.05) node[anchor=north west] {$ZnO$};
+\draw (5.34,-3.7) node[anchor=north west] {$Zn$};
+\draw (4.5,-6.26) node[anchor=north west] {$Al_2O_3$};
+\draw (5.73,-6.86) node[anchor=north west] {$Al$};
+\end{tikzpicture}
+		\subsection{Réduction d'un oxyde}
+			L'aluminium solide peut-il réduire \chemfig{ZnO} ?
+			On écrit l'équation-bilan : \\\schemestart $\frac{4}{3}$ \chemfig{Al} \chemsign{+} 2 \chemfig{ZnO} \arrow{<=>} 2 \chemfig{Zn} \chemsign{+} $\frac{2}{3}$ \chemfig{Al_2O_3}  \schemestop
+			L'enthalpie libre de réaction est négative, donc la constante d'équilibre est supérieure à 1 : la réaction se produit dans le sens écrit (on le retrouve en disant que les deux domaines d'existences sont disjoints)
