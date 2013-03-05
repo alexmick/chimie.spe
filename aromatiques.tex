@@ -120,15 +120,19 @@ $\star$ \textbf{Application aux anhydrides}
 	\schemestart
 		\chemfig{(-[:210])(=[:90]O)-[:-30]@{dnl}\lewis{57,O}-[:30](=[@{dl}:90]O)-[:-30]} \+ \chemfig{@{al}\lewis{4|,Al}-Cl_3}
 		\chemmove[->,shorten >=4pt]{
-			\draw[green, shorten <=4pt ](dnl).. controls+(-45:1cm)and+(-120:1cm).. (al);
+			\draw[blue, shorten <=4pt ](dnl).. controls+(-45:1cm)and+(-120:1cm).. (al);
 			\draw[red, shorten <=2pt](dl).. controls+(0:1cm)and+(120:1cm).. (al);
 		}
 		\arrow(start.mid east--.south west){<=>}[45,0.8,red]
-		\chemfig{(-[:210])(=[:90]O)-[:-30]\lewis{57,O}-[:30](-[:90]O^\oplus-\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:-30]}
+		\chemfig{(-[:210])(=[:90]O)-[@{a1}:-30]\lewis{57,O}-[@{a2}:30](-[@{b1}:90]@{b2}O^\oplus-\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:-30]}
+		\chemmove[->]{
+			\draw[shorten >=2pt](a1).. controls +(225:2cm) and +(-45:2cm) ..(a2);
+			\draw(b1).. controls +(180:1cm) and +(180:1cm) ..(b2);
+		}
 		\arrow(--un){<=>}[,0.8]
 		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
 		\+ \chemfig{(=[:210]\lewis{46,O})(-[:-30])-[:90]\lewis{24,O}-\chembelow{Al}{\scriptstyle\ominus}Cl_3}
-		\arrow(@start.mid east--.north west){<=>}[-45,0.8,green]
+		\arrow(@start.mid east--.north west){<=>}[-45,0.8,blue]
 		\chemfig{(-[:210])(=[:90]O)-[:-30]O(-[:90,0.5,,,draw=none]\scriptstyle\oplus)(-[:-90]\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:30](=[:90]O)-[:-30]}
 		\arrow(--deux){<=>}[,0.8]
 		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
@@ -140,7 +144,7 @@ Et ensuite
 \begin{center}
 	\schemestart
 		\chemfig{[:-30,0.7]*6(=-(-[:-100,0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{0|,})-(-[:45]@{h}H)(-[:-45](=[:-90]O)-[:45])-=-)}
-		\+ \chemfig{Cl_2\chemabove{Al}{\scriptstyle\ominus}(-[:-90]Cl)-[,0.8]O-(-[:-30])=[:30]O}
+		\+ \chemfig{Cl_2\chemabove{Al}{\scriptstyle\ominus}(-[:-90]Cl)-[,1.2]O-(-[:-30])=[:30]O}
 		\arrow(.base east--.base west)[,0.8]
 		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
 		\+ HCl$_{(g)}$ \+ \chemfig{(-[:210])(=[:90]O)-[:-30]O-[:30]AlCl_2}
@@ -148,8 +152,21 @@ Et ensuite
 \end{center}
 \section{Nitration}
 \noindent $\star$ \textbf{Bilan:} Ph - H + HNO$_3 \longrightarrow$ Ph - NO$_2$ (nitrobenzène) + H$2$O  \\
-Dans un \textbf{mélange sulfonitrique} (
+Dans un \textbf{mélange sulfonitrique} (H$_2$SO$_4$ \& HNO$_3$ concentrés) ou de l'acide nitrique concentré (fumant) \\
 $\star$ \textbf{Mécanisme}:
+	HNO$_3$ + 2 H$_2$SO$_4$ $\longrightarrow \underbrace{\mathrm{NO}_2^\oplus}_{\mathrm{Cation\ Nitronium}}$ + H$_3$O$^\oplus$ +2 HSO$_4^\ominus$
+\begin{center}
+	\schemestart
+	\chemfig{[:-30,0.7]*6(=-=(-H)-=-)} \+ \chemfig{\lewis{35,O}=\chemabove{N}{\scriptsize\oplus}=\lewis{17,O}}
+	\arrow[,0.7]
+	\chemfig{[:-30,0.7]*6(=-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{7|,})-(-[:45]H)(-[:-45]\chemabove{N}{\scriptsize\oplus}(=[:-90]\lewis{57,O})-\lewis{026,O^\ominus})-=-)}
+	\arrow{->[\chemfig{\lewis{246,O}^\ominus-S(=[:90]O)(=[:-90]O)-OH}][]}
+	\chemfig{[:-30,0.7]*6(=-=(-\chemabove{N}{\scriptstyle\oplus}(=[:45]\lewis{02,O})-[:-45]\lewis{157,O}^\ominus)-=-)}
+	\+ H$_2$SO$_4$
+	\schemestop
+\end{center}
+
+
 \setatomsep{}
 \setarrowdefault{}
 \setcrambond{}{}{}
