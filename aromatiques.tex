@@ -77,8 +77,19 @@ $\star$ \textbf{Catalyse} par AlCl$_3$
 	\chemfig{C(-[:135]H_3C)(-[:225]\lewis{35,Cl^\oplus}-[:-20]\chemabove{Al}{\scriptstyle\ominus}Cl_3)=\lewis{17,O}}
 	\schemestop \vspace{5mm}
 	\schemestart
-	\hspace{5cm}
-	\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}} \arrow{<->}\chemfig{H_3C-C~\lewis{0,O^\oplus}} , \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+	\arrow{<=>}
+	\chemleft(
+	\subscheme{
+		\chemleft\{
+		\subscheme{
+			\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}}
+			\arrow{<->}
+			\chemfig{H_3C-C~\lewis{0,O^\oplus}}
+			}
+		\chemright\}
+		, \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+		}
+	\chemright)
 	\schemestop
 \end{center}
 
