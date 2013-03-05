@@ -57,42 +57,99 @@ $\star$ \textbf{Mécanisme}:
 	\chemfig{CH(-[:135]H_3C)(-[:225]H_3C)-\lewis{26,Cl^\oplus}-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
 \schemestop
 \end{center}
-Et donc:
 \begin{center}
 	\schemestart[,0.8]
-	\chemfig{[:-30]*6(=-=(-H)-=-)} \+ \chemfig{-[:30]-[:-30]-[:30]Cl}
+	Et donc:
+	\chemfig{[:-30,0.7]*6(=-=(-H)-=-)} \+ \chemfig{-[:30]-[:-30]-[:30]Cl}
 	\arrow(debut.mid east--.south west)[45,0.7]
-	\chemfig{[:-30]*6(-=-(--[:-30]-[:30])=-=)}
+	\chemfig{[:-30,0.7]*6(-=-(--[:-30]-[:30])=-=)}
 	\arrow(@debut.mid east--.north west)[-45,0.7]
-	\chemfig{[:-30]*6(-=-(-(-[:-45])-[:45])=-=)}
+	\chemfig{[:-30,0.7]*6(-=-(-(-[:-45])-[:45])=-=)}
 	\schemestop
 \end{center}
 \section{Acylation}
-\noindent $\star$ \textbf{Bilan:} Ph - H + \chemfig{C(-[:135]H_3C)(-[:225]Cl)=O} $\longrightarrow$ \chemfig{Ph-C(=[:90,0.7]O)-CH_3} + HCl$_{(g)}$  \\
-$\star$ \textbf{Catalyse} par AlCl$_3$
+\noindent $\star$ \textbf{Bilan:} Ph - H + \chemfig{C(-[:135]H_3C)(-[:225]Cl)=O} $\longrightarrow$ \chemfig{Ph-C(=[:90,0.7]O)-CH_3} + HCl$_{(g)}$ \\
+$\star$ \textbf{Catalyse} par AlCl$_3$:
 \begin{center}
 	\schemestart
-	\chemfig{C(-[:135]H_3C)(-[:225]\lewis{357,Cl})=\lewis{17,O}} \+ \lewis{4|,AlCl_3}
-	\arrow{<=>}
-	\chemfig{C(-[:135]H_3C)(-[:225]\lewis{35,Cl^\oplus}-[:-20]\chemabove{Al}{\scriptstyle\ominus}Cl_3)=\lewis{17,O}}
-	\schemestop \vspace{5mm}
-	\schemestart
-	\arrow{<=>}
-	\chemleft(
-	\subscheme{
-		\chemleft\{
+		\chemfig{C(-[:135]H_3C)(-[:225]\lewis{357,Cl})=\lewis{17,O}} \+ \lewis{4|,AlCl_3}
+		\arrow{<=>}
+		\chemfig{C(-[:135]H_3C)(-[:225]\lewis{35,Cl^\oplus}-[:-20]\chemabove{Al}{\scriptstyle\ominus}Cl_3)=\lewis{17,O}}
+		\schemestop \vspace{5mm}
+		\schemestart
+		\arrow{<=>}[,0.9]
+		\chemleft(
 		\subscheme{
-			\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}}
-			\arrow{<->}
-			\chemfig{H_3C-C~\lewis{0,O^\oplus}}
+			\chemleft\{
+			\subscheme{
+				\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}}
+				\arrow{<->[Cation Acylium][]}[,1.7]
+				\chemfig{H_3C-C~\lewis{0,O^\oplus}}
+				}
+			\chemright\}
+			, \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
 			}
-		\chemright\}
-		, \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
-		}
-	\chemright)
+		\chemright)
 	\schemestop
 \end{center}
-
+$\star$ \textbf{Mécanisme}:
+\begin{center}
+	\schemestart
+		\chemfig{C(-[:135]H_3C)(-[:225]\lewis{35,Cl^\oplus}-[:-20]\chemabove{Al}{\scriptstyle\ominus}Cl_3)=\lewis{17,O}}
+		\+
+		\chemfig{[:-30,0.7]*6(=-=(-H)-=-)}
+		\arrow[,0.9]
+		\chemfig{[:-30,0.7]*6(=-(-[:-100,0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{0|,})-(-[:45]H)(-[:-45](=[:-90]O)-[:45])-=-)}
+		\arrow{0}[,0] \+ \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+		\arrow[-90,0.7]
+		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
+		\+ HCl$_{(g)}$ \+ AlCL$_3$
+	\schemestop
+\end{center}
+Mais AlCl$_3$ réagit sur la cétone aromatique, on fait donc une hydrolyse acide.
+\begin{center}
+	\schemestart
+	\chemfig{[:-30,0.7]*6(=-=(-(-[:-45])=[:45]\lewis{3,O^\oplus}-[,1.1]\chemabove{Al}{\scriptstyle\ominus}Cl_3)-=-)}
+	\arrow{->[H$_2$O][H$^\oplus$]}
+	\chemfig{[:-30,0.7]*6(=-=(-(-[:-45])=[:45]\lewis{20,O})-=-)}
+	\+ Al$^{3\oplus}$ \+ 3Cl$^\ominus$
+	\schemestop
+\end{center}
+$\star$ \textbf{Application aux anhydrides}
+\begin{center}
+	\schemestart
+		\chemfig{(-[:210])(=[:90]O)-[:-30]@{dnl}\lewis{57,O}-[:30](=[@{dl}:90]O)-[:-30]} \+ \chemfig{@{al}\lewis{4|,Al}-Cl_3}
+		\chemmove[->,shorten >=4pt]{
+			\draw[green, shorten <=4pt ](dnl).. controls+(-45:1cm)and+(-120:1cm).. (al);
+			\draw[red, shorten <=2pt](dl).. controls+(0:1cm)and+(120:1cm).. (al);
+		}
+		\arrow(start.mid east--.south west){<=>}[45,0.8,red]
+		\chemfig{(-[:210])(=[:90]O)-[:-30]\lewis{57,O}-[:30](-[:90]O^\oplus-\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:-30]}
+		\arrow(--un){<=>}[,0.8]
+		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
+		\+ \chemfig{(=[:210]\lewis{46,O})(-[:-30])-[:90]\lewis{24,O}-\chembelow{Al}{\scriptstyle\ominus}Cl_3}
+		\arrow(@start.mid east--.north west){<=>}[-45,0.8,green]
+		\chemfig{(-[:210])(=[:90]O)-[:-30]O(-[:90,0.5,,,draw=none]\scriptstyle\oplus)(-[:-90]\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:30](=[:90]O)-[:-30]}
+		\arrow(--deux){<=>}[,0.8]
+		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
+		\+ \chemfig{(=[:90]\lewis{13,O})(-[:-30])-[:210]\lewis{35,O}-[:-30]\chembelow{Al}{\scriptstyle\ominus}Cl_3}
+		\arrow(@un--@deux){<->[][*{0.180}\scriptsize identiques]}
+	\schemestop
+\end{center}
+Et ensuite
+\begin{center}
+	\schemestart
+		\chemfig{[:-30,0.7]*6(=-(-[:-100,0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{0|,})-(-[:45]@{h}H)(-[:-45](=[:-90]O)-[:45])-=-)}
+		\+ \chemfig{Cl_2\chemabove{Al}{\scriptstyle\ominus}(-[:-90]Cl)-[,0.8]O-(-[:-30])=[:30]O}
+		\arrow(.base east--.base west)[,0.8]
+		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
+		\+ HCl$_{(g)}$ \+ \chemfig{(-[:210])(=[:90]O)-[:-30]O-[:30]AlCl_2}
+	\schemestop
+\end{center}
+\section{Nitration}
+\noindent $\star$ \textbf{Bilan:} Ph - H + HNO$_3 \longrightarrow$ Ph - NO$_2$ (nitrobenzène) + H$2$O  \\
+Dans un \textbf{mélange sulfonitrique} (
+$\star$ \textbf{Mécanisme}:
 \setatomsep{}
 \setarrowdefault{}
 \setcrambond{}{}{}
