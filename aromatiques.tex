@@ -1,20 +1,87 @@
-\setatomsep{3em}
+\setatomsep{2em}
+\setarrowdefault{0,1.5,black}
+\setcrambond{5pt}{}{}
 \chapter{Hydrocarbures aromatiques}
 \section{Halogénation}
 \noindent $\star$ \textbf{Bilan:} Ph - H + X$_2 \longrightarrow$ Ph - X + H$\,$X  \\
 $\star$ \textbf{Catalyseurs} selon la nature de X$_2$:
-\begin{center}
 \begin{description}
 	\item[Br:] FeBr$_3$ généré \textit{in situ} par action de Br$_2$ sur Fe ( 2$\:$Fe + 3$\:$Br$_2 \longrightarrow\ 2\:$FeBr$_3$)
 	\item[Cl:] AlCL$_3$ ou FeCl$_3$
 	\item[I:] Trop mauvais rendement
 	\item[F:] Trop explosif
 \end{description}
-\end{center}
 $\star$ \textbf{Mécanisme}:
-
+\schemestart
+\chemfig{\lewis{246,Br}-\lewis{206,Br}} \+ \chemfig{\lewis{4|,Fe}-Br_3}
+\arrow{<=>}
+\chemfig{[0,1.5]\lewis{357,Br}-[1]\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+%\arrow{<=>}
+%\chemleft(\chemfig{Br^\oplus},\chemabove{Fe}{\scriptstyle\ominus}Br_3\chemright)
+\schemestop
+\vspace{1cm}
+\begin{center}
+	\schemestart
+	\chemfig{*6(-=-(-H)=-=)} \+ \chemfig{[0,1.5]\lewis{357,\chemabove{Br}{\scriptstyle\oplus}}-[1]\lewis{13,Br^\oplus}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\arrow
+	\chemfig{*6(-=-(<|[:50]@{h}H)(<:[:-15]Br)-(-[:135,0.2,,,draw=none]\scriptstyle\oplus)(-[:45,0.1,,,draw=none]\lewis{1|,})-=)} \+ \chemfig{Br-[@b]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemmove{\draw[->,shorten <=2pt,shorten >=1pt](b).. controls+(90:1cm)and+(0:1cm).. (h);}
+	\arrow[-90,1.5]
+	\chemfig{*6(-=-(-Br)=-=)} \+ HBr \+ FeBr$_3$
+	\schemestop
+\end{center}
+\newpage
 \section{Alkylation}
 \noindent $\star$ \textbf{Bilan:} Ph - H + R - X $\longrightarrow$ Ph - R + H$\,$X  \\
+$\star$ \textbf{Mécanisme}:
+\begin{center}
+\schemestart
+	\chemfig{H_3C-[,0.7]{(}CH_2{)}_{2}-[,1.5]@{cl}\lewis{206,Cl}} \+ \chemfig{@{al}\lewis{4|,Al}-Cl_3}
+	\chemmove{\draw[->,shorten <=2pt,shorten >=5pt](cl).. controls +(90:1cm) and +(180:0.8cm) ..(al);}
+	\arrow{<=>}
+	\chemfig{H_3C-[,0.7]{(}CH_2{)}_{2}-[,1.2]\lewis{26,Cl^\oplus}-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+\schemestop \vspace{5mm}
+\schemestart
+	\hspace{5.9cm} %pour aligner les flèches
+	\arrow{<=>}
+	\chemleft(\chemfig{H_3C-CH_2-\chemabove{\lewis{1|,CH_2}}{\scriptstyle\oplus}},\chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
+\schemestop \vspace{5mm}
+\schemestart
+	\hspace{5.9cm} %pour aligner les flèches
+	\arrow{<=>[\scriptsize Transposition][]}
+	\chemleft(\chemfig{H_3C-\chemabove{\lewis{1|,CH}}{\scriptstyle\oplus}-CH_3},\chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
+\schemestop \vspace{5mm}
+\schemestart
+	\hspace{5.5cm} %pour aligner les flèches
+	\arrow{<=>}
+	\chemfig{CH(-[:135]H_3C)(-[:225]H_3C)-\lewis{26,Cl^\oplus}-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+\schemestop
+\end{center}
+Et donc:
+\begin{center}
+	\schemestart[,0.8]
+	\chemfig{[:-30]*6(=-=(-H)-=-)} \+ \chemfig{-[:30]-[:-30]-[:30]Cl}
+	\arrow(debut.mid east--.south west)[45,0.7]
+	\chemfig{[:-30]*6(-=-(--[:-30]-[:30])=-=)}
+	\arrow(@debut.mid east--.north west)[-45,0.7]
+	\chemfig{[:-30]*6(-=-(-(-[:-45])-[:45])=-=)}
+	\schemestop
+\end{center}
+\section{Acylation}
+\noindent $\star$ \textbf{Bilan:} Ph - H + \chemfig{C(-[:135]H_3C)(-[:225]Cl)=O} $\longrightarrow$ \chemfig{Ph-C(=[:90,0.7]O)-CH_3} + HCl$_{(g)}$  \\
+$\star$ \textbf{Catalyse} par AlCl$_3$
+\begin{center}
+	\schemestart
+	\chemfig{C(-[:135]H_3C)(-[:225]\lewis{357,Cl})=\lewis{17,O}} \+ \lewis{4|,AlCl_3}
+	\arrow{<=>}
+	\chemfig{C(-[:135]H_3C)(-[:225]\lewis{35,Cl^\oplus}-[:-20]\chemabove{Al}{\scriptstyle\ominus}Cl_3)=\lewis{17,O}}
+	\schemestop \vspace{5mm}
+	\schemestart
+	\hspace{5cm}
+	\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}} \arrow{<->}\chemfig{H_3C-C~\lewis{0,O^\oplus}} , \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
+	\schemestop
+\end{center}
+
 \setatomsep{}
 \setarrowdefault{}
 \setcrambond{}{}{}
