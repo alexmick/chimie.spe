@@ -22,9 +22,9 @@ $\star$ \textbf{Mécanisme}:
 \vspace{1cm}
 \begin{center}
 	\schemestart
-	\chemfig{*6(-=-(-H)=-=)} \+ \chemfig{[0,1.5]\lewis{357,\chemabove{Br}{\scriptstyle\oplus}}-[1]\lewis{13,Br^\oplus}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemfig{*6(-=-(-H)=-=)} \+ \chemfig{[0,1.5]\lewis{357,\chemabove{Br}{\scriptstyle\oplus}}-[1]\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
 	\arrow
-	\chemfig{*6(-=-(<|[:50]@{h}H)(<:[:-15]Br)-(-[:135,0.2,,,draw=none]\scriptstyle\oplus)(-[:45,0.1,,,draw=none]\lewis{1|,})-=)} \+ \chemfig{Br-[@b]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemfig{*6(-=-(<|[:50]@{h}H)(<:[:-15]Br)-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.01,,,draw=none]\lewis{2|,})-=)} \+ \chemfig{Br-[@b]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
 	\chemmove{\draw[->,shorten <=2pt,shorten >=1pt](b).. controls+(90:1cm)and+(0:1cm).. (h);}
 	\arrow[-90,1.5]
 	\chemfig{*6(-=-(-Br)=-=)} \+ HBr \+ FeBr$_3$
@@ -44,12 +44,12 @@ $\star$ \textbf{Mécanisme}:
 \schemestart
 	\hspace{5.9cm} %pour aligner les flèches
 	\arrow{<=>}
-	\chemleft(\chemfig{H_3C-CH_2-\chemabove{\lewis{1|,CH_2}}{\scriptstyle\oplus}},\chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
+	\chemleft(\chemfig{H_3C-CH_2-\chemabove{\lewis{6|,CH_2}}{\scriptstyle\oplus}}, \chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
 \schemestop \vspace{5mm}
 \schemestart
 	\hspace{5.9cm} %pour aligner les flèches
 	\arrow{<=>[\scriptsize Transposition][]}
-	\chemleft(\chemfig{H_3C-\chemabove{\lewis{1|,CH}}{\scriptstyle\oplus}-CH_3},\chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
+	\chemleft(\chemfig{H_3C-\chemabove{\lewis{6|,CH}}{\scriptstyle\oplus}-CH_3}, \chemabove{Al}{\scriptstyle\ominus}Cl$_4$\chemright)
 \schemestop \vspace{5mm}
 \schemestart
 	\hspace{5.5cm} %pour aligner les flèches
@@ -82,9 +82,9 @@ $\star$ \textbf{Catalyse} par AlCl$_3$:
 		\subscheme{
 			\chemleft\{
 			\subscheme{
-				\chemfig{H_3C-\lewis{3|,C^\oplus}=\lewis{17,O}}
+				\chemfig{H_3C-\lewis{6|,\chemabove{C}{\scriptstyle\oplus}}=\lewis{17,O}}
 				\arrow{<->[Cation Acylium][]}[,1.7]
-				\chemfig{H_3C-C~\lewis{0,O^\oplus}}
+				\chemfig{H_3C-C~\lewis{0,\chemabove{O}{\scriptstyle\oplus}}}
 				}
 			\chemright\}
 			, \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
@@ -99,7 +99,7 @@ $\star$ \textbf{Mécanisme}:
 		\+
 		\chemfig{[:-30,0.7]*6(=-=(-H)-=-)}
 		\arrow[,0.9]
-		\chemfig{[:-30,0.7]*6(=-(-[:-100,0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{0|,})-(-[:45]H)(-[:-45](=[:-90]O)-[:45])-=-)}
+		\chemfig{[:-30,0.7]*6(=-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.01,,,draw=none]\lewis{7|,})-(-[:45]H)(-[:-45](=[:-90]O)-[:45])-=-)}
 		\arrow{0}[,0] \+ \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
 		\arrow[-90,0.7]
 		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
@@ -109,7 +109,7 @@ $\star$ \textbf{Mécanisme}:
 Mais AlCl$_3$ réagit sur la cétone aromatique, on fait donc une hydrolyse acide.
 \begin{center}
 	\schemestart
-	\chemfig{[:-30,0.7]*6(=-=(-(-[:-45])=[:45]\lewis{3,O^\oplus}-[,1.1]\chemabove{Al}{\scriptstyle\ominus}Cl_3)-=-)}
+	\chemfig{[:-30,0.7]*6(=-=(-(-[:-45])=[:45]\lewis{3,\chemabove{O}{\ \scriptstyle\oplus}}-[,1.1]\chemabove{Al}{\scriptstyle\ominus}Cl_3)-=-)}
 	\arrow{->[H$_2$O][H$^\oplus$]}
 	\chemfig{[:-30,0.7]*6(=-=(-(-[:-45])=[:45]\lewis{20,O})-=-)}
 	\+ Al$^{3\oplus}$ \+ 3Cl$^\ominus$
@@ -124,18 +124,18 @@ $\star$ \textbf{Application aux anhydrides}
 			\draw[red, shorten <=2pt](dl).. controls+(0:1cm)and+(120:1cm).. (al);
 		}
 		\arrow(start.mid east--.south west){<=>}[45,0.8,red]
-		\chemfig{(-[:210])(=[:90]O)-[@{a1}:-30]\lewis{57,O}-[@{a2}:30](-[@{b1}:90]@{b2}O^\oplus-\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:-30]}
+		\chemfig{(-[:210])(=[:90]O)-[@{a1}:-30]\lewis{57,O}-[@{a2}:30](-[@{b1}:90]@{b2}\chemabove{O}{\scriptstyle\oplus}-\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:-30]}
 		\chemmove[->]{
 			\draw[shorten >=2pt](a1).. controls +(225:2cm) and +(-45:2cm) ..(a2);
 			\draw(b1).. controls +(180:1cm) and +(180:1cm) ..(b2);
 		}
 		\arrow(--un){<=>}[,0.8]
-		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
+		\chemfig{(-[:-140])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
 		\+ \chemfig{(=[:210]\lewis{46,O})(-[:-30])-[:90]\lewis{24,O}-\chembelow{Al}{\scriptstyle\ominus}Cl_3}
 		\arrow(@start.mid east--.north west){<=>}[-45,0.8,blue]
-		\chemfig{(-[:210])(=[:90]O)-[:-30]O(-[:90,0.5,,,draw=none]\scriptstyle\oplus)(-[:-90]\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:30](=[:90]O)-[:-30]}
+		\chemfig{(-[:210])(=[:90]O)-[:-30]O(-[:90,0.4,,,draw=none]\scriptstyle\oplus)(-[:-90]\chembelow{Al}{\scriptstyle\ominus}Cl_3)-[:30](=[:90]O)-[:-30]}
 		\arrow(--deux){<=>}[,0.8]
-		\chemfig{(-[:-120])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
+		\chemfig{(-[:-140])(=[:90]O)-[:-25,0.2,,,draw=none]\scriptstyle\oplus}
 		\+ \chemfig{(=[:90]\lewis{13,O})(-[:-30])-[:210]\lewis{35,O}-[:-30]\chembelow{Al}{\scriptstyle\ominus}Cl_3}
 		\arrow(@un--@deux){<->[][*{0.180}\scriptsize identiques]}
 	\schemestop
@@ -143,30 +143,60 @@ $\star$ \textbf{Application aux anhydrides}
 Et ensuite
 \begin{center}
 	\schemestart
-		\chemfig{[:-30,0.7]*6(=-(-[:-100,0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{0|,})-(-[:45]@{h}H)(-[:-45](=[:-90]O)-[:45])-=-)}
+		\chemfig{[:-30,0.7]*6(=-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.01,,,draw=none]\lewis{7|,})-(-[:45]@{h}H)(-[:-45](=[:-90]O)-[:45])-=-)}
 		\+ \chemfig{Cl_2\chemabove{Al}{\scriptstyle\ominus}(-[:-90]Cl)-[,1.2]O-(-[:-30])=[:30]O}
 		\arrow(.base east--.base west)[,0.8]
 		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
 		\+ HCl$_{(g)}$ \+ \chemfig{(-[:210])(=[:90]O)-[:-30]O-[:30]AlCl_2}
 	\schemestop
 \end{center}
-\section{Nitration}
+\section{Nitratation}
 \noindent $\star$ \textbf{Bilan:} Ph - H + HNO$_3 \longrightarrow$ Ph - NO$_2$ (nitrobenzène) + H$2$O  \\
 Dans un \textbf{mélange sulfonitrique} (H$_2$SO$_4$ \& HNO$_3$ concentrés) ou de l'acide nitrique concentré (fumant) \\
 $\star$ \textbf{Mécanisme}:
-	HNO$_3$ + 2 H$_2$SO$_4$ $\longrightarrow \underbrace{\mathrm{NO}_2^\oplus}_{\mathrm{Cation\ Nitronium}}$ + H$_3$O$^\oplus$ +2 HSO$_4^\ominus$
+	HNO$_3$ + 2 H$_2$SO$_4$ $\longrightarrow \underbrace{\mathrm{NO}_2^\oplus}_{\mathrm{Cation\\Nitronium}}$ + H$_3$O$^\oplus$ +2 HSO$_4^\ominus$
 \begin{center}
 	\schemestart
-	\chemfig{[:-30,0.7]*6(=-=(-H)-=-)} \+ \chemfig{\lewis{35,O}=\chemabove{N}{\scriptsize\oplus}=\lewis{17,O}}
+	\chemfig{[:-30,0.7]*6(=-=(-H)-=-)} \+ \chemfig{\lewis{35,O}=\chemabove{N}{\scriptstyle\oplus}=\lewis{17,O}}
 	\arrow[,0.7]
-	\chemfig{[:-30,0.7]*6(=-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.2,,,draw=none]\lewis{7|,})-(-[:45]H)(-[:-45]\chemabove{N}{\scriptsize\oplus}(=[:-90]\lewis{57,O})-\lewis{026,O^\ominus})-=-)}
-	\arrow{->[\chemfig{\lewis{246,O}^\ominus-S(=[:90]O)(=[:-90]O)-OH}][]}
-	\chemfig{[:-30,0.7]*6(=-=(-\chemabove{N}{\scriptstyle\oplus}(=[:45]\lewis{02,O})-[:-45]\lewis{157,O}^\ominus)-=-)}
+	\chemfig{[:-30,0.7]*6(=-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.01,,,draw=none]\lewis{7|,})-[@{a}](-[@{c}:45]@{h}H)(-[:-45]\chemabove{N}{\scriptstyle\oplus}(=[:-90]\lewis{57,O})-[,0.9]\lewis{026,O}-[:48,0.5,,,draw=none]\scriptstyle\ominus)-=-)}
+	\arrow{->[\chemfig{[,0.7]@{b}\lewis{246,O}^\ominus-[,0.8]S(=[:90]O)(=[:-90]O)-OH}][]}
+	\chemfig{[:-30,0.7]*6(=-=(-\chemabove{N}{\scriptstyle\oplus}(=[:45,0.9]\lewis{02,O})-[:-45,0.9]\lewis{157,O}-[:10,0.5,,,draw=none]\scriptstyle\ominus)-=-)}
 	\+ H$_2$SO$_4$
+	\chemmove[->]{
+		\draw[shorten >=1pt](c).. controls +(135:5mm) and +(135:5mm) ..(a);
+		\draw[shorten <=2pt,shorten >=3pt](b).. controls +(110:1cm) and +(45:7mm) ..(h);
+	}
 	\schemestop
 \end{center}
-
-
+\section{Polysubsitutions électrophiles}
+\subsection{Règle de \textsc{Holleman}}
+La régioséléctivité (orto,para \textit{vs} méta) ne dépend que de la nature du substituant déjà en place. Par contre, les proportions entre ortho et para dépendent du substrat et de l'électrophile.
+\subsection{Régiosélectivité}
+\begin{description}
+	\item[Effet +I] $\Rightarrow$ Ortho,para-orienteur
+	\item[Effet -I] $\Rightarrow$ Meta-orienteur
+	\item[Effet +M] $\Rightarrow$ Ortho,para-orienteur
+	\item[Effet -M] $\Rightarrow$ Meta-orienteur
+\end{description}
+Sachant que les effets \textbf{mésomères} sont toujours \textbf{prépondérants} sur les effets inductifs.\\
+Quand il y a plusieurs substituants:
+\begin{itemize}
+	\item L'ordre des substitutions est crucial
+	\item Les effets sont additifs
+	\item Un substituant activant l'emporte toujours sur un effet désactivant
+\end{itemize}
+\section{Oxydation}
+Hormis la combustion, les cycles aromatiques sont très résistants à l'oxydation:\\
+\textbf{Pas d'ozonolyse ni d'epoxydation} $\neq$ Alcènes\\
+En revanche la chaîne substituante s'oxyde très facilement, par exemple:
+\begin{center}
+	\schemestart
+	5 \chemfig{[:-30,0.7]*6(-=-(-)=-=)} \+ 6 MnO$_4$ \+ 18 H$^\oplus$
+	\arrow(.base east--.base west)[,0.6]
+	5 \chemfig{[:-30,0.7]*6(-=-(-CO_2H)=-=)} \+ 6 Mn$^{2\oplus}$ \+ 14 H$_2$O
+	\schemestop
+\end{center}
 \setatomsep{}
 \setarrowdefault{}
 \setcrambond{}{}{}
