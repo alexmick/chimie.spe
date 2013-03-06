@@ -66,9 +66,9 @@ Author={Antoine Hoste, Corentin Chatelier, Alexander Micklewright},
 {$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}} \setpolymerdelim() %Permet de créer les délimiteurs pour les polymères
 \newcommand\moyenne[1]{\langle#1\rangle} %Nombre moyen de 
 %% Environnements personalisés
-\newenvironment{scheme}
-{\shemestart}
-{\schemestop}
+\newenvironment{scheme}[2]
+{\begin{center}\schemestart[#1,#2]}
+{\schemestop\end{center}}  
 
 \begin{document}
 %Page de garde
