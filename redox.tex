@@ -103,3 +103,331 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 \item \textbf{Calcul de potentiel standard :} introduction de $\A^*$. Dans système siège de (R), $\A=n_p.F.U_{el}$ et à l'équilibre $\A=n_p.F.E$. Par analogie, on associe à chaque demi-équation électronique $\A^*=n.F.E$ avec E le potentiel défini par la relation de \bsc{Nernst}. Cette grandeur a les mêmes propriétés que $\A$. Il s'agit en fait de l'affinité d'une réaction mettant en jeu le couple étudié et $H^+/H_2$.
 				\end{enumerate}
 	\section{Principe de construction d'un diagramme potentiel-pH}
+		\subsection{Position du problème}
+			On construit un graphe comportant en ordonnée le potentiel E et en abscisse le pH. Aussi appelés diagrammes de Pourbaix, ces diagrammes sont relatifs à des états d"équilibre et on ne tient pas compte de la cinétique.
+			La demi-équation générale est : \\
+			 \schemestart $\alpha$ \chemfig{Ox} \+ m \chemfig{H^+} \+ n \chemfig{e^{-}} \arrow{<->} $\beta$ \chemfig{Red}+c \chemfig{H_2O}   \schemestop \\
+			 On a donc un potentiel \begin{eqnarray*} E &=& E^0 + \frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}.{a_{h^+}}^m}{{a_{Red}}^{\beta}}\right) \\
+			 								&=& E^0 - \frac{0,06.m}{n}\mbox{pH}-\frac{0,06}{n}\log\left(\frac{{a_{ox}}^{\alpha}}{{a_{Red}}^{\beta}}\right) \end{eqnarray*}
+			On fixe alors arbitrairement $a_{ox}$ et $a_{Red}$ puis on trace la courbe correspondante. Si on choisit les deux activités comme égales à 1, on a le potentiel standard apparent. On peut aussi choisir de tracer une famille de courbe pour des valeurs de $\log$ variant de -6 à -2 ou suivre la consigne de l'énoncé.
+		\subsection{Domaine de prédominance/Domaine d'existences}
+					
+\begin{center}		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0016630274916576cm,y=1.7909725699695518cm]
+\draw[->,color=black] (-1.53,0) -- (8.45,0);
+\foreach \x in {-1,1,2,3,4,5,6,7,8}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (8,0.03) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-0.34) -- (0,2.45);
+\foreach \y in {,0.5,1,1.5,2}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.08,2.32) node [anchor=west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-1.53,-0.34) rectangle (8.45,2.45);
+\draw (1.24,2.08)-- (6.62,0.76);
+\draw (3.98,1.71) node[anchor=north west] {$\mbox{Ox}$};
+\draw (3.81,1.28) node[anchor=north west] {$\mbox{Red}$};
+\draw [dotted] (3.4,0)-- (3.38,1.96);
+\draw (3.44,2.14) node[anchor=north west] {$E_1$};
+\draw [dotted] (0,1.96)-- (3.4,1.96);
+\end{tikzpicture} \end{center}
+			
+			
+			Si $E_1 > E_f(pH_1)$, on est dans le domaine de prédominance de l'oxydant du couple considéré.
+			
+			Pour les couples acides-bases, 
+	\begin{center}		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.1105228700284364cm,y=2.0873488983434414cm]
+\draw[->,color=black] (-0.94,0) -- (6.07,0);
+\foreach \x in {-0.5,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (6,0.01) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-0.09) -- (0,2.31);
+\foreach \y in {,0.5,1,1.5,2}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.03,2.01) node [anchor=west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-0.94,-0.09) rectangle (8.07,2.31);
+\draw (2,3,0.3) node[anchor=north west] {$pK_A$};
+\draw [dash pattern=on 1pt off 1pt] (2.97,1.21)-- (2.99,-0.01);
+\draw (1.52,0.62) node[anchor=north west] {$\mbox{Acide}$};
+\draw (3.7,0.62) node[anchor=north west] {$\mbox{Base}$};
+\end{tikzpicture} \end{center}	
+	\section{Quelques diagrammes}
+		\subsection{Eau}
+			\subsubsection{Couples envisagés} On envisage deux couples : \\
+			
+		\begin{tabular}{c|c}	(\chemfig{H^+}/\chemfig{{H_2}_{(g)}}) & (\chemfig{{O_2}_{(g)}}/\chemfig{H_2O_{(l)}}) \\ 
+			\schemestart 2 \chemfig{H^+} \+ 2 \chemfig{e^{-}} \arrow{<=>} \chemfig{{H_2}_{(g)}} \schemestop & \schemestart \chemfig{O_2} \+ 4 \chemfig{H^+} \+ 4 \chemfig{e^{-}} \arrow{<=>} 2\chemfig{H_2O} \schemestop \\
+						$E_1 = -0,06\mbox{pH}+0,03\log\left(\frac{P^0}{P_{H_2}}\right)$ & $E_2 = 1,23 -0,06\mbox{pH}+0,015\log\left(\frac{P_{O_2}}{P^0}\right)$
+					 \end{tabular}
+			\subsubsection{Tracé du diagramme}
+				Convention : $P_{O_2}=P_{H_2}=1$ bar ce qui donne comme équation-frontière : ${E_1}_f = -0,06\mbox{pH}$ et ${E_2}_f =1,23 -0,06\mbox{pH}$ 
+				
+	\begin{center}			\definecolor{xdxdff}{rgb}{0.49,0.49,1}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7525642580703668cm,y=1.4549680629562294cm]
+\draw[->,color=black] (-2.51,0) -- (16.1,0);
+\foreach \x in {-2,2,4,6,8,10,12,14,16}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (15.51,0.03) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-1.92) -- (0,2.21);
+\foreach \y in {-1.5,-1,-0.5,0.5,1,1.5,2}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.11,2.04) node [anchor=west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-2.51,-1.92) rectangle (16.1,2.21);
+\draw [domain=0.0:16.0955573604552] plot(\x,{(--17.22-0.84*\x)/14});
+\draw (5.59,1.27) node[anchor=north west] {$\chemfig{{O_2}_{(g)}}$};
+\draw (5.05,0.86) node[anchor=north west] {$\chemfig{H_2O}$};
+\draw [domain=0.0:16.0955573604552] plot(\x,{(-0-0.06*\x)/1});
+\draw (8.12,-0.18) node[anchor=north west] {$\chemfig{H_2O}$};
+\draw (7.56,-0.52) node[anchor=north west] {$\chemfig{{H_2}_{(g)}}$};
+\draw [shift={(7.19,2.57)}] plot[domain=4.81:5.7,variable=\t]({1*1.79*cos(\t r)+0*1.79*sin(\t r)},{0*1.79*cos(\t r)+1*1.79*sin(\t r)});
+\begin{scriptsize}
+\fill [color=qqqqff] (8.68,1.58) circle (1.5pt);
+\draw[color=qqqqff] (8.94,1.69) node [anchor=west]{$E_i$(\chemfig{F_2}/\chemfig{F^{-})}};
+\fill [color=qqqqff] (7.19,2.57) circle (1.5pt);
+\draw[color=qqqqff] (6.11,2.09) node {};
+\fill [color=qqqqff] (7.37,0.79) circle (1.5pt);
+\draw[color=qqqqff] (7.63,0.9) node [anchor=south]{$E_f$};
+\end{scriptsize}
+\end{tikzpicture}\end{center}
+			 	
+			\subsubsection{Stabilité vis-à-vis des couples d'oxydoréduction} En liaison avec la convention, on considère l'eau comme stable tant que $P_{H_2}$ ou $P_{O_2}$ résultant de son éventuelle réaction restent inférieurs à 1 bar. Si on introduit un oxydant puissant (par exemple \chemfig{F_2}), le point représentatif initial du couple (\chemfig{F_2}/\chemfig{F^{-}}) est en dehors du domaine de stabilité de l'eau, on a donc réaction.
+			\\ \schemestart \chemfig{{F_{2}}_{(g)}} \+ \chemfig{H_2O} \arrow 2 \chemfig{HF} \+ $\frac{1}{2}$ \chemfig{O_2} \schemestop.   On voit que \chemfig{F_2} disparait tant que le point représentatif ne rejoint pas ${E_2}_f$
+			\\ Si on introduit un couple (Ox/Red) faible tel que (\chemfig{Fe^{2+}}/\chemfig{Fe_{(s)}}), pas d'évolution notable. \\
+			Si on introduit un réducteur puissant (\chemfig{Na_{(s)}}), on est encore en dehors du domaine de stabilité de l'eau, et on a réaction. \\
+			\schemestart \chemfig{Na_{(s)}} \+ \chemfig{H_2O} \arrow \chemfig{Na^+} \+ \chemfig{HO^{-}} \+ $\frac{1}{2}$ \chemfig{H_2} \schemestop \\
+			La cinétique est importante en oxydoréduction : le domaine de stabilité de l'eau est plus large que celui prédit par la thermodynamique. De plus, si on opère avec de l'eau aérée (en présence de \chemfig{H_2} ou \chemfig{O_2}), on a un potentiel apparent différent puisque $P_{O_2}$ vaut 0,2 bar. Heureusement, la cinétique est lente mais une étude sérieuse se fait sous atmosphère de diazote.
+				\subsection{Fer}
+				 \redefinesubmol{e}{e^{-}}
+					\subsubsection{Espèce mises en jeu} On considérera  les espèces suivantes : \chemfig{Fe^{3+}}, \chemfig{Fe^{2+}}, \chemfig{Fe_{(s)}}, \chemfig{Fe{(OH)}_3}, \chemfig{Fe{(OH)}_2} et \chemfig{Fe{(OH)}^{2+}}. Les demi-équations associées sont : \bigskip \\
+					\begin{tabular}{cll} (1) & \schemestart \chemfig{Fe^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \schemestop & ${E^0}_1 = -0,44$V \\
+					(2) & \schemestart \chemfig{Fe^{3+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe^{2+}} \schemestop & ${E^0}_2 = 0,77$V \\
+					(a) & \schemestart \chemfig{Fe^{3+}} \+ \chemfig{H_2O } \arrow{<=>} \chemfig{Fe{(OH)}^{2+}} \+ \chemfig{H^+}  \schemestop & $K_1 =10^{-2,2}$ \\
+					($s_1$) & \schemestart \chemfig{Fe{(OH)}_3} \arrow{<=>} \chemfig{Fe^{3+}} \+ 3 \chemfig{HO^{-}} \schemestop	 & $K_{s_1} = 10^{-37,2}$ \\
+					($s_2$) & \schemestart \chemfig{Fe{(OH)}_2} \arrow{<=>} \chemfig{Fe^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop	 & $K_{s_2} = 10^{-14,7}$ \\
+					(e) & \schemestart \chemfig{H_2O} \arrow{<=>} \chemfig{H^+} \+ \chemfig{HO^{-}} \schemestop & $K_e = 10^{-14}$ 
+						
+						\end{tabular}
+					\subsubsection{Tracé du diagramme}
+						Convention : la concentration des espèces solubles du fer sera prise égale à c=$10^{-3}\mbox{ L.mol}^{-1}$
+						\\ On note $\mbox{pH}_1$ le pH d'apparition de \chemfig{{Fe{(OH)}_{3}}_{(s)}}. On fait l'hypothèse que $\mbox{pH}_1 < 2,2$ on trouve pH = 2,6, c'est impossible donc $\mbox{pH}_1 > 2,2$. On a donc l'équilibre \schemestart \chemfig{Fe{(OH)}_3} \arrow{<=>} \chemfig{Fe{(OH)}^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop et on trouve $\mbox{pH}_1 = 2,8$. Des calculs similaire conduisent au tableau suivant : \\
+						\begin{tabular}{c|ccccccc} 
+						pH & & 2,2 & & 2,8 & & 8,15 \\\hline
+						Fe(III) & \chemfig{Fe^{3+}} & | & \chemfig{Fe{(OH)}^{2+}} & | & \chemfig{Fe{(OH)}_{3}} & &\\\hline
+						Fe(II) &  & & & \chemfig{Fe^{2+}}  &  & | & \chemfig{Fe{(OH)}_2} \\\hline
+						Fe(0) & & & & \chemfig{Fe_{(s)}} & & \end{tabular}
+					\\ \\	
+\begin{itemize}
+\item Équilibre entre Fe(III) et Fe(II)
+\begin{itemize}
+\item  Pour des pH inférieurs à 2,2, on considère le couple ( \chemfig{Fe^{3+}}/\chemfig{Fe^{2+}}) : $E_2 = 0,77 +0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right) \Rightarrow {E_2}_f = 0,77$ V. 
+\item Pour des pH compris entre 2,2 et 2,8, on considère l'équilibre entre (\chemfig{Fe{(OH)}^{2+}}/\chemfig{Fe^{2+}})  : \schemestart \chemfig{H^+} \+ \chemfig{Fe{(OH)}^{2+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe^{2+}} \+ \chemfig{H_2O}  \schemestop (3)
+\\ On a $E_3 = {E_3}^0 -0,06\mbox{ pH} +0,06\log\left(\frac{\left[\chemfig{Fe{(OH)}^{2+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
+\\ De plus, (3) = (2)-(a) soit $${\A_3}^0 = {\A_2}^0 - {\A_a}^0 \Rightarrow F.{E_3}^0 = F.{E_2}^0 -RT\ln(K_a)$$ et finalement ${E_3}^0 = 0,90$V et ${E_3}^0_f = 0,90 - 0,06$pH
+\item Pour des pH compris entre 2,8 et 8,15, on a
+\\  \schemestart \chemfig{Fe{(OH)}_{3}} \+ \chemfig{!e} \+ 3 \chemfig{H^+} \arrow{<=>} \chemfig{Fe^{2+}} \+ 3 \chemfig{H_2O} (4) \schemestop
+\\ soit $ E_4 = {E_4}^0 -0,18\mbox{ pH} +0,06\log\left(\frac{\displaystyle 1}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
+\\ On a (4) = (2) +($s_1$) - 3 (e) d'où 
+$${E_4}^0 = {E_2}^0 +0,06(3.pK_e - pK_s) = 1,06\mbox{ V}$$
+et ${E_4}^0_f = 1,24 -0,06$pH
+\item Pour des pH supérieurs à 8,15 , on a 
+\\ \schemestart \chemfig{Fe{(OH)}_{3}} \+ \chemfig{H^+} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe{(OH)}_{2}} \+ \chemfig{H_2O} \schemestop 
+On a \begin{eqnarray*} E_5 &=&  {E_5}^0 -0,06\mbox{pH} \\
+					&=& E_2 = {E_2}^0 + 0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{+2}}\right]}\right) \\
+					&=& {E_2}^0 + 0,06\log\left(\frac{Ks_1}{\omega^3}.\frac{\omega^2}{Ks_2}\right)  \\
+					&=& {E_2}^0 + 0,06\log\left(\frac{Ks_1}{Ks_2}.\frac{h}{Ke}\right) \\
+					&=& \underbrace{{E_2}^0 +0,06(PkE+pKs_2 - pKs_1)}_{{E_5}^0=0,26V}  -0,06\mbox{pH}  \end{eqnarray*}
+	et ${E_5}^0_f = 0,26 - 0,06$ pH
+\end{itemize}
+\item Équilibre entre Fe(II) et Fe(0)
+\begin{itemize}
+\item Pour des pH inférieurs à 8,15, on a (1) soit $E_1 = -0,44 +0,03\log\left(\left[\chemfig{Fe^{2+}}\right]\right)$ et ${E_1}_f = -0,53$V
+\item pour des pH supérieurs à 8,15, on a l'équilibre \\ \schemestart \chemfig{Fe{(OH)}_2}\+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \+ 2 \chemfig{H_2O} \schemestop  \\ et $E_6 = {E_6}^0-0,06$pH. On se sert de la continuité du potentiel à pH = 8,15 et ${E_6}^0 = -0,04-0,06$pH
+\end{itemize}
+
+\end{itemize}
+
+\begin{center} 
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0204081632653064cm,y=5.0cm]
+\draw[->,color=black] (-0.5,0) -- (14.2,0);
+\foreach \x in {,1,2,3,4,5,6,7,8,9,10,11,12,13,14}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (13.74,0.02) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-1) -- (0,1.4);
+\foreach \y in {-1,-0.8,-0.6,-0.4,-0.2,0.2,0.4,0.6,0.8,1,1.2,1.4}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.13,1.2) node [anchor=north west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-0.5,-1) rectangle (14.2,1.35);
+\draw (0,0.77)-- (2.2,0.77);
+\draw (2.2,0.77)-- (2.8,0.73);
+\draw (2.2,0.77)-- (2.2,1.2);
+\fill[blue,opacity=0.5] (0,0)--(0,1.23)--(14,0.39)--(14,-0.84)--cycle;
+\draw (2.8,0.73)-- (2.8,1.2);
+\draw (0.32,0.98) node[anchor=north west] {\chemfig{Fe^{3+}}};
+\draw (2.5,0.89) node[anchor=center,rotate=90] {\footnotesize{\chemfig{Fe{(OH)^{2+}}}}};
+\draw (7.64,0.6) node[anchor=north west] {\chemfig{Fe{(OH)}_3}};
+\draw (2.8,0.73)-- (8.15,-0.23);
+\draw (8.15,-0.23)-- (8.15,-0.53);
+\draw (8.15,-0.53)-- (0,-0.53);
+\draw (1.22,0.31) node[anchor=north west] {\chemfig{Fe^{2+}}};
+\draw (8.15,-0.229)-- (14,-0.58);
+\draw (8.15,-0.53)-- (14, -.88);
+\draw (9,0.2) node[anchor=center] {Domaine de stabilité de l'eau};
+\draw (6.06,-0.62) node[anchor=north west] {\chemfig{Fe_{(s)}}};
+\draw (9.4,-0.39) node[anchor=north west] {\chemfig{Fe{(OH)}_2}};
+\end{tikzpicture}  \end{center}		
+
+\subsubsection{Exploitation du diagramme}
+				On voit que le domaine de stabilité de l'eau et du fer solide sont disjoints $\Rightarrow$ le fer solide n'est pas stable dans l'eau. Selon le pH, il est oxydé en \chemfig{Fe^{2+}} ou \chemfig{Fe{(OH)}_2} tandis que l'eau est réduit en \chemfig{H_2}. Dans de l'eau désaérée, toutes les espèces du fer(II) et du fer(III) sont stables, dans l'eau aérée seules les espèces du fer(III) sont stables
+\subsubsection{Diagramme simplifié}
+\begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.945812807881773cm,y=2.5cm]
+\draw[->,color=black] (-1.18,0) -- (14.68,0);
+\foreach \x in {,2,4,6,8,10,12,14}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+\draw[->,color=black] (0,-1.17) -- (0,3.94);
+\foreach \y in {-1,1,2,3}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+\clip(-1.18,-1.17) rectangle (14.68,3.94);
+\draw (13.89,0.47) node[anchor=north west] {pH};
+\draw (0.11,3.96) node[anchor=north west] {E};
+\fill[color=blue,opacity=0.5] (0,-0.22)--(9.46,-0.22)--(9.46,0.67)-- (1.67,3.19)--(1.67,3.94)--(0,3.94)--cycle;
+\fill[color=red,opacity=0.5] (0,-0.22)--(9.46,-0.22)-- (14.66,-1.03)--(0,-1.03)--cycle;
+\fill[color=Aquamarine,opacity=0.5] (1.67,3.94)--(14.68,3.94)--(14.66,-1.03)--(9.46,-0.22)--(9.46,0.67)--(1.67,3.19)--cycle;
+\draw (0,3.19)-- (1.67,3.19);
+\draw (1.67,3.19)-- (1.67,3.85);
+\draw (1.67,3.19)-- (9.46,0.67);
+\draw (9.46,0.67)-- (14.6,-0.18);
+\draw (9.46,0.67)-- (9.46,-0.22);
+\draw (9.46,-0.22)-- (0,-0.22);
+\draw (9.46,-0.22)-- (14.66,-1.03);
+
+\draw (0.22,3.68) node[anchor=north west] {\chemfig{Fe^{3+}}};
+\draw (5.91,2.77) node[anchor=north west] {\chemfig{Fe{(OH)}_3}};
+\draw (1.59,1.68) node[anchor=north west] {\chemfig{Fe^{2+}}};
+\draw (3.61,-0.47) node[anchor=north west] {\chemfig{Fe_{(s)}}};
+\draw (10.36,-0.02) node[anchor=north west] {\chemfig{Fe{(OH)}_2}};
+\end{tikzpicture} \end{center}
+				En rouge, le domaine d'immunité du métal : il y est thermodynamique stable. En bleu, c'est le domaine de corrosion : les espèces du fer sont oxydées et solubles. En vert, le domaine de passivation où les espèces oxydées du fer sont insolubles.
+				\subsection{Zinc}
+		
+\subsubsection{Espèces envisagées}
+	On prend en compte les espèces suivantes :
+	\chemfig{Zn_{(s)}}, \chemfig{Zn^{2+}}, \chemfig{Zn{(OH)}_2}, \chemfig{Zn{(OH)}_4^{2+}}. On a les données suivantes : 
+	\\ \begin{tabular}{ccc}
+	(1) & \schemestart \chemfig{Zn^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \schemestop & ${E_0}^1 = -0,76$V \\
+	(s) & \schemestart \chemfig{Zn{(OH)}_2} \arrow{<=>} \chemfig{Zn^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop	 & $K_s = 10^{-16}$ \\
+	(c) & \schemestart \chemfig{Zn^{2+}} \+ 4 \chemfig{HO^{-}} \arrow{<=>} \chemfig{Zn{(OH)}_4^{2-}} \schemestop & $\beta_4 = 10^{15,5}$ \end{tabular}			
+\subsubsection{Tracé du diagramme}
+On se place dans le convention $c=10^{-1} \mbox{ mol.L}^{-1}$
+\\ On note pH$_1$ le pH d'apparition de \chemfig{Zn{(OH)}_2} $K_s=10^{-1}\omega^2 \Rightarrow \mbox{pH}_1 = 6,5$
+On note pH$_2$ le pH de disparition de \chemfig{Zn{(OH)}_2} et on trouve $\mbox{pH}_2 = 13,75$
+\\ \begin{tabular}{c|ccccc} 
+	pH & 	& 	6,5 & 	& 	13,75 	&	 \\\hline
+	Zn(II) & \chemfig{Zn^{2+}} & | & \chemfig{Zn{(OH)}_2} & | & \chemfig{Zn{(OH)}_4^{2-}} \\\hline
+	Zn(0) & & & \chemfig{Zn_{(s)}} & & \end{tabular}
+\begin{itemize}
+\item Pour des pH compris entre 0 et 6,5, \\
+$E_1 = {E_1}^0 + 0,03\log\left(\left[\chemfig{Zn^{2+}}\right]\right)$ soit ${E_1}_f = -0.79$ V
+\item Pour des pH compris entre 6.5 et 13.75, on a la demi-équation suivante : \\
+\schemestart \chemfig{Zn{(OH}_2} \+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \+ 2 \chemfig{H_2O} \schemestop  soit $E_2= {E_2}^0 -0,06$pH. Avec la continuité du potentiel, on trouve ${E_2}^0 = -0.40$ V soit ${E_2}_f = -0.40 - 0.06$pH
+\item Pour des pH supérieurs à 13.75, 
+\schemestart \chemfig{Zn{(OH)}_4^{2-}} \+ 4 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \+ 4 \chemfig{H_2O} \schemestop \\
+ et on trouve ${E_3}_f = 0,43 - 0.12$pH
+\end{itemize}
+
+
+
+
+\begin{center}\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.8342415745622042cm,y=3cm]
+\draw[->,color=black] (-1.83,0) -- (16.15,0);
+\foreach \x in {,2,4,6,8,10,12,14,16}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (15.31,0.03) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-2) -- (0,1.23);
+\foreach \y in {-2,-1.5,-1,-0.5,0.5,1}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.16,1.08) node [anchor=west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-1.83,-2) rectangle (16.15,1.23);
+\fill[color=Aquamarine,opacity=0.5] (6.5,-0.79)-- (6.5,1.96)--(13.75,2)--(13.75,-1.23)--cycle;
+\fill[color=blue,opacity=0.5] (0,-0.79)--(6.5,-0.79)--(6.5,1.96)--(0,2)--cycle;
+\fill[color=blue,opacity=0.5] (13.75,-1.23)--(13.75,2)--(16.,2)--(16,-1.49)--cycle;
+\fill[color=red,opacity=0.5] ((0,-0.79)--(6.5,-0.79)--(13.75,-1.23)--(16,-1.49)--(16,-2)--(0,-2)--cycle;
+\draw[dashed](0,0)--(16,-0.96);
+\draw[dashed] (0,1.23)--(16,0.219);
+\draw (0,-0.79)-- (6.5,-0.79);
+\draw (6.5,-0.79)-- (6.5,1.96);
+\draw (6.5,-0.79)-- (13.75,-1.23);
+\draw (13.75,-1.23)-- (16,-1.49);
+\draw (13.75,-1.23)-- (13.75,2);
+\draw (1.49,-0.24) node[anchor=north west] {\chemfig{Zn^{2+}}};
+\draw (5.83,-1.22) node[anchor=north west] {\chemfig{Zn_{(s)}}};
+\draw (7.81,-0.55) node[anchor=north west] {\chemfig{Zn{(OH)}_2}};
+\draw (14.11,-0.93) node[anchor=north west] {\chemfig{Zn{(OH)}_4^{2-}}};
+\end{tikzpicture}\end{center}
+
+Même légende que pour le Fer, on a superposé le diagramme de l'eau en pointillé. On voit que le Zn solide n'est pas stable en solution aqueuse, et que toutes les espèces du Zn(II) y sont stables, et ce en présence d'eau aérée ou non.
+
+	\subsection{Cuivre}
+	\subsubsection{Espèces envisagées} On considère les espèces suivantes :
+	\\ \chemfig{Cu^{2+}}, \chemfig{Cu{(OH)}_2}, \chemfig{Cu^{+}}, \chemfig{Cu_2O} et \chemfig{Cu_{(s)}}. On a les données suivantes : \\ \begin{tabular}{ccc}
+		(1) & \schemestart \chemfig{Cu^{2+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu^+} \schemestop & ${E_1}^0 = 0.16$ V \\
+		(2) &  \schemestart \chemfig{Cu^{+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu_{(s)}} \schemestop  & ${E_2}^0 = 0.52 V$\end{tabular} \\ \\
+		Comme (Cu(I)/Cu(0)) > (Cu(II)/Cu(I)), \chemfig{Cu^+} se dismute en milieu acide.  \\
+		\\\begin{tabular}{ccc}
+		(3) & \schemestart \chemfig{Cu^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_{(s)}} \schemestop & \\
+		(4) & \schemestart 2 \chemfig{Cu{(OH)}_2} \+ \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_2O} \+ \chemfig{H_2O}\schemestop & \\
+		(s1) & \schemestart \chemfig{Cu{(OH)}_2} \arrow{<=>} \chemfig{Cu^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop & \\
+		(s2) & \schemestart \chemfig{Cu_2O}\+ \chemfig{H_2O} \arrow{<=>} 2 \chemfig{Cu^+} \+ 2 \chemfig{HO^{-}} \schemestop & \\
+		(e) & \schemestart \chemfig{H_2O} \arrow{<=>} \chemfig{H^+} \+ \chemfig{HO^{-}}\schemestop\end{tabular}
+	\\	\\ On a (4) =2(1)+2(s1) -(s2)-2(e) soit ${E_4}^0 = 0,75$ V et $E_4 = 0,75 -0,06\mbox{pH} = {E_4}_f$ \\
+		\\\begin{tabular}{ccc}
+		(5) & \schemestart \chemfig{Cu_2O} \+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} 2 \chemfig{Cu} \+ \chemfig{H_2O}  \schemestop & \end{tabular} \\ \\
+		On a $E_5 = {E_5}_f = 0,52 -0,06$pH. On voit que 0,52 < 0,75 : \chemfig{Cu_2O} ne se dismute pas. 
+		\subsubsection{Tracé du diagramme} On se place dans la convention $c=10^{-2} \mbox{mol.L}^{-1}$ \\
+		On note pH$_1$ le pH d'apparition de \chemfig{Cu{(OH)}_2} et on trouve pH$_1$ = 5.9.
+		On note pH$_2$ le  pH à partir duquel \chemfig{Cu_2O} est stable. \\ \begin{tabular}{cc}
+		(6) & \schemestart \chemfig{Cu^{2+}}\+ 2 \chemfig{H_2O} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_2O} \+ 2 \chemfig{H^+} \schemestop \end{tabular} \\ 
+		On a $E_6 = \underbrace{{E_6}^0}_{0,116}+0,06\mbox{pH} +0,06\log\left(\left[\chemfig{Cu^{2+}}\right]\right)$ soit ${E_6}_f = 0,04 + 0,06$pH. \chemfig{Cu_2O} sera stable si E(Cu(I)/Cu(0)) < E(Cu(II)/Cu(I)) d'où pH$_2$ = 4. \\ 
+		 \begin{tabular}{c|ccccc}
+		pH & & 4 & & 5.9 & \\\hline
+		Cu(II) & & \chemfig{Cu^{2+}} &  & | & \chemfig{Cu{(OH)}_2} \\\hline
+		Cu(I) & pas stable & | & \chemfig{Cu_2O} & & \\\hline
+		Cu(0) & & & \chemfig{Cu_{(s)}} & & \end{tabular}
+\begin{itemize}
+\item Pour des pH compris entre 0 et 4, équilibre entre \chemfig{Cu^{2+}} et Cu$_{(s)}$, ${E_3}_f = 0,28$
+\item Pour des pH compris entre 4 et 5.9, on a ${E_6}_f = 0,04 + 0,06$pH
+\item Pour des pH supérieurs à 5.9, on a équilibre entre l'oxyde et l'hydroxyde de cuivre, ${E_4}_f = 0,75 -0,06\mbox{pH}$
+\item Pour des pH supérieurs à 4, on a équilibre entre l'oxyde et le cuivre solide et ${E_5}_f = 0,52 -0,06$pH
+\end{itemize}
+\begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.9206896551724135cm,y=4cm]
+\draw[->,color=black] (-1.15,0) -- (15.14,0);
+\foreach \x in {,2,4,6,8,10,12,14}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (14.38,0.02) node [anchor=south west] { pH};
+\draw[->,color=black] (0,-0.78) -- (0,1.58);
+\foreach \y in {-0.5,0.5,1,1.5}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.14,1.47) node [anchor=west] { E};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-1.15,-0.78) rectangle (15.14,1.58);
+\fill[color=blue,opacity=0.5] (0,0.28)--(4,0.28)--(5.9,0.39)--(5.9,1.51)--(0,1.51)--cycle;
+\fill[color=Aquamarine,opacity=0.5] (4,0.28)--(5.9,0.39)--(5.9,1.51)--(14,1.51)--(14,-0.32)--cycle;
+\fill[color=red,opacity=0.5] (0,0.28)-- (4,0.28)--(14,-0.32)--(14,-0.78)--(0,-0.78)--cycle;
+\draw (0,0.28)-- (4,0.28);
+\draw (4,0.28)-- (5.9,0.39);
+\draw (5.9,0.39)-- (5.9,1.51);
+\draw (5.9,0.39)-- (14,-0.09);
+\draw (4,0.28)-- (14,-0.32);
+\draw (0.96,0.92) node[anchor=north west] {\chemfig{Cu^{2+}}};
+\draw (6.1,0.3) node[anchor=north west] {\chemfig{Cu_2O}};
+\draw (7.7,0.55) node[anchor=north west] {\chemfig{Cu{(OH})_2}};
+\draw (5.62,-0.07) node[anchor=north west] {\chemfig{Cu_{(s)}}};
+\draw [dash pattern=on 1pt off 1pt] (0,0)-- (14,-0.84);
+\draw [dash pattern=on 1pt off 1pt] (0,1.12)-- (14,0.39);
+\end{tikzpicture} \end{center}		
+ On voit que le cuivre est stable en solution aqueuse. De plus, si on place \chemfig{Cu_2O} dans de l'eau pure désaérée, il ne se passera rien. Si on acidifie la solution, il se dismute en \chemfig{Cu^{2+}} et en \chemfig{Cu_{(s)}}
