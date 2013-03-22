@@ -22,7 +22,10 @@ $\star$ \textbf{Mécanisme}:
 \vspace{1cm}
 \begin{center}
 	\schemestart
-	\chemfig{*6(-=-(-H)=-=)} \+ \chemfig{[0,1.5]\lewis{357,\chemabove{Br}{\scriptstyle\oplus}}-[1]\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemfig{*6(-=-(-H)=[@{dbl}]-=)} \+ \chemfig{[0,1.5]@{br}\lewis{357,Br}-[@{li}1]@{br2}\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemmove{\draw[->,shorten <=1pt,shorten >=5pt](dbl).. controls+(45:2cm)and+(90:1cm).. (br);
+	\draw[->,shorten <=2pt,shorten >=1pt](li).. controls+(-45:0.5cm)and+(-90:0.5cm).. (br2);
+	}
 	\arrow
 	\chemfig{*6(-=-(<|[:50]@{h}H)(<:[:-15]Br)-(-[,-0.2,,,draw=none]\scriptstyle\oplus)(-[,0.01,,,draw=none]\lewis{2|,})-=)} \+ \chemfig{Br-[@b]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
 	\chemmove{\draw[->,shorten <=2pt,shorten >=1pt](b).. controls+(90:1cm)and+(0:1cm).. (h);}
