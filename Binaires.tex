@@ -1,0 +1,345 @@
+\chapter{Mélanges Binaires - Équilibres de Phase}
+
+
+\section{Binaires Liquide/Vapeur (Systèmes fermés)}
+\subsection{Variance}
+\noindent \underline{Phase liquide unique :} système \textbf{divariant}, on trace donc soit des diagrammes isobares, soit des diagrammes isothermes.
+
+\begin{center}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-3,-0.98) rectangle (3,5.62);
+\draw (-1,0)-- (-1,2);
+\draw (0,2)-- (-1,2);
+\draw (-1,0)-- (1,0);
+\draw (1,0)-- (1,2);
+\draw (0,2)-- (1,2);
+\draw (-1,2)-- (-1,5);
+\draw (-1,5)-- (0,5);
+\draw (1,2)-- (1,5);
+\draw (1,5)-- (0,5);
+\draw (-0.7,1.58) node[anchor=north west] {$Liq$};
+\draw (-0.7,4.06) node[anchor=north west] {$Vap$};
+\draw (1.44,4.06) node[anchor=north west] {$y_1 ,  y_2$};
+\draw (1.4,1.6) node[anchor=north west] {$x_1 ,  x_2$};
+\draw (-3,2.5) node[anchor=north west] {{\LARGE $(\Sigma)$}};
+\end{tikzpicture}
+\end{center}
+
+
+\noindent S'il y a \underline{miscibilité nulle} à l'état liquide, le système est \textbf{monovariant} : à P fixée, T et la composition du système (triphasique) sont imposées.
+
+Remarque : Miscibilité partielle $\rightarrow$ $v=1$.
+\subsection{Solutions liquides idéales}
+\paragraph{Isothermes :}
+En notant $P^*$ la pression de vapeur saturante, on a :
+$$P_{1_{(T)}}=x_1P_{1_{(T)}}^* \hspace{1cm} P_{2_{(T)}}=x_2P_{2_{(T)}}^* \hspace{1cm} P=P_1 + P_2 $$
+$$ \text{(1)}\hspace{.5cm} P(T)=P_{2_{(T)}}^* + x_1 \left( P_{1_{(T)}}^* - P_{2_{(T)}}^* \right) \hspace{1.5cm} P_{(T)}(x_1) : \text{courbe d'ébullition}$$
+\\
+\noindent En général, $x_i$ en abscisse.
+
+$$x_1=\displaystyle\frac{ P_{(T)} - P_{2_{(T)}}^*}{ P_{1_{(T)}}^* - P_{2_{(T)}}^*}=\displaystyle\frac{ P_{1_{(T)}}}{P_{1_{(T)}}^*}=\displaystyle\frac{ y_1 P_{(T)}}{P_{1_{(T)}}^*}$$
+
+\noindent Soit donc : $$P_{1_{(T)}}^*\left(P_{(T)} - P_{2_{(T)}}^* \right)=y_1 P_{(T)} \left(P_{1_{(T)}}^* - P_{2_{(T)}}^* \right)$$
+$$ P_{(T)}=\displaystyle\frac{P_{1_{(T)}}^*P_{2_{(T)}}^*}{P_{1_{(T)}}^*-y_1 \left(P_{1_{(T)}}^* - P_{2_{(T)}}^* \right)}$$
+
+\noindent $P(y_1)$ est la courbe de rosée. En général, $y_i$ en abscisse.
+
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-3.98,-1.98) rectangle (8.96,7.99);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw [shift={(-2.03,9.54)},color=qqqqff]  plot[domain=4.715:5.955,variable=\t]({1*9.54*cos(\t r)+0*9.54*sin(\t r)},{0*9.54*cos(\t r)+1*9.54*sin(\t r)});
+\draw [color=ffqqqq] (-2,0)-- (7,6.48);
+\draw (2.6,3.4) node[anchor=north west] {$\text{{\Large L+V}}$};
+\draw (0.42,5.58) node[anchor=north west] {$\text{{\Large L}}$};
+\draw (4.37,0.8) node[anchor=north west] {$\text{{\Large V}}$};
+\draw [dash pattern=on 2pt off 2pt] (0.78,2)-- (0.77,0.41);
+\draw [dash pattern=on 4pt off 4pt] (-2,2)-- (3.81,2);
+\draw [dash pattern=on 2pt off 2pt] (0.77,0.42)-- (-2,0.42);
+\draw [dash pattern=on 1pt off 2pt on 4pt off 4pt] (0.78,2)-- (0.78,3.68);
+\draw (0.4,4.4) node[anchor=north west] {$I$};
+\draw (0,2.8) node[anchor=north west] {$E$};
+\draw (0.7,1.3) node[anchor=north west] {$R$};
+\draw (0.77,0.42)-- (0.76,-0.5);
+\draw (0.93,-0.1) node[anchor=north west] {$F$};
+\draw (-2.96,2.56) node[anchor=north west] {$P_e$};
+\draw (-2.96,1.32) node[anchor=north west] {$P_r$};
+\draw (-2.94,0.39) node[anchor=north west] {$P_2^*$};
+\draw (7.21,6.98) node[anchor=north west] {$P_1^*$};
+\draw (-2.8,8) node[anchor=north west] {$\text{P}$};
+\draw (7.21,8) node[anchor=north west] {$\text{P}$};
+\draw (3.8,2.1) node[anchor=north west] {$B$};
+\draw [color=ffqqqq](8.06,-0.4) node[anchor=north west] {${x_1}$};
+\draw [color=qqqqff](8.06,-1) node[anchor=north west] {$y_1$};
+\begin{scriptsize}
+\draw [color=black] (0.78,2)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (3.81,2)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (0.77,0.42)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (0.78,3.68)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (0.76,-0.5)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+
+\noindent Cas étudié : $P_{1_{(T)}}^* > P_{2_{(T)}}^*$, soit 1 plus volatile que 2. En $E$ apparait la 1$^{ere}$ bulle de vapeur. Sur la courbe d'ébullition, l'abscisse de $B$ donne la composition de la 1$^{ere}$ bulle. $$ x_1=\displaystyle\frac{n_{1,l}}{n_{1,l}+n_{2,l}}$$
+
+\paragraph{Isobares : }
+\noindent La courbe d'analyse thermique ($\theta=f(t)$) permet de tracer le diagramme isobare. En $A$, il y a apparition de la 1$^{ere}$ bulle; en $D$, il y a disparition du liquide. $\theta_{eb1}>\theta_{eb2}$, 2 est plus volatil que 1.
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-15.0,-2.17) rectangle (10.05,9.99);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw [color=ffqqqq](8.04,-0.5) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](8.04,-1) node[anchor=north west] {$y_1$};
+\draw [->] (-14,-2) -- (-14,8);
+\draw [->] (-15,-1) -- (-5,-1);
+\draw (-5,-0.68) node[anchor=north west] {$t$};
+\draw (-14.2,9) node[anchor=north west] {$\theta$};
+\draw (-2.17,9) node[anchor=north west] {$\theta$};
+\draw (-3.22,1.7) node[anchor=north west] {$\theta_{eb2}$};
+\draw (-15.26,7.7) node[anchor=north west] {$\theta_{eb1}$};
+\draw (-3.22,7.7) node[anchor=north west] {$\theta_{eb1}$};
+\draw [shift={(-37.98,77.02)},color=ffqqqq]  plot[domain=5.184:5.215,variable=\t]({1*84.68*cos(\t r)+0*84.68*sin(\t r)},{0*84.68*cos(\t r)+1*84.68*sin(\t r)});
+\draw [shift={(-0.56,10.01)},color=ffqqqq]  plot[domain=5.15:5.3,variable=\t]({1*7.94*cos(\t r)+0*7.94*sin(\t r)},{0*7.94*cos(\t r)+1*7.94*sin(\t r)});
+\draw [shift={(1.4,7.77)},color=ffqqqq]  plot[domain=5.22:5.76,variable=\t]({1*5*cos(\t r)+0*5*sin(\t r)},{0*5*cos(\t r)+1*5*sin(\t r)});
+\draw [shift={(114.24,-74.12)},color=ffqqqq]  plot[domain=2.5:2.51,variable=\t]({1*134.44*cos(\t r)+0*134.44*sin(\t r)},{0*134.44*cos(\t r)+1*134.44*sin(\t r)});
+\draw [shift={(10.72,-13.46)},color=qqqqff]  plot[domain=2.07:2.2,variable=\t]({1*19.73*cos(\t r)+0*19.73*sin(\t r)},{0*19.73*cos(\t r)+1*19.73*sin(\t r)});
+\draw [shift={(38.01,-61.57)},color=qqqqff]  plot[domain=2.04:2.09,variable=\t]({1*75.04*cos(\t r)+0*75.04*sin(\t r)},{0*75.04*cos(\t r)+1*75.04*sin(\t r)});
+\draw [shift={(-9.87,34.3)},color=qqqqff]  plot[domain=5.16:5.23,variable=\t]({1*32.13*cos(\t r)+0*32.13*sin(\t r)},{0*32.13*cos(\t r)+1*32.13*sin(\t r)});
+\draw (0.02,5.8) node[anchor=north west] {$\text{V}$};
+\draw (1.23,3.8) node[anchor=north west] {$\text{L+V}$};
+\draw (3.13,1.74) node[anchor=north west] {$\text{L}$};
+\draw (6.78,9) node[anchor=north west] {$\theta$};
+\draw [shift={(-4.28,12.45)},color=ffqqqq]  plot[domain=4.91:5.13,variable=\t]({1*11.86*cos(\t r)+0*11.86*sin(\t r)},{0*11.86*cos(\t r)+1*11.86*sin(\t r)});
+\draw [shift={(0.36,0.47)},color=qqqqff]  plot[domain=2.1:3,variable=\t]({1*2.38*cos(\t r)+0*2.38*sin(\t r)},{0*2.38*cos(\t r)+1*2.38*sin(\t r)});
+\draw [color=qqqqff] (5.95,6.34)-- (7,6.89);
+\draw [color=ffqqqq] (7,6.89)-- (6.48,6.26);
+\draw [dash pattern=on 3pt off 3pt] (7,6.89)-- (-12,6.89);
+\draw [dash pattern=on 3pt off 3pt] (-2,0.81)-- (-6.48,0.81);
+\draw [dash pattern=on 3pt off 3pt,color=ffqqqq] (5.1,4.43)-- (-9.12,4.43);
+\draw [dash pattern=on 3pt off 3pt,color=qqqqff] (5.07,5.86)-- (-7.3,5.86);
+\draw (-9.12,4.43)-- (-7.3,5.86);
+\draw (-13.09,6.89)-- (-12,6.89);
+\draw (-6.48,0.81)-- (-7.35,0.81);
+\draw [shift={(47.97,3.1)}] plot[domain=3.11:3.15,variable=\t]({1*61.56*cos(\t r)+0*61.56*sin(\t r)},{0*61.56*cos(\t r)+1*61.56*sin(\t r)});
+\draw [shift={(-9.59,5)}] plot[domain=2.65:3.14,variable=\t]({1*3.98*cos(\t r)+0*3.98*sin(\t r)},{0*3.98*cos(\t r)+1*3.98*sin(\t r)});
+\draw [shift={(-7.21,4.21)}] plot[domain=2.15:2.63,variable=\t]({1*5.49*cos(\t r)+0*5.49*sin(\t r)},{0*5.49*cos(\t r)+1*5.49*sin(\t r)});
+\draw [shift={(-3.78,0.2)}] plot[domain=2.76:3.08,variable=\t]({1*6.73*cos(\t r)+0*6.73*sin(\t r)},{0*6.73*cos(\t r)+1*6.73*sin(\t r)});
+\draw [shift={(0.94,-1.92)}] plot[domain=2.58:2.74,variable=\t]({1*11.9*cos(\t r)+0*11.9*sin(\t r)},{0*11.9*cos(\t r)+1*11.9*sin(\t r)});
+\draw [shift={(15.37,-0.11)}] plot[domain=2.76:2.88,variable=\t]({1*23.44*cos(\t r)+0*23.44*sin(\t r)},{0*23.44*cos(\t r)+1*23.44*sin(\t r)});
+\draw [shift={(-4.52,-0.69)}] plot[domain=2.65:3.11,variable=\t]({1*3.2*cos(\t r)+0*3.2*sin(\t r)},{0*3.2*cos(\t r)+1*3.2*sin(\t r)});
+\draw [shift={(-1.76,-1.59)}] plot[domain=2.27:2.67,variable=\t]({1*5.29*cos(\t r)+0*5.29*sin(\t r)},{0*5.29*cos(\t r)+1*5.29*sin(\t r)});
+\draw (-13.92,2.23) node[anchor=north west] {$x_1=1$};
+\draw (-11.73,0.89) node[anchor=north west] {$x_1=0,9$};
+\draw (-7.59,0.53) node[anchor=north west] {$x_1=0$};
+\draw (-13.3,7) node[anchor=north west] {$A$};
+\draw (-10,4.9) node[anchor=north west] {$A$};
+\draw (-12.51,7.8) node[anchor=north west] {$D$};
+\draw (-8.26,6.5) node[anchor=north west] {$D$};
+\draw [dotted] (5.1,4.43)-- (5.09,-1);
+\draw (4.24,-0.9) node[anchor=north west] {$x_1=0,9$};
+\begin{scriptsize}
+\draw [color=black] (5.07,5.86)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (5.1,4.43)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-12,6.89)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-9.12,4.43)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-7.3,5.86)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-13.09,6.89)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+
+On a donc deux diagrammes, avec ici 1 plus volatil que 2 :
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-3.3,-2.04) rectangle (21.4,8.01);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw [shift={(-2.03,9.54)},color=qqqqff]  plot[domain=4.72:5.96,variable=\t]({1*9.54*cos(\t r)+0*9.54*sin(\t r)},{0*9.54*cos(\t r)+1*9.54*sin(\t r)});
+\draw [color=ffqqqq] (-2,0)-- (7,6.48);
+\draw (2.52,3.3) node[anchor=north west] {$\text{L+V}$};
+\draw (0.41,5.62) node[anchor=north west] {$\text{L}$};
+\draw (4.35,1.25) node[anchor=north west] {$\text{V}$};
+\draw (-2.94,0.42) node[anchor=north west] {$P_2^*$};
+\draw (7.22,7.04) node[anchor=north west] {$P_1^*$};
+\draw (-2.68,8.23) node[anchor=north west] {$\text{P}$};
+\draw (7.19,8.23) node[anchor=north west] {$\text{P}$};
+\draw [color=ffqqqq](8.05,-0.3) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](8.05,-0.7) node[anchor=north west] {$y_1$};
+\draw [->] (10.01,-2) -- (10.01,8);
+\draw [->] (9.01,-1) -- (20.01,-1);
+\draw [->] (19.01,-2) -- (19.01,8);
+\draw (13.57,3.6) node[anchor=north west] {$\text{L+V}$};
+\draw (12.08,2.23) node[anchor=north west] {$\text{L}$};
+\draw (16.06,6.21) node[anchor=north west] {$\text{V}$};
+\draw (8.85,6.45) node[anchor=north west] {$\theta_{eb2}$};
+\draw [color=ffqqqq](20.05,-0.3) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](20.05,-0.7) node[anchor=north west] {$y_1$};
+\draw (19.0,1.3) node[anchor=north west] {$\theta_{eb1}$};
+\draw (19.12,8.23) node[anchor=north west] {$\theta$};
+\draw (9.3,8.23) node[anchor=north west] {$\theta$};
+\draw [shift={(6.63,-9.76)},color=qqqqff]  plot[domain=0.98:1.36,variable=\t]({1*16.12*cos(\t r)+0*16.12*sin(\t r)},{0*16.12*cos(\t r)+1*16.12*sin(\t r)});
+\draw [shift={(4.71,-12.39)},color=qqqqff]  plot[domain=0.741:0.973,variable=\t]({1*19.38*cos(\t r)+0*19.38*sin(\t r)},{0*19.38*cos(\t r)+1*19.38*sin(\t r)});
+\draw [shift={(21.14,13.23)},color=ffqqqq]  plot[domain=3.719:4.19,variable=\t]({1*13.27*cos(\t r)+0*13.27*sin(\t r)},{0*13.27*cos(\t r)+1*13.27*sin(\t r)});
+\draw [shift={(18.82,10.04)},color=ffqqqq]  plot[domain=4.23:4.731,variable=\t]({1*9.36*cos(\t r)+0*9.36*sin(\t r)},{0*9.36*cos(\t r)+1*9.36*sin(\t r)});
+\end{tikzpicture}
+Courbe de \textcolor{blue}{Rosée}. Courbe d'\textcolor{red}{Ébullition}.
+\end{center}
+\subsection{Solutions Réelles}
+On peut avoir des diagrammes isoP et isoT avec ou sans extremum. Prenons les isoT (il en ira de même pour les isoP).
+\paragraph{Courbe sans extremum :}
+Faible écart à l'idéalité, diagramme similaire à celui vu précédemment. Exemple : mélange Ph-H/Ph-CH$_3$.
+
+\paragraph{Courbe avec extremum :}
+Théorème de \bsc{Gibbs-Konovalov}
+\begin{center}
+Un extremum de température à pression constante, ou un extremum de pression totale, à température constante entraîne l'identité de composition des phases liquide et vapeur.
+\end{center}
+On appelle \textbf{Azéotropes} les mélanges qui correspondent à de tels extrema. Exemple d'\textbf{Azéotrope positif} :
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-3.99,-2.39) rectangle (9.41,8.45);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw (0.48,4.72) node[anchor=north west] {$\text{L+V}$};
+\draw (0.05,6.51) node[anchor=north west] {$\text{L}$};
+\draw (3.24,3.15) node[anchor=north west] {$\text{V}$};
+\draw (-3.1,1.34) node[anchor=north west] {$P_2^*$};
+\draw (7.2,6.6) node[anchor=north west] {$P_1^*$};
+\draw (-2.8,8.18) node[anchor=north west] {$\text{P}$};
+\draw (7.2,8.18) node[anchor=north west] {$\text{P}$};
+\draw [color=ffqqqq](8.05,-0.17) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](8.05,-0.8) node[anchor=north west] {$y_1$};
+\draw [shift={(7.64,-2.61)},color=ffqqqq]  plot[domain=2.22:2.78,variable=\t]({1*10.29*cos(\t r)+0*10.29*sin(\t r)},{0*10.29*cos(\t r)+1*10.29*sin(\t r)});
+\draw [shift={(-6.61,12.03)},color=qqqqff]  plot[domain=5.11:5.6,variable=\t]({1*11.96*cos(\t r)+0*11.96*sin(\t r)},{0*11.96*cos(\t r)+1*11.96*sin(\t r)});
+\draw [shift={(5.82,-0.34)},color=ffqqqq]  plot[domain=1.68:2.21,variable=\t]({1*7.39*cos(\t r)+0*7.39*sin(\t r)},{0*7.39*cos(\t r)+1*7.39*sin(\t r)});
+\draw [shift={(22.59,-10.48)},color=qqqqff]  plot[domain=2.37:2.5,variable=\t]({1*24.93*cos(\t r)+0*24.93*sin(\t r)},{0*24.93*cos(\t r)+1*24.93*sin(\t r)});
+\draw [shift={(5.02,4.54)},color=ffqqqq]  plot[domain=0.63:1.58,variable=\t]({1*2.46*cos(\t r)+0*2.46*sin(\t r)},{0*2.46*cos(\t r)+1*2.46*sin(\t r)});
+\draw [shift={(7.66,9.31)},color=qqqqff]  plot[domain=3.97:4.52,variable=\t]({1*3.38*cos(\t r)+0*3.38*sin(\t r)},{0*3.38*cos(\t r)+1*3.38*sin(\t r)});
+\draw [shift={(5.01,6.55)},color=qqqqff]  plot[domain=0.68:2.42,variable=\t]({1*0.45*cos(\t r)+0*0.45*sin(\t r)},{0*0.45*cos(\t r)+1*0.45*sin(\t r)});
+\draw (5.55,7) node[anchor=north west] {$\text{{\scriptsize L}}$};
+\draw (5.9,6.8) node[anchor=north west] {$\text{{\scriptsize +}}$};
+\draw (6.27,6.6) node[anchor=north west] {$\text{{\scriptsize V}}$};
+\draw [->] (5,7) -- (6.19,7.01);
+\draw [->] (5,7) -- (3.86,6.99);
+\draw (4.6,8.1) node[anchor=north west] {$Z$};
+\begin{scriptsize}
+\draw [color=black] (5,7)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0) -- ++(5.0pt,-5.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+Ecart positif à l'idéalité : $P_i>P_i(LR)$. Déstabilisation du mélange liquide par rapport au cas idéal. Exemple : eau/éthanol.
+\\ \\
+\textbf{Azéotrope négatif :} écart négatif à l'idéalité, $P_i<P_i(LR)$. Stabilisation du mélange liquide par rapport au cas idéal. Exemple : acétone/chloroforme.
+\\ \\
+En Z, la variance est de 1 : 6 paramètres, 5 relations. T est imposée, les autres paramètres sont fixes. 
+\\ \\
+A $T=c^{ste}$, pour la composition Z comme pour les corps purs, la pression totale reste constante tant que coexistent les 2 phases.
+
+\subsection{Théorème des Moments Chimiques}
+Permet d'atteindre les quantités de matière de chacune des phases.
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.8cm,y=0.8cm]
+\clip(-4.03,-2.27) rectangle (9.01,8.31);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw (-2.67,8.18) node[anchor=north west] {$\text{P}$};
+\draw [color=ffqqqq](8.05,-0.17) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](8.05,-0.8) node[anchor=north west] {$y_1$};
+\draw [shift={(4.16,0.24)},color=ffqqqq]  plot[domain=1.72:2.62,variable=\t]({1*5.16*cos(\t r)+0*5.16*sin(\t r)},{0*5.16*cos(\t r)+1*5.16*sin(\t r)});
+\draw [shift={(-1.27,8.74)},color=qqqqff]  plot[domain=5.03:5.65,variable=\t]({1*7.96*cos(\t r)+0*7.96*sin(\t r)},{0*7.96*cos(\t r)+1*7.96*sin(\t r)});
+\draw (0.07,6.18) node[anchor=north west] {$\text{L}$};
+\draw (2.09,1.13) node[anchor=north west] {$\text{V}$};
+\draw (1.22,3.28) node[anchor=north west] {$\text{L+V}$};
+\draw [dash pattern=on 5pt off 5pt] (-2,3.73)-- (6,3.73);
+\draw [dash pattern=on 2pt off 2pt] (0.36,3.73)-- (0.36,-1);
+\draw [dash pattern=on 2pt off 2pt] (4.92,3.73)-- (4.91,-1);
+\draw [dotted] (3.37,3.73)-- (3.37,-1);
+\draw [color=ffqqqq](0.09,-0.97) node[anchor=north west] {$x_1$};
+\draw [color=qqqqff](4.75,-1.03) node[anchor=north west] {$y_1$};
+\draw (3.1,-0.97) node[anchor=north west] {$\text{X}_1$};
+\draw (-0.1,4.74) node[anchor=north west] {$A$};
+\draw (4.99,3.8) node[anchor=north west] {$B$};
+\draw (3.06,4.68) node[anchor=north west] {$M$};
+\begin{scriptsize}
+\draw [color=black] (3.37,3.73)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+$$ n_g=n_{1,g}+n_{2,g} \hspace{1cm} x_1=\displaystyle\frac{n_{1,l}}{n_{l}}$$
+$$ n_l=n_{1,l}+n_{2,l} \hspace{1cm} y_1=\displaystyle\frac{n_{1,g}}{n_{g}}$$
+On définit $X_1$ comme étant la fraction molaire globale :
+$$ X_1=\displaystyle\frac{n_{1,g}+n_{1,l}}{n_{g}+n_{l}}=\displaystyle\frac{y_1 n_{g}+x_1 n_{l}}{n_{g}+n_{l}}$$
+On en déduit (car $n_g\text{MB}=n_l\text{AM}$) : 
+$$ n_g(y_1-X_1)=n_l(X_1-x_1)$$
+Remarque : si en abscisse sont reportées les fractions massique $w_{1,g}$ et $w_{1,l}$, en posant $W_1=\displaystyle\frac{m_1}{m_1+m_2}$, on a :
+$$ m_g(w_{1,g}-W_1)=m_l(W1-w_{1,l})$$
+
+\subsection{Propriétés colligatives}
+Ce sont des propriétés qui dépendent :
+\begin{enumerate}
+\item de la nature du solvant.
+\item de la quantité de soluté.
+\item mais \underline{\textbf{PAS}} de la nature du soluté.
+\end{enumerate}
+\subsubsection{Tonométrie}
+\noindent État initial : solvant S à l'équilibre L/V $P_I=P_S^*(T)$. On opère à $T=C^{ste}$. On ajoute une petite quantité de soluté A peu volatil.
+\\ \\
+État final : $\text{S(l)}=\text{S(g)}$ à $P_F$
+$$P_F\simeq P_S(LR)= P_S^*(T) x_S=P_S^*(T)(1-x_A)$$
+La pression a diminué de $x_A P_S^*(T)$. Abaissement relatif : 
+$$\displaystyle\frac{P_S^*(T)-P_F}{P_S^*(T)}=x_A= \displaystyle\frac{n_A}{n_A+n_S}\simeq \displaystyle\frac{n_A}{n_S}$$
+On a : $n_A=\displaystyle\frac{m_A}{M_A}$. Soit donc :
+$$ \displaystyle\frac{P_S^*(T)-P_F}{P_S^*(T)}=\displaystyle\frac{m_A}{n_S} \displaystyle\frac{1}{M_A} \longrightarrow M_A$$
+\begin{center}
+\definecolor{uuuuuu}{rgb}{0.27,0.27,0.27}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\clip(-3.55,-2.45) rectangle (9.28,8.7);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw (6.8,7.04) node[anchor=north west] {$P_S^*(\text{T})$};
+\draw (-3.2,8.23) node[anchor=north west] {$\text{P}$};
+\draw (7.19,8.23) node[anchor=north west] {$\text{P}$};
+\draw (7,6.07)-- (5.96,5.36);
+\draw [dash pattern=on 2pt off 2pt] (5.96,5.36)-- (-2,0);
+\draw [shift={(2.56,5.38)}] plot[domain=5.61:6.28,variable=\t]({1*3.4*cos(\t r)+0*3.4*sin(\t r)},{0*3.4*cos(\t r)+1*3.4*sin(\t r)});
+\draw (8.16,-0.8) node[anchor=north west] {$x$};
+\draw (6,-1.1) node[anchor=north west] {$1$};
+\end{tikzpicture}
+\end{center}
+\subsubsection{Ébulliométrie}
+\noindent État initial : solvant S à l'équilibre L/V à $T_I$. On opère à $P=C^{ste}$ : $P=P_S^*(T_I)=P_I$. On ajoute une petite quantité d'un soluté A peu volatil. 
+\\ \\
+État d'équilibre : $\text{S(l)}=\text{S(g)}$ à $T_F$.
+$$ K_{(T_F)}^0=\displaystyle\frac{P_S}{P^0 x_S}=\displaystyle\frac{P_I}{P^0 x_S} \hspace{1cm} K_{(T_I)}^0=\displaystyle\frac{P_I}{P^0} $$
+
+$$ \displaystyle\frac{\mathrm d\ln{K_{(T)}^0}}{\mathrm dT}=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{RT^2}  \hspace{1cm} \text{Soit :} \hspace{0.5cm} \int_{T_I}^{T_F} \! \mathrm d\left(\ln{K_{(T)}^0}\right)=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{R} \int_{T_I}^{T_F} \displaystyle\frac{\mathrm dT}{T^2}$$
+\vspace{0.5cm}
+$$ \ln{\left(\displaystyle\frac{K_{(T_F)}^0}{K_{(T_I)}^0}\right)}=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{R} \left(\displaystyle\frac{1}{T_I}-\displaystyle\frac{1}{T_F} \right)  \hspace{1cm} \text{Et donc :} \hspace{0.5cm} -\ln{x_S}=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{R T_I T_F} \left(T_F-T_I \right)$$
+On pose $\Delta T = T_F-T_I > 0$. On a : $T_I T_F=T_{eb(s)}(T_{eb(s)}+\Delta T) \simeq T_{eb(s)}^2$. On a ainsi :
+$$ x_A \simeq \displaystyle\frac{\Delta_{eb}H^0_{(S)} \Delta T}{R T_{eb(s)}^2}$$
+\section{Binaires Liquide/Solide (Systèmes Fermés)}
