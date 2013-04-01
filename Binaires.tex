@@ -342,4 +342,138 @@ $$ \displaystyle\frac{\mathrm d\ln{K_{(T)}^0}}{\mathrm dT}=\displaystyle\frac{\D
 $$ \ln{\left(\displaystyle\frac{K_{(T_F)}^0}{K_{(T_I)}^0}\right)}=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{R} \left(\displaystyle\frac{1}{T_I}-\displaystyle\frac{1}{T_F} \right)  \hspace{1cm} \text{Et donc :} \hspace{0.5cm} -\ln{x_S}=\displaystyle\frac{\Delta_{eb}H^0_{(S)}}{R T_I T_F} \left(T_F-T_I \right)$$
 On pose $\Delta T = T_F-T_I > 0$. On a : $T_I T_F=T_{eb(s)}(T_{eb(s)}+\Delta T) \simeq T_{eb(s)}^2$. On a ainsi :
 $$ x_A \simeq \displaystyle\frac{\Delta_{eb}H^0_{(S)} \Delta T}{R T_{eb(s)}^2}$$
+
+\subsection{Distillation (Isobare)}
+
+\subsubsection{Distillation simple}
+Chauffage assez doux : proche de l'équilibre. T $\nearrow$, $x_A \searrow$. Vapeur toujours plus riche en A que le liquide, mais la composition en A $\searrow \ $. On peut ainsi obtenir le composé le moins volatil pur, mais avec un mauvais rendement.
+
+\subsubsection{Distillation fractionnée en l'abscence d'azéotrope}
+Colonne de distillation : lieu où se produisent plusieurs distillation (ébu/condensation) en continu. Différents types de colonnes : à plateaux (industrie), de \bsc{Vigreux} (labo du lycée), à remplissage (anneaux). 
+ \\
+Si la colonne est assez performante, en tête de colonne on peut recueillir le composé le plus volatil, dans un premier temps.
+
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-3.96,-2.38) rectangle (11.58,9.2);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (9.99,-1);
+\draw (-3.51,9.1) node[anchor=north west] {$\theta_{tête \ de \ colonne}$};
+\draw (10.3,-0.5) node[anchor=north west] {$t$};
+\draw (0.88,2.75)-- (2.76,2.75);
+\draw (5.86,5.52)-- (7.74,5.52);
+\draw (-2,1.02)-- (-0.52,1.02);
+\draw [shift={(-3.33,4.72)}] plot[domain=5.365:5.845,variable=\t]({1*4.65*cos(\t r)+0*4.65*sin(\t r)},{0*4.65*cos(\t r)+1*4.65*sin(\t r)});
+\draw [shift={(2.58,1.93)}] plot[domain=0.19:0.61,variable=\t]({1*6.28*cos(\t r)+0*6.28*sin(\t r)},{0*6.28*cos(\t r)+1*6.28*sin(\t r)});
+\draw [shift={(2.79,2.13)}] plot[domain=0.35:1.63,variable=\t]({1*0.62*cos(\t r)+0*0.62*sin(\t r)},{0*0.62*cos(\t r)+1*0.62*sin(\t r)});
+\draw [shift={(4.27,2.72)}] plot[domain=3.53:4.5,variable=\t]({1*0.98*cos(\t r)+0*0.98*sin(\t r)},{0*0.98*cos(\t r)+1*0.98*sin(\t r)});
+\draw [shift={(4.16,2.49)}] plot[domain=4.54:6.09,variable=\t]({1*0.72*cos(\t r)+0*0.72*sin(\t r)},{0*0.72*cos(\t r)+1*0.72*sin(\t r)});
+\draw [shift={(-11.48,6.44)}] plot[domain=6.035:6.14,variable=\t]({1*16.86*cos(\t r)+0*16.86*sin(\t r)},{0*16.86*cos(\t r)+1*16.86*sin(\t r)});
+\draw [shift={(8.09,3.64)}] plot[domain=2.44:3.01,variable=\t]({1*2.92*cos(\t r)+0*2.92*sin(\t r)},{0*2.92*cos(\t r)+1*2.92*sin(\t r)});
+\draw [dash pattern=on 2pt off 2pt] (0.88,2.75)-- (-2,2.75);
+\draw [dash pattern=on 2pt off 2pt] (5.86,5.52)-- (-2,5.52);
+\draw (-3.39,6.2) node[anchor=north west] {$\theta_{eb,B}$};
+\draw (-3.39,3.35) node[anchor=north west] {$\theta_{eb,A}$};
+\draw (5.9,6.57) node[anchor=north west] {$B \ pur$};
+\draw (1,3.67) node[anchor=north west] {$A \ pur$};
+\draw (-1.92,-1) node[anchor=north west] {$0$};
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Distillation fractionnée en présence d'azéotrope}
+On recueille  : 
+\begin{itemize}
+\item l'azéotrope
+\item le corps pur en excès par rapport à la composition azéotropique
+\end{itemize}
+
+\subsection{Mélange réel à miscibilité nulle à l'état liquide}
+On part d'un mélange liquide contenant 2 phases liquides : A et B purs. On chauffe en agitant. $$ X_A=\displaystyle\frac{n_A}{n_A+n_B} $$
+Le point $H$ est appelé \textbf{Hétéroazéotrope}.
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{qqzzqq}{rgb}{0,0.6,0}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-15.21,-2.35) rectangle (9.3,9.07);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw (8.09,-1.1) node[anchor=north west] {$X$};
+\draw [color=qqzzqq](8.07,-0.1) node[anchor=north west] {$Y_A$};
+\draw [->] (-14,-2) -- (-14,8);
+\draw [->] (-15,-1) -- (-5,-1);
+\draw (-5,-0.68) node[anchor=north west] {$t$};
+\draw (-14.2,9) node[anchor=north west] {$\theta$};
+\draw (-2.17,9) node[anchor=north west] {$\theta$};
+\draw (-2.91,1) node[anchor=north west] {$\theta_H$};
+\draw (7.25,2.1) node[anchor=north west] {$\theta_{ebA}$};
+\draw (-3.35,7.5) node[anchor=north west] {$\theta_{ebB}$};
+\draw [color=qqzzqq](3.34,5.5) node[anchor=north west] {$\text{V}$};
+\draw [color=qqzzqq](0.94,0.5) node[anchor=north west] {$A(l)+B(l)$};
+\draw (6.78,9) node[anchor=north west] {$\theta$};
+\draw (-14.25,0.25) node[anchor=north west] {{\small $X_A=0,2$}};
+\draw (-13.3,1.8) node[anchor=north west] {$A$};
+\draw (-11.85,1.1) node[anchor=north west] {$D_{A(l)}$};
+\draw (-12.94,0.99)-- (-11.27,0.99);
+\draw (-11.27,0.99)-- (-9.98,5.7);
+\draw [shift={(-16.91,7.79)}] plot[domain=-0.29:0.01,variable=\t]({1*7.23*cos(\t r)+0*7.23*sin(\t r)},{0*7.23*cos(\t r)+1*7.23*sin(\t r)});
+\draw [shift={(-9.03,-0.52)}] plot[domain=2.77:3.14,variable=\t]({1*4.2*cos(\t r)+0*4.2*sin(\t r)},{0*4.2*cos(\t r)+1*4.2*sin(\t r)});
+\draw [color=qqqqff] (-9.5,0.99)-- (-8.16,0.99);
+\draw [color=ffqqqq] (-6.87,0.99)-- (-5.97,0.99);
+\draw [shift={(-6.75,-0.51)},color=qqqqff]  plot[domain=2.64:3.15,variable=\t]({1*3.13*cos(\t r)+0*3.13*sin(\t r)},{0*3.13*cos(\t r)+1*3.13*sin(\t r)});
+\draw [shift={(-3.46,-0.49)},color=ffqqqq]  plot[domain=2.73:3.14,variable=\t]({1*3.73*cos(\t r)+0*3.73*sin(\t r)},{0*3.73*cos(\t r)+1*3.73*sin(\t r)});
+\draw [color=ffqqqq] (-5.97,0.99)-- (-5.69,1.51);
+\draw [shift={(-19.75,7.79)},color=ffqqqq]  plot[domain=5.86:6.26,variable=\t]({1*15.4*cos(\t r)+0*15.4*sin(\t r)},{0*15.4*cos(\t r)+1*15.4*sin(\t r)});
+\draw [shift={(-24.77,9.54)},color=qqqqff]  plot[domain=5.81:6.18,variable=\t]({1*18.68*cos(\t r)+0*18.68*sin(\t r)},{0*18.68*cos(\t r)+1*18.68*sin(\t r)});
+\draw [color=qqqqff](-10.9,0.25) node[anchor=north west] {{\small $X_A=X_H$}};
+\draw [color=ffqqqq](-8.2,0.25) node[anchor=north west] {{\small $X_A=0,8$}};
+\draw [dotted] (-14,0.99)-- (7,0.99);
+\draw (-15,1.82) node[anchor=north west] {$\theta_H$};
+\draw [dash pattern=on 2pt off 2pt] (-9.98,5.7)-- (-0.01,5.7);
+\draw [dash pattern=on 2pt off 2pt,color=ffqqqq] (-5.69,1.51)-- (6.01,1.51);
+\draw [color=qqzzqq] (-2.01,0.99)-- (6.99,0.99);
+\draw [shift={(-7.62,-4.85)},color=qqzzqq]  plot[domain=0.47:1.12,variable=\t]({1*13.01*cos(\t r)+0*13.01*sin(\t r)},{0*13.01*cos(\t r)+1*13.01*sin(\t r)});
+\draw [shift={(7.19,-7.27)},color=qqzzqq]  plot[domain=1.59:1.94,variable=\t]({1*8.86*cos(\t r)+0*8.86*sin(\t r)},{0*8.86*cos(\t r)+1*8.86*sin(\t r)});
+\draw [color=qqzzqq](-1.19,3.87) node[anchor=north west] {$V+B(l)$};
+\draw [color=qqzzqq](5.15,1.6) node[anchor=north west] {{\scriptsize  $V+A(l)$}};
+\draw (-0.37,-0.96) node[anchor=north west] {$0,2$};
+\draw [color=qqqqff](3.64,-0.99) node[anchor=north west] {$X_H$};
+\draw [color=ffqqqq](5.63,-0.96) node[anchor=north west] {$0,8$};
+\draw (-11.5,6.5) node[anchor=north west] {$D_{B(l)}$};
+\draw [color=ffqqqq](-6.2,1) node[anchor=north west] {$D_{B(l)}$};
+\draw [color=ffqqqq](-5.36,2.41) node[anchor=north west] {$D_{A(l)}$};
+\draw [color=qqqqff](-9.85,1.8) node[anchor=north west] {$A$};
+\draw [color=ffqqqq](-7.2,1.8) node[anchor=north west] {$A$};
+\draw [color=qqqqff](-10.06,3.3) node[anchor=north west] {$D_{A(l)B(l)}$};
+\draw [->,color=qqqqff] (-8.96,2.48) -- (-8.16,0.99);
+\begin{scriptsize}
+\draw [color=black] (-12.94,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-11.27,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-9.98,5.7)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=qqqqff] (-9.5,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=qqqqff] (-8.16,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=ffqqqq] (-6.87,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=ffqqqq] (-5.97,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=ffqqqq] (-5.69,1.51)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=qqzzqq] (-0.01,5.7)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=qqzzqq] (6.01,1.51)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=qqzzqq] (4,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-0.01,-1)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (3.98,-1)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (5.99,-1)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\subsubsection{Applications}
+\noindent \underline{$\star$ Hydrodistillation} (distillation simple, eau $+$ liquide non miscible à l'eau):
+\\ \\ 
+\noindent Lorsque l'on arrive à $\theta_H$, il y a apparition de la vapeur à la composition hétéroazéotropique ($\theta_H < 100°C$). Le distillat est composé de 2 phases que l'on sépare (ampoule à décanter). Avec ce type de distillation, on minimise les risques de dégradation thermique des composés organiques.
+\\ \\
+\noindent \underline{$\star$ Entrainement à la vapeur :}
+\\ \\
+\noindent Même principie, montage différent.
 \section{Binaires Liquide/Solide (Systèmes Fermés)}
