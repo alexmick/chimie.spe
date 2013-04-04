@@ -87,7 +87,7 @@ $$ P_{(T)}=\displaystyle\frac{P_{1_{(T)}}^*P_{2_{(T)}}^*}{P_{1_{(T)}}^*-y_1 \lef
 \end{tikzpicture}
 \end{center}
 
-\noindent Cas étudié : $P_{1_{(T)}}^* > P_{2_{(T)}}^*$, soit 1 plus volatile que 2. En $E$ apparait la 1$^{ere}$ bulle de vapeur. Sur la courbe d'ébullition, l'abscisse de $B$ donne la composition de la 1$^{ere}$ bulle. $$ x_1=\displaystyle\frac{n_{1,l}}{n_{1,l}+n_{2,l}}$$
+\noindent Cas étudié : $P_{1_{(T)}}^* > P_{2_{(T)}}^*$, soit 1 plus volatil que 2. En $E$ apparait la 1$^{ere}$ bulle de vapeur. Sur la courbe d'ébullition, l'abscisse de $B$ donne la composition de la 1$^{ere}$ bulle. $$ x_1=\displaystyle\frac{n_{1,l}}{n_{1,l}+n_{2,l}}$$
 
 \paragraph{Isobares : }
 \noindent La courbe d'analyse thermique ($\theta=f(t)$) permet de tracer le diagramme isobare. En $A$, il y a apparition de la 1$^{ere}$ bulle; en $D$, il y a disparition du liquide. $\theta_{eb1}>\theta_{eb2}$, 2 est plus volatil que 1.
@@ -436,8 +436,8 @@ Le point $H$ est appelé \textbf{Hétéroazéotrope}.
 \draw [dash pattern=on 2pt off 2pt] (-9.98,5.7)-- (-0.01,5.7);
 \draw [dash pattern=on 2pt off 2pt,color=ffqqqq] (-5.69,1.51)-- (6.01,1.51);
 \draw [color=qqzzqq] (-2.01,0.99)-- (6.99,0.99);
-\draw [shift={(-7.62,-4.85)},color=qqzzqq]  plot[domain=0.47:1.12,variable=\t]({1*13.01*cos(\t r)+0*13.01*sin(\t r)},{0*13.01*cos(\t r)+1*13.01*sin(\t r)});
-\draw [shift={(7.19,-7.27)},color=qqzzqq]  plot[domain=1.59:1.94,variable=\t]({1*8.86*cos(\t r)+0*8.86*sin(\t r)},{0*8.86*cos(\t r)+1*8.86*sin(\t r)});
+\draw [shift={(-7.62,-4.85)},color=qqzzqq]  plot[domain=0.465:1.124,variable=\t]({1*13.01*cos(\t r)+0*13.01*sin(\t r)},{0*13.01*cos(\t r)+1*13.01*sin(\t r)});
+\draw [shift={(7.19,-7.27)},color=qqzzqq]  plot[domain=1.593:1.94,variable=\t]({1*8.86*cos(\t r)+0*8.86*sin(\t r)},{0*8.86*cos(\t r)+1*8.86*sin(\t r)});
 \draw [color=qqzzqq](-1.19,3.87) node[anchor=north west] {$V+B(l)$};
 \draw [color=qqzzqq](5.15,1.6) node[anchor=north west] {{\scriptsize  $V+A(l)$}};
 \draw (-0.37,-0.96) node[anchor=north west] {$0,2$};
@@ -467,6 +467,7 @@ Le point $H$ est appelé \textbf{Hétéroazéotrope}.
 \draw [color=black] (5.99,-1)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
 \end{scriptsize}
 \end{tikzpicture}
+En $A$, apparition de la 1$^{ere}$ bulle. En $D_{A(l)}$, disparition de $A(l)$.
 \end{center}
 \subsubsection{Applications}
 \noindent \underline{$\star$ Hydrodistillation} (distillation simple, eau $+$ liquide non miscible à l'eau):
@@ -475,5 +476,453 @@ Le point $H$ est appelé \textbf{Hétéroazéotrope}.
 \\ \\
 \noindent \underline{$\star$ Entrainement à la vapeur :}
 \\ \\
-\noindent Même principie, montage différent.
+\noindent Même principe, montage différent.
+\\ \\ \\
 \section{Binaires Liquide/Solide (Systèmes Fermés)}
+\subsection{Variance}
+\noindent Liquide : 1 seule phase. Le cas 1 seule phase solide est rare, $v=1$. Si miscibilité nulle à l'état solide, 2 phases solides, $v=0$ : la T d'équilibre est imposée par la nature de $(\Sigma)$, idem pour la composition.
+
+\subsection{Miscibilité totale à l'état solide}
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-15,-2.61) rectangle (9.4,8.67);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw (3.07,6.27) node[anchor=north west] {$L$};
+\draw [shift={(6.44,8.59)}] plot[domain=3.44:4.053,variable=\t]({1*8.83*cos(\t r)+0*8.83*sin(\t r)},{0*8.83*cos(\t r)+1*8.83*sin(\t r)});
+\draw [shift={(-10.98,-10.16)},color=qqqqff]  plot[domain=0.832:1.064,variable=\t]({1*18.49*cos(\t r)+0*18.49*sin(\t r)},{0*18.49*cos(\t r)+1*18.49*sin(\t r)});
+\draw [shift={(6.32,8.64)}] plot[domain=4.068:4.53,variable=\t]({1*8.8*cos(\t r)+0*8.8*sin(\t r)},{0*8.8*cos(\t r)+1*8.8*sin(\t r)});
+\draw [shift={(-11.84,-10.74)},color=qqqqff]  plot[domain=0.6:0.82,variable=\t]({1*19.49*cos(\t r)+0*19.49*sin(\t r)},{0*19.49*cos(\t r)+1*19.49*sin(\t r)});
+\draw [shift={(4.79,3.16)}] plot[domain=4.7:5.48,variable=\t]({1*3.18*cos(\t r)+0*3.18*sin(\t r)},{0*3.18*cos(\t r)+1*3.18*sin(\t r)});
+\draw [shift={(6.71,-0.81)},color=qqqqff]  plot[domain=1.4:2.51,variable=\t]({1*1.72*cos(\t r)+0*1.72*sin(\t r)},{0*1.72*cos(\t r)+1*1.72*sin(\t r)});
+\draw [shift={(4.81,0.69)},color=qqqqff]  plot[domain=3.68:5.53,variable=\t]({1*0.7*cos(\t r)+0*0.7*sin(\t r)},{0*0.7*cos(\t r)+1*0.7*sin(\t r)});
+\draw (5.47,0.79) node[anchor=north west] {{\scriptsize $L$}};
+\draw (5.81,0.96) node[anchor=north west] {{\scriptsize $+$}};
+\draw (6.22,1.07) node[anchor=north west] {{\scriptsize $S$}};
+\draw (4.25,0) node[anchor=north west] {$M$};
+\draw [->] (-14,-1.98) -- (-14,8.02);
+\draw [->] (-15,-0.98) -- (-4,-0.98);
+\draw [->] (-5,-1.98) -- (-5,8.02);
+\draw (-10.13,3.58) node[anchor=north west] {$L+S$};
+\draw (-7.65,1.27) node[anchor=north west] {$S$};
+\draw (-13.91,8.21) node[anchor=north west] {$\theta$};
+\draw [color=qqqqff](-3.92,-0.2) node[anchor=north west] {$x_{1,l}$};
+\draw (-3.94,-1.2) node[anchor=north west] {$x_{1,s }$};
+\draw [shift={(3.61,-14.93)},color=qqqqff]  plot[domain=1.953:2.437,variable=\t]({1*23.1*cos(\t r)+0*23.1*sin(\t r)},{0*23.1*cos(\t r)+1*23.1*sin(\t r)});
+\draw [shift={(-16.26,12.65)}] plot[domain=4.89:5.782,variable=\t]({1*12.83*cos(\t r)+0*12.83*sin(\t r)},{0*12.83*cos(\t r)+1*12.83*sin(\t r)});
+\draw (-11.99,6.29) node[anchor=north west] {$L$};
+\draw (8,-1.2) node[anchor=north west] {$x_{1,s }$};
+\draw [color=qqqqff](8,-0.2) node[anchor=north west] {$x_{1,l}$};
+\draw (-5.01,8.31) node[anchor=north west] {$\theta$};
+\draw (-2,8.28) node[anchor=north west] {$\theta$};
+\draw (7,8.28) node[anchor=north west] {$\theta$};
+\draw (0.16,3.2) node[anchor=north west] {$L+S$};
+\draw (0.38,0.93) node[anchor=north west] {$S$};
+\draw [color=qqqqff](-11.41,3.67) node[anchor=north west] {$L$};
+\draw [color=qqqqff](-11.02,3.9) node[anchor=north west] {$i$};
+\draw [color=qqqqff](-10.73,4.06) node[anchor=north west] {$q$};
+\draw [color=qqqqff](-10.39,4.3) node[anchor=north west] {$u$};
+\draw [color=qqqqff](-10.03,4.6) node[anchor=north west] {$i$};
+\draw [color=qqqqff](-9.81,4.79) node[anchor=north west] {$d$};
+\draw [color=qqqqff](-9.47,4.88) node[anchor=north west] {$u$};
+\draw [color=qqqqff](-9.18,5.13) node[anchor=north west] {$s$};
+\draw (-10.64,1.44) node[anchor=north west] {$S$};
+\draw (-10.22,1.55) node[anchor=north west] {$o$};
+\draw (-9.88,1.82) node[anchor=north west] {$l$};
+\draw (-9.59,2) node[anchor=north west] {$i$};
+\draw (-9.3,2.3) node[anchor=north west] {$d$};
+\draw (-8.91,2.4) node[anchor=north west] {$u$};
+\draw (-8.52,2.7) node[anchor=north west] {$s$};
+\draw (-15,0.96) node[anchor=north west] {$\theta_{f1}$};
+\draw (-5,7.3) node[anchor=north west] {$\theta_{fus,2}$};
+\draw (7.36,1.81) node[anchor=north west] {$\theta_{fus,1}$};
+\draw (-3.6,6.42) node[anchor=north west] {$\theta_{fus,2}$};
+\draw (-13.89,-1) node[anchor=north west] {$0$};
+\begin{scriptsize}
+\draw [color=black] (4.75,-0.01)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0) -- ++(5.0pt,-5.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3cm}
+\noindent Premier cas : sans extremum. Ex : Cu/Ni.
+\\
+\noindent Second cas : avec extremum. M : point indifférent. Ex : Cu/Au.
+\subsubsection{Analyse Thermique}
+\vspace{-0.3cm}
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-15.55,-2.03) rectangle (6.67,8.33);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (6.2,-1);
+\draw [->] (-14,-1.98) -- (-14,8.02);
+\draw [->] (-15,-0.98) -- (-4,-0.98);
+\draw [->] (-5,-1.98) -- (-5,8.02);
+\draw (-11.3,2.75) node[anchor=north west] {$L+S$};
+\draw (-7.66,1.03) node[anchor=north west] {$S$};
+\draw (-13.92,8.21) node[anchor=north west] {$\theta$};
+\draw [color=qqqqff](-3.93,0.2) node[anchor=north west] {$x_{1,l}$};
+\draw (-3.95,-0.74) node[anchor=north west] {$x_{1,s }$};
+\draw [shift={(3.61,-14.93)},color=qqqqff]  plot[domain=1.953:2.437,variable=\t]({1*23.1*cos(\t r)+0*23.1*sin(\t r)},{0*23.1*cos(\t r)+1*23.1*sin(\t r)});
+\draw [shift={(-16.26,12.65)}] plot[domain=4.89:5.782,variable=\t]({1*12.83*cos(\t r)+0*12.83*sin(\t r)},{0*12.83*cos(\t r)+1*12.83*sin(\t r)});
+\draw (-11.45,7.53) node[anchor=north west] {$L$};
+\draw (-4.99,8.31) node[anchor=north west] {$\theta$};
+\draw (-2.01,8.28) node[anchor=north west] {$\theta$};
+\draw (-15.5,0.96) node[anchor=north west] {$\theta_{fus,1}$};
+\draw (-4.8,7.6) node[anchor=north west] {$\theta_{fus,2}$};
+\draw (-13.9,-1) node[anchor=north west] {$0$};
+\draw [dotted] (-7.41,7.36)-- (-7.39,5.38);
+\draw [dash pattern=on 2pt off 2pt] (-7.39,5.38)-- (0,5.39);
+\draw [dotted] (-7.39,5.38)-- (-7.39,3.38);
+\draw [dash pattern=on 2pt off 2pt] (-7.39,3.38)-- (3.18,3.38);
+\draw [dotted] (-7.39,3.38)-- (-10.48,3.38);
+\draw (-7.39,3.38)-- (-7.4,2.24);
+\draw (0,5.39)-- (3.18,3.38);
+\draw [shift={(6.16,7.9)}] plot[domain=3.21:3.53,variable=\t]({1*6.65*cos(\t r)+0*6.65*sin(\t r)},{0*6.65*cos(\t r)+1*6.65*sin(\t r)});
+\draw [shift={(13.29,5.65)}] plot[domain=3.36:3.69,variable=\t]({1*10.36*cos(\t r)+0*10.36*sin(\t r)},{0*10.36*cos(\t r)+1*10.36*sin(\t r)});
+\draw (-10.96,4.64) node[anchor=north west] {$C$};
+\draw (-8,8.28) node[anchor=north west] {$I$};
+\draw (6.19,-0.72) node[anchor=north west] {$t$};
+\draw (0.15,6.51) node[anchor=north west] {$A$};
+\draw (3.28,4.45) node[anchor=north west] {$D$};
+\begin{scriptsize}
+\draw [color=black] (-7.41,7.36)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (0,5.39)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (3.18,3.38)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-10.48,3.38)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+En A : apparition du premier microcristal. En D : disparition de la dernière goutte de liquide. En C : on a la composition de la dernière goutte.
+
+\subsubsection{Cristallisation Fractionnée}
+En effectuant plusieurs fois la double opération \textbf{cristallisation-fusion}, on obtient un solide de plus en plus riche (le moins fusible).
+
+\subsection{Miscibilité nulle à l'état solide}
+\subsubsection{Analyse Thermique}
+\begin{center}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqzzqq}{rgb}{0,0.6,0}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+\clip(-15.3,-2.1) rectangle (9.32,8.72);
+\draw [->] (-2,-2) -- (-2,8);
+\draw [->] (-3,-1) -- (8,-1);
+\draw [->] (7,-2) -- (7,8);
+\draw [color=qqzzqq](8.07,-0.2) node[anchor=north west] {$x_{1,l}$};
+\draw [->] (-14,-2) -- (-14,8);
+\draw [->] (-15,-1) -- (-5,-1);
+\draw (-5,-0.7) node[anchor=north west] {$t$};
+\draw (-14.2,8.8) node[anchor=north west] {$\theta$};
+\draw (-2.15,8.8) node[anchor=north west] {$\theta$};
+\draw (-2.93,1.15) node[anchor=north west] {$\theta_E$};
+\draw (7.37,3.92) node[anchor=north west] {$\theta_{fus1}$};
+\draw (-3.55,6.54) node[anchor=north west] {$\theta_{fus2}$};
+\draw (2.55,5.94) node[anchor=north west] {$L_{1+2}$};
+\draw (1.5,0.55) node[anchor=north west] {$1(s)/2(s)$};
+\draw (6.8,8.8) node[anchor=north west] {$\theta$};
+\draw (-13.2,3.27) node[anchor=north west] {$X_1=0$};
+\draw (-13.02,5.32)-- (-11.77,5.32);
+\draw [line width=1.4pt,color=ffqqqq] (-9,0.99)-- (-7.45,0.99);
+\draw [dotted] (-14,0.99)-- (7,0.99);
+\draw (-15,1.79) node[anchor=north west] {$\theta_E$};
+\draw [dash pattern=on 2pt off 2pt] (-10.17,4.29)-- (0.25,4.29);
+\draw [line width=0.9pt,dash pattern=on 2pt off 2pt,color=qqqqff] (-2.01,0.99)-- (6.99,0.99);
+\draw [shift={(-4.43,-3)},color=qqzzqq]  plot[domain=0.48:1.29,variable=\t]({1*8.67*cos(\t r)+0*8.67*sin(\t r)},{0*8.67*cos(\t r)+1*8.67*sin(\t r)});
+\draw [shift={(7.55,-1.93)},color=qqzzqq]  plot[domain=1.68:2.54,variable=\t]({1*5.19*cos(\t r)+0*5.19*sin(\t r)},{0*5.19*cos(\t r)+1*5.19*sin(\t r)});
+\draw (-1.4,3.39) node[anchor=north west] {$L+2(s)$};
+\draw (4.5,2.22) node[anchor=north west] {$L+1(s)$};
+\draw (0,-1.03) node[anchor=north west] {$0,2$};
+\draw (-7.4,2.04) node[anchor=north west] {$D$};
+\draw [dotted] (-11.77,5.32)-- (-2,5.32);
+\draw (2.9,2.37) node[anchor=north west] {$E$};
+\draw (-15.55,6.14) node[anchor=north west] {$\theta_{fus2}$};
+\draw (-10.17,4.29)-- (-10.42,7.32);
+\draw (-10.17,4.29)-- (-9,0.99);
+\draw (-7.45,0.99)-- (-6.85,-0.18);
+\draw (-13.02,5.32)-- (-13.5,7.32);
+\draw (-11.77,5.32)-- (-10.52,1.32);
+\draw (-9.05,2.87) node[anchor=north west] {$X_1=0,2$};
+\draw [color=qqqqff](8.05,-1.2) node[anchor=north west] {$x_{1,s}$};
+\draw (6.4,-1) node[anchor=north west] {$1$};
+\draw (-1.85,-1) node[anchor=north west] {$0$};
+\draw [line width=0.9pt,color=qqqqff] (-2,5.32)-- (-2,0.99);
+\draw [line width=0.9pt,color=qqqqff] (7,3.23)-- (7,0.99);
+\draw (-10.05,5.27) node[anchor=north west] {$A_{2(s)}$};
+\draw (-13.57,5.32) node[anchor=north west] {$A_{2(s)}$};
+\draw (-9.7,1.1) node[anchor=north west] {$A_{1(s)}$};
+\draw (-12,6.29) node[anchor=north west] {$D$};
+\begin{scriptsize}
+\draw [color=black] (-13.02,5.32)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-11.77,5.32)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-10.17,4.29)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-9,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (-7.45,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=qqzzqq] (0.25,4.29)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=qqzzqq] (3.26,0.99)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (0.22,-1)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\noindent En \textcolor{red}{{\Large ---}}, cristallisation des 2 solides. 
+\\
+\noindent En D, disparition du liquide.
+\\
+\noindent En A(.), apparition de (.). 
+\\
+\noindent E, point \textbf{Eutectique}, à cette composition, la température de fusion est minimale. 
+\\
+\noindent En \textcolor{blue}{{\Large -\,-\,-}}, variation de $\theta$ avec la composition aux équilibres. 
+\\ \\
+Ex : Bi/Cd, Benzène/Naphtalène.
+\subsubsection{Équation du liquidus}
+$$ 2(s) \rightleftarrows 2(l) \hspace{2cm} K^0=\displaystyle\frac{a_2}{1}$$
+$$ \displaystyle\frac{\mathrm d \ln{a_2}}{\mathrm dT}=\displaystyle\frac{\Delta_{fus}H^0_2}{RT^2}$$
+$$ \text{Approximation \ d'\bsc{Ellingham} \ :} \int_1^{a_2}\mathrm d \ln{(a_2)}=\displaystyle\frac{\Delta_{fus}H^0_2}{R} \int_{T_{fus,2}}^T \displaystyle\frac{\mathrm dT}{T^2}$$
+$$ \ln{(a_2)}=\displaystyle\frac{\Delta_{fus}H^0_2}{R} \left( \displaystyle\frac{1}{T_{fus,2}}-\displaystyle\frac{1}{T} \right)$$
+\noindent Pour chaque valeur de T, le calcul fournit $a_2$. Le graphe fournit $x_2$, on en déduit $\gamma_2$ : $$ a_2=\gamma_2 x_2$$
+
+\subsubsection{Cryométrie}
+\noindent Première expérience : on repère $T_fus,S$, S le solvant.
+\\
+\noindent Seconde expérience : dans S(l) on ajoute un peu, très peu de soluté A. On laisse refroidir, on repère la T d'apparition du premier microcristal de S.
+$$ T<T_{fus,S} \hspace{1cm} \Delta T=T_{fus}-T \ \longrightarrow \ \text{Abaissement \ cryoscopique}$$
+Dans le liquide : S majoritaire, $a_S \simeq x_S=1-x_A$
+$$ -x_A=\displaystyle\frac{\Delta_{fus}H^0_S}{R} \left( \displaystyle\frac{T-T_{fus}}{T_{fus}T} \right)\hspace{1cm} x_A \approx \displaystyle\frac{\Delta_{fus}H^0_S}{R} \displaystyle\frac{\Delta T}{T_{fus}^2}=\displaystyle\frac{m_A}{n_S}\displaystyle\frac{1}{M_A} $$
+On détermine ainsi $M_A$.
+
+\subsection{Existence de Composés Définis}
+Lors d'une réaction entre 1 et 2, il peut se former un corps \textbf{PUR}, noté D, appelé composé \textbf{défini}.
+$$ p1(s)+q2(s)\rightleftarrows \underbrace{1_p2_q}_{D}$$
+\\
+\textbf{Exemple} : ($cf$ CCP Chimie 1 2012)
+\\
+\noindent Binaire Al/Mg, composé défini : $\text{Al}_x\text{Mg}_y$, où $x$ et $y$ entiers, les plus petits possibles.
+$$ D_1=\text{Al}_{x_1}\text{Mg} _{y_1} \hspace{1cm} \frac{x_1}{y_1}=\frac{0,4}{0,6}=\frac{2}{3} \ \longleftarrow \ \text{Al}_2\text{Mg}_3$$
+$$ D_2=\text{Al}_{x_2}\text{Mg} _{y_2} \hspace{1cm} \frac{x_2}{y_2}=\frac{0,6}{0,4}=\frac{3}{2} \ \longleftarrow \ \text{Al}_3\text{Mg}_2$$
+\textbf{Exemple} : Acide formique - Formamide. Où x est la fraction molaire en formamide.
+\begin{center}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.2cm,y=1.2cm]
+\clip(0.8,-3.24) rectangle (11.2,5.38);
+\draw [->] (2,-3) -- (2,5);
+\draw [->] (1,-2) -- (11,-2);
+\draw [->] (10,-3) -- (10,5);
+\draw (2,-1)-- (10,-1);
+\draw (5.7,-1)-- (5.7,3);
+\draw (2,1)-- (5.7,1);
+\draw (5.7,0.42)-- (10,0.42);
+\draw [shift={(-1.37,0.25)}] plot[domain=0.15:0.86,variable=\t]({1*5.16*cos(\t r)+0*5.16*sin(\t r)},{0*5.16*cos(\t r)+1*5.16*sin(\t r)});
+\draw [shift={(6.26,0.49)}] plot[domain=1.79:2.94,variable=\t]({1*2.57*cos(\t r)+0*2.57*sin(\t r)},{0*2.57*cos(\t r)+1*2.57*sin(\t r)});
+\draw [shift={(3.73,-0.68)}] plot[domain=0.27:1.08,variable=\t]({1*4.17*cos(\t r)+0*4.17*sin(\t r)},{0*4.17*cos(\t r)+1*4.17*sin(\t r)});
+\draw [shift={(11.57,-0.21)}] plot[domain=1.99:2.98,variable=\t]({1*3.86*cos(\t r)+0*3.86*sin(\t r)},{0*3.86*cos(\t r)+1*3.86*sin(\t r)});
+\draw (6.06,4.18) node[anchor=north west] {$L$};
+\draw (2.4,2.92) node[anchor=north west] {$L$};
+\draw (5.06,2.72) node[anchor=north west] {$L$};
+\draw (6.1,2.42) node[anchor=north west] {$L$};
+\draw (9.3,2.54) node[anchor=north west] {$L$};
+\draw (2.68,2.4) node[anchor=north west] {$+$};
+\draw (4.84,2.24) node[anchor=north west] {$+$};
+\draw (6.35,1.86) node[anchor=north west] {$+$};
+\draw (8.98,1.98) node[anchor=north west] {$+$};
+\draw (2,1.86) node[anchor=north west] {$\text{Acide (s)}$};
+\draw (8.2,1.3) node[anchor=north west] {$\text{Amide (s)}$};
+\draw (2.8,0.26) node[anchor=north west] {$\text{Acide (s)}+D$};
+\draw (6.8,-0.08) node[anchor=north west] {$\text{Amide (s)}+D$};
+\draw (4.58,1.8) node[anchor=north west] {$D$};
+\draw (6.65,1.38) node[anchor=north west] {$D$};
+\draw (10.62,-2) node[anchor=north west] {$x$};
+\draw (2.2,-2) node[anchor=north west] {$0$};
+\draw (9.5,-2) node[anchor=north west] {$1$};
+\draw (1.6,5) node[anchor=north west] {$\theta$};
+\draw (10.1,5) node[anchor=north west] {$\theta$};
+\draw (3.45,1) node[anchor=north west] {$E_1$};
+\draw (7.5,0.45) node[anchor=north west] {$E_2$};
+\begin{scriptsize}
+\draw [color=black] (3.74,1)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (7.76,0.42)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqcc}{rgb}{0,0,0.8}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.92cm,y=0.92cm]
+\clip(1.2,-10.65) rectangle (20.06,10.23);
+\draw [->] (2,-10) -- (2,10);
+\draw [->] (18,-10) -- (18,10);
+\draw [->] (2,-10) -- (20,-10);
+\draw (1.45,8.2) node[anchor=north west] {$0$};
+\draw (0.78,-3.8) node[anchor=north west] {$-120$};
+\draw (0.92,2.2) node[anchor=north west] {$-60$};
+\draw (2,-1.03)-- (7.1,-1.03);
+\draw (7.1,-1.03)-- (7.1,-10);
+\draw (7.1,-1.03)-- (7.1,0.21);
+\draw [shift={(1.3,-5.29)}] plot[domain=0.84:1.45,variable=\t]({1*5.71*cos(\t r)+0*5.71*sin(\t r)},{0*5.71*cos(\t r)+1*5.71*sin(\t r)});
+\draw [shift={(7.12,-2.06)}] plot[domain=1.58:2.67,variable=\t]({1*2.27*cos(\t r)+0*2.27*sin(\t r)},{0*2.27*cos(\t r)+1*2.27*sin(\t r)});
+\draw (7.1,-0.29)-- (10.53,-0.29);
+\draw (10.53,-0.29)-- (10.52,0.93);
+\draw [shift={(7.05,-4.52)}] plot[domain=1.11:1.56,variable=\t]({1*4.73*cos(\t r)+0*4.73*sin(\t r)},{0*4.73*cos(\t r)+1*4.73*sin(\t r)});
+\draw [shift={(11.82,-1.86)}] plot[domain=2.01:2.61,variable=\t]({1*3.08*cos(\t r)+0*3.08*sin(\t r)},{0*3.08*cos(\t r)+1*3.08*sin(\t r)});
+\draw [dotted] (2,8)-- (18,8);
+\draw [shift={(6.96,-4.79)}] plot[domain=0:1.015,variable=\t]({1*6.74*cos(\t r)+0*6.74*sin(\t r)},{0*6.74*cos(\t r)+1*6.74*sin(\t r)});
+\draw [shift={(34.83,-4.75)}] plot[domain=2.493:3.14,variable=\t]({1*21.13*cos(\t r)+0*21.13*sin(\t r)},{0*21.13*cos(\t r)+1*21.13*sin(\t r)});
+\draw (6.6,5.33) node[anchor=north west] {$L$};
+\draw (6.06,0.13) node[anchor=north west] {$L/S$};
+\draw (11.17,-1.01) node[anchor=north west] {$L/S$};
+\draw (2.27,0.2) node[anchor=north west] {$L$};
+\draw (16.48,2.86) node[anchor=north west] {$L$};
+\draw [color=qqqqcc](8.33,-4.92) node[anchor=north west] {$H_2(s)$};
+\draw [color=ffqqqq](13.68,-7) node[anchor=north west] {$H_1(s)$};
+\draw (3.67,-3.56) node[anchor=north west] {$NH_3(s)$};
+\draw (13.43,-8) node[anchor=north west] {$H_2O(s)$};
+\draw (15.45,-0.31) node[anchor=north west] {$H_2O(s)$};
+\draw (10.01,4.67) node[anchor=north west] {$1 \varphi$};
+\draw (4.04,-2.25) node[anchor=north west] {$2 \varphi$};
+\draw (14.05,-6) node[anchor=north west] {$2 \varphi$};
+\draw (8.53,-1.75) node[anchor=north west] {$2 \varphi$};
+\draw (2.85,-0.3) node[anchor=north west] {$NH_{3(s)}$};
+\draw (7.09,0.25) node[anchor=north west] {$L/S$};
+\draw (9.55,0.68) node[anchor=north west] {$L/S$};
+\draw (4.91,-1.09) node[anchor=north west] {$E_3$};
+\draw (8.9,-0.31) node[anchor=north west] {$E_2$};
+\draw (13.7,-4.2) node[anchor=north west] {$E_1$};
+\draw (18.5,-9.5) node[anchor=north west] {$x_{eau}$};
+\draw (2.4,10.06) node[anchor=north west] {$T(° C)$};
+\draw [color=ffqqqq](11.46,-2.86) node[anchor=north west] {$H_1(s)$};
+\draw [color=ffqqqq](9.3,0.3) node[anchor=north west] {$H_1(s)$};
+\draw [color=ffqqqq](8.45,-3.48) node[anchor=north west] {$H_1(s)$};
+\draw [color=qqqqcc](7.88,0.138) node[anchor=north west] {{\scriptsize $H_{2_{(s)}}$}};
+\draw [color=qqqqcc](5.49,-0.45) node[anchor=north west] {$H_2(s)$};
+\draw [color=qqqqcc](3.72,-5.17) node[anchor=north west] {$H_2(s)$};
+\draw (10.53,-0.29)-- (10.53,-10);
+\draw (13.7,-4.8)-- (10.53,-4.8);
+\draw (13.7,-4.8)-- (18,-4.8);
+\begin{scriptsize}
+\draw [color=black] (2,8)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,-4)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,2)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (5.1,-1.03)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (9.17,-0.29)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (13.7,-4.8)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+Système binaire liquide-solide : $H_2O$/$NH_3$. $P=1 \ \text{atm}$. 
+\end{center}
+
+\subsection{Miscibilité Partielle}
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqcc}{rgb}{0,0,0.8}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.9cm,y=0.9cm]
+\clip(0.75,-10.89) rectangle (19.44,10.34);
+\draw [->] (2,-10) -- (2,10);
+\draw [->] (18,-10) -- (18,10);
+\draw [->] (2,-10) -- (19,-10);
+\draw (0.9,-7.75) node[anchor=north west] {$400$};
+\draw (18.62,-9.5) node[anchor=north west] {$w$};
+\draw (2.42,10.06) node[anchor=north west] {$T(° C)$};
+\draw (0.74,-3.75) node[anchor=north west] {$600$};
+\draw (0.78,0.25) node[anchor=north west] {$800$};
+\draw (0.53,4.25) node[anchor=north west] {$1000$};
+\draw (0.58,8.25) node[anchor=north west] {$1200$};
+\draw (4,-0.77)-- (14.97,-0.77);
+\draw [shift={(29.01,-12.56)}] plot[domain=2.063:2.61,variable=\t]({1*23.32*cos(\t r)+0*23.32*sin(\t r)},{0*23.32*cos(\t r)+1*23.32*sin(\t r)});
+\draw [shift={(33.63,-2.32)}] plot[domain=2.558:3.06,variable=\t]({1*18.73*cos(\t r)+0*18.73*sin(\t r)},{0*18.73*cos(\t r)+1*18.73*sin(\t r)});
+\draw [shift={(44.86,-10.73)}] plot[domain=2.902:3.124,variable=\t]({1*42.06*cos(\t r)+0*42.06*sin(\t r)},{0*42.06*cos(\t r)+1*42.06*sin(\t r)});
+\draw [shift={(-4.89,-10.03)}] plot[domain=0.0015:0.437,variable=\t]({1*21.91*cos(\t r)+0*21.91*sin(\t r)},{0*21.91*cos(\t r)+1*21.91*sin(\t r)});
+\draw (2.13,-10) node[anchor=north west] {$0$};
+\draw (17.56,-10) node[anchor=north west] {$1$};
+\draw [shift={(-4.67,-2.63)}] plot[domain=0.21:0.72,variable=\t]({1*8.87*cos(\t r)+0*8.87*sin(\t r)},{0*8.87*cos(\t r)+1*8.87*sin(\t r)});
+\draw [shift={(-2.54,-12.58)}] plot[domain=0.8:1.29,variable=\t]({1*16.44*cos(\t r)+0*16.44*sin(\t r)},{0*16.44*cos(\t r)+1*16.44*sin(\t r)});
+\draw (8.6,-0.7) node[anchor=north west] {$E$};
+\draw (5.82,-3.65) node[anchor=north west] {$\text{2 phases solides non miscibles}$};
+\draw (6.47,-5.28) node[anchor=north west] {$\text{(Cu+Ag) et (Cu+Ag)}$};
+\draw (8.11,6.38) node[anchor=north west] {$L$};
+\draw [color=qqqqcc](15.88,0.73) node[anchor=north west] {$\text{Ag}$};
+\draw (15.92,-0.09) node[anchor=north west] {$\text{dans}$};
+\draw [color=ffqqqq](16.04,-0.95) node[anchor=north west] {$\text{Cu}$};
+\draw (2.22,-1.36) node[anchor=north west] {$\text{dans}$};
+\draw [color=ffqqqq] (2.34,-0.54) node[anchor=north west] {$\text{Cu}$};
+\draw [color=qqqqcc](2.38,-2.38) node[anchor=north west] {$\text{Ag}$};
+\draw (3.24,2.2) node[anchor=north west] {$L$};
+\draw (14.61,5.48) node[anchor=north west] {$L$};
+\draw (13.71,4.37) node[anchor=north west] {$+$};
+\draw (4.14,1.5) node[anchor=north west] {$+$};
+\draw (2.58,0.49) node[anchor=north west] {$S$};
+\draw (16.25,1.67) node[anchor=north west] {$S$};
+\draw [color=qqqqcc](11.63,2.9) node[anchor=north west] {$\text{Ag}$};
+\draw (11.99,2.04) node[anchor=north west] {$\text{dans}$};
+\draw [color=ffqqqq] (12.93,1.26) node[anchor=north west] {$\text{Cu}$};
+\draw [color=ffqqqq] (5.12,1) node[anchor=north west] {$\text{Cu}$};
+\draw (4.79,0.44) node[anchor=north west] {$\text{dans}$};
+\draw [color=qqqqcc](6,0.44) node[anchor=north west] {$\text{Ag}$};
+\draw (9.25,-2.05) node[anchor=north west] {$S$};
+\begin{scriptsize}
+\draw [color=black] (2,-8)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,-4)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,0)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,4)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (2,8)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (8.89,-0.77)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+Système binaire liquide-solide. Composants formant des solutions solides. Ici exemple de Cu/Ag, à $P=1 \ \text{atm}$. $w$ : fraction massique en Cuivre.
+\end{center}
+\vspace{0.5cm}
+\noindent Solution (par analogie aux solutions liquides) de \textcolor{red}{Cu} dans \textcolor{blue}{Ag} : solide où \textcolor{blue}{Ag} est majoritaire, \textcolor{red}{Cu} s'est inséré dans le réseau.
+
+\section{Binaires Liquide/Liquide (Systèmes Fermés)}
+\textbf{Exemple} : méthanol/n-heptane. La miscibilité des 2 composants est incomplète.
+\begin{center}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.24,-0.6) rectangle (10.6,9.18);
+\draw [->] (0,0) -- (0,9);
+\draw [->] (0,0) -- (10.54,0);
+\draw [->] (10,0) -- (10,9);
+\draw [shift={(10.14,0)},color=qqqqff]  plot[domain=2.525:3.141,variable=\t]({1*9.14*cos(\t r)+0*9.14*sin(\t r)},{0*9.14*cos(\t r)+1*9.14*sin(\t r)});
+\draw [shift={(5.68,2.96)},color=qqqqff]  plot[domain=1.77:2.48,variable=\t]({1*3.79*cos(\t r)+0*3.79*sin(\t r)},{0*3.79*cos(\t r)+1*3.79*sin(\t r)});
+\draw [shift={(5.41,4.28)},color=qqqqff]  plot[domain=0.626:1.77,variable=\t]({1*2.45*cos(\t r)+0*2.45*sin(\t r)},{0*2.45*cos(\t r)+1*2.45*sin(\t r)});
+\draw [shift={(-1.51,0.13)},color=qqqqff]  plot[domain=-0.012:0.56,variable=\t]({1*10.51*cos(\t r)+0*10.51*sin(\t r)},{0*10.51*cos(\t r)+1*10.51*sin(\t r)});
+\draw [dash pattern=on 2pt off 2pt,color=ffqqqq] (1.94,4.04)-- (8.25,4.04);
+\draw [dotted] (4.52,4.04)-- (4.52,0);
+\draw [dotted] (1.94,4.04)-- (1.94,0);
+\draw [dotted] (8.25,4.04)-- (8.25,0);
+\draw (0.06,9.18) node[anchor=north west] {$T(° C)$};
+\draw (10.24,0.5) node[anchor=north west] {$x$};
+\draw (5.36,7.4) node[anchor=north west] {$C$};
+\draw (4.3,0.02) node[anchor=north west] {$x_G$};
+\draw (1.7,0) node[anchor=north west] {$x_1$};
+\draw (8,0.02) node[anchor=north west] {$x_2$};
+\draw (-0.2,0.02) node[anchor=north west] {$0$};
+\draw (9.8,0.02) node[anchor=north west] {$1$};
+\draw (4.44,4.78) node[anchor=north west] {$I$};
+\draw (2,8) node[anchor=north west] {$\text{1 phase liquide}\longrightarrow \text{2 constituants}$};
+\draw (2.8,3) node[anchor=north west] {$\text{2 phases liq non miscibles}$};
+\begin{scriptsize}
+\draw [color=black] (5.46,6.73)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (1.94,4.04)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (8.25,4.04)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (4.52,4.04)-- ++(-1.5pt,-1.5pt) -- ++(3.0pt,3.0pt) ++(-3.0pt,0) -- ++(3.0pt,-3.0pt);
+\draw [color=black] (4.52,0)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (1.94,0)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\draw [color=black] (8.25,0)-- ++(-1.5pt,0 pt) -- ++(3.0pt,0 pt) ++(-1.5pt,-1.5pt) -- ++(0 pt,3.0pt);
+\end{scriptsize}
+\end{tikzpicture}
+
+$x$ : fraction molaire en méthanol. $P=1\,\text{atm}$
+
+\textcolor{blue}{Courbe d'Équilibre}
+\end{center}
+
+\noindent Si l'on part de I, avec pour le méthanol, une fraction molaire globale $x_G$, on aura deux phases liquides, une de fraction $x_1$ en méthanol, l'autre de fraction $x_2$ en méthanol.
