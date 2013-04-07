@@ -13,20 +13,20 @@
 					\begin{center}
 					\schemestart  $\frac{1}{2}$\chemfig{H^{+}} \arrow \chemfig{H_{2}} \schemestop \ avec $E^0_3 = 0\,$V
 					\end{center}
-\item Prévisions thermodynamiques : Les réactions qui se déroulent majoritairement sont celles qui demandent le moins d'énergie, ce qui correspond à celles de plus forte affinité chimique. L'affinité chimique est maximale si l'affinité de la cathode est maximale et celle de l'anode minimale (avec $\A = F.E$). La thermo prévoit donc la réduction de l'espèce avec le potentiel de Nernst le plus élevé (parmi les réactions possibles à la cathode) et l'oxydation de l'espèce avec le potentiel de Nernst le moins élevé (parmi les réactions possibles à l'anode) \end{itemize}
+\item Prévisions thermodynamiques : Les réactions qui se déroulent majoritairement sont celles qui demandent le moins d'énergie, ce qui correspond à celles de plus forte affinité chimique. L'affinité chimique est maximale si l'affinité de la cathode est maximale et celle de l'anode minimale (avec $\A = F.E$). La thermo prévoit donc la réduction de l'espèce avec le potentiel de \bsc{Nernst} le plus élevé (parmi les réactions possibles à la cathode) et l'oxydation de l'espèce avec le potentiel de \bsc{Nernst} le moins élevé (parmi les réactions possibles à l'anode). \end{itemize}
 		\subsection{Vérifications expérimentales}
-			La concentration de \chemfig{Cl^{-}} vaut 1 mol$\times \mbox{L}^{-1}$, $p_{H_2}=p_{O_2}=1$bar,  à la cathode se produit la réduction de \chemfig{H^{+}} ce qui est conforme aux prévisions, mais la thermodynamique prévoit l'oxydation de l'eau à l'anode, ce qui n'est pas vérifiée expérimentalement. On peut cependant retrouver l'existence de la tension limite en exprimant la différentielle de G et on trouve \[U_{el} \geq \frac{\Delta rG}{F} = E_a-E_c\]
+			La concentration de \chemfig{Cl^{-}} vaut 1 mol$\times \mbox{L}^{-1}$, $p_{H_2}=p_{O_2}=1$bar,  à la cathode se produit la réduction de \chemfig{H^{+}} ce qui est conforme aux prévisions, mais la thermodynamique prévoit l'oxydation de l'eau à l'anode, ce qui n'est pas vérifiée expérimentalement. On peut cependant retrouver l'existence de la tension limite en exprimant la différentielle de G et on trouve : \[U_{el} \geq \frac{\Delta rG}{F} = E_a-E_c\]
 	\section{Généralités sur les courbes intensité-potentiel}
 		\subsection{Insuffisance de la thermodynamique}
 			Le contrôle cinétique est fréquent dans les électrolyses (cf exemple du dessus) et il y a une cinétique hétérogène puisque le conducteur électronique est seul dans a phase, l'électrolyte est liquide et les constituants actifs peuvent être solides ou gazeux. 
 		\subsection{Phénomène de transferts}
 			Il y a deux types de transferts : les transferts de matière ou d'électron.
 				\begin{itemize}
-\item Transfert de matière : arrivée des réactifs au voisinage de l'électrode ou départ des produits du voisinage de l'électrode, du à la migration des ions (gradient de potentiel), à la diffusion (gradient de concentration) et à la convection (agitation, gradient de température ou de densité)
-\item Transfert des électrons à la surface des électrodes
+\item Transfert de matière : arrivée des réactifs au voisinage de l'électrode ou départ des produits du voisinage de l'électrode, du à la migration des ions (gradient de potentiel), à la diffusion (gradient de concentration) et à la convection (agitation, gradient de température ou de densité).
+\item Transfert des électrons à la surface des électrodes.
 \end{itemize}
 
-		\subsection{densité de courant, mesure de la vitesse}
+		\subsection{Densité de courant, mesure de la vitesse}
 			Écriture générale de la réaction : \schemestart
 $\alpha$ \chemfig{Ox}+m \chemfig{H^{+}}+n \chemfig{e^{-}} \arrow{<->} $\beta$ \chemfig{Red} + c \chemfig{H_2O}
 \schemestop \\
@@ -75,7 +75,7 @@ La mesure se fait grâce à un potentiostat. L'intensité est mesurée à l'électrode
 \bsc{Fig 1} : Graphe caractéristique d'un système \og rapide \fg
 \end{center}
 \vspace{0.5cm}
-Un système est lent s'il existe un domaine de potentiel tel que j=0. On appelle surtension la différence $\eta = E-E_{eq}$ pour une valeur de j donnée mais conventionnellement, si rien n'est précisé, il faut comprendre "quand j arrête d'être nul". La surtension anodique est positive, la surtension cathodique est négative. 
+Un système est lent s'il existe un domaine de potentiel tel que j=0. On appelle surtension la différence $\eta = E-E_{eq}$ pour une valeur de j donnée mais conventionnellement, si rien n'est précisé, il faut comprendre \og quand j arrête d'être nul \fg. La surtension anodique est positive, la surtension cathodique est négative. 
 \begin{center}
 \definecolor{ffqqqq}{rgb}{1,0,0}
 \definecolor{qqqqff}{rgb}{0,0,1}
@@ -130,5 +130,5 @@ Un système est lent s'il existe un domaine de potentiel tel que j=0. On appelle 
 		\subsection{Applications à quelques systèmes électrochimiques}
 		\begin{itemize}
 \item Pour une électrolyse, on a toujours $\A = \A^{\star}_c-\A^{\star}_a \mbox{ et }\A^{\star}= E$. A la cathode, on a toujours la réduction demandant de l'énergie soit celle de plus fort potentiel et à l'anode l'oxydation demandant le moins d'énergie soit celle de plus faible E. 
-\item Exemple de la pile Daniell : un solution de sulfate de Zinc dans laquelle plonge une lame en Zinc, séparée par un pont salin d'une solution de sulfate de cuivre dans laquelle plonge une lame de cuivre. A la cathode, il se produit la réduction du Cuivre \schemestart \chemfig{Cu^{2+}} + 2 \chemfig{e^{-}} \arrow \chemfig{Cu_{(s)}} \schemestop. Comme il y a un apport d'électron, la lame de Cuivre est reliée au pôle moins du générateur et à l'anode, on a l'oxydation du Zinc \schemestart \chemfig{Zn_{(s)}} \arrow \chemfig{Zn^{2+}} + 2 \chemfig{e^{-}} \schemestop
+\item Exemple de la pile \bsc{Daniell} : un solution de sulfate de Zinc dans laquelle plonge une lame en Zinc, séparée par un pont salin d'une solution de sulfate de cuivre dans laquelle plonge une lame de cuivre. A la cathode, il se produit la réduction du Cuivre \schemestart \chemfig{Cu^{2+}} + 2 \chemfig{e^{-}} \arrow \chemfig{Cu_{(s)}} \schemestop. Comme il y a un apport d'électron, la lame de Cuivre est reliée au pôle moins du générateur et à l'anode, on a l'oxydation du Zinc \schemestart \chemfig{Zn_{(s)}} \arrow \chemfig{Zn^{2+}} + 2 \chemfig{e^{-}} \schemestop
 \end{itemize}
