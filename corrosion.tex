@@ -1,21 +1,21 @@
 \chapter{Phénomènes de corrosion}
 	\section{Nature de la corrosion}
 		\begin{itemize}
-\item La corrosion est la dégradation des matériaux par le milieu dans lequel il se trouve : il y a par exemple la corrosion des métaux c'est-à-dire leur oxydation qui peut-être de deux types : la corrosion humide (en présence d'eau) ou la corrosion sèche (cf Ellingham) 
+\item La corrosion est la dégradation des matériaux par le milieu dans lequel il se trouve : il y a par exemple la corrosion des métaux c'est-à-dire leur oxydation qui peut-être de deux types : la corrosion humide (en présence d'eau) ou la corrosion sèche (cf \bsc{Ellingham}). 
 \item Réaction générale : \schemestart \chemfig{M_{(s)}} \chemsign{+} Ox \arrow{<=>}  \chemfig{M^{n+}}  \chemsign{+} Red \schemestop 
 \item Facteurs favorables : présence simultanée d'eau et de \chemfig{O_2} (eau aérée) etd'ions : ils augmentent la conductivité du milieu et peuvent invertir dans certaines réactions chimique (par exemple les ions chlorures qui peuvent créer des chlorocomplexes en compétition avec les oxydes). \\ Dans l'atmosphère terrestre, il y a toujours \chemfig{H_2O_{(g)}}. Par condensation sur les pièces métallique il se forme un  film aqueux dans lequel sont dissouts certains oxydes (\chemfig{CO_2}, \chemfig{SO_2}, \chemfig{NO_x} qui sont sources d'ions) $\Leftarrow$ il y a toujours corrosion.
 \end{itemize}
 
 	\section{Corrosion uniforme}
-		Ce phénomène est observé lorsque toute la pièce métallique est immergée dans une solution et que l'oxydation est uniforme à sa surface (aussi appelée corrosion chimique)
+		Ce phénomène est observé lorsque toute la pièce métallique est immergée dans une solution et que l'oxydation est uniforme à sa surface (aussi appelée corrosion chimique).
 		\subsection{Approche thermodynamique}				
 					\begin{itemize}
-\item Fer : l'étude du diagramme E-pH avec la convention c=$10^{-6}$ mol.L$^{_1}$ (les espèces étudiées sont le Fer solide, \chemfig{Fe^{2+}}, \chemfig{Fe^{3+}}, \chemfig{Fe_2O_3}) nous apprend que le domaine d'immunité du fer est disjoint de celui de l'eau (aérée ou non), tandis que les domaines de passivation ou de corrosion recouvrent partiellement le domaine de stabilité de l'eau. Pour que la passivation soit effective, il faut que le solide formée à al surface du métal constitue une couche couvrante, adhérente, inerte et étanche. Pour le fer, les couches de solides formés sont des mélanges d'oxydes et de carbonates, perméable à l'air et à l'eau et peu adhérente
+\item Fer : l'étude du diagramme E-pH avec la convention c=$10^{-6}$ mol.L$^{_1}$ (les espèces étudiées sont le Fer solide, \chemfig{Fe^{2+}}, \chemfig{Fe^{3+}}, \chemfig{Fe_2O_3}) nous apprend que le domaine d'immunité du fer est disjoint de celui de l'eau (aérée ou non), tandis que les domaines de passivation ou de corrosion recouvrent partiellement le domaine de stabilité de l'eau. Pour que la passivation soit effective, il faut que le solide formée à al surface du métal constitue \textbf{une couche couvrante, adhérente, inerte et étanche.} Pour le fer, les couches de solides formés sont des mélanges d'oxydes et de carbonates, perméable à l'air et à l'eau et peu adhérente.
 \item Zinc : L'étude du diagramme E-pH nous montrent qu'en présence d'ions carbonates, le domaine de passivation du zinc est étendu.
 \end{itemize}
 
 	\section{Corrosion différentielle}
-		Ce phénomène est observé lorsque les systèmes ne sont pas homogènes (métal et solution). Elle est dite différentielle car elle se produit de façon différente selon les zones du métal. En effet, l'oxydation du métal et la réduction de l'agent corrosif ont lieu simultanément mais dans des zones différentes : on  a un ensemble de micro-piles. Certaines zones sont des anodes, d'autres zones sont des cathodes. Il n'y a pas de transfert direct d'électron entre les atomes du métal et ceux des agents oxydants
+		Ce phénomène est observé lorsque les systèmes ne sont pas homogènes (métal et solution). Elle est dite différentielle car elle se produit de façon différente selon les zones du métal. En effet, l'oxydation du métal et la réduction de l'agent corrosif ont lieu simultanément mais dans des zones différentes : on  a un ensemble de micro-piles. Certaines zones sont des anodes, d'autres zones sont des cathodes. Il n'y a pas de transfert direct d'électron entre les atomes du métal et ceux des agents oxydants.
 		\subsection{Corrosion par aération différentielle}
 \vspace{.5cm}			
 \begin{center}
@@ -62,7 +62,7 @@
 \draw [color=zzqqww](-5.35,0.64) node[anchor=north west] {$ HO^-$};
 \draw [color=zzqqww](4.44,0.64) node[anchor=north west] {$ HO^-$};
 \draw (-2.52,2.15) node[anchor=north west] {$Na^+,Cl^-$};
-\draw (0.96,2.06) node[anchor=north west] {$Cl^-, Na^+$};
+\draw (0.8,2.06) node[anchor=north west] {$Cl^-, Na^+$};
 \draw [->] (-0.94,1.57) -- (-0.47,1.08);
 \draw [->] (0.73,1.55) -- (0.39,1.05);
 \draw [->] (-2.74,1.69) -- (-3.7,1.19);
@@ -95,27 +95,32 @@
 			\subsection{Courbe de polarisation d'un métal}
 				Certains métaux donnent effectivement lieu au phénomène de passivation Ti, Cr... Pour l'acier (alliage Fe/C avec le \%C $\simeq$ 0,15-0,85), le carbone ne sert qu'à améliorer les propriétés mécaniques du fer et n'a aucun effet sur la corrosion. 
 				\\ Les métaux passivables présentent sur leurs courbes i-E des zones où i=0 pour un large domaine de potentiel (appelé Potentiel de Flade) situé entre l'oxydation du métal proprement dite et la transpassivation (disparition de la couche passivante). On voit alors que l'oxydation est auto-inhibée. Pour le Fer, dans l'air humide, cette passivation ne s'observe pas. On cherche donc à rendre le Fer \og inoxydable \fg. Pour cela, on réalise un alliage dont le le domaine de passivation est important dans l'air humide ou dans des conditions spécifiques. La plupart des aciers inoxydables contiennent du Chrome à plus de 12\% en masse. 
-				\\ Pour certains métaux (par exemple le titane) la couche naturellement formée assure une passivation efficace. Pour d'autres (par exemple l'aluminium) la couche naturelle est peu efficace (\chemfig{Al_2O_3} est peu adhérent). Dans de tels cas, on oxyde de façon contrôlée ces métaux de façon à avoir une formation lente d'une couche efficace (on parle par exemple d'aluminium anodisé)
+				\\ Pour certains métaux (par exemple le titane) la couche naturellement formée assure une passivation efficace. Pour d'autres (par exemple l'aluminium) la couche naturelle est peu efficace (\chemfig{Al_2O_3} est peu adhérent). Dans de tels cas, on oxyde de façon contrôlée ces métaux de façon à avoir une formation lente d'une couche efficace (on parle par exemple d'aluminium anodisé).
 			\subsection{Protection cathodique}
-			\begin{itemize}
-\item Principe : on amène la structure à protéger dans son domaine d'immunité et l'y maintient. Dans ces conditions, le Fer est la cathode et son oxydation devient négligeable. 
-\item Protection par courant imposé : la pièce à protéger est reliée au pôle - d'un générateur de courant. Cette méthode est surtout utilisée pour les pièces enterrées ou immergées. L'anode est constituée d'un bloc de graphite qu'il faut changer régulièrement.
-\item Protection par anode sacrificielle : on court-circuite le fer avec un métal plus corrodable (par exemple le zinc, l'aluminium ou le manganèse). Plus corrodable signifie que son courant de corrosion pour le potentiel d'équilibre du Fer est plus grand que le courant d'échange du fer : la réaction d'oxydation du zinc solide est beaucoup plus rapide que celle du Fer, c'est donc lui qui disparait (c'est pourquoi on parle d'anode sacrificielle puisqu'on perd le métal)
-\item Protection par un revêtement métallique : \begin{itemize}
-\item Par un métal plus corrodable que le fer : on recouvre la pièce de Fer à protéger par une couche de Zinc. Si on a rupture de la couche de zinc, le Fer est à nu mais on a une protection cathodique : le Zinc s'oxyde en \chemfig{Zn{(}OH{)}_2} qui est passivant donc autoinhibe la corrosion. 
+			
+\noindent Principe : on amène la structure à protéger dans son domaine d'immunité et l'y maintient. Dans ces conditions, le Fer est la cathode et son oxydation devient négligeable. 
+
+	\indent Protection par courant imposé : la pièce à protéger est reliée au pôle - d'un générateur de courant. Cette méthode est surtout utilisée pour les pièces enterrées ou immergées. L'anode est constituée d'un bloc de graphite qu'il faut changer régulièrement.
+	
+	\indent Protection par anode sacrificielle : on court-circuite le fer avec un métal plus corrodable (par exemple le zinc, l'aluminium ou le manganèse). Plus corrodable signifie que son courant de corrosion pour le potentiel d'équilibre du Fer est plus grand que le courant d'échange du fer : la réaction d'oxydation du zinc solide est beaucoup plus rapide que celle du Fer, c'est donc lui qui disparait (c'est pourquoi on parle d'anode sacrificielle puisqu'on perd le métal).
+	
+	\indent Protection par un revêtement métallique : 
+	
+\indent \indent Par un métal plus corrodable que le fer : on recouvre la pièce de Fer à protéger par une couche de Zinc. Si on a rupture de la couche de zinc, le Fer est à nu mais on a une protection cathodique : le Zinc s'oxyde en \chemfig{Zn{(}OH{)}_2} qui est passivant donc autoinhibe la corrosion. 
 
 \vspace{.5cm}
 \begin{center}
 \includegraphics[scale=.1]{Chimie_Corrosion_Sacrificielle.jpg} 
 
-\bsc{Fig. 3} \\ (Clou du haut) Un morceau de zinc est enroulé autour du clou, le zinc s'oxyde (\chemfig{Zn{(}OH{)}_2} blanc). \\ (Clou du bas) Un fil de cuivre est enroulé autour du clou, le fer s'oxyde (\chemfig{Fe_3{(}Fe{(}CN{)}_{6}{)}_2} bleu).
+\bsc{Fig. 3} \\ (Clou du haut) Un morceau de zinc est enroulé autour du clou, le zinc s'oxyde \\ (\chemfig{Zn{(}OH{)}_2} blanc) \\ (Clou du bas) Un fil de cuivre est enroulé autour du clou, le fer s'oxyde \\ (\chemfig{Fe_3{(}Fe{(}CN{)}_{6}{)}_2} bleu)
 \end{center}
 
 \vspace{.5cm}
-\item Pour déposer la couche de zinc protectrice, on plonge la pièce en fer, préalablement décapée, dégraissée et préchauffée dans un bain de Zinc$_{l}$ ou alors on utilise la méthode d'électrozingage : la cathode est la pièce à zinguer, l'anode du Zn très pur et l'électrolyte du \chemfig{Zn{(}OH{)}_{4}^{2-}} ou \chemfig{Zn{(}Cl{)}_{4}^{2-}}. On dépose alors une couche d'environ 10 $\mu m$ de Zinc. 
-\item Par un métal moins corrodable que le fer : par exemple une couche de Nickel. Si on a rupture de la couche protectrice de Ni, le Fer est à nu. Comme le Fer est plus corrodable que le Nickel, c'est lui qui est corrodé principalement. Cette protection est donc un facteur aggravant la corrosion.
-\end{itemize}
-\end{itemize}
+
+\indent \indent Pour déposer la couche de zinc protectrice, on plonge la pièce en fer, préalablement décapée, dégraissée et préchauffée dans un bain de Zinc$_{l}$ ou alors on utilise la méthode d'électrozingage : la cathode est la pièce à zinguer, l'anode du Zn très pur et l'électrolyte du \chemfig{Zn{(}OH{)}_{4}^{2-}} ou \chemfig{Zn{(}Cl{)}_{4}^{2-}}. On dépose alors une couche d'environ 10 $\mu m$ de Zinc. 
+
+\indent \indent Protection par un métal moins corrodable que le fer : par exemple une couche de Nickel. Si on a rupture de la couche protectrice de Ni, le Fer est à nu. Comme le Fer est plus corrodable que le Nickel, c'est lui qui est corrodé principalement. Cette protection est donc un facteur aggravant la corrosion.
+
 \section{Conclusion}
 	Il existe d'autre méthodes : \begin{itemize}
 \item la peinture
