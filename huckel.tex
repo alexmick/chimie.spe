@@ -16,12 +16,12 @@
 									\item Une combinaison de k OA donne k OM
 									\item Une combinaison de 2 OA donne 2 OM : une liante ($E_{OM}$ < min($E_{OA}$)) et une anti-liante : ($E_{OM}$ > max($E_{OA}$)) \end{itemize}
 		\subsection{Recouvrement}
-			Le critère incontournable "\textbf{de même type de symétrie}" se ramène à "\textbf{intégrale de recouvrement non-nul}". On définit pour 2 OA l'intégrale S de recouvrement comme 
+			Le critère incontournable \og\textbf{de même type de symétrie}\fg se ramène à \og\textbf{intégrale de recouvrement non-nul}\fg. On définit pour 2 OA l'intégrale S de recouvrement comme 
 			$$S_{AB}=\iiint_{espace}X_AX_B\d \tau \ \ \ |S_{AB}|<1$$
 			Si $X_A$ et $X_B$ sont de même signe dans le domaine de recouvrement, $X_A$ et $X_B$ sont dites en phase. Le recouvrement est dit liant si $S_{AB}$>0, anti-liant sinon. \\
 			Plus le recouvrement du nuage électronique est important, plus la molécule est stable.
 		\subsection{Interactions entre deux OA}
-			On considère la molécule diatomique \chemfig{A-[,0.7]B}. Soit $\varphi = c_A.X_A + c_B.X_B$, chaque OA étant centrée sur "son" atome. \\
+			On considère la molécule diatomique \chemfig{A-[,0.7]B}. Soit $\varphi = c_A.X_A + c_B.X_B$, chaque OA étant centrée sur \og son\fg atome. \\
 			Les OA et les OM sont normées c'est à dire 
 			$$\iiint_{espace}X_A.X_A.\d \tau = 1 = \ps{X_A}{X_A} \mbox{ et de même } \ps{\varphi}{\varphi}=1$$
 			On appelle $\H$ l'opérateur hamiltonien mono-électronique, ce qui donne dans l'équation de \bsc{Schrödinger} : $$\H ( \varphi )= E\varphi$$
@@ -37,25 +37,25 @@
 			
 			On part de l'équation de \bsc{Schrödinger}.
 			\begin{eqnarray*} \H \varphi &=& E \varphi \\
-						\Longleftrightarrow \H(c_A.X_A+c_B.X_B) &=& E \varphi \\
-						\Longleftrightarrow c_A\H(X_A)+c_B\H(X_B) &=& E(c_A.X_A+c_B.X_B) \end{eqnarray*}
+						\Longleftrightarrow \H(c_A\cdot X_A+c_B\cdot X_B) &=& E \varphi \\
+						\Longleftrightarrow c_A\H(X_A)+c_B\H(X_B) &=& E(c_A\cdot X_A+c_B\cdot X_B) \end{eqnarray*}
 			On multiplie à gauche par $X_A$ et on intègre sur tout l'espace (ce qui revient à projeter sur $X_A$) On a donc 
 			\begin{eqnarray} c_A\ps{X_A}{\H(X_A)} +c_B\ps{X_A}{\H(X_B)} &=& E c_A\ps{X_A}{X_A} +E c_B\ps{X_B}{X_B} \nonumber \\
-						\Longleftrightarrow c_A.H_{AA}+c_B.H_{AB} &=& E c_A + E.c_B.S \nonumber \\
-						\Longleftrightarrow c_A(H_{AA}-E)&+&c_B(H_{AB}-E.S) = 0 \end{eqnarray}
-				Idem avec $X_B$ \begin{eqnarray}  c_A(H_{AB}-E.S)+c_B(H_{BB}-E) = 0 \end{eqnarray}
+						\Longleftrightarrow c_A\cdot H_{AA}+c_B\cdot H_{AB} &=& E c_A + E\cdot c_B\cdot S \nonumber \\
+						\Longleftrightarrow c_A(H_{AA}-E)&+&c_B(H_{AB}-E\cdot S) = 0 \end{eqnarray}
+				Idem avec $X_B$ \begin{eqnarray}  c_A(H_{AB}-E\cdot S)+c_B(H_{BB}-E) = 0 \end{eqnarray}
 						Une solution triviale est $c_A$=$c_B$=0, pas de sens chimique.
 						Une autre solution serait 
 						$$\left|\!\! \begin{tabular}{cc} 
-						$H_{AA}-E$ & $H_{AB}-E.S$ \\
-						$H_{AB}-E.S$ & $H_{BB}-E$ \\
+						$H_{AA}-E$ & $H_{AB}-E\cdot S$ \\
+						$H_{AB}-E\cdot S$ & $H_{BB}-E$ \\
 						\end{tabular}\!\!\right|=0$$
 						C'est le \textbf{déterminant séculaire}. 
 			\subsubsection{Interaction entre 2 OA identiques}
 			
 				On suppose $H_{AA}=H_{BB}$, ce qui entraine pour le déterminant séculaire $\displaystyle (H_{AA}-E)^2-(H_{AB}-E.S)^2 =0$ on a deux valeurs propres, $E_1$ et $E_2$ avec 
 				$$E_1=\frac{H_{AA}+H_{AB}}{1+S} \mbox{ et } E_2 = \frac{H_{AA}-H_{AB}}{1-S}$$ On peut démontrer que $E_1 <H_{AA}<E_2$. On voit donc que $E_1$ est l'énergie de l'OM liante $\varphi_1$ et $E_1$ l'énergie de l'OM anti-liante $\varphi_2$ 
-				\\ \\ Par symétrie, ${c_A}^2 = {c_B}^2$ \\ Pour la liante, $c_A = c_B$, pas de surface nodale entre A et B. On exprime la normalisation de $\varphi_1$ et on trouve $\displaystyle \varphi_1 = \frac{X_A+X_B}{\sqrt{2}\sqrt{1+S}}$ et de même $\displaystyle \varphi_2 = \frac{X_A-X_B}{\sqrt{2}{1-S}}$
+				\\ \\ Par symétrie, ${c_A}^2 = {c_B}^2$ \\ Pour la liante, $c_A = c_B$, pas de surface nodale entre A et B. On exprime la normalisation de $\varphi_1$ et on trouve $\displaystyle \varphi_1 = \frac{X_A+X_B}{\sqrt{2}\sqrt{1+S}}$ et de même $\displaystyle \varphi_2 = \frac{X_A-X_B}{\sqrt{2}\sqrt{1-S}}$
 				\\ On a comme résultat que la différence d'énergie entre l'OM anti-liante et $H_{AA}$ (la déstabilisation) est plus grande que la différence entre $H_{AA}$ et l'énergie de l'OM liante (la stabilisation) \\ \\
 				Si les deux OA sont différentes, on a toujours deux OM, dont une liante et une anti-liante, et on a toujours la déstabilisation plus importante que la stabilisation. On a en plus que l'OM liante ressemble/est plus développée sur l'atome dont le coefficient $c_i$ est le plus important en valeur absolue.
 		\section{Théorie de \bsc{Hückel} simple}
@@ -80,7 +80,7 @@
 			 \underline{Remarques} S=0 supprime la dissymétrie stabilisation/déstabilisation. \\ Les valeurs exactes de $\alpha_X$ et $\beta_{CX}$ importent peu, mais l'électronégativité doit être respectée : si $\chi \nearrow$, $\alpha_X \searrow$
 			\\ \\ \underline{Indice de liaison $\pi$, charge nette} : \begin{itemize}
 			\item Indice de liaison : Valable uniquement pour 2 atomes i et j directement connectés dans le squelette $\sigma$ 
-			$$P_{ij}=\sum_{\ell}n_{\ell}.c_{i,\ell}c_{j,\ell}$$ avec $n_{\ell}$ le nombre d'électron dans l'OM $\ell$
+			$$P_{ij}=\sum_{\ell}n_{\ell}\cdot c_{i,\ell}c_{j,\ell}$$ avec $n_{\ell}$ le nombre d'électron dans l'OM $\ell$
 			Si $P_{i,j}$=0, la liaison est uniquement $\sigma$, si  $P_{i,j}$=1, la liaison est une liaison $\pi$ pure. 
 			\item Charge nette : \begin{itemize} \item On définit tout d'abord la charge électronique de l'atome A 
 			$$q_{e}(A) = -\sum_{\ell}n_{\ell}{c_{A,\ell}}^2$$
@@ -103,10 +103,10 @@
 				$c_2$ & $\displaystyle\frac{1}{\sqrt{2}}$ & -$\displaystyle\frac{1}{\sqrt{2}}$ \\ & & \\ \hline \end{tabular}$$
 				
 				\item Si on doit calculer l'indice de liaison $\pi$, 
-					$$P_{12} = 2.\frac{1}{\sqrt{2}}.\frac{1}{\sqrt{2}} =1$$ donc la liaison est purement $\pi$ 
+					$$P_{12} = 2\cdot\frac{1}{\sqrt{2}}\cdot\frac{1}{\sqrt{2}} =1$$ donc la liaison est purement $\pi$ 
 				\item De même, la charge nette est nulle
 				\item L'énergie de liaison vaut
-					$$2\alpha - 2(\alpha +\beta) = 2\beta$$
+					$$\underbrace{2\alpha}_{dissocié} - \underbrace{2(\alpha +\beta)}_{associé} = -2\beta$$
 			\end{enumerate}
 		\subsection{Acétylène}
 		\begin{enumerate} \item : Squelette $\sigma$ \chemfig{[,0.7]H-C-C-H}. Il y a deux sous-systèmes $\pi$ indépendants car ils n'ont pas le même type de symétrie $\rightarrow$ on ne peut pas combiner les OA. 
