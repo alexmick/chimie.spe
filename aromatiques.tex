@@ -13,12 +13,12 @@ $\star$ \textbf{Catalyseurs} selon la nature de X$_2$:
 \end{description}
 $\star$ \textbf{Mécanisme}:
 \schemestart
-\chemfig{\lewis{246,Br}-\lewis{206,Br}} \+ \chemfig{\lewis{4|,Fe}-Br_3}
-\arrow{<=>}
-\chemfig{[0,1.5]\lewis{357,Br}-[1]\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
-%\arrow{<=>}
-%\chemleft(\chemfig{Br^\oplus},\chemabove{Fe}{\scriptstyle\ominus}Br_3\chemright)
-\schemestop
+	\chemfig{\lewis{246,Br}-@{br}\lewis{206,Br}} \+ \chemfig{@{fe}\lewis{4|,Fe}-Br_3}
+	\arrow{<=>}
+	\chemfig{[0,1.5]\lewis{357,Br}-[1]\lewis{13,\chemabove{Br}{\scriptstyle\oplus}}-[7]\chemabove{Fe}{\scriptstyle\ominus}Br_3}
+	\chemmove{\draw[->,shorten <=2pt,shorten >=5pt](br).. controls+(-90:1cm)and+(-160:0.8cm).. (fe);}
+	\schemestop
+
 \vspace{1cm}
 \begin{center}
 	\schemestart
@@ -106,7 +106,7 @@ $\star$ \textbf{Mécanisme}:
 		\arrow{0}[,0] \+ \chemfig{Cl-\chemabove{Al}{\scriptstyle\ominus}Cl_3}
 		\arrow[-90,0.7]
 		\chemfig{[:-30,0.7]*6(-=-(-(-[:45])=[:-45]O)=-=)}
-		\+ HCl$_{(g)}$ \+ AlCL$_3$
+		\+ HCl$_{(g)}$ \+ AlCl$_3$
 	\schemestop
 \end{center}
 Mais AlCl$_3$ réagit sur la cétone aromatique, on fait donc une hydrolyse acide.
