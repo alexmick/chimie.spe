@@ -31,7 +31,7 @@
 \vspace{1cm}
 \end{small}
 \end{center}
-\underline{Mécanisme :}
+\underline{Mécanisme :} %On pourrait mettre le vrai méca...
 \schemestart[0,0.65]
 \chemfig{a/b} 
 \arrow{<=>} 
@@ -337,9 +337,9 @@ Préparation : par réaction de \textbf{Crotonisation} ou par oxydation des alcool
 \subscheme{
 \chemfig{(-[::-120])(-[::120](=^[::60](-[::60])(-[::-60])))=[@{c6dl2}]@{c6a1}O}
 \arrow{<->}
-\chemfig{\lewis{1|,\chembelow{C}{\quad \chargp}}(-[::-120])(-[@{c6l1}::120](=^[@{c6dl1}::60](-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \chargm}}}
+\chemfig{-[:60](-[:120])=_[@{c6dl1}]-[@{c6l1}:-60](-[:60,0.2,,,draw=none]\chargp)(-[,-0.06,,,draw=none]\lewis{4|,})(-[:-120])-\lewis{026,\chemabove{O}{\quad \chargm}}}
 \arrow{<->}
-\chemfig{(-[::-120])(=^[::120](-[::60]\lewis{1|,\chembelow{C}{\quad \chargp}}(-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \chargm}}}
+\chemfig{(-[::-120])(=^[::120](-[::60](-[:60,0.2,,,draw=none]\chargp)(-[,-0.06,,,draw=none]\lewis{4|,})(-[::60])(-[::-60])))-\lewis{026,\chemabove{O}{\quad \chargm}}}
 }
 \chemright]
 \chemmove{
@@ -432,13 +432,13 @@ Cyclisation à 6 chaînons. $\beta$-dicétone (ou cétoester) $+$ $\alpha$-énone.
 \schemestart
 \chemfig{*6(--(=O)-@{c7a1}(-)(-[@{c7l1}::-120]@{c7a2}H)-(=O)--)}
 \arrow{->[\chemfig{Et-@{c7a3}\lewis{062,O}} \! $\chargm$][\chemfig{EtOH}]}
-\chemfig{*6(--(=O)-@{c7a4}\lewis{7,\chemabove{C}{ \chargm}}(-)-(=O)--)}
+\chemfig{*6(--(=O)-@{c7a4}(-[90,0.2,,,draw=none]\chargm)(-[,0.08,,,draw=none]\lewis{7,})(-)-(=O)--)}
 \arrow{->[\chemfig{@{c7a5}=^[@{c7dl1}::-30]-[@{c7l2}::60](-[::60])=[@{c7dl2}::-60]@{c7a6}O}][]}[,2]
 \chemfig{*6(--(=O)-(-)(-[::-120]-[::60]=^[::60](-[::60])(-[::-60]\lewis{137,\chemabove{O}{ \chargm}}))-(=O)--)}
 \chemmove{
 \draw[->,shorten <= 0pt, shorten >= 2pt](c7l1).. controls +(30:4mm) and +(0:2mm).. (c7a1);
 \draw[->,shorten <= 2pt, shorten >= 2pt](c7a3).. controls +(90:10mm) and +(60:10mm).. (c7a2);
-\draw[->,shorten <= 3pt, shorten >= 2pt](c7a4).. controls +(330:10mm) and +(210:10mm).. (c7a5);
+\draw[->,shorten <= 3pt, shorten >= 4pt](c7a4).. controls +(330:10mm) and +(210:10mm).. (c7a5);
 \draw[->,shorten <= 2pt, shorten >= 2pt](c7dl1).. controls +(30:4mm) and +(150:4mm).. (c7l2);
 \draw[->,shorten <= 2pt, shorten >= 0pt](c7dl2).. controls +(30:6mm) and +(45:6mm).. (c7a6);
 }
@@ -451,7 +451,7 @@ Cyclisation à 6 chaînons. $\beta$-dicétone (ou cétoester) $+$ $\alpha$-énone.
 \chemfig{*6(--@{c8a2}(=[@{c8dl1}]@{c8a3}O)-(-)(-[::-120]-[::60]-[::60](-[::60]H_2 @{c8a1}\lewis{1,\chemabove{C}{\chargm}})(=[::-60]O))-(=O)--)}
 \arrow{<=>[Cétolisation][Intramoléculaire]}[,2]
 \chemmove{
-\draw[->,shorten <= 3pt, shorten >= 3pt,red](c8a1).. controls +(50:6cm) and +(280:5cm).. (c8a2);
+\draw[->,shorten <= 3pt, shorten >= 3pt](c8a1).. controls +(50:6cm) and +(280:5cm).. (c8a2);
 \draw[->,shorten <= 2pt, shorten >= 0pt](c8dl1).. controls +(30:6mm) and +(45:6mm).. (c8a3);
 }
 \schemestop
@@ -461,7 +461,7 @@ Cyclisation à 6 chaînons. $\beta$-dicétone (ou cétoester) $+$ $\alpha$-énone.
 \arrow{->[\chemfig{EtOH}][-\chemfig{Et\lewis{062,O}} \! $\chargm$]}[,1.2]
 \chemfig{*6(--(-[::-120]OH)(*6(-(-H)(-[::0]H)-(=O)----))-(-)(-[::0])-(=O)--)}
 \arrow{->[\chemfig{Et\lewis{062,O}} \! $\chargm$][-\chemfig{EtOH}]}[,1.2]
-\chemfig{*6(--(-[::-120]OH)(*6(-\lewis{6,\chembelow{\chemabove{C}{H}}{\quad \chargm}}-(=O)----))-(-)(-[::0])-(=O)--)}
+\chemfig{*6(--(-[::-120]OH)(*6(-(-[90,0.25,,,draw=none]\chargm)(-[:90,0.03,,,draw=none]\lewis{6,})-(=O)----))-(-)(-[::0])-(=O)--)}
 \schemestop
 \vspace{1cm}
 \schemestart
