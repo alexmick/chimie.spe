@@ -5,7 +5,7 @@
 \section{Hydrogénation}
 \subsection{Hydrogénation catalytique des alcanes}
 \noindent \textbf{Bilan:} Alcène + H$_2$ $\longrightarrow$ Alcane \\
-\textbf{Catalyse:} Nickel \\
+\textbf{Catalyse:} Nickel de \textsc{Raney} \\
 \textbf{Stéréochimie:} Addition syn des deux H
 
 {\setatomsep{35pt}
@@ -56,16 +56,19 @@
 \chemfig{*5(--=(-[,0.5])--)}
 \arrow{->[ 1) BH$_3$, Et$_2$O][ 2) H$_2$O$_2$,HO$^-$]}[,2]
 \chemfig{*5(--(<|[:45]H)(<:[:-20,0.7]OH)-(<:[:-20,0.7]H)(<|[:45]CH_3)--)}
+\arrow{0}[,0] \+ 
+Énantiomère
 \schemestop
 \end{center}
 \subsection{Halogenation}
+ 
 \noindent Attaque d'un di-halogène ou du chlorure d'iode sur le un trialkylborane
-{\setatomsep{15pt}
+{\setatomsep{17pt} \setbondoffset{0pt} %sinon les liaisons sont trop courtes
 \begin{center}
 \begin{footnotesize}
 \schemestart
 \chemleft( \chemfig{-[:30]-[:-30]CH_2} \chemright)$_{_{_{_{_{_{_{\!\! 3}}}}}}}$B
-\arrow{->[3$\:$Br$_2$][]}
+\arrow{->[3$\:$Br$_2$][]}[,0.8]
 3 \chemfig{-[:30]-[:-30]CH_2-Br} \+ \chemfig{B-Br_3}
 \arrow{0}[,0.6]
 \chemfig{*6(---=--)}
@@ -88,7 +91,7 @@ C'est une réaction \textbf{stéréospécifique}:
 \schemestart
 \chemfig{H-[:-30]C(-[:210]R)=C(-[:30]R')-[:-30]H}
 \arrow{->[MCPBA][]}[,1.5]
-\chemfig{C?(<:[:200]H)(<|[:250]R)-C(<:[:-20]R)(<|[:-70]H)-[:120]O?}
+\chemfig{C?(<:[:200]H)(<|[:250]R)-C(<:[:-20]R')(<|[:-70]H)-[:120]O?}
 \schemestop
 \end{center}
 \subsection{Hydrolyse}
