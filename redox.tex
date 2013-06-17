@@ -8,7 +8,7 @@
 						$$Ox + n.e^{-} = Red$$
 						\item On note un couple d'oxydant et de réducteur (Ox/Red), contrairement aux couples acides/bases où le donneur est en premier.
 						\item \underline{Bilan :}
-						$$n_2.Ox_1 + n_1.Red_1 = n_2.Red_1 + n_1.Ox_2$$ dont la constante d'équilibre vaut : $$K^0 = \frac{[Red_1]^{n_2}.[Ox_2]^{n_1}}{[Red_2]^{n_1}.[Ox_1]^{n_2}}$$
+						$$n_2.Ox_1 + n_1.Red_1 = n_2.Red_1 + n_1.Ox_2$$ dont la constante d'équilibre vaut : $$K^\circ = \frac{[Red_1]^{n_2}.[Ox_2]^{n_1}}{[Red_2]^{n_1}.[Ox_1]^{n_2}}$$
 			\end{itemize}
 		\item \underline{Calcul du nombre d'oxydation :} \\ le nombre d'oxydation est la charge formelle de l'ion fictif créé en attribuant les doublets liants à l'atome le plus électronégatif. 
 		\item \underline{Quelques règles de calcul :} 
@@ -37,8 +37,8 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 					$$\d H = V\d P + \delta Q_e - U_{el}\d q$$
 					Lors d'une transformation isobare, en confondant $\d H$ avec $\Delta_rH\d\xi$ : 
 					$$\Delta_rH\d\xi =\delta Q_e -n_p.F.U_{el}\d\xi$$
-					En confondant $\Delta_rH$ et $\Delta_rH^0$ et en considérant $U_{el}$ comme une constante, on peut intégrer selon l'avancement et :
-					$$Q_e = (\Delta_rH^0+n_p.F.U_{el})(\xi_F-\xi_I)$$
+					En confondant $\Delta_rH$ et $\Delta_rH^\circ$ et en considérant $U_{el}$ comme une constante, on peut intégrer selon l'avancement et :
+					$$Q_e = (\Delta_rH^\circ+n_p.F.U_{el})(\xi_F-\xi_I)$$
 					\item En écrivant la différentielle de G de deux manières différentes, on peut prouver que 
 					$$\mathcal{A}\d\xi = U_{el}\d q +T.\delta S_{cr}$$
 					On pose alors $$ \stackrel{\sim}{\mathcal{A}}=\mathcal{A}-n_p.F.U_{el}$$
@@ -47,15 +47,15 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 					\item On peut définir un potentiel électrochimique : 
 					$$\stackrel{\sim}{\mu}_i\left(T,P,U_{el},\mbox{compo}\right) = \mu_i\left(T,P,U_{el},\mbox{compo}\right)+z_i.F.\varphi_i$$ avec $\varphi_i$ le potentiel de la phase où est $A_i$, d'où 
 					$$\stackrel{\sim}{\mathcal{A}} \ = \sum_{i=1}^{n+p}\nu_i.\stackrel{\sim}{\mu}_i$$
-					\item Tension à vide standard $E^0$
+					\item Tension à vide standard $E^\circ$
 						\begin{itemize} \item On considère une pile fonctionnant de manière réversible où chacune des espèces est dans un état standard. On a alors :
-						$$\mathcal{A} = \mathcal{A}^0 = -\Delta_rG^0$$
+						$$\mathcal{A} = \mathcal{A}^\circ = -\Delta_rG^\circ$$
 						Ce qui donne avec la formule (1) 
-						\begin{equation}E^0 = \frac{\mathcal{A}^0}{n_p.F} = \frac{RT\ln\left(K^0\right)}{n_p.F} = V^0_1-V^0_2 \end{equation}
+						\begin{equation}E^\circ = \frac{\mathcal{A}^\circ}{n_p.F} = \frac{RT\ln\left(K^\circ\right)}{n_p.F} = V^\circ_1-V^\circ_2 \end{equation}
 						\item On a de même :
-						$$\Delta rG^0 = -n_pFE^0 \mbox{ et } \Delta rS^0 = n_pF\frac{\d E^0}{\d T}$$
+						$$\Delta rG^\circ = -n_pFE^\circ \mbox{ et } \Delta rS^\circ = n_pF\frac{\d E^\circ}{\d T}$$
 						\item D'où :
-						$$\Delta rH^0 = n_pF\left(T\frac{\d E^0}{\d T}-E^0\right)$$
+						$$\Delta rH^\circ = n_pF\left(T\frac{\d E^\circ}{\d T}-E^\circ\right)$$
 						\end{itemize} \end{enumerate}
 				\section{Formule de \bsc{Nernst}}	\begin{enumerate} 
 						\item Mise en place : avec (3), on a 
@@ -66,14 +66,14 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 						$$E=\frac{1}{nF}(\alpha\mu_{Ox}-\beta\mu_{Red})$$
 						C'est le potentiel d'oxydoréduction du couple (Ox/Red). 
 						\item On a donc
-						$$E = \underbrace{\frac{1}{nF}(\alpha\mu^0_{Ox}-\beta\mu^0_{Red})}_{E^0 \mbox{, potentiel standard}}+\frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}}{{a_{red}}^{\beta}}\right)$$		
+						$$E = \underbrace{\frac{1}{nF}(\alpha\mu^\circ_{Ox}-\beta\mu^\circ_{Red})}_{E^\circ \mbox{, potentiel standard}}+\frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}}{{a_{red}}^{\beta}}\right)$$		
 						\item Exemple : 
 						\begin{center}
 \schemestart 
 						\chemfig{Cr_2O_7^{2-}} \chemsign{+} 14\chemfig{H^{+}}\chemsign{+}6\chemfig{e^{-}}  \arrow{<->} 2\chemfig{Cr^{3+}} \chemsign{+} 7\chemfig{H_2O}
 						\schemestop
 \end{center}
-						$$E=E^0+\frac{RT}{nF}\ln\left(\frac{[\text{Cr}_2\text{O}_7^{2-}]\text{h}^{14}}{[\text{Cr}^{3+}]^2}\right)$$
+						$$E=E^\circ+\frac{RT}{nF}\ln\left(\frac{[\text{Cr}_2\text{O}_7^{2-}]\text{h}^{14}}{[\text{Cr}^{3+}]^2}\right)$$
 						\end{enumerate}
 		\section{Potentiel d'électrode}
 				\subsection{Electrode à hydrogène}
@@ -84,13 +84,13 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 					\schemestop
 					\\
 					On a donc un potentiel 
-					$$E = E^0_{(H^{+}/H_{2})}+\frac{RT}{2F}\ln\left(\frac{h^2.P^0}{P_{H_2}}\right)$$
+					$$E = E^\circ_{(H^{+}/H_{2})}+\frac{RT}{2F}\ln\left(\frac{h^2.P^\circ}{P_{H_2}}\right)$$
 				Si on prend tous les constituants dans leurs états standards, on a par convention 
-				$$ E^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
-				$$ V^0_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
+				$$ E^\circ_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
+				$$ V^\circ_{(H^{+}/H_{2})} = 0,000 \,\mathrm{V} \ \ \forall \mathrm{T}$$
 				\subsection{Définition du potentiel d'électrode}
 					Il s'agit de la tension à vide d'un pile dont l'électrode de gauche est l'électrode standard à hydrogène, celle de droite étant celle étudiée. On a donc :
-					$$E= E_{Ox/Red}-E^0_{(H^{+}/H_{2})} = V_{Ox/Red} - V^0_{(H^{+}/H_{2})}$$ 
+					$$E= E_{Ox/Red}-E^\circ_{(H^{+}/H_{2})} = V_{Ox/Red} - V^\circ_{(H^{+}/H_{2})}$$ 
 					Par convention, on  a donc que pour un même couple, le potentiel d'oxydoréduction et le potentiel d'électrodes sont identiques.
 			\section{Utilisation des potentiels d'oxydoréduction}
 				\begin{enumerate}
@@ -102,8 +102,8 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 			On construit un graphe comportant en ordonnée le potentiel E et en abscisse le pH. Aussi appelés diagrammes de \bsc{Pourbaix}, ces diagrammes sont relatifs à des états d"équilibre et on ne tient pas compte de la cinétique.
 			La demi-équation générale est : \\
 			 \schemestart $\alpha$ \chemfig{Ox} \+ m \chemfig{H^+} \+ n \chemfig{e^{-}} \arrow{<->} $\beta$ \chemfig{Red}+c \chemfig{H_2O}   \schemestop \\
-			 On a donc un potentiel \begin{eqnarray*} E &=& E^0 + \frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}.{a_{h^+}}^m}{{a_{Red}}^{\beta}}\right) \\
-			 								&=& E^0 - \frac{0,06.m}{n}\mbox{pH}-\frac{0,06}{n}\log\left(\frac{{a_{ox}}^{\alpha}}{{a_{Red}}^{\beta}}\right) \end{eqnarray*}
+			 On a donc un potentiel \begin{eqnarray*} E &=& E^\circ + \frac{RT}{nF}\ln\left(\frac{{a_{ox}}^{\alpha}.{a_{h^+}}^m}{{a_{Red}}^{\beta}}\right) \\
+			 								&=& E^\circ - \frac{0,06.m}{n}\mbox{pH}-\frac{0,06}{n}\log\left(\frac{{a_{ox}}^{\alpha}}{{a_{Red}}^{\beta}}\right) \end{eqnarray*}
 			On fixe alors arbitrairement $a_{ox}$ et $a_{Red}$ puis on trace la courbe correspondante. Si on choisit les deux activités comme égales à 1, on a le potentiel standard apparent. On peut aussi choisir de tracer une famille de courbe pour des valeurs de $\log$ variant de -6 à -2 ou suivre la consigne de l'énoncé.
 		\subsection{Domaine de prédominance/Domaine d'existences}
 					
@@ -153,11 +153,11 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 		\begin{center}
 \begin{tabular}{c|c}	(\chemfig{H^+}/\chemfig{{H_2}_{(g)}}) & (\chemfig{{O_2}_{(g)}}/\chemfig{H_2O_{(l)}}) \\ 
 			\schemestart 2 \chemfig{H^+} \+ 2 \chemfig{e^{-}} \arrow{<=>} \chemfig{{H_2}_{(g)}} \schemestop & \schemestart \chemfig{O_2} \+ 4 \chemfig{H^+} \+ 4 \chemfig{e^{-}} \arrow{<=>} 2\chemfig{H_2O} \schemestop \\
-						$E_1 = -0,06\mbox{pH}+0,03\log\left(\frac{P^0}{P_{H_2}}\right)$ & $E_2 = 1,23 -0,06\mbox{pH}+0,015\log\left(\frac{P_{O_2}}{P^0}\right)$
+						$E_1 = -0,06\mbox{pH}+0,03\log\left(\frac{P^\circ}{P_{H_2}}\right)$ & $E_2 = 1,23 -0,06\mbox{pH}+0,015\log\left(\frac{P_{O_2}}{P^\circ}\right)$
 					 \end{tabular}
 \end{center}
 			\subsubsection{Tracé du diagramme}
-				Convention : $P_{O_2}=P_{H_2}=1$ bar ce qui donne comme équation-frontière : ${E_1}_f = -0,06\mbox{pH}$ et ${E_2}_f =1,23 -0,06\mbox{pH}$ 
+				Convention : $P_{O_2}=P_{H_2}=1$ bar ce qui donne comme équation-frontière : $E_1_f = -0,06\mbox{pH}$ et $E_2_f =1,23 -0,06\mbox{pH}$ 
 				
 	\begin{center}			\definecolor{xdxdff}{rgb}{0.49,0.49,1}
 \definecolor{qqqqff}{rgb}{0,0,1}
@@ -190,7 +190,7 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 \end{tikzpicture}\end{center}
 			 	
 			\subsubsection{Stabilité vis-à-vis des couples d'oxydoréduction} En liaison avec la convention, on considère l'eau comme stable tant que $P_{H_2}$ ou $P_{O_2}$ résultant de son éventuelle réaction restent inférieurs à 1 bar. Si on introduit un oxydant puissant (par exemple \chemfig{F_2}), le point représentatif initial du couple (\chemfig{F_2}/\chemfig{F^{-}}) est en dehors du domaine de stabilité de l'eau, on a donc réaction.
-			\\ \schemestart \chemfig{{F_{2}}_{(g)}} \+ \chemfig{H_2O} \arrow 2 \chemfig{HF} \+ $\frac{1}{2}$ \chemfig{O_2} \schemestop.   On voit que \chemfig{F_2} disparait tant que le point représentatif ne rejoint pas ${E_2}_f$
+			\\ \schemestart \chemfig{{F_{2}}_{(g)}} \+ \chemfig{H_2O} \arrow 2 \chemfig{HF} \+ $\frac{1}{2}$ \chemfig{O_2} \schemestop.   On voit que \chemfig{F_2} disparait tant que le point représentatif ne rejoint pas $E_2_f$
 			\\ Si on introduit un couple (Ox/Red) faible tel que (\chemfig{Fe^{2+}}/\chemfig{Fe_{(s)}}), pas d'évolution notable. \\
 			Si on introduit un réducteur puissant (\chemfig{Na_{(s)}}), on est encore en dehors du domaine de stabilité de l'eau, et on a réaction. \\
 			\schemestart \chemfig{Na_{(s)}} \+ \chemfig{H_2O} \arrow \chemfig{Na^+} \+ \chemfig{HO^{-}} \+ $\frac{1}{2}$ \chemfig{H_2} \schemestop \\
@@ -199,8 +199,8 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 				 \redefinesubmol{e}{e^{-}}
 					\subsubsection{Espèce mises en jeu} On considérera  les espèces suivantes : \chemfig{Fe^{3+}}, \chemfig{Fe^{2+}}, \chemfig{Fe_{(s)}}, \chemfig{Fe{(OH)}_3}, \chemfig{Fe{(OH)}_2} et \chemfig{Fe{(OH)}^{2+}}. Les demi-équations associées sont : \bigskip 
 					\begin{center}
-\begin{tabular}{cll} (1) & \schemestart \chemfig{Fe^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \schemestop & ${E^0}_1 = -0,44$V \\
-					(2) & \schemestart \chemfig{Fe^{3+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe^{2+}} \schemestop & ${E^0}_2 = 0,77$V \\
+\begin{tabular}{cll} (1) & \schemestart \chemfig{Fe^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \schemestop & $E^\circ_1 = -0,44$V \\
+					(2) & \schemestart \chemfig{Fe^{3+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe^{2+}} \schemestop & $E^\circ_2 = 0,77$V \\
 					(a) & \schemestart \chemfig{Fe^{3+}} \+ \chemfig{H_2O } \arrow{<=>} \chemfig{Fe{(OH)}^{2+}} \+ \chemfig{H^+}  \schemestop & $K_1 =10^{-2,2}$ \\
 					($s_1$) & \schemestart \chemfig{Fe{(OH)}_3} \arrow{<=>} \chemfig{Fe^{3+}} \+ 3 \chemfig{HO^{-}} \schemestop	 & $K_{s_1} = 10^{-37,2}$ \\
 					($s_2$) & \schemestart \chemfig{Fe{(OH)}_2} \arrow{<=>} \chemfig{Fe^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop	 & $K_{s_2} = 10^{-14,7}$ \\
@@ -224,29 +224,29 @@ $$\mbox{(R)} = p_1(1)-p_2(2) \Rightarrow a_1Ox_1+b_2Red_2 \leftrightarrow a_2Ox_
 \begin{itemize}
 \item Équilibre entre Fe(III) et Fe(II)
 \begin{itemize}
-\item  Pour des pH inférieurs à 2,2, on considère le couple ( \chemfig{Fe^{3+}}/\chemfig{Fe^{2+}}) : $E_2 = 0,77 +0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right) \Rightarrow {E_2}_f = 0,77$ V. 
+\item  Pour des pH inférieurs à 2,2, on considère le couple ( \chemfig{Fe^{3+}}/\chemfig{Fe^{2+}}) : $E_2 = 0,77 +0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right) \Rightarrow E_2_f = 0,77$ V. 
 \item Pour des pH compris entre 2,2 et 2,8, on considère l'équilibre entre (\chemfig{Fe{(OH)}^{2+}}/\chemfig{Fe^{2+}})  : \schemestart \chemfig{H^+} \+ \chemfig{Fe{(OH)}^{2+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe^{2+}} \+ \chemfig{H_2O}  \schemestop (3)
-\\ On a $E_3 = {E_3}^0 -0,06\mbox{ pH} +0,06\log\left(\frac{\left[\chemfig{Fe{(OH)}^{2+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
-\\ De plus, (3) = (2)-(a) soit $${\A_3}^0 = {\A_2}^0 - {\A_a}^0 \Rightarrow F.{E_3}^0 = F.{E_2}^0 -RT\ln(K_a)$$ et finalement ${E_3}^0 = 0,90$V et ${E_3}^0_f = 0,90 - 0,06$pH
+\\ On a $E_3 = E_3^\circ -0,06\mbox{ pH} +0,06\log\left(\frac{\left[\chemfig{Fe{(OH)}^{2+}}\right]}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
+\\ De plus, (3) = (2)-(a) soit $$\A_3^\circ = \A_2^\circ - \A_a^\circ \Rightarrow \mathcal{F}\,E_3^\circ = \mathcal{F}\,E_2^\circ -RT\ln(K_a)$$ et finalement $E_3^\circ = 0,90$V et $E_{3_f}^\circ = 0,90 - 0,06$pH
 \item Pour des pH compris entre 2,8 et 8,15, on a
 \\  \schemestart \chemfig{Fe{(OH)}_{3}} \+ \chemfig{!e} \+ 3 \chemfig{H^+} \arrow{<=>} \chemfig{Fe^{2+}} \+ 3 \chemfig{H_2O} (4) \schemestop
-\\ soit $ E_4 = {E_4}^0 -0,18\mbox{ pH} +0,06\log\left(\frac{\displaystyle 1}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
+\\ soit $ E_4 = E_4^\circ -0,18\mbox{ pH} +0,06\log\left(\frac{\displaystyle 1}{\left[\chemfig{Fe^{2+}}\right]}\right)$. 
 \\ On a (4) = (2) +($s_1$) - 3 (e) d'où 
-$${E_4}^0 = {E_2}^0 +0,06(3.pK_e - pK_s) = 1,06\mbox{ V}$$
-et ${E_4}^0_f = 1,24 -0,06$pH
+$$E_4^\circ = E_2^\circ +0,06(3.pK_e - pK_s) = 1,06\mbox{ V}$$
+et $E_4^\circ_f = 1,24 -0,06$pH
 \item Pour des pH supérieurs à 8,15 , on a 
 \\ \schemestart \chemfig{Fe{(OH)}_{3}} \+ \chemfig{H^+} \+ \chemfig{!e} \arrow{<=>} \chemfig{Fe{(OH)}_{2}} \+ \chemfig{H_2O} \schemestop 
-On a \begin{eqnarray*} E_5 &=&  {E_5}^0 -0,06\mbox{pH} \\
-					&=& E_2 = {E_2}^0 + 0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{+2}}\right]}\right) \\
-					&=& {E_2}^0 + 0,06\log\left(\frac{Ks_1}{\omega^3}.\frac{\omega^2}{Ks_2}\right)  \\
-					&=& {E_2}^0 + 0,06\log\left(\frac{Ks_1}{Ks_2}.\frac{h}{Ke}\right) \\
-					&=& \underbrace{{E_2}^0 +0,06(PkE+pKs_2 - pKs_1)}_{{E_5}^0=0,26V}  -0,06\mbox{pH}  \end{eqnarray*}
-	et ${E_5}^0_f = 0,26 - 0,06$ pH
+On a \begin{eqnarray*} E_5 &=&  E_5^\circ -0,06\mbox{pH} \\
+					&=& E_2 = E_2^\circ + 0,06\log\left(\frac{\left[\chemfig{Fe^{3+}}\right]}{\left[\chemfig{Fe^{+2}}\right]}\right) \\
+					&=& E_2^\circ + 0,06\log\left(\frac{Ks_1}{\omega^3}.\frac{\omega^2}{Ks_2}\right)  \\
+					&=& E_2^\circ + 0,06\log\left(\frac{Ks_1}{Ks_2}.\frac{h}{Ke}\right) \\
+					&=& \underbrace{E_2^\circ +0,06(pKe+pKs_2 - pKs_1)}_{E_5^\circ=0,26V}  -0,06\mbox{pH}  \end{eqnarray*}
+	et $E_{5_f}^\circ = 0,26 - 0,06$ pH
 \end{itemize}
 \item Équilibre entre Fe(II) et Fe(0)
 \begin{itemize}
-\item Pour des pH inférieurs à 8,15, on a (1) soit $E_1 = -0,44 +0,03\log\left(\left[\chemfig{Fe^{2+}}\right]\right)$ et ${E_1}_f = -0,53$V
-\item pour des pH supérieurs à 8,15, on a l'équilibre \\ \schemestart \chemfig{Fe{(OH)}_2}\+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \+ 2 \chemfig{H_2O} \schemestop  \\ et $E_6 = {E_6}^0-0,06$pH. On se sert de la continuité du potentiel à pH = 8,15 et ${E_6}^0 = -0,04-0,06$pH
+\item Pour des pH inférieurs à 8,15, on a (1) soit $E_1 = -0,44 +0,03\log\left(\left[\chemfig{Fe^{2+}}\right]\right)$ et $E_1_f = -0,53$V
+\item pour des pH supérieurs à 8,15, on a l'équilibre \\ \schemestart \chemfig{Fe{(OH)}_2}\+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Fe_{(s)}} \+ 2 \chemfig{H_2O} \schemestop  \\ et $E_6 = E_6^\circ-0,06$pH. On se sert de la continuité du potentiel à pH = 8,15 et $E_6^\circ = -0,04-0,06$pH
 \end{itemize}
 
 \end{itemize}
@@ -321,7 +321,7 @@ On a \begin{eqnarray*} E_5 &=&  {E_5}^0 -0,06\mbox{pH} \\
 	\chemfig{Zn_{(s)}}, \chemfig{Zn^{2+}}, \chemfig{Zn{(OH)}_2}, \chemfig{Zn{(OH)}_4^{2+}}. On a les données suivantes : 
 	 \begin{center}
 \begin{tabular}{ccc}
-	(1) & \schemestart \chemfig{Zn^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \schemestop & ${E_0}^1 = -0,76$V \\
+	(1) & \schemestart \chemfig{Zn^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \schemestop & $E_1^\circ = -0,76$V \\
 	(s) & \schemestart \chemfig{Zn{(OH)}_2} \arrow{<=>} \chemfig{Zn^{2+}} \+ 2 \chemfig{HO^{-}} \schemestop	 & $K_s = 10^{-16}$ \\
 	(c) & \schemestart \chemfig{Zn^{2+}} \+ 4 \chemfig{HO^{-}} \arrow{<=>} \chemfig{Zn{(OH)}_4^{2-}} \schemestop & $\beta_4 = 10^{15,5}$ \end{tabular}
 \end{center}			
@@ -337,12 +337,12 @@ On note pH$_2$ le pH de disparition de \chemfig{Zn{(OH)}_2} et on trouve $\mbox{
 \end{center}
 \begin{itemize}
 \item Pour des pH compris entre 0 et 6,5, \\
-$E_1 = {E_1}^0 + 0,03\log\left(\left[\chemfig{Zn^{2+}}\right]\right)$ soit ${E_1}_f = -0.79$ V
+$E_1 = E_1^\circ + 0,03\log\left(\left[\chemfig{Zn^{2+}}\right]\right)$ soit $E_{1_f} = -0.79$ V
 \item Pour des pH compris entre 6.5 et 13.75, on a la demi-équation suivante : \\
-\schemestart \chemfig{Zn{(OH}_2} \+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \+ 2 \chemfig{H_2O} \schemestop  soit $E_2= {E_2}^0 -0,06$pH. Avec la continuité du potentiel, on trouve ${E_2}^0 = -0.40$ V soit ${E_2}_f = -0.40 - 0.06$pH
+\schemestart \chemfig{Zn(OH)_2} \+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \+ 2 \chemfig{H_2O} \schemestop\  soit $E_2= E_2^\circ -0,06$pH. Avec la continuité du potentiel, on trouve $E_2^\circ = -0.40$ V soit $E_{2_f} = -0.40 - 0.06$pH
 \item Pour des pH supérieurs à 13.75, 
 \schemestart \chemfig{Zn{(OH)}_4^{2-}} \+ 4 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Zn_{(s)}} \+ 4 \chemfig{H_2O} \schemestop \\
- et on trouve ${E_3}_f = 0,43 - 0.12$pH
+ et on trouve $E_{3_f} = 0,43 - 0.12$pH
 \end{itemize}
 
 
@@ -381,9 +381,9 @@ Même légende que pour le Fer, on a superposé le diagramme de l'eau en pointillé.
 	\subsection{Cuivre}
 	\subsubsection{Espèces envisagées} On considère les espèces suivantes :
 	\\ \chemfig{Cu^{2+}}, \chemfig{Cu{(OH)}_2}, \chemfig{Cu^{+}}, \chemfig{Cu_2O} et \chemfig{Cu_{(s)}}. On a les données suivantes : \\ \begin{tabular}{ccc}
-		(1) & \schemestart \chemfig{Cu^{2+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu^+} \schemestop & ${E_1}^0 = 0.16$ V \\
-		(2) &  \schemestart \chemfig{Cu^{+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu_{(s)}} \schemestop  & ${E_2}^0 = 0.52 V$\end{tabular} \\ \\
-		Comme (Cu(I)/Cu(0)) > (Cu(II)/Cu(I)), \chemfig{Cu^+} se dismute en milieu acide.  \begin{center}
+		(1) & \schemestart \chemfig{Cu^{2+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu^+} \schemestop & $E_1^\circ = 0.16$ V \\
+		(2) &  \schemestart \chemfig{Cu^{+}} \+ \chemfig{!e} \arrow{<=>} \chemfig{Cu_{(s)}} \schemestop  & $E_2^\circ = 0.52 V$\end{tabular} \\ \\
+		Comme E^\circ(Cu(I)/Cu(0)) > E^\circ(Cu(II)/Cu(I)), \chemfig{Cu^+} se dismute en milieu acide.  \begin{center}
 \begin{tabular}{ccc}
 		(3) & \schemestart \chemfig{Cu^{2+}} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_{(s)}} \schemestop & \\
 		(4) & \schemestart 2 \chemfig{Cu{(OH)}_2} \+ \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_2O} \+ \chemfig{H_2O}\schemestop & \\
@@ -391,19 +391,19 @@ Même légende que pour le Fer, on a superposé le diagramme de l'eau en pointillé.
 		(s2) & \schemestart \chemfig{Cu_2O}\+ \chemfig{H_2O} \arrow{<=>} 2 \chemfig{Cu^+} \+ 2 \chemfig{HO^{-}} \schemestop & \\
 		(e) & \schemestart \chemfig{H_2O} \arrow{<=>} \chemfig{H^+} \+ \chemfig{HO^{-}}\schemestop\end{tabular}
 \end{center}
-On a (4) =2(1)+2(s1) -(s2)-2(e) soit ${E_4}^0 = 0,75$ V et $E_4 = 0,75 -0,06\mbox{pH} = {E_4}_f$ \\
+On a (4) =2(1)+2(s1) -(s2)-2(e) soit $E_4^\circ = 0,75$ V et $E_4 = 0,75 -0,06\mbox{pH} = E_{4_f}$ \\
 		\\\begin{center}
 \begin{tabular}{ccc}
 		(5) & \schemestart \chemfig{Cu_2O} \+ 2 \chemfig{H^+} \+ 2 \chemfig{!e} \arrow{<=>} 2 \chemfig{Cu} \+ \chemfig{H_2O}  \schemestop & \end{tabular}
 \end{center} 
-		On a $E_5 = {E_5}_f = 0,52 -0,06$pH. On voit que 0,52 < 0,75 : \chemfig{Cu_2O} ne se dismute pas. 
+		On a $E_5 = E_{5_f} = 0,52 -0,06$pH. On voit que 0,52 < 0,75 : \chemfig{Cu_2O} ne se dismute pas. 
 		\subsubsection{Tracé du diagramme} On se place dans la convention $c=10^{-2} \mbox{mol.L}^{-1}$ \\
 		On note pH$_1$ le pH d'apparition de \chemfig{Cu{(OH)}_2} et on trouve pH$_1$ = 5.9.
 		On note pH$_2$ le  pH à partir duquel \chemfig{Cu_2O} est stable. \\ \begin{center}
 \begin{tabular}{cc}
 		(6) & \schemestart \chemfig{Cu^{2+}}\+ 2 \chemfig{H_2O} \+ 2 \chemfig{!e} \arrow{<=>} \chemfig{Cu_2O} \+ 2 \chemfig{H^+} \schemestop \end{tabular}
 \end{center} 
-		On a $E_6 = \underbrace{{E_6}^0}_{0,116}+0,06\mbox{pH} +0,06\log\left(\left[\chemfig{Cu^{2+}}\right]\right)$ soit ${E_6}_f = 0,04 + 0,06$pH. \chemfig{Cu_2O} sera stable si E(Cu(I)/Cu(0)) < E(Cu(II)/Cu(I)) d'où pH$_2$ = 4. \\ 
+		On a $E_6 = \underbrace{E_6^\circ}_{0,116}+0,06\mbox{pH} +0,06\log\left(\left[\chemfig{Cu^{2+}}\right]\right)$ soit $E_{6_f} = 0,04 + 0,06$pH. \chemfig{Cu_2O} sera stable si E(Cu(I)/Cu(0)) < E(Cu(II)/Cu(I)) d'où pH$_2$ = 4. \\ 
 		 \begin{center}
 \begin{tabular}{c|ccccc}
 		pH & & 4 & & 5.9 & \\\hline
