@@ -95,7 +95,7 @@ La chaîne (a) est dite linéaire, la chaîne (b) est ramifiée (ou branchée) et la 
 \chemfig{[,0.8](-[:-140])(<|[:110]Y)(<:[:60]X)-[:-40]-[:40](<|[:110]Y)(<:[:60]X)-[:-40]-[:40](<|[:110]X)(<:[:60]Y)-[:-40]-[:40](<|[:110]Y)(<:[:60]X)-[:-40]-[:40](<|[:110]X)(<:[:60]Y)-[:-40]-[:40](<|[:110]X)(<:[:60]Y)-[:-40]}
 \end{center}
 \end{itemize}
-\underline{Remarque} : La polymérisation radicalaire du styrène à température élevée conduit ) des polymères ataxiques optiquement inactifs et amorphes. La polymérisation anionique aux basses températures donne des polymères isotactique ou syndiotactique (semi-cristallins)
+\underline{Remarque} : La polymérisation radicalaire du styrène à température élevée conduit à des polymères atactiques optiquement inactifs et amorphes. La polymérisation anionique aux basses températures donne des polymères isotactique ou syndiotactique (semi-cristallins)
 \end{itemize}
 			\subsubsection{Stéréorégularité liée à la présence de C=C dans la chaîne}
 				\underline{Exemple} polymérisation de l'isoprène : \bigskip
@@ -109,8 +109,9 @@ $\star$\underline{Polymérisation par addition 1,4} :
 \draw[->](dep3).. controls+(-90:1cm)and+(-100:1cm).. (ar3);}
 			\schemestop \]
 	%Motif constitutif  : \chemfig{[,0.7]-H_2C-CH=C(-[:-90]CH_3)-H_2C-} \\ %On le voit après...
-	On a deux motifs configurationnels : \chemname{\chemfig{[,0.7]C(-[:140]H_2C-[:-180])(-[:-140]H)=C(-[:-40]CH_3)-[:40]CH_2-}}{(cis)-1,4, caoutchouc naturel} et \chemname{\chemfig{[,0.7]C(-[:140]H_2C-[:-180])(-[:-140]H)=C(-[:40]CH_3)-[:-40]CH_2-}}{(trans)-1,4}\\
-$\star$\underline{Polymérisation par addition 1,2} :
+	On a deux motifs configurationnels : \chemname{\chemfig{[,0.7]C(-[:140]H_2C-[:-180])(-[:-140]H)=C(-[:-40]CH_3)-[:40]CH_2-}}{(cis)-1,4, caoutchouc naturel} et \chemname{\chemfig{[,0.7]C(-[:140]H_2C-[:-180])(-[:-140]H)=C(-[:40]CH_3)-[:-40]CH_2-}}{(trans)-1,4}
+\newpage %sinon la ligne suivante se retrouve sur la page précedente
+\noindent $\star$\underline{Polymérisation par addition 1,2} :
 \begin{center}
 \schemestart \chemfig{[,0.9]Li-[@{dep1}]Bu} \+ \chemfig{[,0.9]H_2@{ar1}C=[@{dep2}]@{ar2}C(-[:-90]CH_3)-CH=CH_2}
 \arrow(.base east--.base west) \chemfig{[,0.9]Bu-H_2C-\chemabove{\lewis{5,C}}{\ominus}(-[:-90]CH_3)-CH=CH_2},\chemfig{Li^+} 
@@ -198,7 +199,7 @@ $\star$\underline{Polymérisation par addition 3,4} :
 \draw (1.2,0.84)-- (0.16,2.28);
 \draw (0.16,2.28)-- (-0.7,3.48);
 \end{tikzpicture} \end{center}
-Lorsque la concentration augmente, les pelotes commencent à s'interpénétrer, à partir d'une \og concentration critique de recouvrement\fg $C^*$ propre à chaque type de polymère dans un solvant donné.
+Lorsque la concentration augmente, les pelotes commencent à s'interpénétrer, à partir d'une \og concentration critique de recouvrement\fg\ $C^*$ propre à chaque type de polymère dans un solvant donné.
 \begin{center}  %Dessin des sphères
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.15cm,y=1.15cm]
 \clip(-6.3,-2.90) rectangle (5.3,6.25);
@@ -270,7 +271,7 @@ Pour des solutions diluées (C$<C^*$) les chaînes se comportent comme des sphères
 \item physique : il s'agit d'enchevêtrement (cf. cheveux mêlés). Ils peuvent disparaître par élévation de température ou contrainte mécanique
 \item chimique : il y a création de ponts covalents (plus ou moins longs) entre chaînes.
 \end{itemize}
-\underline{Exemples}: Polycondensation d'une molécule difonctionnelle (anhydrite phtalique) et d'une molécule trifonctionielle (propane-1,2,3,-triol) conduisant aux résines glycérophtaliques :
+\underline{Exemples}: Polycondensation d'une molécule difonctionnelle (anhydride phtalique) et d'une molécule trifonctionielle (propane-1,2,3,-triol) conduisant aux résines glycérophtaliques :
 \begin{center}
 \schemestart \chemfig{[:-60]*6(-=-*5(-(=[:-90]O)-O-(=[:90]O)-)=-=)}
 \arrow(.east--.base west){0}[,0.2] et \chemfig{HO-CH_2-CH(-[:-90]OH)-CH_2-OH} \schemestop
@@ -500,7 +501,7 @@ Pour un polymère cristallin, il n'y a pas de point de fusion et $T_f > T_g$
 		Il existe plusieurs modes de classification des polymères, selon leur diffusion industrielle, leur usage, leurs propriétés d'utilisation ou leur ordre moléculaire. Dans ce paragraphe, on se base sur leur emploi. Il existe alors quatre grandes familles usuelles de polymères : 
 		\begin{itemize}
 \item Polymères naturels
-\item Polymère thermoplastiques : groupe le plus important des polymères de synthèse. Ils sont constitués de macromolécules linéaires ou ramifiées. Il peuvent être semi-cristallins. Il se ramollissent à une température supérieure à $T_g$. Ce processus est renversante et peut être répété plusieurs fois sans trop d'altération des propriétés du matériau. Ils sont ainsi facile à mettre en forme et leur recyclage pose peu de problème. Comme tous les polymères, ils se dégradent par une élévation trop grande de température, T > $T_d$ température de décomposition plastique 
+\item Polymère thermoplastiques : groupe le plus important des polymères de synthèse. Ils sont constitués de macromolécules linéaires ou ramifiées. Il peuvent être semi-cristallins. Il se ramollissent à une température supérieure à $T_g$. Ce processus est renversable et peut être répété plusieurs fois sans trop d'altération des propriétés du matériau. Ils sont ainsi facile à mettre en forme et leur recyclage pose peu de problème. Comme tous les polymères, ils se dégradent par une élévation trop grande de température, T > $T_d$ température de décomposition plastique 
 \item Élastomères : matériaux amorphes constitués de macromolécules linéaires (ou peu ramifiées) avec quelques pontages entre les chaînes. Cette opération confère au polymère une structure tridimensionnelle très souple et très déformable car le taux de réticulation est faible. Utilisés au-delà de $T_g$, ils ont un comportement caoutchoutique, c'est-à-dire une grande capacité de déformation réversible. Ils se décomposent pour T>$T_d$ et deviennent dur et souvent cassant pour T<$T_g$
 \item Polymères thermodurcissables : matériaux amorphes formés par un réseau tridimensionnels de macromolécules. Leur taux de réticulation est 10 à 100 fois plus élevé que celui des élastomères. Ils sont rigides. Lorsqu'on élève leur température, ils quittent leur état vitreux pour T>$T_g$ et acquièrent une modeste souplesse jusqu'à $T_d$. Ils sont infusibles. A la différence des thermoplastiques, ils ne peuvent pas être mis en forme par chauffage. \\
 \end{itemize}
